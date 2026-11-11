@@ -1,0 +1,30 @@
+@use "../shared/shared-placeholders" as *;
+.plan-summary-container {
+  @extend %SecondaryBackgroundRounded;
+
+  .card-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--neutral-border-strong);
+
+    .heading {
+      line-height: 1.688rem;
+    }
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .card-item {
+      border-right: 1px solid var(--neutral-border-strong);
+    }
+
+    :last-child {
+      border-right: none;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.k-grid {
+  border: none;
+
+  /* background: var(--neutral-surface-layer-02) ; */
+  .k-master-row {
+    font-size: var(--fs-16);
+    font-weight: var(--font-semi-bold);
+    letter-spacing: 0%;
+    color: var(--neutral-text-default);
+    background: var(--neutral-surface-layer-01);
+  }
+
+  .k-table-alt-row {
+    background-color: var(--neutral-surface-layer-02);
+  }
+
+  tr.k-state-selected > td {
+    background-color: transparent;
+  }
+
+  .k-checkbox {
+    &:hover {
+      outline: 2px solid var(--brand-border-primary-default);
+      outline-offset: 2px;
+    }
+
+    &:focus {
+      border-color: transparent;
+      box-shadow: none;
+    }
+
+    &::before {
+      background-image: none;
+    }
+
+    &:checked {
+      color: transparent;
+    }
+
+    box-sizing: border-box;
+    border-radius: 0px;
+    height: 13px;
+    width: 13px;
+    accent-color: var(--brand-background-primary-strong);
+    transition: outline-color 0.1s;
+    appearance: auto;
+  }
+
+  td {
+    border: none;
+  }
+
+  tr:hover {
+    background-color: var(--neutral-surface-layer-02);
+  }
+
+  .k-grid-header {
+    border: none;
+    padding-right: 8px;
+
+    .k-grid-header-wrap {
+      border: none;
+    }
+
+    .k-header {
+      border: none;
+      background: var(--neutral-surface-layer-01);
+      background-color: var(--brand-background-primary-light);
+
+      .k-icon {
+        font-size: var(--fs-10);
+        font-weight: 900;
+      }
+
+      .k-link {
+        font-size: var(--fs-14);
+        font-weight: var(--font-medium);
+        letter-spacing: 0%;
+        color: var(--neutral-text-subtle);
+        border: none;
+        background-color: var(--brand-background-primary-light);
+        padding-inline: 0.5rem;
+      }
+    }
+  }
+
+  .k-grid-content {
+    overflow: auto;
+  }
+
+  .k-grid-content::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .k-table-td,
+  .k-table-th {
+    border-inline-start-width: 0;
+  }
+}
+
+.kendo-norecords-flair {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--neutral-surface-layer-01);
+  padding: 12px 20px;
+  border-radius: 4px;
+  text-align: center;
+  z-index: 0;
+  width: 100%;
+  pointer-events: none;
+}
+.k-animation-container.k-animation-container-fixed.k-animation-container-shown {
+  z-index: 1000001;
+}

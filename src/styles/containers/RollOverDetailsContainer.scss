@@ -1,0 +1,271 @@
+.formgrey-corp-actions {
+  .w-fit-content {
+    .form-control {
+      width: 330px;
+    }
+  }
+}
+
+.formgrey-corp-actions-merge {
+  .w-fit-content {
+    .form-control {
+      padding-right: 50px;
+      width: 350px;
+    }
+  }
+}
+
+.text-box-style {
+  font-size: var(--fs-14);
+  font-weight: 500;
+}
+
+.rollOverErrorStyle {
+  color: var(--semantics-critical-text);
+  font-size: var(--fs-14);
+  /* font-family: Poppins; */
+  font-weight: 400;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.plan-details-container {
+  margin-top: 50px;
+  width: 98%;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.rollover-plan-details-container {
+  margin-top: 32px;
+  width: 100%;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.plan-details-header {
+  color: var(--neutral-text-default);
+  font-size: var(--fs-16);
+  margin: 0px;
+}
+
+.distribution-plan-card {
+  background-color: var(--neutral-surface-layer-03);
+  margin: -25px;
+  border-radius: 4px;
+}
+
+.rollover-distribution-plan-card {
+  background-color: var(--neutral-surface-layer-03);
+  margin: -15px;
+  border-radius: 4px;
+}
+
+.source-header {
+  margin-top: -20px;
+  padding-top: 10px;
+  background: var(--neutral-surface-layer-03);
+  padding-left: 40px;
+  padding-right: 20px;
+  margin-right: -20px;
+  margin-left: -40px;
+  border-radius: 5px;
+}
+.investment-header-rolloverin {
+  margin-top: 0px;
+  padding-top: 10px;
+  background: var(--neutral-surface-layer-03);
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-right: -32px;
+  margin-left: -32px;
+
+  border-radius: 5px 5px 0px 0px;
+}
+
+.field-header {
+  color: var(--neutral-text-subtle-least);
+  font-size: var(--fs-16);
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.sourcemapping-table {
+  width: 100%;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  padding: 0px;
+
+  .table {
+    border: none;
+  }
+
+  thead {
+    background-color: var(--neutral-surface-layer-03);
+    tr {
+      th {
+        font-size: var(--fs-16);
+        font-weight: 500;
+        color: var(--neutral-text-default);
+      }
+    }
+  }
+  .padright-rolloverin-source-details {
+    text-align: right;
+    padding-right: 36px;
+  }
+  .padleft-rolloverin-source-details {
+    padding-left: 36px;
+  }
+  .rollover-bg {
+    background-color: var(--neutral-surface-layer-03);
+  }
+  .padding-rolloverin-source-details {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .border-rolloverin-source-mapping {
+    padding: 0px 36px 0px 36px;
+    div {
+      border-bottom: 1px solid var(--neutral-border-strong);
+    }
+  }
+}
+
+.sourceallocation-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 25px;
+  border: 1px solid var(--neutral-border-strong);
+  background-color: var(--neutral-surface-layer-01);
+  border-radius: 5px;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+.sourcemapping-container {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.ft-18 {
+  font-size: var(--fs-18);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.mt-35 {
+  margin-top: 35px;
+}
+
+.upload-doc-container {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  color: var(--neutral-text-default);
+  font-size: var(--fs-18);
+  font-weight: 500;
+}
+
+/* .d-flex { */
+/* display: flex; */
+/* flex-direction: row; */
+/* } */
+
+/* .flex-column { */
+/* display: flex; */
+/* flex-direction: column; */
+/* } */
+
+.summary-plan-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid var(--neutral-border-strong);
+  background-color: var(--neutral-surface-layer-01);
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+
+.plancard-firstblock {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 35px;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.plancard-secondblock {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-right: 0.5px solid var(--neutral-border-strong);
+  border-left: 0.5px solid var(--neutral-border-strong);
+  padding: 0px 35px;
+}
+
+.plancard-lastblock {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 35px;
+  align-items: flex-start;
+}
+
+.summary-planname {
+  margin-bottom: 8px;
+  padding: 0px;
+  max-width: 100%;
+}
+
+.ml-55 {
+  margin-left: 55px;
+}
+
+.summary-uploaddoc {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  width: 100%;
+  padding: 30px;
+}
+
+.line-separator-rollover {
+  border: 1px dashed var(--neutral-border-strong);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.in-plan-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+  margin-right: 5px;
+}
+
+.inactive {
+  opacity: 0.45;
+}

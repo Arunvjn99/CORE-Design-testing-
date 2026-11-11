@@ -1,0 +1,64 @@
+#eachcardintrans {
+  /* color: var(--semantics-critical-text); */
+  /* border-color: var(--neutral-border-strong); */
+  /* border: 1px solid var(--neutral-border-strong); */
+  margin: 16px 8px 16px 8px;
+  padding: 12px 8px 12px 8px;
+  /* padding: 1px; */
+}
+
+/* .transacreccoldate { */
+/* display: flex; */
+/* justify-content: end; */
+/* align-items: center; */
+/* font-weight: 600; */
+/* } */
+
+/* .transacreccoldate-emp { */
+/* display: flex; */
+/* justify-content: start; */
+/* align-items: center; */
+/* font-weight: 500; */
+/* } */
+
+.timeclass {
+  margin-left: 5px;
+  color: var(--neutral-text-subtle-least);
+  font-weight: 500;
+}
+.pl-0 {
+  padding-left: 0;
+}
+
+.pl-40 {
+  padding-left: 40px;
+}
+
+.pl-80 {
+  padding-left: 80px;
+}
+
+.pr-70 {
+  padding-right: 70px;
+}
+
+.pr-90 {
+  padding-right: 90px;
+}
+
+.ssptransaction-pr-50 {
+  padding-right: 17px;
+}
+
+.m-l-3r-items-center {
+  padding-right: 57px;
+}
+
+.model-trans-date-flair {
+  padding-right: 72px;
+}
+
+.transaction-amount-mod-port-flair {
+  margin-left: 24px;
+  justify-content: center;
+}

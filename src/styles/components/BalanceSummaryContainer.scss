@@ -1,0 +1,25 @@
+.balancesummaryheadingstext {
+  width: 97%;
+  margin: 11px;
+  padding: 8px 10px 0px 22px;
+}
+.bl-pt-aftx-rth-ctr {
+  background-color: var(--neutral-surface-layer-02);
+  /* height: 4rem; */
+  border: 1px solid var(--neutral-border-inverse);
+  border-radius: 10px;
+  padding: 11px 10px 0px 0px;
+  width: 97%;
+  margin: 10px;
+  .tree ul li:last-child:before {
+    background: var(--neutral-surface-layer-02);
+    height: auto;
+    top: 1em;
+    bottom: 0;
+  }
+}
+.loading-spinner {
+  width: 1.65rem;
+  height: 1.65rem;
+  margin-top: 2px;
+}

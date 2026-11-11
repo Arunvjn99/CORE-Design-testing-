@@ -1,0 +1,184 @@
+@use "../foundation/typography-mixins" as *;
+
+.transaction-maintenance-container {
+  margin: 0px 10px 0px 0px;
+  width: 100%;
+  padding: 0px 24px 0px 24px;
+
+  .nav-tabs .nav-link {
+    border: none;
+    @include heading-regular($color: var(--neutral-text-subtle-least));
+    color: var(--neutral-text-subtle-least);
+
+    &.active {
+      @include heading-regular($color: var(--neutral-text-default));
+      border-bottom: 3px solid var(--brand-border-primary-default);
+    }
+  }
+  .transaction-breakdown-distribution {
+    .addtree-strucuture-li-gap {
+      margin-right: -82px;
+    }
+  }
+
+  .page-scroll {
+    overflow: auto;
+    height: 50vh;
+  }
+  .page-scroll-38vh {
+    overflow: auto;
+    height: 38vh;
+  }
+
+  .padding-right-15 {
+    padding-right: 25px;
+  }
+
+  .transfer-transaction-breakdown {
+    margin: 10px 0px;
+    border: 1px solid var(--neutral-border-strong);
+    overflow: hidden;
+    border-radius: 5px;
+
+    p {
+      margin: 0px;
+    }
+
+    .transfer-breakdown-header {
+      padding: 10px;
+      background-color: var(--neutral-surface-layer-02);
+    }
+
+    .transfer-breakdown-disclaimer {
+      margin: 10px;
+      background-color: var(--neutral-surface-layer-03);
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .transfer-breakdown-body {
+      margin: 10px;
+
+      .transaction-dashed-border-bottom {
+        border: 0.1px dashed var(--neutral-border-strong);
+        margin: 10px 0px;
+      }
+
+      .transfer-investment-card {
+        border: 1px solid var(--neutral-border-strong);
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 10px;
+
+        .grey-text {
+          color: var(--neutral-text-subtle-least);
+        }
+      }
+
+      .holdings-container {
+        border: 1px solid var(--neutral-border-strong);
+        border-radius: 0px 0px 5px 5px;
+        border-top: 0px;
+        margin: 0px 1px;
+        overflow: hidden;
+      }
+
+      .transaction-transfer-table {
+        .cspl-table {
+          border-radius: 5px;
+
+          .table-head-cell {
+            background-color: var(--brand-background-primary-light);
+          }
+
+          .table-row:nth-child(even) {
+            background-color: var(--neutral-surface-layer-03);
+          }
+
+          .column-investment-name {
+            width: 60%;
+          }
+
+          .column-amount {
+            width: 20%;
+          }
+
+          .column-percentage {
+            width: 20%;
+          }
+        }
+      }
+
+      .holdings-total {
+        background-color: var(--neutral-surface-layer-05);
+        font-weight: 700;
+        font-size: var(--fs-14);
+        padding: 10px 0px;
+        border-radius: 5px;
+        margin-left: 1.5rem;
+        margin-right: 0.3rem;
+
+        .padding-left-2 {
+          padding-left: 2rem;
+        }
+
+        .w-60 {
+          width: 60%;
+        }
+
+        .w-20 {
+          width: 20%;
+        }
+      }
+
+      .grey-back-ground {
+        background-color: var(--neutral-surface-layer-02);
+      }
+    }
+  }
+}
+.wd-17-7 {
+  width: 17.7%;
+}
+.wd-20 {
+  width: 20%;
+}
+
+.w-95 {
+  width: 95%;
+}
+
+.transaction-maintenance-layout {
+  /* margin-right: -15px; */
+  &.layout-height {
+    height: 95vh;
+  }
+
+  width: 100%;
+}
+
+.fm-tm-second-card {
+  width: 100%;
+  background: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 5%,
+    transparent
+  );
+  padding: 2rem;
+}
+
+.fm-tm-investment-card-flair {
+  border: 1px solid;
+  margin: 16px 0px;
+  width: 65%;
+  border-radius: 8px;
+  border-color: var(--neutral-border-light);
+}
+
+.padding-top-tm {
+  padding-top: 32px;
+}
+
+.ml-1-7 {
+  margin-left: 1.7rem;
+}

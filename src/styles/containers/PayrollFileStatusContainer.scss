@@ -1,0 +1,110 @@
+@use "../shared/shared-placeholders" as *;
+.file-information {
+  .validation-report {
+    padding: 0.5rem 1.25rem;
+    background: var(--neutral-surface-layer-02);
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 5px;
+  }
+}
+.position-relative {
+  position: relative;
+}
+.position-abs-top-right {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+}
+.grid-template {
+  display: grid;
+  /* overflow-x: scroll; */
+  grid-template-columns: repeat(5, 25.3%);
+  grid-auto-columns: 30%;
+  grid-auto-flow: column;
+  width: 100%;
+
+  .title-head {
+    @extend %TextBodyDefault;
+  }
+}
+.grid-template-duplicate {
+  display: grid;
+  grid-auto-columns: 33.3%;
+  grid-auto-flow: column;
+  width: 100%;
+
+  .title-head {
+    @extend %TextBodyDefault;
+  }
+}
+.grid-item {
+  grid-area: span 1 / span 1 / span 1;
+  border-left: 0.031rem solid var(--neutral-border-strong);
+  border-right: 0.031rem solid var(--neutral-border-strong);
+  border-bottom: 2px solid var(--neutral-border-strong);
+  overflow-y: hidden;
+
+  .bg-head {
+    background: var(--neutral-surface-layer-02);
+
+    .inner-head {
+      font-size: var(--fs-14);
+      padding: 10px;
+      margin-bottom: 0;
+    }
+    .inner-head-var {
+      @extend %Padding10pxNoBottomMargin;
+    }
+
+    .inner-head-value {
+      font-size: var(--fs-14);
+      padding: 10px 10px 0;
+      margin-bottom: 0;
+    }
+    .inner-head-value-var {
+      @extend %Padding10pxNoBottomMargin;
+    }
+
+    .trash-btn {
+      margin-top: 6px;
+      margin-right: 20px;
+    }
+  }
+
+  .marker-name {
+    color: var(--semantics-critical-text);
+  }
+
+  .field-name {
+    font-size: var(--fs-14);
+    color: var(--neutral-text-default);
+    padding: 10px;
+    font-weight: 500;
+    overflow-y: hidden;
+  }
+
+  .field-values {
+    font-size: var(--fs-14);
+    color: var(--neutral-text-default);
+    padding: 10px 10px 10px 30px;
+    font-weight: 400;
+  }
+
+  .form-check {
+    padding-left: 0rem;
+    display: inline-flex;
+  }
+
+  .form-check-input {
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.payroll-container-var {
+  height: auto;
+  overflow: auto;
+}

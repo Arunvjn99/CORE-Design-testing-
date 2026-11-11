@@ -1,0 +1,289 @@
+@use "../foundation/typography-mixins" as *;
+
+@use "../shared/shared-placeholders" as *;
+
+.compensation-tableError {
+  .compensation-table-row {
+    border: 1px solid var(--semantics-critical-border);
+    border-bottom: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}
+
+.compensation-table_category {
+  .btn-group {
+    display: inline-flex;
+  }
+  .form-group.xxl .form-control,
+  .form-group .dropSide-popup .xxl .form-control {
+    width: unset;
+  }
+}
+
+.compensation-table {
+  width: 100%;
+  background: var(--neutral-surface-layer-01);
+  border-radius: 5px 5px 0px 0px;
+  margin-bottom: 0%;
+
+  .compensation-table-row,
+  .compensation-table-body,
+  .compensation-table-head {
+    width: 100%;
+  }
+
+  .compensation-table-head-cell,
+  .compensation-table-cell {
+    flex: 1 0 auto;
+    padding-left: 0.5rem;
+    color: var(--neutral-text-subtle-least);
+
+    &.loan-source-align {
+      flex: 0 0 60%;
+      max-width: 60%;
+      min-width: 60%;
+      padding-left: 0;
+      margin-left: 0.5rem;
+      display: flex;
+      align-items: center;
+    }
+
+    &.loan-hierarchy-align {
+      flex: 1 1 auto;
+      max-width: 40%;
+      min-width: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+
+      .form-group,
+      .form-control {
+        width: 97%;
+        max-width: 97%;
+        box-sizing: border-box;
+        margin: 0;
+      }
+    }
+  }
+
+  .compensation-table-head {
+    background-color: var(--neutral-surface-layer-01);
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 5px;
+    padding-inline: 16px;
+
+    &.loan-source-hierarchy-head {
+      padding: 0;
+      overflow-y: scroll;
+      scrollbar-color: transparent transparent;
+
+      &::-webkit-scrollbar {
+        background: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: transparent;
+      }
+    }
+
+    .compensation-table-head-cell {
+      min-height: 40px;
+      align-items: center;
+      font-weight: 500;
+      font-size: var(--fs-12);
+    }
+  }
+
+  .compensation-table-body {
+    gap: 16px;
+    max-height: 50vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 0;
+    scrollbar-width: none;
+
+    .compensation-table-row {
+      border: 1px solid var(--neutral-border-strong);
+      padding: 16px;
+      border-radius: 8px;
+
+      .compensation-table-cell {
+        font-size: var(--fs-14);
+        align-items: center;
+        .company-compensation-check-times-button {
+          .btn {
+            @extend %NoHorizontalPadding;
+          }
+        }
+
+        .form-group {
+          margin: 0px;
+        }
+      }
+    }
+  }
+
+  .compensation-table-head.loan-source-hierarchy-head
+    + .compensation-table-body {
+    max-height: 220px;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+
+    .compensation-table-row {
+      border: 1px solid var(--neutral-border-strong);
+      padding: 10px 0;
+      border-radius: 8px;
+    }
+  }
+
+  .classifiactionTypeError {
+    background: var(--semantics-critical-background-light);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border: 1px solid var(--semantics-critical-border);
+    border-top: 0px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 5px;
+    color: var(--semantics-critical-text);
+  }
+
+  .compensation-categories {
+    width: 41%;
+    font-weight: 400;
+    align-self: center;
+  }
+
+  .plan-added-tables {
+    width: 50%;
+  }
+
+  .plan-compensation {
+    width: 35%;
+    font-weight: 400;
+
+    .custom-switch {
+      padding-left: 2.5rem;
+    }
+
+    .form-button-group {
+      margin-bottom: unset;
+    }
+
+    .disable {
+      pointer-events: none;
+    }
+
+    .toggle-msg {
+      display: flex;
+      position: absolute;
+      top: -15px;
+
+      .toggle-button {
+        height: 30px;
+        margin-top: 0px;
+      }
+
+      .message {
+        margin-top: 5px;
+        margin-left: 5px;
+        @include body-text-small-bold($color: var(--neutral-text-default));
+      }
+    }
+  }
+
+  .compensation-categories-head {
+    width: 41%;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .plan-compensation-head {
+    width: 35%;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .w-50 {
+    width: 50%;
+  }
+
+  .plan-compensation-action {
+    width: 30%;
+    font-style: normal;
+    font-weight: 500;
+  }
+}
+
+.compensation-link {
+  color: var(--brand-text-primary-default);
+  font-size: var(--fs-12);
+}
+
+.mnl-15 {
+  margin-left: -10px;
+}
+
+.contributions-slider-table /* slider in contributions css */ {
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  .add-contributions-table {
+    height: fit-content;
+  }
+}
+
+.manage-company-menu-back-button {
+  display: flex;
+  padding: 1rem 1rem 0 1rem;
+  font-weight: 600;
+  font-size: var(--fs-16);
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  color: var(--brand-text-primary-default);
+
+  .manage-company-menu-back-button-label {
+    margin-left: 1.5rem;
+  }
+}
+
+.manage-compensation-container {
+  .slider-content {
+    height: 84%;
+  }
+}
+
+.bg-white {
+  border: none;
+  box-shadow: none;
+}
+
+.column-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  white-space: nowrap;
+  padding: 20px 20px;
+}
+
+.column-source-cm-source {
+  margin-left: 2rem;
+}
+
+.compensationtable-height {
+  height: 70vh;
+}
+
+.checkButton {
+  border: none;
+  outline: none;
+}
+
+.iconDisable {
+  @extend %DisabledFadedOverlay;
+}

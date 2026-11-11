@@ -1,0 +1,38 @@
+.add-icon {
+  border: 0px;
+  background-color: transparent;
+  color: var(--neutral-text-default);
+  padding: 0px;
+  width: 26px;
+  height: 26px;
+  font-size: var(--fs-19);
+  line-height: 1px;
+  outline: none;
+
+  &:disabled {
+    opacity: 0.5;
+    text-decoration: none;
+    cursor: not-allowed;
+  }
+}
+
+.core-button-flair {
+  &.xs {
+    height: 24px;
+    padding: 0px 16px;
+    font-size: var(--fs-12);
+    font-weight: 600;
+  }
+  &.sm {
+    height: 32px;
+    padding: 0px 16px;
+    font-size: var(--fs-14);
+    font-weight: 600;
+  }
+  &.md {
+    height: 38px;
+    padding: 0px 16px;
+    font-size: var(--fs-16);
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,185 @@
+@use "../shared/shared-placeholders" as *;
+.payroll-accept-card {
+  padding: 10px;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+
+  .form-group {
+    margin-bottom: 0px;
+  }
+
+  &:hover {
+    background-color: var(--brand-background-primary-light);
+    border: 1px solid var(--brand-border-primary-default);
+    color: var(--neutral-text-default);
+    box-shadow: none;
+    font-weight: 400;
+  }
+}
+
+.payroll-accept-warning-card {
+  padding: 20px;
+  border-radius: 6px;
+  background: linear-gradient(
+      0deg,
+      color-mix(
+        in srgb,
+        var(--semantics-warning-background-light) 40%,
+        transparent
+      ),
+      color-mix(
+        in srgb,
+        var(--semantics-warning-background-light) 40%,
+        transparent
+      )
+    ),
+    var(--semantics-warning-background-light);
+  border: 1px solid
+      linear-gradient(
+        0deg,
+        color-mix(in srgb, var(--semantics-warning-border) 40%, transparent),
+        color-mix(in srgb, var(--semantics-warning-border) 40%, transparent)
+      ),
+    var(--neutral-border-inverse);
+  margin-bottom: 10px;
+  color: var(--semantics-warning-text);
+}
+
+.accept-warning {
+  @extend %PrimaryLinkUnderline;
+}
+.warning-msg-contribution-box {
+  margin-top: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--semantics-warning-border);
+  border-radius: 4px;
+  background-color: var(--semantics-warning-background-light);
+  width: 100%;
+
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error-msg-contribution-box {
+  margin-top: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--semantics-critical-border);
+  border-radius: 4px;
+  background-color: var(--semantics-critical-background-light);
+  width: 100%;
+
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contribution-warning-content {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.contribution-warning-message {
+  flex: 1;
+  min-width: 0;
+}
+
+.contribution-warning-title {
+  display: flex;
+  align-items: center;
+  font-size: var(--fs-18);
+  font-weight: 500;
+  color: var(--semantics-warning-text);
+  line-height: 1.4;
+}
+
+.contribution-warning-description {
+  margin-top: 2px;
+  font-size: var(--fs-14);
+  font-weight: 500;
+  color: var(--neutral-text-primary);
+  line-height: 1.5;
+}
+
+.contribution-accept-warning {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  color: var(--brand-text-primary-default);
+  cursor: pointer;
+  font-size: var(--fs-14);
+  font-weight: 500;
+  padding-left: 16px;
+  border-left: 1px solid var(--neutral-border-strong);
+}
+.payroll-card-container {
+  /* compensation */
+  .column-compensation-plan-details {
+    width: 40%;
+  }
+
+  .column-compensation-amount {
+    width: 40%;
+  }
+
+  .column-compensation-action {
+    width: 20%;
+  }
+
+  /* loan */
+  .column-loan-plan-id {
+    width: 20%;
+  }
+
+  .column-loan-loan-id {
+    width: 30%;
+  }
+
+  .column-loan-amount {
+    width: 30%;
+  }
+
+  .column-loan-action {
+    width: 20%;
+  }
+
+  /* contribution */
+  .column-contribution-plan-id {
+    width: 10%;
+  }
+
+  .column-contribution-source {
+    margin-right: 0.5rem;
+    width: 19%;
+  }
+  .column-contribution-eligibility-indicator {
+    margin-right: 0.5rem;
+    width: 16%;
+  }
+
+  .column-contribution-pay-period {
+    width: 20%;
+  }
+
+  .column-contribution-ytd {
+    width: 15%;
+    margin-left: 2rem;
+  }
+
+  .column-contribution-calculated-value {
+    width: 15%;
+    margin-left: 2rem;
+  }
+
+  .column-contribution-action {
+    margin-left: 1rem;
+    width: 5%;
+    text-wrap: nowrap;
+  }
+}

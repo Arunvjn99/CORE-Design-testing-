@@ -1,0 +1,14 @@
+.add-plans-component {
+  padding: 75px 100px;
+  background: var(--neutral-surface-layer-01);
+  .wd-50 {
+    width: 50%;
+    h1 {
+      font-size: var(--fs-24);
+      font-weight: 400;
+      line-height: 36px;
+      color: var(--neutral-text-default);
+      margin-bottom: 20px;
+    }
+  }
+}

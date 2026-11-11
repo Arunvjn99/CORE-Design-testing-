@@ -1,0 +1,64 @@
+@use "../shared/shared-placeholders" as *;
+
+.fsad-card {
+  background-color: var(--neutral-surface-layer-02);
+  margin: 0px 16px 16px 16px;
+  border-radius: 8px;
+  padding-bottom: 16px;
+}
+
+.fsad-heading {
+  font-size: var(--fs-16);
+  font-weight: 600;
+  padding: 8px 16px 8px 16px;
+}
+
+.fsad-details {
+  background-color: var(--neutral-surface-layer-01);
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  margin: 0px 16px 0px 16px;
+}
+
+.fsad-details-card {
+  @extend %FlexSpaceBetweenPadded;
+}
+
+.allocperc {
+  display: flex;
+  flex-direction: row;
+  height: 36px;
+  border-radius: 8px;
+}
+
+.allocnumber {
+  display: flex;
+  font-weight: 600;
+  font-size: var(--fs-14);
+}
+
+.form-group.sm .form-control.allocnumber1 {
+  width: 100px;
+  border-radius: 8px 0 0 8px;
+  color: var(--neutral-text-subtle);
+  border-bottom: 1px solid var(--neutral-border-strong);
+  border-top: 1px solid var(--neutral-border-strong);
+  border-left: 1px solid var(--neutral-border-strong);
+  height: 36px;
+}
+
+.percsym {
+  width: 40%;
+  background-color: var(--neutral-surface-layer-05);
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-top: 1px solid var(--neutral-border-strong);
+  border-right: 1px solid var(--neutral-border-strong);
+  border-bottom: 1px solid var(--neutral-border-strong);
+}
+
+.fsad-total {
+  @extend %FlexSpaceBetweenPadded;
+}

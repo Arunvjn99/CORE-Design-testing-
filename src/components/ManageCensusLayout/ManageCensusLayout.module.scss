@@ -1,0 +1,21 @@
+.m-t-20px-text-v2 {
+  color: var(--semantics-disabled-text);
+  margin-top: 20px;
+  font-size: var(--fs-16);
+  font-weight: 500;
+}
+
+.m-b-100px-text {
+  color: var(--semantics-warning-text);
+  font-weight: 300;
+  font-size: var(--fs-10);
+  margin-bottom: 100px;
+}
+
+.m-t-123px-m-l-25px-text {
+  color: var(--semantics-warning-text);
+  margin-top: -123px;
+  margin-left: 25px;
+  font-size: var(--fs-14);
+  font-weight: 300;
+}

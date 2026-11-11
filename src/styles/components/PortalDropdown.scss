@@ -1,0 +1,38 @@
+.portal-dropdown {
+  padding: 12px;
+  width: 200px;
+}
+
+.portal-dropdown .dropdown-toggle {
+  border: 1px solid var(--neutral-border-subtle);
+  width: 100%;
+  background-color: var(--neutral-surface-layer-02);
+  border-radius: 8px;
+  display: flex;
+}
+
+.portal-dropdown .dropdown-menu {
+  padding: 1rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: var(--elevation-01);
+}
+
+.portal-dropdown .dropdown-item {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--neutral-border-light);
+}
+
+.portal-dropdown .dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.portal-dropdown .dropdown-item:focus,
+.portal-dropdown .dropdown-item:hover {
+  background-color: var(--brand-background-primary-light);
+}
+
+.portal-toggle-content {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}

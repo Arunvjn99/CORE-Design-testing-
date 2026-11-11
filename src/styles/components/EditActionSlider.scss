@@ -1,0 +1,23 @@
+.edit-action-slider {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  .edit-action {
+    font-size: var(--fs-26);
+    border: 0px;
+    padding: 0px 16px;
+    background: var(--neutral-surface-layer-03);
+    border-radius: 0px 5px 0px 0px;
+    cursor: pointer;
+  }
+  .edit-flow {
+    font-size: var(--fs-14);
+    width: 120px;
+    height: 39px;
+    padding: 10px 10px;
+    background: var(--neutral-surface-layer-03);
+    color: var(--neutral-text-subtle-least);
+    border-radius: 0px 5px 0px 0px;
+  }
+}

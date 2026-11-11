@@ -1,0 +1,86 @@
+.SourceCollectionHeader {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-18);
+  line-height: 27px;
+  color: var(--neutral-text-default);
+  margin-top: 10px;
+}
+
+.source-flex-around {
+  display: flex;
+  flex-direction: row;
+  padding: 0rem 0rem 1rem 0.175rem;
+}
+
+.filter-condition-text {
+  /* font-family: Poppins; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-16);
+  line-height: 2.5rem;
+}
+
+.filter-condition {
+  margin: 1.25rem 0rem 0rem 0rem;
+  padding: 0rem 1rem 0rem 1rem;
+  border: 0.125rem solid var(--neutral-border-strong);
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.sourceCollectiontree {
+  margin: 0;
+  padding: 0;
+  color: var(--semantics-critical-text);
+  list-style: none;
+  /* font-family: "Poppins"; */
+  margin-left: 1em;
+  position: relative;
+}
+
+.sourceCollectiontree:before {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: 0px;
+  border-left: 1px solid var(--neutral-border-strong);
+}
+
+.sourceCollectiontree .listSourceCollectiontree {
+  margin: 0;
+  padding: 0 3em;
+  padding-bottom: 15px;
+  line-height: 2em;
+  font-size: var(--fs-14);
+  font-style: normal;
+  margin-top: -22px;
+  font-weight: 400;
+  position: relative;
+  padding-top: 15px;
+}
+
+.sourceCollectiontree .listSourceCollectiontree:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 0;
+  border-top: 1px solid var(--neutral-border-strong);
+  margin-top: 20px;
+  position: absolute;
+  top: 1em;
+  left: 0;
+  margin-left: 0px;
+}
+
+.sourceCollectiontree .listSourceCollectiontree:last-child:before {
+  background: var(--neutral-surface-layer-01);
+  height: auto;
+  bottom: 0;
+}

@@ -1,0 +1,182 @@
+@use "../shared/shared-placeholders" as *;
+.participantStatement {
+  .remove-no-records {
+    .k-grid-norecords {
+      display: none;
+    }
+  }
+  .removeHeaderCellFromGridTransactions {
+    .k-grid-header {
+      display: none;
+    }
+    border: "none";
+  }
+  .k-grid table {
+    border-collapse: collapse;
+    border: none;
+    font-weight: 600;
+  }
+
+  .k-grid th,
+  .k-grid td {
+    @extend %TransparentButton;
+  }
+  .k-grid-content {
+    @extend %ScrollableContentText;
+  }
+}
+
+.bgApply {
+  .k-grid-header {
+    background-color: var(--neutral-surface-layer-05);
+    padding-right: 0px;
+    .k-link {
+      text-align: right;
+    }
+  }
+}
+.bgRkkas {
+  .k-grid-header {
+    background-color: var(--neutral-surface-layer-05);
+    font-weight: 500;
+    padding: 0;
+  }
+}
+.bgHeaderApply {
+  .k-grid-header {
+    background-color: var(--neutral-surface-layer-02);
+    padding-right: 0px;
+  }
+}
+
+.alternativeColor {
+  .k-master-row {
+    background-color: var(--neutral-surface-layer-01);
+  }
+  .k-alt {
+    background-color: var(--neutral-surface-layer-04);
+  }
+}
+
+.contributionStatement {
+  .k-widget .k-grid .removeHeaderCellFromGridTransactions {
+    background-color: var(--neutral-surface-layer-04);
+  }
+  .text-align-right {
+    text-align: right;
+  }
+  .text-align-left {
+    text-align: left;
+  }
+  .k-grid table {
+    border-collapse: collapse;
+    border: none;
+  }
+  .k-link {
+    left: 15px;
+    margin-left: 20px;
+  }
+  .removeHeaderCellFromGridTransactions {
+    .k-grid-header {
+      display: none;
+    }
+    .k-master-row {
+      background-color: var(--neutral-surface-layer-02);
+    }
+  }
+  .k-grid th,
+  .k-grid td {
+    @extend %TransparentButton;
+  }
+  .k-grid-header {
+    font-size: var(--fs-14);
+    font-weight: 500;
+    padding: 0px;
+    background-color: var(--neutral-surface-layer-05);
+  }
+  .k-grid-content {
+    @extend %ScrollableContentText;
+  }
+
+  .k-master-row {
+    background-color: var(--neutral-surface-layer-01);
+  }
+  .k-alt {
+    background-color: var(--neutral-surface-layer-04);
+  }
+}
+
+.investmentStatement {
+  .removeHeaderCellFromGridTransactions {
+    .k-grid-header {
+      display: none;
+    }
+    border: "none";
+    .k-master-row {
+      background-color: var(--neutral-surface-layer-02);
+    }
+  }
+  .k-grid-content {
+    font-size: var(--fs-14);
+    padding-right: 0px;
+    overflow-y: auto;
+  }
+  .k-link {
+    text-align: center;
+  }
+  .k-grid-header {
+    font-size: var(--fs-14);
+    font-weight: 500;
+    background-color: var(--neutral-surface-layer-05);
+    padding-right: 0px;
+  }
+  .k-master-row {
+    background-color: var(--neutral-surface-layer-01);
+  }
+  .k-alt {
+    background-color: var(--neutral-surface-layer-04);
+  }
+}
+
+.toggleSwitchParticipantInvestment {
+  display: flex;
+  align-items: center;
+  font-size: var(--fs-14);
+  margin-left: 10px;
+  margin-top: -3rem;
+  font-weight: bold;
+
+  .dollar-unit-toggle {
+    display: flex;
+    align-items: center;
+    background-color: var(--neutral-surface-layer-03);
+    border-radius: 20px;
+  }
+  .switch {
+    display: none;
+  }
+
+  .option {
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+    height: 30px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .switch:checked + .option {
+    background-color: var(--brand-background-primary-strong);
+    color: var(--neutral-text-on-color);
+  }
+}
+.rkaas-slider {
+  .sliding-panel-container {
+    .panel-content {
+      overflow: hidden;
+    }
+  }
+}

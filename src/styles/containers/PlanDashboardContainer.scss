@@ -1,0 +1,176 @@
+#taskmanagementheading {
+  /* color: var(--neutral-text-subtle); */
+
+  /* H6 (Page Menu) */
+  /* font-family: Open Sans; */
+  /* font-size: var(--fs-18); */
+  /* font-style: normal; */
+  /* font-weight: 600; */
+  line-height: 22px; /* 133.333% */
+  letter-spacing: 0.18px;
+  text-transform: capitalize;
+  padding-left: 11px;
+}
+
+.headertopclass {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.iconStyle {
+  margin-top: 3px;
+  // color: var(--brand-text-primary-default);
+  font-size: var(--fs-16);
+  font-weight: 400;
+}
+
+.planAUMContainer {
+  height: 65vh;
+  overflow-y: scroll;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 10px;
+}
+
+.planContribution {
+  height: 50vh;
+  overflow-y: scroll;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 10px;
+}
+
+.planRor {
+  height: 45vh;
+  overflow-y: scroll;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 10px;
+}
+
+.planRor2 {
+  height: 55vh;
+  overflow-y: scroll;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.graph-coming-soon {
+  position: relative;
+  display: flow-root;
+  pointer-events: none;
+  user-select: none;
+
+  .chart-container,
+  .cusstycol + .cusstycol,
+  .ml-auto {
+    filter: grayscale(1);
+    opacity: 0.35;
+  }
+
+  .recharts-cartesian-axis-tick-value {
+    visibility: hidden;
+  }
+}
+
+.graph-coming-soon-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.graph-coming-soon-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  max-width: 240px;
+  padding: 16px 24px;
+  text-align: center;
+  white-space: normal;
+  text-wrap: balance;
+  background-color: var(--neutral-surface-layer-01);
+  border: 1px solid var(--neutral-border-subtle);
+  border-radius: 8px;
+  box-shadow: var(--elevation-01);
+}
+
+.graph-coming-soon-icon {
+  margin-bottom: 4px;
+  font-size: var(--fs-24);
+  color: var(--neutral-text-subtle-least);
+}
+
+.cpceep-dashboard .maincontainerclass,
+.cpceep-dashboard .h-50vh,
+.cpceep-dashboard .transaction-summary {
+  height: auto;
+}
+
+.maincontainerclass {
+  flex: 1;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid var(--neutral-border-strong);
+  background: var(--neutral-surface-layer-01);
+  box-shadow: var(--elevation-01);
+
+  overflow-y: scroll;
+  height: 65vh;
+}
+
+#payrollheading {
+  /* color: var(--neutral-text-subtle); */
+
+  /* Body Text/Medium - Semibold */
+  /* font-family: Open Sans; */
+  /* font-size: var(--fs-14); */
+  font-style: normal;
+  /* font-weight: 600; */
+  line-height: normal;
+}
+.chart-AUM {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+#viewmorebutton {
+  display: flex;
+  /* width: 303px; */
+  /* height: 38px; */
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius-8, 8px);
+  background: linear-gradient(
+      0deg,
+      color-mix(
+          in srgb,
+          var(--brand-background-primary-strong) 15%,
+          transparent
+        )
+        0%,
+      color-mix(
+          in srgb,
+          var(--brand-background-primary-strong) 15%,
+          transparent
+        )
+        100%
+    ),
+    var(--neutral-surface-layer-01);
+  width: 100%;
+  color: var(--brand-text-primary-default);
+
+  /* Body Text/Large - SemiBold */
+  // font-family: Open Sans;
+  font-size: var(--fs-16);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  border: none;
+  margin-bottom: 15px;
+}

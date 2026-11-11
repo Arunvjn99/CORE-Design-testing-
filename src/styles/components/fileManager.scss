@@ -1,0 +1,301 @@
+.file-manager {
+  padding: 0 16px;
+  overflow-y: none;
+}
+
+.file-manager-div {
+  height: 100%;
+  overflow: hidden;
+}
+
+.status-bar {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  .fm-all-button {
+    border: 1px solid var(--brand-border-primary-default);
+    color: var(--brand-text-primary-default);
+    border-radius: 8px;
+    padding: 5px 15px;
+    background: var(--neutral-surface-layer-01);
+    font-size: var(--fs-12);
+    font-weight: 500;
+    margin-right: 15px;
+    background: color-mix(
+      in srgb,
+      var(--brand-background-primary-strong) 5%,
+      transparent
+    );
+    cursor: pointer;
+    display: flex;
+    gap: 3px;
+  }
+
+  .fm-error-button {
+    border: 1px solid var(--semantics-critical-border);
+    color: var(--semantics-critical-text);
+    border-radius: 8px;
+    padding: 5px 15px;
+    background: var(--neutral-surface-layer-01);
+    font-size: var(--fs-12);
+    font-weight: 500;
+    margin-right: 15px;
+    background: color-mix(
+      in srgb,
+      var(--semantics-critical-background-strong) 5%,
+      transparent
+    );
+    cursor: pointer;
+    display: flex;
+    gap: 3px;
+  }
+
+  .fm-complete-button {
+    border: 1px solid var(--semantics-success-border);
+    color: var(--semantics-success-text);
+    border-radius: 8px;
+    padding: 5px 15px;
+    background: var(--neutral-surface-layer-01);
+    font-size: var(--fs-12);
+    font-weight: 500;
+    margin-right: 15px;
+    background: color-mix(
+      in srgb,
+      var(--semantics-success-background-strong) 5%,
+      transparent
+    );
+    cursor: pointer;
+    display: flex;
+    gap: 3px;
+  }
+
+  .fm-progress-button {
+    border: 1px solid var(--brand-border-primary-default);
+    color: var(--brand-text-primary-default);
+    border-radius: 8px;
+    padding: 5px 15px;
+    background: var(--neutral-surface-layer-01);
+    font-size: var(--fs-12);
+    font-weight: 500;
+    margin-right: 15px;
+    background: color-mix(
+      in srgb,
+      var(--brand-background-primary-strong) 5%,
+      transparent
+    );
+    cursor: pointer;
+    display: flex;
+    gap: 3px;
+  }
+
+  .active-all-button {
+    background: var(--brand-background-primary-strong);
+    color: var(--neutral-text-on-color);
+  }
+
+  .active-error-button {
+    background: var(--semantics-critical-background-strong);
+    color: var(--neutral-text-on-color);
+  }
+
+  .active-complete-button {
+    background: var(--semantics-success-background-strong);
+    color: var(--neutral-text-on-color);
+  }
+
+  .active-progress-button {
+    background: var(--brand-background-primary-strong);
+    color: var(--neutral-text-on-color);
+  }
+}
+
+.fm-error-div {
+  border-left: 5px solid var(--semantics-critical-border);
+  border-radius: 5px 0px 0px 5px;
+}
+
+.fm-complete-div {
+  border-left: 5px solid var(--semantics-success-border);
+  border-radius: 5px 0px 0px 5px;
+}
+
+.fm-progress-div {
+  border-left: 5px solid var(--semantics-highlight-border);
+  border-radius: 5px 0px 0px 5px;
+}
+
+.fm-file-data-card {
+  display: flex;
+  border-radius: 8px;
+  height: 7rem;
+  margin-bottom: 10px;
+  border: 1px solid var(--neutral-border-strong);
+  cursor: pointer;
+}
+
+.fm-file-data-card:hover {
+  border: 1px solid var(--brand-border-primary-default);
+}
+
+/* .fm-table { */
+/* } */
+
+.fm-headings {
+  display: flex;
+  margin: 16px 0;
+}
+
+.export-icon {
+  color: var(--semantics-success-text);
+  margin: 0 4px;
+}
+
+.fm-complete-status {
+  color: var(--semantics-success-text);
+  background-color: color-mix(
+    in srgb,
+    var(--semantics-success-background-light) 5%,
+    transparent
+  );
+}
+
+.fm-progress-status {
+  color: var(--semantics-highlight-text);
+  background-color: color-mix(
+    in srgb,
+    var(--semantics-highlight-background-strong) 5%,
+    transparent
+  );
+  max-width: 70%;
+}
+
+.file-manager-filter {
+  background-color: var(--neutral-surface-layer-02);
+  padding: 16px;
+  margin-top: 0;
+}
+
+.fm-status-div {
+  padding: 8px 16px;
+  border-radius: 8px;
+  width: fit-content;
+  font-size: var(--fs-12);
+  font-weight: 600;
+}
+
+.fm-headers {
+  color: var(--neutral-text-subtle-least);
+  font-size: var(--fs-12);
+  font-weight: 600;
+  gap: 2px;
+  white-space: nowrap;
+}
+
+.error-details-div {
+  display: flex;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--neutral-border-strong);
+  min-height: 220px;
+  padding: 16px;
+}
+
+.error-details-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  border-right: 1px dashed var(--neutral-border-strong);
+  margin-right: 16px;
+}
+
+.error-detail-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 23%;
+}
+
+.error-details-top {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px dashed var(--neutral-border-strong);
+  align-items: flex-start;
+  padding-bottom: 16px;
+}
+
+.error-details-bottom {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 16px;
+}
+
+.error-details-right {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.ed-header {
+  font-size: var(--fs-18);
+  font-weight: 600;
+  margin: 16px 0;
+}
+
+.ed-failures {
+  border-radius: 8px;
+  border: 1px solid var(--neutral-border-strong);
+  background-color: var(--neutral-surface-layer-02);
+  font-size: var(--fs-14);
+  font-weight: 600;
+  padding: 16px;
+}
+
+.fm-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--brand-text-primary-default);
+  font-weight: 600;
+  width: fit-content;
+}
+
+.fm-download.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.file-card-div {
+  align-content: top;
+  padding-bottom: 0.5rem;
+  //height: 40vh;
+  //overflow-y: auto ;
+}
+
+.searchfield-fileManager {
+  .search-bar-plan
+    .input-group
+    .form-control-seach-text
+    .close-button-sponsor
+    .icon-size {
+    margin-top: 0.4rem;
+  }
+}
+
+.datePicker-fileManager .form-control .dropSide-custom-select {
+  z-index: 0;
+}
+
+/* .datePicker-fileManager .form-control .dropSide-popup { */
+/* top: 175px ; */
+/* left: 500px ; */
+/* } */
+
+.rk-pd-t14 {
+  padding-top: 14px;
+}

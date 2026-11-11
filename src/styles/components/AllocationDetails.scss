@@ -1,0 +1,84 @@
+.line-separator {
+  border: 1px dashed var(--neutral-border-strong);
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+.sourcename {
+  font-size: var(--fs-16);
+  color: var(--neutral-text-default);
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.label {
+  /* font-family: Poppins; */
+  font-style: normal;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.allocation-details {
+  .cspl-table {
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 5px;
+  }
+
+  .boxborder {
+    padding: 22px 25px 22px 25px;
+    background-color: var(--neutral-surface-layer-05);
+  }
+
+  .displaycontent {
+    display: flex;
+    justify-content: space-between;
+
+    .sourceName {
+      width: 35%;
+    }
+
+    .contributions {
+      width: 22%;
+    }
+
+    .earnings {
+      width: 22%;
+    }
+
+    .amount {
+      width: 21%;
+    }
+  }
+}
+
+.total-row {
+  width: "90%";
+  font-weight: "700";
+  font-size: "var(--fs-14)";
+  color: var(--neutral-text-default);
+}
+
+.allocation-table {
+  .column-sourceName {
+    width: 55%;
+  }
+
+  .column-contributions {
+    width: 15%;
+  }
+
+  .column-earnings {
+    width: 15%;
+  }
+
+  .column-amount {
+    width: 15%;
+  }
+  .table-padding {
+    padding-left: 2rem;
+  }
+}

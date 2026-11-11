@@ -1,0 +1,19 @@
+@use "../shared/shared-placeholders" as *;
+
+.AdhocCommunicationInfoContainer-scrollable {
+  @extend %communication-scrollable;
+
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.delete-recipient-popup-withdrawal {
+  display: flex;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 16px;
+  background: var(--neutral-surface-layer-02);
+  border-radius: 8px;
+  width: 110%;
+}

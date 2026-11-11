@@ -1,0 +1,121 @@
+.vertical-tabs {
+  .nav-item {
+    font-size: var(--fs-14);
+
+    &:last-child {
+      a.nav-link {
+        border-bottom: 1px solid var(--neutral-border-strong);
+      }
+    }
+
+    a.nav-link {
+      background: var(--neutral-surface-layer-02);
+      border-top: 1px solid var(--neutral-border-strong);
+      font-size: var(--fs-12);
+      color: var(--neutral-text-subtle-least);
+
+      .ssn-number {
+        color: var(--neutral-text-subtle-least);
+        font-size: var(--fs-14);
+      }
+    }
+
+    a.nav-link.active {
+      background-color: var(--neutral-surface-layer-01);
+      border-radius: 0px;
+      border-right: 0px;
+      right: -1px;
+      position: relative;
+      z-index: 1;
+      border-left: 3px solid var(--brand-border-primary-default);
+      font-size: var(--fs-14);
+      font-weight: 500;
+      color: var(--neutral-text-default);
+
+      .ssn-number {
+        color: var(--neutral-text-default);
+      }
+    }
+  }
+
+  .search-control-wrapper {
+    background: var(--neutral-surface-layer-02);
+    padding: 0.675rem;
+
+    input {
+      border: 1px solid var(--neutral-border-strong);
+      border-radius: 5px;
+      font-size: var(--fs-13);
+    }
+  }
+
+  .tab-content {
+    .tab-pane.active {
+      height: 100%;
+      background: var(--neutral-surface-layer-01);
+      border: 1px solid var(--neutral-border-strong);
+      box-sizing: border-box;
+      border-radius: 0px 5px 5px 0px;
+    }
+
+    .error-details-tab {
+      position: relative;
+      padding: 1rem 1rem;
+
+      .nav {
+        background-color: var(--neutral-surface-layer-01);
+
+        .nav-item {
+          font-weight: 500;
+          font-size: var(--fs-14);
+          line-height: 150%;
+          text-align: center;
+          color: var(--neutral-text-subtle-least);
+          padding: 0.9rem;
+          width: auto;
+
+          &.active {
+            border-bottom: 3px solid var(--brand-border-primary-default);
+          }
+        }
+      }
+
+      .tab-pane {
+        border: 0px;
+      }
+
+      .payroll-census-tabs {
+        width: 70%;
+      }
+
+      .payroll-error-details-tabs {
+        width: 30%;
+      }
+
+      .payrol-cencus-button-wrapper {
+        white-space: nowrap;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid var(--neutral-border-strong);
+        text-align: end;
+
+        .payroll-delete {
+          border: 1px solid var(--semantics-critical-border);
+          color: var(--semantics-critical-text);
+        }
+      }
+
+      .error-details-tab-wrapper {
+        margin-top: 0px;
+        background: var(--neutral-surface-layer-02);
+        border-radius: 0px 5px 5px 0px;
+        padding: 1rem;
+
+        .nav,
+        .nav .nav-item.active,
+        .tab-pane.active {
+          background: transparent;
+        }
+      }
+    }
+  }
+}

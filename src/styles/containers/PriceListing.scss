@@ -1,0 +1,48 @@
+@use "../shared/shared-placeholders" as *;
+.trade-holiday {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid var(--semantics-warning-border);
+  border-radius: 4px;
+  background-color: var(--semantics-warning-background-light);
+  align-items: center;
+}
+.exclamation-tri {
+  margin-right: 10px;
+  color: var(--semantics-warning-text);
+}
+.trade-holiday-style {
+  margin-bottom: 0px;
+  font-size: var(--fs-14);
+  font-weight: 600;
+  color: var(--semantics-warning-text);
+}
+.checkicon {
+  font-size: var(--fs-18);
+  color: var(--semantics-success-text);
+  border-right: 1px solid var(--neutral-border-strong);
+  padding-right: 0.2rem;
+  cursor: pointer;
+}
+.crossicon {
+  color: var(--semantics-critical-text);
+  font-size: var(--fs-18);
+  padding-left: 0.2rem;
+  rotate: 45deg;
+  cursor: pointer;
+}
+.planGroupResetPL {
+  font-size: var(--fs-16);
+  line-height: 1.313rem;
+  color: var(--brand-text-primary-default);
+  padding-right: 1rem;
+  font-weight: 600;
+}
+.price-listing-table-global {
+  .form-group {
+    margin-bottom: 0rem;
+  }
+}

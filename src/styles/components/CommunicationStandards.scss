@@ -1,0 +1,31 @@
+.communication-standards-card {
+  width: 100%;
+  border: 1px solid var(--neutral-border-strong);
+  padding: 20px;
+  border-radius: 5px;
+  .name-label {
+    font-size: var(--fs-16);
+  }
+  .content-label {
+    font-size: var(--fs-12);
+    font-weight: 400px;
+    color: var(--neutral-text-subtle-least);
+  }
+  .content-item {
+    font-size: var(--fs-14);
+  }
+  .text-green {
+    padding: 5px 0 5px 0;
+    color: var(--semantics-success-text);
+    font-size: var(--fs-12);
+  }
+
+  .communication-border-left {
+    border-left: 1px solid var(--neutral-border-strong);
+  }
+}
+
+.communication-standards-card-color {
+  background-color: var(--brand-background-primary-light);
+  border: 1px solid var(--brand-border-primary-default);
+}

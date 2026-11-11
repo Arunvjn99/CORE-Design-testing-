@@ -1,0 +1,51 @@
+@use "../shared/shared-placeholders" as *;
+.cspl-table {
+  /*height: 100%;*/
+  overflow: hidden;
+
+  a {
+    &:hover {
+      font-weight: 500;
+    }
+
+    color: var(--brand-text-primary-default);
+  }
+
+  .column-entryDateName {
+    width: 20%;
+  }
+
+  .column-entryDateFor {
+    width: 20%;
+  }
+
+  .column-entryDateCriteriaFor {
+    width: 40%;
+  }
+
+  .column-additionalRule {
+    width: 20%;
+  }
+
+  .btn-theme {
+    @include PrimarySolidButton;
+  }
+}
+
+textarea {
+  @extend %StandardInputField;
+}
+
+.cspl-table {
+  .column-addtional-EntryDate-entryDateDescription {
+    width: 25%;
+  }
+
+  .column-addtional-EntryDate-entryDateFor {
+    width: 35%;
+  }
+
+  .column-addtional-EntryDate-prospectiveOrRetrospectiveCriteria {
+    width: 40%;
+  }
+}

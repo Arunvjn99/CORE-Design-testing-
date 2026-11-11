@@ -1,0 +1,73 @@
+.grey-box-rounded {
+  border-radius: 10px;
+  background-color: var(--neutral-surface-layer-03);
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 15%;
+  padding: 16px;
+
+  .title-div {
+  }
+
+  .content-div {
+  }
+}
+
+.rounded-count {
+  border-radius: 50%;
+  display: flex;
+  width: 35px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--neutral-border-strong);
+}
+
+.border-right-grey {
+  border-right: 1px solid var(--neutral-border-strong);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 16px;
+  padding-right: 40px;
+}
+
+.border-rounded-grey {
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--neutral-border-strong);
+  display: flex;
+}
+
+.transaction-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  /* display: flex; */
+  gap: 30px;
+  padding: 16px;
+
+  .transaction-name {
+    background-color: var(--neutral-surface-layer-03);
+    border-radius: 8px;
+    font-weight: 600;
+    width: fit-content;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  .transaction-count {
+    color: var(--brand-text-primary-default);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+.card-table-card {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}

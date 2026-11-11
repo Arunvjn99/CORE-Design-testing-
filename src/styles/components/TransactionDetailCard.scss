@@ -1,0 +1,116 @@
+.margin-top-bottom {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.margin-tb16 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.transaction-details {
+  /* */
+  .transaction-detail-container {
+    padding: 0px 15px;
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    .transaction-detail-bg-color {
+      background: var(--neutral-surface-layer-02);
+      padding: 35px 15px 35px 15px;
+    }
+    p {
+      margin-top: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    p.ml-auto {
+      margin-left: auto;
+    }
+  }
+  .transaction-dashed-border-bottom {
+    border: 0.1px dashed var(--neutral-border-strong);
+    margin-bottom: 20px;
+  }
+  .card-text-color {
+    color: var(--neutral-text-subtle-least);
+  }
+  .completed-text {
+    color: var(--semantics-success-text);
+    /* background-color: color-mix(in srgb, var(--semantics-success-background-strong) 10%, transparent); */
+    /* border-radius: 5px; */
+    /* padding: 5px; */
+    /* display: inline; */
+  }
+  .inactiv-text-txn {
+    color: var(--semantics-critical-text);
+    /* background-color: color-mix(in srgb, var(--semantics-critical-background-strong) 10%, transparent); */
+    /* border-radius: 5px; */
+    /* padding: 5px; */
+    /* display: inline; */
+  }
+  .view-trade {
+    color: var(--brand-text-primary-default);
+    background-color: color-mix(
+      in srgb,
+      var(--brand-background-primary-strong) 5%,
+      transparent
+    );
+    border-radius: 5px;
+    padding: 15px;
+    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+  }
+}
+
+.pt-16 {
+  padding-top: 16px;
+}
+
+.trade-message-tm {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--neutral-surface-layer-03);
+  border: 1px solid var(--neutral-border-strong);
+  width: 45%;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.transaction-line-separator {
+  border-bottom: 1px solid var(--neutral-border-strong);
+  padding: 0 0 1rem 0;
+}
+
+.restriction-container {
+  border: 1px solid var(--semantics-warning-border);
+  background-color: var(--semantics-warning-background-light);
+  height: 30vh;
+  width: 50%;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.transaction-detail-flex-gap {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+  text-wrap: wrap;
+}
+
+@media (max-width: 991px) {
+  .transaction-detail-flex-gap {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .transaction-detail-flex-gap {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+}

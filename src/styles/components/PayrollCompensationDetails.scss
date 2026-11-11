@@ -1,0 +1,182 @@
+@use "../foundation/typography-mixins" as *;
+
+@use "../shared/shared-placeholders" as *;
+.payroll-compensation-details {
+  .header-cmp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 0px 16px;
+    @include body-text-regular-bold(var(--neutral-text-default));
+    width: 97%;
+  }
+
+  .card-cmp.warning-msg-compensation {
+    border: 1px solid var(--semantics-warning-border);
+  }
+
+  .card-cmp.warning-msg-compensation.error-cmp {
+    border: 1px solid var(--semantics-critical-border);
+  }
+
+  .card-cmp.warning-msg-compensation.error-cmp {
+    .warning-msg-compensation-box {
+      margin: 4px;
+      color: var(--semantics-critical-text);
+      background-color: var(--semantics-critical-background-light);
+    }
+  }
+
+  .error-msg-compensation-box {
+    margin: 12px;
+    border: 1px solid var(--semantics-critical-border);
+    color: var(--semantics-critical-text);
+    background-color: var(--semantics-critical-background-light);
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+
+    > div:first-child {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+  .warning-msg-compensation {
+    width: 100%;
+  }
+  .warning-msg-text-edited,
+  .warning-msg-text-edited i {
+    color: var(--semantics-warning-text);
+  }
+  .error-msg-text-edited,
+  .error-msg-text-edited i {
+    color: var(--semantics-critical-text);
+  }
+
+  .warning-msg-compensation-box {
+    color: var(--semantics-warning-text);
+    border: 1px solid var(--semantics-warning-text);
+    background-color: var(--semantics-warning-background-light);
+    border-radius: 4px;
+    padding: 4px;
+    gap: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    .warning-msg-content {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .accept-cmp-warning {
+      color: var(--brand-text-primary-default);
+      cursor: pointer;
+      text-decoration: underline;
+      white-space: nowrap;
+      padding-left: 16px;
+    }
+  }
+
+  .card-cmp {
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    /* width: 85%; */
+
+    .box-cmp {
+      padding: 16px;
+    }
+
+    .method {
+      @extend %SubheadingText;
+    }
+
+    .amount {
+      font-size: var(--fs-14);
+      font-weight: 700;
+      color: var(--neutral-text-subtle-least);
+    }
+
+    .content-cmp-row {
+      display: flex;
+      justify-content: space-between;
+
+      .dh-payperiod-amount {
+        display: flex;
+        justify-content: flex-end;
+        width: 30%;
+      }
+    }
+
+    .padding-left-40 {
+      padding-left: 40px;
+    }
+
+    .padding-left-25 {
+      padding-left: 25px;
+    }
+
+    .padding-left-13 {
+      padding-left: 13px;
+    }
+    .category-name {
+      @extend %FlexColumn;
+      @include body-text-regular-bold(var(--neutral-text-default));
+    }
+
+    .pill {
+      font-weight: 600;
+      color: var(--semantics-success-text);
+      line-height: 0;
+    }
+
+    .excluded {
+      color: var(--semantics-critical-text);
+    }
+
+    .card-head {
+      margin-bottom: 0.5rem;
+      @include body-text-regular-bold(var(--neutral-text-default));
+      display: flex;
+      justify-content: space-between;
+
+      .icon {
+        color: var(--neutral-text-subtle-least);
+        margin-top: 3px;
+        font-size: var(--fs-16);
+      }
+    }
+  }
+
+  .tree ul:before {
+    @extend %FadedTextNegativeLeftMargin;
+  }
+
+  .tree ul li:before {
+    @extend %FadedTextNegativeLeftMargin;
+  }
+
+  .tree li {
+    padding: 0 0 0 2em;
+  }
+
+  .currencyAndMethod {
+    color: var(--neutral-text-subtle-least);
+  }
+  .card-cmp.dh-error-cnt {
+    border: 1px solid var(--semantics-critical-border);
+  }
+  .dh-error-box {
+    color: var(--semantics-critical-text);
+    background-color: var(--semantics-critical-background-light);
+    border-radius: 0px 0px 8px 8px;
+    padding: 16px;
+  }
+}

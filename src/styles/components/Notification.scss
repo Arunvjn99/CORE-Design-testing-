@@ -1,0 +1,428 @@
+@use "../shared/shared-placeholders" as *;
+.BannerStyle {
+  border-radius: 4px;
+  border: 1px solid;
+  gap: var(--spacing-4);
+  padding: var(--spacing-8);
+  display: flex;
+  width: fit-content;
+  max-width: 100%;
+  white-space: normal;
+
+  .message-banner {
+    @extend %TextInlineCenteredSemiBold;
+  }
+
+  .iconStyle-banner {
+    font-size: var(--fs-12);
+    font-weight: 900;
+    align-self: center;
+  }
+
+  &.bannerIconTop {
+    .iconStyle-banner {
+      align-self: flex-start;
+      margin-top: 2px;
+    }
+  }
+  .iconStyle-banner-button {
+    font-size: var(--fs-16);
+    font-weight: 900;
+    align-self: center;
+  }
+  .message-banner-font-head {
+    font-size: var(--fs-16);
+    font-weight: 600;
+  }
+  .message-banner-font-desc {
+    font-size: var(--fs-14);
+    font-weight: 500;
+  }
+}
+
+.InlineStyle {
+  border-radius: 6px;
+  border: 1px solid;
+  padding: 16px;
+  display: flex;
+  gap: var(--spacing-8);
+
+  .message-inline {
+    font-size: var(--fs-16);
+    font-weight: var(--font-semi-bold);
+    align-self: center;
+  }
+
+  .iconStyle-inline {
+    @extend %ValueTextLargeBold;
+  }
+}
+
+.ToastStyle {
+  .toast {
+    border: 1px solid;
+    box-sizing: border-box;
+    box-shadow: none;
+    border-radius: 6px;
+    width: fit-content;
+    height: auto;
+    padding: 16px;
+    transition: none;
+    max-width: 560px;
+    white-space: normal;
+
+    &.bg-color-success-light {
+      background-color: var(--semantics-success-background-light);
+    }
+
+    &.bc-success {
+      border-color: var(--semantics-success-border);
+    }
+
+    &.infoBorder {
+      border-color: var(--semantics-highlight-background-strong);
+    }
+
+    &.infoBackground {
+      background-color: var(--semantics-highlight-background-light);
+    }
+
+    .toast-body {
+      padding: 0px;
+      max-width: 475px;
+
+      .toastMessageStyle {
+        font-weight: var(--font-semi-bold);
+        font-size: var(--fs-16);
+        color: var(--neutral-text-default);
+      }
+
+      .subToastMessage {
+        font-weight: var(--font-medium);
+        font-size: var(--fs-14);
+        color: var(--neutral-text-default);
+        margin-top: 4px;
+      }
+
+      .iconStyle-toast {
+        @extend %ValueTextLargeBold;
+      }
+    }
+  }
+  .fullWidthToast {
+    width: 100%;
+    max-width: none;
+  }
+
+  .toast.fullWidthToast .toast-body {
+    max-width: none;
+  }
+}
+
+.SliderNotificationStyle {
+  .toast {
+    border: 1px solid;
+    box-sizing: border-box;
+    box-shadow: none;
+    border-radius: 8px;
+    width: fit-content;
+    max-width: fit-content;
+    height: auto;
+    padding: 16px;
+    transition: none;
+
+    .toast-body {
+      padding: 0px;
+      gap: var(--spacing-8);
+      max-width: 875px;
+
+      .sliderMessageStyle {
+        font-weight: var(--font-medium);
+        font-size: var(--fs-16);
+        color: var(--neutral-text-default);
+      }
+
+      .subSliderMessage {
+        @extend %BodyTextWithTopMargin;
+      }
+
+      .iconStyle-slider {
+        font-size: var(--fs-18);
+        font-weight: 900;
+        margin-top: 3px;
+      }
+
+      .sliderCancelStyle {
+        font-weight: 300;
+        font-size: var(--fs-18);
+        color: var(--neutral-text-default);
+        margin-left: auto;
+        cursor: pointer;
+        margin-top: 3px;
+      }
+
+      .sliderButtons {
+        gap: var(--spacing-4);
+        border-radius: 4px;
+        display: flex;
+        margin-top: 8px;
+
+        .okay {
+          @extend %PrimaryCallToActionButton;
+        }
+
+        .cancel {
+          background: var(--neutral-surface-layer-01);
+          padding: 8px 16px 8px 16px;
+          color: var(--brand-text-primary-default);
+          border: 1px solid var(--brand-border-primary-default);
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+
+.modalStyle {
+  .modal-content {
+    width: fit-content;
+    border-radius: 8px;
+    border: 1px solid var(--neutral-border-strong);
+    box-shadow: 0 2px 6px
+        color-mix(
+          in srgb,
+          var(--neutral-surface-high-contrast) 45%,
+          transparent
+        ),
+      0 4px 10px
+        color-mix(
+          in srgb,
+          var(--neutral-surface-high-contrast) 40%,
+          transparent
+        );
+  }
+
+  .modal-body {
+    padding: 0;
+    display: flex;
+    height: 100%;
+
+    .leftSide {
+      width: 95px;
+      padding: 0px 24px 0px 24px;
+      background-color: var(--neutral-surface-layer-02);
+      border: 1px solid var(--neutral-border-subtle);
+      align-content: center;
+
+      .iconStyle {
+        width: 47px;
+        height: 50px;
+        border-radius: 0;
+        pointer-events: none;
+      }
+    }
+
+    .rightSide {
+      padding: 16px;
+
+      .header {
+        font-weight: var(--font-bold);
+        font-size: var(--fs-18);
+        color: var(--neutral-text-default);
+      }
+
+      .subHeader {
+        display: flex;
+        align-items: baseline;
+        column-gap: 12px;
+        margin: 12px 0 12px 0;
+        white-space: nowrap;
+        min-width: 0;
+
+        .counter {
+          font-size: var(--fs-14);
+          line-height: 20px;
+          font-weight: var(--font-medium);
+          color: var(--neutral-text-default);
+          letter-spacing: 0.2px;
+        }
+
+        .warningName {
+          font-weight: var(--font-bold);
+          font-size: var(--fs-14);
+          line-height: 20px;
+          color: var(--neutral-text-default);
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
+      .subMessage {
+        @extend %BodyTextWithTopMargin;
+      }
+
+      .buttons {
+        padding-top: 16px;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: flex-start;
+
+        .navigationButton {
+          background: transparent;
+          border: none;
+          font-size: var(--fs-14);
+          color: var(--brand-text-primary-active);
+          cursor: pointer;
+          display: inline-flex;
+          align-items: center;
+          text-decoration: underline;
+          text-underline-offset: 2px;
+
+          &:hover:not(:disabled) {
+            color: var(--brand-text-primary-disabled);
+          }
+
+          &:focus {
+            outline: none;
+            border: none;
+          }
+
+          &:disabled {
+            color: var(--brand-text-primary-disabled);
+            text-decoration: none;
+            cursor: not-allowed;
+          }
+        }
+
+        .primaryButton {
+          @extend %PrimaryCallToActionButton;
+        }
+
+        .secondaryButton {
+          margin-left: 8px;
+          background: var(--neutral-surface-layer-01);
+          padding: 8px 16px;
+          color: var(--brand-text-primary-default);
+          border: 1px solid var(--brand-border-primary-default);
+          border-radius: 4px;
+        }
+        &:has(.navigationButton) .primaryButton {
+          margin-left: auto;
+        }
+        &:has(.navigationButton):not(:has(.primaryButton)) .secondaryButton {
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+  .closeButton {
+    padding: 16px;
+
+    .buttonStyle {
+      font-weight: var(--font-regular);
+      font-size: var(--fs-24);
+      cursor: pointer;
+    }
+  }
+}
+.cancelStyle {
+  font-weight: 300;
+  font-size: var(--fs-20);
+  color: var(--neutral-text-default);
+  align-self: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.warningBackground {
+  background-color: var(--semantics-warning-background-light);
+}
+
+.infoBorder {
+  border-color: var(--semantics-highlight-background-strong);
+}
+
+.infoBackground {
+  background-color: var(--semantics-highlight-background-light);
+}
+
+.InformationBanner {
+  border-radius: 4px;
+  border: 1px solid;
+  gap: var(--spacing-4);
+  padding: var(--spacing-16);
+  width: 100%;
+
+  .message-banner {
+    @extend %TextInlineCenteredSemiBold;
+  }
+
+  .iconStyle-banner {
+    font-size: var(--fs-18);
+    font-weight: 900;
+    align-self: center;
+  }
+}
+
+.InformationBanner-dismissible {
+  position: relative;
+  padding-right: 2.5rem;
+}
+
+.InformationBanner-close {
+  position: absolute;
+  top: var(--spacing-8);
+  right: var(--spacing-12);
+  padding: 0;
+  border: none;
+  background: transparent;
+  font-size: var(--fs-14);
+  line-height: 1;
+  color: var(--neutral-text-default);
+  cursor: pointer;
+}
+
+// Compact critical banner (DRO account freeze) - pass as InformationBanner className
+.InformationBanner.account-frozen-banner {
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-color: var(--semantics-critical-border);
+  border-radius: 5px;
+  background-color: var(--semantics-critical-background-light);
+  white-space: normal;
+
+  &.InformationBanner-dismissible {
+    padding-right: 2.5rem;
+  }
+
+  > .d-flex {
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .iconStyle-banner {
+    flex-shrink: 0;
+    font-size: var(--fs-14);
+    color: var(--semantics-critical-text);
+  }
+
+  .core-heading-regular {
+    margin-left: 8px;
+    font-size: var(--fs-14);
+    font-weight: var(--font-semi-bold);
+    line-height: 1.4;
+  }
+
+  .core-body-text-regular-medium {
+    min-width: 0;
+    margin-top: 0;
+    margin-left: 22px;
+    font-size: var(--fs-12);
+    font-weight: var(--font-regular);
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+}

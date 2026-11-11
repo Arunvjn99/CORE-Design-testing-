@@ -1,0 +1,153 @@
+/* ----------------------------- typography functions -----------------------------------// */
+
+@mixin heading-1($color: var(--neutral-text-default)) {
+  font-size: var(--fs-40);
+  font-weight: var(--font-semi-bold);
+  color: $color;
+}
+
+@mixin heading-2($color: var(--neutral-text-default)) {
+  font-size: var(--fs-32);
+  font-weight: var(--font-semi-bold);
+  color: $color;
+}
+
+@mixin heading-3($color: var(--neutral-text-default)) {
+  font-size: var(--fs-28);
+  font-weight: var(--font-semi-bold);
+  color: $color;
+}
+
+@mixin heading-4($color: var(--neutral-text-default)) {
+  font-size: var(--fs-24);
+  font-weight: var(--font-semi-bold);
+  color: $color;
+}
+
+@mixin heading-5($color: var(--neutral-text-default)) {
+  font-size: var(--fs-20);
+  font-weight: var(--font-semi-bold);
+  color: $color;
+}
+
+@mixin heading-6($color: var(--neutral-text-default)) {
+  font-size: var(--fs-16);
+  font-weight: var(--font-semi-bold);
+  color: $color;
+}
+
+@mixin page-titles($color: var(--neutral-text-default)) {
+  font-size: var(--fs-24);
+  font-weight: var(--font-semi-bold);
+  letter-spacing: 1%;
+  color: $color;
+}
+
+@mixin heading-regular($color: var(--neutral-text-default)) {
+  font-size: var(--fs-18);
+  font-weight: var(--font-bold);
+  letter-spacing: 1%;
+  color: $color;
+}
+
+@mixin heading-6-page-menu($color: var(--neutral-text-default)) {
+  font-size: var(--fs-18);
+  font-weight: var(--font-semi-bold);
+  letter-spacing: 1%;
+  color: $color;
+}
+
+@mixin body-text-large-medium($color: var(--neutral-text-subtle)) {
+  font-size: var(--fs-16);
+  font-weight: var(--font-medium);
+  letter-spacing: 0%;
+  color: $color;
+}
+
+@mixin body-text-large-semi-bold($color: var(--neutral-text-subtle)) {
+  font-size: var(--fs-16);
+  font-weight: var(--font-semi-bold);
+  letter-spacing: 0%;
+  color: $color;
+}
+
+@mixin body-text-large-bold($color: var(--neutral-text-subtle)) {
+  font-size: var(--fs-16);
+  font-weight: var(--font-bold);
+  letter-spacing: 0%;
+  color: $color;
+}
+
+@mixin body-text-regular-medium($color: var(--neutral-text-subtle)) {
+  font-size: var(--fs-14);
+  font-weight: var(--font-medium);
+  letter-spacing: 0%;
+  color: $color;
+}
+
+@mixin body-text-regular-regular($color: var(--neutral-text-subtle)) {
+  font-size: var(--fs-14);
+  font-weight: var(--font-regular);
+  letter-spacing: 0%;
+  color: $color;
+}
+
+@mixin body-text-regular-semi-bold($color: var(--neutral-text-subtle)) {
+  font-size: var(--fs-14);
+  font-weight: var(--font-semi-bold);
+  letter-spacing: 0%;
+  color: $color;
+}
+
+@mixin body-text-regular-bold($color: var(--neutral-text-subtle)) {
+  font-size: var(--fs-14);
+  font-weight: var(--font-bold);
+  letter-spacing: 0%;
+  color: $color;
+}
+
+@mixin body-text-small-medium($color: var(--neutral-text-subtle)) {
+  font-size: var(--fs-12);
+  font-weight: var(--font-medium);
+  letter-spacing: 0%;
+  color: $color;
+}
+
+@mixin body-text-small-semi-bold($color: var(--neutral-text-subtle)) {
+  font-size: var(--fs-12);
+  font-weight: var(--font-semi-bold);
+  letter-spacing: 0%;
+  color: $color;
+  line-break: anywhere;
+}
+
+@mixin body-text-small-bold($color: var(--neutral-text-subtle)) {
+  font-size: var(--fs-12);
+  font-weight: var(--font-bold);
+  letter-spacing: 0%;
+  color: $color;
+}
+
+@mixin body-icon-regular-medium($color: var(--neutral-text-subtle)) {
+  font-size: var(--fs-12);
+  font-weight: var(--font-regular);
+  color: $color;
+}
+
+@mixin body-button-large {
+  font-size: var(--fs-16);
+  height: 38px;
+  padding: var(--spacing-8) var(--spacing-16);
+}
+
+@mixin body-button-medium {
+  font-size: var(--fs-14);
+  height: 32px;
+  padding: var(--spacing-6) var(--spacing-16);
+}
+
+@mixin body-button-small {
+  font-size: var(--fs-12);
+  height: 24px;
+  padding: var(--spacing-4) var(--spacing-16);
+}

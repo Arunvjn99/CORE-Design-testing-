@@ -1,0 +1,12 @@
+.data-table {
+  .header-label {
+    width: min-content;
+  }
+}
+.critical-secondary-background {
+  background-color: var(--semantics-critical-background-light);
+  font-size: var(--fs-16);
+  font-weight: var(--font-bold);
+  letter-spacing: 0%;
+  color: var(--semantics-critical-text);
+}

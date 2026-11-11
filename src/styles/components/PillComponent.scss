@@ -1,0 +1,79 @@
+@use "../shared/shared-placeholders" as *;
+
+.pillFilterButton {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 20px;
+  padding: 4px 8px;
+  background-color: var(--neutral-surface-layer-01);
+  outline: none;
+  background: var(--neutral-surface-layer-01);
+  font-weight: var(--font-medium);
+  font-size: var(--fs-14);
+  display: flex;
+  cursor: pointer;
+  width: fit-content;
+  color: var(--neutral-text-default);
+  .pillFilter-tagLeft {
+    margin-right: 4px;
+    align-self: center;
+    font-size: var(--fs-12);
+  }
+  .pillFilter-tagRight {
+    margin-left: 4px;
+    align-self: center;
+    font-size: var(--fs-12);
+  }
+}
+
+.filteredActiveButton {
+  border: 1px solid var(--brand-border-primary-default);
+  color: var(--brand-text-primary-default);
+  background-color: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 10%,
+    transparent
+  );
+}
+
+.planMasterPill {
+  border: 1px solid var(--brand-border-primary-default);
+  color: var(--brand-text-primary-default);
+  border-radius: 16px;
+  padding: 2px 8px;
+}
+
+.planAEPill {
+  border: 1px solid var(--semantics-highlight-border);
+  color: var(--semantics-highlight-text);
+  background-color: var(--semantics-highlight-background-light);
+  border-radius: 16px;
+  padding: 2px 8px;
+}
+
+.planRegPill {
+  border: 1px solid var(--neutral-border-strong);
+  color: var(--neutral-text-default);
+  background-color: var(--neutral-surface-layer-02);
+  border-radius: 16px;
+  padding: 2px 8px;
+}
+
+.pillInputButton {
+  flex-flow: row wrap;
+  display: flex;
+  justify-content: start;
+}
+
+.pillInputButton label:hover {
+  border: 1px solid var(--brand-border-primary-default);
+  cursor: pointer;
+  color: var(--brand-text-primary-default);
+}
+
+.pill-plansize {
+  @extend %TextSmallSemiBold;
+}
+
+.nocursor {
+  cursor: auto;
+}

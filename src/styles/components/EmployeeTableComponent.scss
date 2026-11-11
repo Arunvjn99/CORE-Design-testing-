@@ -1,0 +1,115 @@
+@use "../shared/shared-placeholders" as *;
+.payroll-listing-table {
+  .employee-table-component {
+    .footer-table {
+      .k-grid-header {
+        display: none;
+      }
+
+      .inner-column {
+        @extend %FixedHeight70pxPadded;
+      }
+    }
+
+    .column-footer {
+      background-color: var(--neutral-surface-layer-05);
+      box-shadow: inset var(--elevation-01);
+    }
+
+    .outer-table {
+      td {
+        @extend %NoPaddingTopAligned;
+      }
+
+      max-height: calc(100vh - 300px);
+      overflow: auto;
+    }
+
+    .inner-table {
+      border-width: 0px;
+      padding-left: 0px;
+
+      .k-grid-header .k-header {
+        .k-link {
+          padding: 0px;
+          margin-left: 0.25rem;
+        }
+      }
+
+      .inner-column {
+        @extend %FixedHeight70pxPadded;
+      }
+    }
+  }
+
+  .create-generate-tiles {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin: 0.5rem 0rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+}
+// .k-animation-container-shown {
+//   z-index: 20001 ;
+// }
+.payroll-listing-table.full-screen {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15003;
+  background-color: var(--neutral-surface-layer-02);
+
+  .outer-table {
+    max-height: 90vh;
+  }
+}
+
+.employee-table-component {
+  .outer-table {
+    td {
+      @extend %NoPaddingTopAligned;
+    }
+
+    .k-i-more-vertical::before {
+      content: "\e129";
+    }
+
+    .employee-name-ssn {
+      display: none;
+    }
+  }
+  .k-grid {
+    td {
+      padding-left: 0rem;
+    }
+  }
+
+  .inner-table {
+    border-width: 0px;
+
+    .k-grid-header .k-header {
+      .k-link {
+        padding: 0px;
+      }
+    }
+
+    .inner-column {
+      @extend %FixedHeight70pxPadded;
+    }
+  }
+}
+
+.employee-table-component {
+  .footer-table {
+    .k-grid-table-thead {
+      display: none;
+    }
+  }
+}

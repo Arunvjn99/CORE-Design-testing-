@@ -1,0 +1,30 @@
+.borderBottomReport {
+  border-bottom: 1px solid var(--neutral-border-light);
+  margin-top: 1rem;
+}
+
+.sliderClose {
+  color: var(--brand-text-primary-default);
+  margin-top: 4px;
+}
+
+.gridInnerStyle {
+  height: 60vh;
+  margin-bottom: 1.5rem;
+}
+
+.yearEndReportCard {
+  margin-top: 1rem;
+  border-radius: 7px;
+  border-color: var(--neutral-border-light);
+  background: var(--neutral-surface-layer-02);
+  padding: 1rem;
+}
+
+.exportReportYearEnd {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  align-items: center;
+  width: 100%;
+}

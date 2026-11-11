@@ -1,0 +1,57 @@
+.barr {
+  // width: 35rem;
+  // height: 6rem;
+  background-color: var(--semantics-critical-background-light);
+  border-radius: 8px;
+  margin-top: 20px;
+  border: var(--semantics-critical-border) solid 1.5px;
+}
+.approval-hover {
+  color: var(--neutral-text-default);
+}
+
+.approval-hover:hover {
+  text-decoration: none;
+}
+
+.waitingg {
+  font-size: var(--fs-18);
+  font-weight: 600;
+  margin-left: 5%;
+  margin-top: 4%;
+}
+.awaiting-transactions-count {
+  // display: flex;
+  .data1 {
+    font-size: var(--fs-14);
+    font-weight: 600;
+    color: var(--neutral-text-subtle-least);
+  }
+  .countt {
+    font-size: var(--fs-20);
+    font-weight: 700;
+    // margin-top: -20%;
+  }
+}
+// .data1 {
+//   font-weight: 600;
+//   margin-right: 2rem;
+// }
+
+// .data2 {
+//   font-weight: 600;
+//   margin-right: 2rem;
+// }
+
+// .data3 {
+//   font-weight: 600;
+//   margin-right: 2rem;
+// }
+
+.countt1 {
+  color: var(--semantics-critical-text);
+  font-size: var(--fs-26);
+  font-weight: 700;
+  margin-left: 6%;
+  margin-top: -8%;
+}

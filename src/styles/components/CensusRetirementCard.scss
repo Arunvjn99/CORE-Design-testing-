@@ -1,0 +1,52 @@
+@use "../shared/shared-placeholders" as *;
+.retirementcard {
+  width: 90%;
+  height: fit-content;
+  padding: 22px 25px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+}
+.eracard {
+  width: 50%;
+  height: fit-content;
+  padding: 22px 25px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+}
+
+.label {
+  line-height: 21px;
+  color: var(--neutral-text-subtle-least);
+}
+.col-display {
+  @extend %FlexColumn;
+}
+
+.source-name {
+  font-size: var(--fs-16);
+  color: var(--neutral-text-default);
+  font-weight: 500;
+  margin-bottom: 5px;
+  line-height: 24px;
+}
+.dotline-separator {
+  border: 1px dashed var(--neutral-border-strong);
+  height: auto;
+  width: 0px;
+  margin-right: 20px;
+  /* padding-top: -22px; */
+}
+
+.border-for-history {
+  border-left: 0.5px solid var(--neutral-border-strong);
+  border-right: 0.5px solid var(--neutral-border-strong);
+  border-top: 0.5px solid var(--neutral-border-strong);
+  border-bottom: 0.5px solid var(--neutral-border-strong);
+  padding: 3px;
+}

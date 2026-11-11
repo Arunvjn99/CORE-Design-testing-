@@ -1,0 +1,91 @@
+.advisor-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  padding: 0.625rem 1rem;
+  gap: 10px;
+  background: var(--neutral-surface-layer-01);
+  position: relative;
+  justify-self: center;
+}
+
+.advisor-card-icon-wrapper {
+  flex: 0 0 60px;
+  height: 60px;
+  max-width: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advisor-card-icon-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.advisor-card-wrapper {
+  flex: 1;
+  min-width: 100%;
+}
+.advisor-card-button-scale {
+  transform: scale(0.85);
+  transform-origin: left center;
+}
+.advisor-card-button-align {
+  align-items: center;
+  gap: 10px;
+}
+
+.advisor-card-verticalBorder {
+  height: 90%;
+  width: 1px;
+  background-color: var(--neutral-border-strong);
+}
+
+.advisor-card-button {
+  color: var(--brand-text-primary-default);
+  text-decoration: underline;
+  align-items: center;
+  font-weight: 600;
+}
+
+.advisor-card-button.critical-text-color {
+  color: var(--semantics-critical-text);
+}
+
+.advisor-layout-associated-plans-var {
+  align-items: center;
+  padding-right: 24px;
+  padding-left: 0;
+}
+
+.contact-details-label-bold {
+  padding: 1rem 0;
+  font-weight: 500;
+  font-size: var(--fs-20);
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: var(--neutral-text-default);
+}
+
+@media screen and (max-width: 768px) {
+  .advisor-card {
+    padding: 15px;
+    gap: 8px;
+  }
+
+  .advisor-card-wrapper {
+    width: 100%;
+  }
+}
+
+.clearing-partner-inside-content.mt-0px {
+  margin-top: 0;
+}

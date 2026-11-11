@@ -1,0 +1,94 @@
+.btn-size-sm button {
+  font-size: var(--fs-12);
+  width: 75px;
+}
+.eligibility-table-wrapper {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.eligibility-table-wrapper thead th {
+  position: sticky;
+  top: 0;
+  background: var(--neutral-surface-layer-01);
+  z-index: 100;
+}
+
+.eligibility-table-wrapper table {
+  border-collapse: collapse;
+}
+.form-sort {
+  margin-top: 18px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.br-0 button {
+  border-radius: 5px 0px 0px 5px;
+}
+.bl-0 button {
+  border-radius: 0px 5px 5px 0px;
+}
+.bl-4 {
+  border-radius: 0px 5px 5px 0px;
+}
+.elibility-summary-sort {
+  .sort-field-label {
+    border: 1px solid var(--neutral-border-strong);
+    border-right-width: 0px;
+    background: var(--neutral-surface-layer-01);
+    color: var(--neutral-text-default);
+    border-radius: 5px 0px 0px 5px;
+    padding: 5px;
+    width: 85px;
+  }
+}
+.border-cut {
+  .form-control {
+    border-radius: 0px 5px 5px 0px;
+  }
+}
+.h-2_375rem {
+  height: 2.375;
+}
+.placeholder-text {
+  text-align: center;
+  font-size: var(--fs-50);
+  font-weight: 500;
+  padding-top: 60px;
+  color: var(--neutral-text-subtle-least);
+}
+
+.eligibility-table {
+  .cspl-table {
+    .column-elig-companyName {
+      width: 14%;
+    }
+    .column-elig-planId {
+      width: 11%;
+    }
+    .column-elig-planName {
+      width: 13%;
+    }
+    .column-elig-statusPlan {
+      width: 19%;
+    }
+    .column-elig-statusSource {
+      width: 20%;
+    }
+    .column-elig-processDate {
+      width: 20%;
+    }
+    .table-cell,
+    .table-head {
+      white-space: normal;
+      word-break: break-word;
+      flex-wrap: wrap;
+    }
+    .table-cell {
+      display: block;
+    }
+  }
+}
+.eligibility-summary-dropdowns {
+  max-height: 140px;
+}

@@ -1,0 +1,28 @@
+.icon-container {
+  position: relative;
+  padding: 12px;
+  /* (Important) Siblings are positioned for stacking */
+
+  /* Sibling 1: icon */
+  .icon {
+    position: relative;
+    color: var(--neutral-text-default);
+  }
+  .black-icon {
+    color: var(--neutral-text-on-color);
+  }
+
+  /* Sibling 2: popup */
+  .icon-popover {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: var(--neutral-surface-high-contrast);
+    color: var(--neutral-text-on-color);
+    border-radius: 8px;
+    border: 0px solid transparent;
+    padding-top: 48px;
+    padding-bottom: 12px;
+    margin: 0px;
+  }
+}

@@ -1,0 +1,85 @@
+@use "../shared/shared-placeholders" as *;
+.AddPlanSearchBar {
+  position: relative;
+  flex-grow: 1;
+  input {
+    border-radius: 0 0.3rem 0.3rem 0;
+  }
+  .sm {
+    width: 18.75rem;
+    height: 2.25rem;
+    padding-left: 2.063rem;
+    font-size: var(--fs-14);
+    border-radius: 0.3rem;
+  }
+  .plan-group-searchbar {
+    width: 23.813rem;
+    height: 2.25rem;
+    font-size: var(--fs-12);
+    line-height: 1.125rem;
+    border-radius: 0.3rem;
+  }
+
+  .addclose-button-wrapper {
+    position: relative;
+    margin-top: 0.25rem;
+    float: right;
+    right: 0.3rem;
+    display: none;
+    align-items: center;
+    height: 100%;
+    .addclose-button {
+      @extend %BorderlessTransparent;
+      svg {
+        font-size: var(--fs-24);
+      }
+    }
+    &.active {
+      display: flex;
+    }
+  }
+  .addclose-button-pg {
+    position: absolute;
+    margin-left: 17.25rem;
+    top: 0rem;
+    display: none;
+    align-items: center;
+    height: 100%;
+    .addicon-size {
+      @extend %BorderlessTransparent;
+      svg {
+        font-size: var(--fs-14);
+      }
+    }
+    &.active {
+      display: flex;
+    }
+  }
+}
+
+.small-input-grp {
+  > .AddPlanSearchBar:first-child {
+    display: flex;
+    width: 1%;
+    input {
+      border-radius: 0.3rem 0 0 0.3rem;
+      border-right-color: var(--neutral-border-inverse);
+    }
+  }
+  .addclose-button-wrapper {
+    right: 0rem;
+    .addclose-button svg {
+      font-size: var(--fs-16);
+    }
+  }
+  .plan-search-button {
+    background-color: var(--neutral-surface-layer-01);
+    border-left-color: var(--neutral-border-inverse);
+  }
+}
+
+.search-bar {
+  .input-group-text {
+    background: var(--neutral-surface-layer-01);
+  }
+}

@@ -1,0 +1,343 @@
+.trade-order-instruction {
+  .trade-file {
+    display: flex;
+
+    .trade-file-Id {
+      padding-left: 0.5rem;
+    }
+  }
+}
+
+.trade-ofi-status {
+  padding: 1rem 0.5rem;
+  background-color: var(--neutral-surface-layer-02);
+
+  .w-40 {
+    width: 40%;
+  }
+
+  .w-20 {
+    width: 20%;
+  }
+
+  .p48x {
+    padding: 4px 8px;
+  }
+
+  .vertical-page-breaker {
+    border: 1px solid;
+    border-color: var(--neutral-border-strong);
+  }
+}
+
+.trade-transaction-card-flair {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  padding: 0rem 0rem 0rem 0.25rem;
+
+  .w-20 {
+    width: 20%;
+  }
+
+  .w-15 {
+    width: 15%;
+  }
+
+  .w-40 {
+    width: 40%;
+  }
+
+  .w-25 {
+    width: 25%;
+  }
+
+  .w-17_5 {
+    width: 17.5%;
+  }
+
+  .w-12_5 {
+    width: 12.5%;
+  }
+
+  .w-23_5 {
+    width: 23.5%;
+  }
+
+  .w-19 {
+    width: 19%;
+  }
+
+  .w-17_5 {
+    width: 17.5%;
+  }
+}
+
+.tofi-columns-filters {
+  .w-23_5 {
+    width: 23.5%;
+  }
+
+  .w-15 {
+    width: 15%;
+  }
+
+  .w-17_5 {
+    width: 17.5%;
+  }
+
+  .w-40 {
+    width: 40%;
+  }
+
+  .w-19 {
+    width: 19%;
+  }
+
+  .w-20 {
+    width: 20%;
+  }
+
+  .w-12_5 {
+    width: 12.5%;
+  }
+
+  .w-15_5 {
+    width: 15.5%;
+  }
+}
+
+.toic-column-filters {
+  padding: 0rem 0.5rem;
+
+  .w-20 {
+    width: 20%;
+  }
+
+  .w-15 {
+    width: 15%;
+  }
+
+  .w-12_5 {
+    width: 12.5%;
+  }
+
+  .w-10 {
+    width: 10%;
+  }
+}
+
+.trade-order-investment-card {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+
+  .card-info-desc {
+    font-size: var(--fs-12);
+  }
+
+  .toi-Awaiting {
+    border-radius: 8px;
+    display: flex;
+    padding: 4px 8px;
+    background-color: color-mix(
+      in srgb,
+      var(--semantics-warning-background-light) 40%,
+      transparent
+    );
+    width: fit-content;
+    color: var(--semantics-warning-text);
+  }
+
+  .toi-Settled {
+    border-radius: 8px;
+    display: flex;
+    padding: 4px 8px;
+    background-color: color-mix(
+      in srgb,
+      var(--semantics-success-background-light) 40%,
+      transparent
+    );
+    width: fit-content;
+    color: var(--semantics-success-text);
+  }
+
+  .toi-Rejected {
+    border-radius: 8px;
+    display: flex;
+    padding: 4px 8px;
+    background-color: color-mix(
+      in srgb,
+      var(--semantics-critical-background-light) 40%,
+      transparent
+    );
+    width: fit-content;
+    color: var(--semantics-critical-text);
+  }
+
+  .w-20 {
+    width: 20%;
+  }
+
+  .w-15 {
+    width: 15%;
+  }
+
+  .w-12_5 {
+    width: 12.5%;
+  }
+
+  .w-10 {
+    width: 10%;
+  }
+}
+
+.toic-card {
+  .toi-Awaiting {
+    border-radius: 8px;
+    display: flex;
+    padding: 4px 8px;
+    background-color: color-mix(
+      in srgb,
+      var(--semantics-warning-background-light) 40%,
+      transparent
+    );
+    width: fit-content;
+    color: var(--semantics-warning-text);
+  }
+
+  .toi-Settled {
+    border-radius: 8px;
+    display: flex;
+    padding: 4px 8px;
+    background-color: color-mix(
+      in srgb,
+      var(--semantics-success-background-light) 40%,
+      transparent
+    );
+    width: fit-content;
+    color: var(--semantics-success-text);
+  }
+
+  .toi-Rejected {
+    border-radius: 8px;
+    display: flex;
+    padding: 4px 8px;
+    background-color: color-mix(
+      in srgb,
+      var(--semantics-critical-background-light) 40%,
+      transparent
+    );
+    width: fit-content;
+    color: var(--semantics-critical-text);
+  }
+}
+
+.toic-rejection-card {
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: var(--semantics-critical-border);
+  margin-bottom: 1rem;
+}
+
+.toic-regenerate-card {
+  background-color: var(--neutral-surface-layer-03);
+  margin-bottom: 1rem;
+  border-radius: 6px;
+
+  .toi-Awaiting {
+    border-radius: 8px;
+    display: flex;
+    padding: 4px 8px;
+    background-color: color-mix(
+      in srgb,
+      var(--semantics-warning-background-light) 40%,
+      transparent
+    );
+    width: fit-content;
+    color: var(--semantics-warning-text);
+  }
+}
+
+.toic-card-data-flair {
+  height: 47vh;
+  overflow: auto;
+}
+
+.toic-rejection-card-data {
+  height: 70vh;
+  overflow: auto;
+}
+
+.toic-settle-await-flair {
+  height: 85vh;
+  overflow: auto;
+}
+
+.toic-rejection-left-card {
+  padding: 1rem;
+  background-color: color-mix(
+    in srgb,
+    var(--semantics-critical-background-light) 40%,
+    transparent
+  );
+  width: 75%;
+}
+
+.toic-rejection-right-card {
+  padding: 1rem;
+  background-color: color-mix(
+    in srgb,
+    var(--semantics-critical-background-light) 40%,
+    transparent
+  );
+  width: 25%;
+  align-content: center;
+  text-align: center;
+}
+
+.toic-horizontal-line {
+  border: 1px solid;
+  color: var(--neutral-text-subtle-least);
+  width: 97%;
+  /* margin-bottom: 1rem; */
+}
+
+.toic-vertical-line {
+  border: 1px solid;
+  height: 100%;
+  width: 1px;
+  color: var(--neutral-text-subtle-least);
+}
+
+.trade-order-details-card {
+  display: flex;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--neutral-surface-layer-03);
+
+  .w-25 {
+    width: 25%;
+  }
+
+  .w-20 {
+    width: 20%;
+  }
+
+  .w-15 {
+    width: 15%;
+  }
+}
+
+.tod-slider-header {
+  font-size: var(--fs-24);
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.pl-1-75-em {
+  padding-left: 1.75em;
+}

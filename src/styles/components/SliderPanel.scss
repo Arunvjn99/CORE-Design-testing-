@@ -1,0 +1,161 @@
+.sliding-panel-container {
+  .slider-title-case {
+    margin: 0.5rem 0rem;
+  }
+
+  .panel-content {
+    background-color: var(--neutral-surface-layer-01);
+    overflow: auto;
+  }
+
+  .slider-close-button {
+    /* position: absolute; */
+    /* right: 1rem; */
+    /* top: 0.3rem; */
+    cursor: pointer;
+    margin: 0.5rem;
+
+    .btn-primary:disabled {
+      color: var(--neutral-text-on-color);
+      background-color: var(--brand-background-primary-strong);
+      //border-color: var(--brand-border-primary-default);
+      border-color: transparent;
+    }
+  }
+
+  .slider-close-button-Rkaas {
+    cursor: pointer;
+    margin: 0.5rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0rem;
+  }
+  .notemanager-sdr-btn {
+    cursor: pointer;
+    border: none;
+    background-color: var(--neutral-surface-layer-01);
+  }
+  .notemanager-sdr-btn:focus {
+    outline: none;
+  }
+  .notemanager-sdr-btn:active {
+    outline: none;
+  }
+
+  .slider-cancel-button {
+    /* position: absolute; */
+    /* right: 7rem; */
+    /* top: 1rem; */
+    cursor: pointer;
+    margin: 0.5rem;
+  }
+  .td-underline {
+    text-decoration: underline;
+  }
+
+  .slider-save-button {
+    /* position: absolute; */
+    /* right: 1rem; */
+    /* top: 1rem; */
+    cursor: pointer;
+    /* margin: 0.5rem; */
+    margin: 0.5rem;
+  }
+
+  .slider-delete-button {
+    color: var(--semantics-critical-text);
+    font-weight: 600;
+    font-size: var(--fs-14);
+    line-height: 20px;
+    /* position: absolute; */
+    /* right: 12rem; */
+    /* top: 1.5rem; */
+    cursor: pointer;
+    margin: 0.5rem;
+  }
+
+  .slider-back-button {
+    display: flex;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: var(--fs-16);
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    color: var(--brand-text-primary-default);
+    margin: 0.5rem;
+
+    .slider-back-label {
+      margin-left: 0.5rem;
+    }
+  }
+
+  .slider-edit-button {
+    /* position: absolute; */
+    /* right: 3rem; */
+    /* top: 1rem; */
+    cursor: pointer;
+    margin: 0.5rem;
+  }
+
+  .slider-content {
+    color: var(--neutral-text-default);
+    padding: 4rem 2rem;
+    height: 100%;
+  }
+
+  .plan-group-slider-content {
+    color: var(--neutral-text-default);
+    padding: 1rem 1rem; /* 4rem was there */
+    height: 100%;
+  }
+
+  .sliderPad-16 {
+    padding: var(--spacing-16);
+  }
+
+  .sliderLeftRightPad-16 {
+    padding: 0 var(--spacing-16);
+  }
+
+  .cursor-style {
+    cursor: auto;
+  }
+}
+
+.slide-pane__content {
+  .sliderPad-16.slider-header-background {
+    .slider-button-group {
+      .slider-close-button {
+        cursor: pointer;
+        margin: 0.5rem;
+      }
+    }
+  }
+}
+
+// Tighter header/content spacing for the Investment Election Changes slider only
+.investment-election-changes-slider {
+  .slide-pane__content .sliderPad-16 {
+    padding: 0.25rem;
+  }
+}
+
+// .withdrawal-slider-delete {
+//   font-weight: 600;
+//   font-size: var(--fs-14);
+//   line-height: 20px;
+//   cursor: pointer;
+//   margin: 0.5rem;
+//   margin-top: 0px;
+//   padding: 6px;
+//   border-radius: 4px;
+// }
+
+.slide-pane {
+  .slider-close-button,
+  .slider-close-button * {
+    cursor: pointer;
+  }
+}

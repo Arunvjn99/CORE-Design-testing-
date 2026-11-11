@@ -1,0 +1,67 @@
+.vesting-bis-left {
+  font-size: var(--fs-12);
+  margin-top: 4%;
+  margin-right: 1%;
+}
+.vesting-bis-right {
+  font-size: var(--fs-12);
+  margin-top: 4%;
+  margin-left: 1%;
+}
+.vesting-table {
+  font-size: var(--fs-12);
+  margin-top: 10px;
+  th {
+    text-align: center;
+  }
+  td {
+    padding: 0px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50px;
+    height: 36px;
+  }
+  &.editable {
+    td {
+      padding: 0px;
+      vertical-align: middle;
+    }
+    .form-group {
+      margin-bottom: 0px;
+      .form-label {
+        display: none;
+      }
+      .form-control {
+        border: 0px;
+        border-radius: 0px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.mb-5rm {
+  margin-bottom: 0.5rem;
+}
+.hours-table-vesting-parent {
+  width: 800px;
+  overflow: auto;
+}
+.hours-table-vesting {
+  overflow-y: scroll;
+  border: 2px solid var(--neutral-border-strong);
+  border-collapse: separate;
+  thead {
+    background: var(--neutral-surface-layer-02);
+    line-height: 21px;
+    height: 53px;
+
+    th {
+      width: 1rem;
+      vertical-align: middle;
+      padding: 1rem;
+      background-color: var(--neutral-surface-layer-02);
+      color: var(--neutral-text-subtle-least);
+    }
+  }
+}

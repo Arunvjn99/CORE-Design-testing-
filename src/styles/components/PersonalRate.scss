@@ -1,0 +1,94 @@
+.pheader-div {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.Personal-rate {
+  margin: 20px;
+  margin-right: 0;
+  background-color: var(--neutral-surface-layer-01);
+  width: 580px;
+}
+
+.pheader {
+  color: var(--brand-text-primary-default);
+  font-size: var(--fs-16);
+  margin: 0;
+}
+
+.pfooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 60px 0 40px;
+  width: 650px;
+}
+
+.percentInfo {
+  font-size: var(--fs-12);
+  font-weight: 600;
+  color: var(--brand-text-primary-default);
+}
+
+.dateInfo {
+  font-size: var(--fs-8);
+  font-weight: 600;
+  color: var(--brand-text-primary-default);
+}
+
+.x-axis line {
+  stroke: var(--brand-border-primary-default);
+}
+
+.y-axis line {
+  color: var(--brand-text-primary-default);
+}
+
+.x-axis path {
+  stroke: var(--brand-border-primary-default);
+}
+
+.y-axis path {
+  color: var(--neutral-text-on-color);
+}
+
+.x-axis text {
+  color: var(--brand-text-primary-default);
+  font-size: var(--fs-12);
+  font-weight: 600;
+}
+
+.y-axis text {
+  color: var(--brand-text-primary-default);
+}
+
+.pdropdown {
+  list-style: none;
+  color: var(--brand-text-primary-default);
+  z-index: 100;
+  position: absolute;
+  border: 1px solid var(--neutral-border-strong);
+  background-color: var(--neutral-surface-layer-01);
+  border-radius: 5px;
+  padding-left: 0;
+  top: 30px;
+}
+
+.pdropdown > li {
+  padding: 0 20px;
+}
+
+.pdropdown > li:hover {
+  background-color: var(--neutral-surface-layer-05);
+}
+
+.PRDropDown {
+  button {
+    font-size: var(--fs-12);
+    color: var(--brand-text-primary-default);
+    border-radius: 100px;
+    font-weight: 600;
+  }
+}

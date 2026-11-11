@@ -1,0 +1,83 @@
+.gridWrapper {
+  overflow-x: auto;
+  width: 100%;
+  max-width: 560px;
+  max-height: calc(100vh - 380px);
+  overflow-y: auto;
+
+  &.noScroll {
+    max-height: none;
+    overflow-y: visible;
+  }
+
+  :global(.k-grid) {
+    width: 100%;
+    border: 2px solid var(--neutral-border-strong);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: none;
+  }
+
+  // Header row
+  :global(.k-grid-header),
+  :global(.k-grid-header-wrap),
+  :global(.k-grid-header-wrap table),
+  :global(.k-grid-header-wrap thead),
+  :global(.k-grid-header-wrap tr) {
+    background-color: var(--neutral-surface-layer-03);
+    border-bottom: none;
+  }
+
+  :global(.k-grid-header .k-header),
+  :global(.k-grid-header th),
+  :global(.k-grid-header th.k-header),
+  :global(.k-grid-header .k-sorted),
+  :global(.k-grid-header .k-header.k-sorted) {
+    color: var(--neutral-text-subtle);
+    background-color: var(--neutral-surface-layer-03);
+    font-weight: 600;
+    font-size: var(--fs-14);
+    border-color: var(--neutral-border-strong);
+    padding: 10px 14px;
+  }
+
+  :global(.k-grid-header .k-header .k-link) {
+    background-color: transparent;
+  }
+
+  // Data rows
+  :global(.k-grid-content) {
+    overflow-y: visible;
+
+    :global(tr),
+    :global(tr:nth-child(odd)),
+    :global(tr:nth-child(even)) {
+      background-color: var(--neutral-surface-layer-01);
+    }
+
+    :global(td) {
+      background-color: var(--neutral-surface-layer-01);
+      border-color: var(--neutral-border-strong);
+      padding: 10px 14px;
+      vertical-align: middle;
+      font-size: var(--fs-14);
+    }
+
+    :global(tr:last-child td) {
+      border-bottom: none;
+    }
+  }
+
+  @media (max-width: 576px) {
+    max-width: 100%;
+
+    :global(.k-grid-header),
+    :global(.k-grid-content) {
+      min-width: 340px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    min-height: 400px;
+  }
+}

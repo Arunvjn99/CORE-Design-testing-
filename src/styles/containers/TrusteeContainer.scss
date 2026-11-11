@@ -1,0 +1,104 @@
+@use "../shared/shared-placeholders" as *;
+.cspl-table {
+  /*height: 100%;*/
+  overflow: hidden;
+  a {
+    &:hover {
+      font-weight: 500;
+    }
+    color: var(--brand-text-primary-default);
+  }
+  .column-trusteeName {
+    width: 25%;
+  }
+  .column-trusteeMail {
+    width: 25%;
+  }
+  .column-trusteePhone {
+    width: 25%;
+  }
+  .column-trusteePlanAdded {
+    width: 25%;
+  }
+  .column-trusteePlan {
+    width: 25%;
+    justify-content: center;
+  }
+  .btn-theme {
+    @include PrimarySolidButton;
+  }
+}
+.add-plan {
+  margin-bottom: 0;
+  margin-top: 7px;
+  font-size: var(--fs-14);
+  color: var(--neutral-text-default);
+}
+
+.selected-table-value {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: 10px;
+}
+.selected-title-head {
+  font-size: var(--fs-14);
+  margin-bottom: 0px;
+}
+.trusteeTable {
+  .cspl-table {
+    /*height: 100%;*/
+    overflow: hidden;
+    a {
+      &:hover {
+        font-weight: 500;
+      }
+      color: var(--brand-text-primary-default);
+    }
+    .w-90 {
+      width: 90%;
+    }
+    .w-75 {
+      width: 75%;
+    }
+    .w-15 {
+      width: 15%;
+    }
+    .w-10 {
+      width: 10%;
+    }
+    .column-custodiancheckbox {
+      width: 1%;
+    }
+    .column-custodianName {
+      width: 17%;
+    }
+    .column-custodianMail {
+      width: 16%;
+    }
+    .column-custodianPhone {
+      width: 16%;
+    }
+    .column-custodianCode {
+      width: 16%;
+    }
+    .column-custodianEin {
+      width: 16%;
+    }
+    .column-custodianPlan {
+      width: 18%;
+    }
+    .height-50 {
+      height: 100px;
+    }
+    .btn-theme {
+      @include PrimarySolidButton;
+    }
+    /* .checkbox { */
+    /* padding: 0px ; */
+    /* } */
+    .header-height-50 {
+      height: 50px;
+    }
+  }
+}

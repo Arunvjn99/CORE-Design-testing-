@@ -1,0 +1,951 @@
+.highlevel-plan-details {
+  .plan-label {
+    font-size: var(--fs-10);
+    color: var(--neutral-text-subtle-least);
+    white-space: nowrap;
+  }
+
+  .plan-label-var {
+    font-size: var(--fs-14);
+    color: var(--neutral-text-subtle-least);
+    white-space: nowrap;
+  }
+
+  .plan-value {
+    font-size: var(--fs-14);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+}
+
+.ml-12-mr-12 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.min-h-18 {
+  min-height: 18px;
+}
+
+.error-message-deferral {
+  display: block;
+  font-size: var(--fs-12);
+  margin-top: 0rem;
+  color: var(--semantics-critical-text);
+}
+
+.column-investment-percentage-own {
+  .percentage-field {
+    #totalBox.invalid.form-group ~ .error-message-deferral {
+      display: none;
+    }
+
+    #totalBox.invalid.form-group {
+      .input-critical-text-flair {
+        &::after {
+          content: "The total value of investment election should be 100%";
+        }
+      }
+    }
+  }
+}
+
+.payroll-header {
+  font-weight: 600;
+  font-size: var(--fs-19);
+}
+
+.payroll-detail-slider {
+  background-color: var(--neutral-surface-layer-02);
+  border-radius: 8px;
+}
+
+.employee-manage-plan-modules {
+  .tab-content {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+
+.vertical-tabs.nav {
+  flex-wrap: unset;
+}
+
+.vertical-tabs {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-right: 30px;
+  /* height: 100%; */
+  border-top: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 1px solid var(--neutral-border-strong);
+  overflow-y: auto;
+  .nav-item {
+    .nav-link.active {
+      width: 98%;
+    }
+  }
+
+  .nav-item .nav-link.active {
+    background-color: color-mix(
+      in srgb,
+      var(--brand-background-primary-strong) 10%,
+      transparent
+    );
+    border-color: var(--neutral-border-inverse);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+
+  .nav-item .nav-link {
+    border-color: var(--neutral-border-inverse);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+
+  .nav-item .nav-link .verticalLine-tab {
+    height: 20px;
+    display: inline-block;
+    width: 5px;
+    background: var(--neutral-surface-layer-05);
+    border-radius: 5px;
+  }
+
+  .nav-item .nav-link.active .verticalLine-tab {
+    height: 20px;
+    display: inline-block;
+    width: 5px;
+    background: var(--brand-background-primary-strong);
+    border-radius: 5px;
+  }
+
+  .nav-item .nav-link .tab-var-census {
+    color: var(--neutral-text-subtle);
+  }
+
+  .nav-item .nav-link.active .tab-var-census {
+    color: var(--brand-text-primary-default);
+  }
+}
+
+.top-level-tab-enrollment.nav.nav-tabs.border-0 {
+  border: 0;
+}
+
+.top-level-tab-enrollment {
+  width: max-content;
+  border-bottom: 1px solid var(--neutral-border-strong);
+
+  .nav-item.nav-link {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 3rem;
+    font-size: var(--fs-14);
+    color: var(--neutral-text-subtle-least);
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &.active {
+      margin-bottom: 0;
+      font-weight: 500;
+      color: var(--neutral-text-default);
+
+      &#visited-tab-1 {
+        border-top: 3px solid var(--brand-border-primary-default);
+      }
+
+      &#error-tab-1 {
+        border-top: 3px solid var(--semantics-critical-border);
+      }
+
+      /* Uncomment if needed for saved tabs */
+      /* &#saved-tab-1, */
+      /* &#saved-tab-2 { */
+      /* border-top: 3px solid var(--semantics-success-border); */
+      /* } */
+    }
+  }
+}
+
+.top-level-tab {
+  width: max-content;
+  border-bottom: 1px solid var(--neutral-border-strong);
+
+  .nav-item .nav-link {
+    border: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0rem;
+    margin-right: 3rem;
+    color: var(--neutral-text-subtle-least);
+    font-size: var(--fs-14);
+
+    &:first-child {
+      margin-left: 0px;
+    }
+  }
+
+  .nav-item .nav-link.active {
+    margin-bottom: 0px;
+    font-weight: 500;
+    border-bottom: 3px solid var(--brand-border-primary-default);
+    color: var(--neutral-text-default);
+  }
+}
+
+.top-level-tab-enrollment {
+  width: max-content;
+  border-bottom: 1px solid var(--neutral-border-strong);
+
+  .nav-item .nav-link {
+    border: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0rem;
+    margin-right: 3rem;
+    /* border-top: 3px solid var(--brand-border-primary-default); */
+    color: var(--neutral-text-subtle-least);
+    font-size: var(--fs-14);
+
+    &:first-child {
+      margin-left: 0px;
+    }
+  }
+
+  .nav-item .nav-link.active#visited-tab-1 {
+    margin-bottom: 0px;
+    font-weight: 500;
+    border-top: 3px solid var(--brand-border-primary-default);
+    color: var(--neutral-text-default);
+  }
+
+  /* #saved-tab-1 */
+  /* { */
+  /* border-top: 3px solid var(--semantics-success-border); */
+  /* } */
+  /* #saved-tab-2 */
+  /* { */
+  /* border-top: 3px solid var(--semantics-success-border); */
+  /* } */
+  .nav-item .nav-link.active#error-tab-1 {
+    margin-bottom: 0px;
+    font-weight: 500;
+    border-top: 3px solid var(--semantics-critical-border);
+    color: var(--neutral-text-default);
+  }
+}
+
+.balance_summary_tabs {
+  height: 100%;
+  overflow: auto;
+  margin-bottom: 5rem;
+
+  .balance_s_conts {
+    background-color: var(--neutral-surface-layer-02);
+    height: 5.3rem;
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 10px;
+    padding: 15px 20px 10px 20px;
+    width: 34%;
+    margin: 10px;
+    margin-left: 0px;
+    margin-bottom: 5rem;
+  }
+
+  .balance_s_conts_wht {
+    background-color: var(--neutral-surface-layer-02);
+    height: 5.3rem;
+    border-radius: 10px;
+    padding: 15px 20px 10px 20px;
+    width: 34%;
+    margin: 10px;
+    margin-left: 0px;
+    border: 1px solid var(--neutral-border-strong);
+  }
+
+  .nav-tabs {
+    border-bottom: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: var(--font-medium);
+    font-size: var(--fs-12);
+
+    /* margin-left: 10px; */
+    .nav-item .nav-link {
+      border: 1px solid var(--neutral-border-strong);
+      border-radius: 20px;
+      margin-right: 1.25rem;
+      color: var(--neutral-text-default);
+      padding: 4px 8px;
+    }
+
+    .nav-item .nav-link.active {
+      margin-bottom: 0px;
+      border: 1px solid var(--brand-border-primary-default);
+      color: var(--brand-text-primary-default);
+      background-color: color-mix(
+        in srgb,
+        var(--brand-background-primary-strong) 10%,
+        transparent
+      );
+      padding: 4px 8px;
+      /* background: var(--neutral-surface-layer-03); */
+    }
+
+    .nav-item:hover {
+      border: 1px solid var(--brand-border-primary-default);
+      cursor: pointer;
+      color: var(--brand-text-primary-default);
+    }
+  }
+
+  /* .tab-content { */
+  /* border-top: 1px solid var(--neutral-border-strong); */
+  /* } */
+  .search-bar {
+    width: 280px;
+    margin-left: 15px;
+  }
+
+  .search-icon-postion {
+    color: var(--neutral-text-subtle-least);
+    z-index: 6;
+    position: absolute;
+    margin-left: 13px;
+    margin-top: 8px;
+  }
+
+  .mb-14 {
+    margin-bottom: 14px;
+  }
+
+  .h-70 {
+    height: 70px;
+  }
+
+  .mb-5 {
+    margin-bottom: 5px;
+  }
+
+  .lh-18 {
+    line-height: 18px;
+  }
+
+  .w-238 {
+    width: 238px;
+  }
+
+  .pad-left-search {
+    position: absolute;
+    padding-left: 40px;
+    margin-left: -3px;
+    border-radius: 5px;
+  }
+
+  .flex-space {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mt-50 {
+    margin-top: 50px;
+  }
+
+  .drop1 {
+    margin-top: 24px;
+  }
+
+  .selectall {
+    margin-left: 30px;
+    line-height: 0px;
+  }
+
+  .clearall {
+    margin-right: 30px;
+    line-height: 0px;
+  }
+}
+
+.deposit_histoy_tabs {
+  .nav-tabs {
+    border-bottom: none;
+    font-weight: var(--font-medium);
+    font-size: var(--fs-14);
+    padding-top: 8px;
+    padding-bottom: 1.25rem;
+
+    .nav-link {
+      border: 1px solid var(--neutral-border-strong);
+      border-radius: 20px;
+      margin-right: 1.25rem;
+      padding: 4px 8px;
+      margin-bottom: 1rem;
+
+      &.active {
+        margin-bottom: 1rem;
+        font-weight: 500;
+        border: 1px solid var(--brand-border-primary-default);
+        color: var(--brand-text-primary-default);
+        background-color: color-mix(
+          in srgb,
+          var(--brand-background-primary-strong) 10%,
+          transparent
+        );
+        padding: 4px 8px;
+      }
+
+      &:hover {
+        border: 1px solid var(--brand-border-primary-default);
+        color: var(--brand-text-primary-default);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .tab-content {
+    border-top: 1px solid var(--neutral-border-strong);
+  }
+
+  .search-bar {
+    width: 280px;
+    margin-left: 15px;
+  }
+
+  .search-icon-color {
+    color: var(--neutral-text-subtle-least);
+  }
+
+  .search-icon-postion {
+    color: var(--neutral-text-subtle-least);
+    z-index: 6;
+    position: absolute;
+    margin-left: 13px;
+    margin-top: 8px;
+  }
+
+  .mb-14 {
+    margin-bottom: 14px;
+  }
+
+  .h-70 {
+    height: 70px;
+  }
+
+  .mb-5 {
+    margin-bottom: 5px;
+  }
+
+  .lh-18 {
+    line-height: 18px;
+  }
+
+  .w-238 {
+    width: 238px;
+  }
+
+  .pad-left-search {
+    position: absolute;
+    padding-left: 40px;
+    margin-left: -3px;
+    border-radius: 5px;
+  }
+
+  .flex-space {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mt-50 {
+    margin-top: 50px;
+  }
+
+  .drop1 {
+    margin-top: 24px;
+  }
+
+  .selectall {
+    margin-left: 30px;
+    line-height: 0px;
+  }
+
+  .clearall {
+    margin-right: 30px;
+    line-height: 0px;
+  }
+}
+
+.cspl-table {
+  .column-deferrals-source {
+    width: 25%;
+  }
+
+  .column-miniumDeferral {
+    width: 25%;
+  }
+
+  .column-maximumDeferral {
+    width: 25%;
+  }
+
+  .column-deferrals {
+    width: 25%;
+  }
+
+  .column-loanId {
+    width: 25%;
+  }
+
+  .column-outstandingLoanAmount {
+    width: 25%;
+  }
+
+  .column-periodicPaymentAmount {
+    width: 25%;
+  }
+
+  .column-loanStatus {
+    width: 25%;
+  }
+}
+
+.fileInfoUserRole {
+  width: fit-content;
+  background: var(--neutral-surface-layer-03);
+  border-radius: 23px;
+  padding: 3px 6px;
+  font-size: var(--fs-12);
+  font-weight: 500;
+}
+
+.eligibility-title {
+  /* background-color: var(--semantics-critical-background-strong); */
+  .table-head-cell {
+    padding-left: 0.5rem;
+  }
+}
+
+.eligibility-override {
+  .table-head {
+    height: 100px;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+    padding: 0.5rem;
+  }
+
+  .table-cell {
+    padding: 0.5rem;
+    margin-left: 0.5%;
+  }
+
+  .width-10 {
+    width: 11%;
+    min-width: 11%;
+    max-width: 11%;
+
+    .form-control {
+      width: 10%;
+    }
+  }
+
+  .table-body {
+    .accordion-wrap {
+      .accordion-header {
+        padding: 1rem 0rem;
+      }
+    }
+  }
+}
+
+.eligibiliy-slider-table {
+  /* font-size: var( --fs-14); */
+  /* .table-cell { */
+  /* padding-left: 1rem; */
+  /* } */
+
+  .parent-row {
+    cursor: pointer;
+
+    &.open,
+    &.open + .table-row {
+      background-color: var(--neutral-surface-layer-02);
+    }
+  }
+  .eligibiliy-slider-table1 {
+    .column-accordion-icon {
+      width: 2.5%;
+    }
+
+    .column-eligibilityStatus {
+      width: 10%;
+    }
+
+    .column-eligibilityRequirementMetDate {
+      width: 20%;
+    }
+
+    .column-entryDate {
+      width: 12.5%;
+    }
+
+    .column-eligibilityRunDate {
+      width: 15%;
+    }
+
+    .column-anchorEligibility {
+      width: 12.5%;
+    }
+
+    .column-effectiveStartDate {
+      width: 12.5%;
+    }
+
+    .column-effectiveEndDate {
+      width: 12.5%;
+    }
+  }
+
+  .accordion-child {
+    .accordion-row {
+      padding: 0;
+
+      .accordion-content {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+
+        .accordion-field {
+          display: flex;
+          flex-direction: column;
+
+          &:first-child {
+            width: 10%; // Aligns with eligibility status column (w-10)
+          }
+
+          &:nth-child(2) {
+            width: 20%; // Aligns with requirement met date column (w-20)
+          }
+
+          &:nth-child(3) {
+            width: 12.5%; // Aligns with entry date column (w-12_5)
+          }
+
+          &:nth-child(4) {
+            width: 15%; // Aligns with eligibility run date column (w-15)
+          }
+
+          &:nth-child(5) {
+            width: 12.5%; // Aligns with anchor eligibility column (w-12_5)
+          }
+
+          &:nth-child(6) {
+            width: 12.5%; // Aligns with effective start date column (w-12_5)
+          }
+
+          &:nth-child(7) {
+            width: 12.5%; // Aligns with effective end date column (w-12_5)
+          }
+        }
+      }
+    }
+  }
+
+  .column-accordion-icon {
+    /* width: 1%; */
+    size: 1rem;
+  }
+
+  .column-accordion-eligiblityStatus {
+    width: 15%;
+  }
+
+  .column-accordion-eligibilityRequirementMetDate {
+    width: 18%;
+  }
+
+  .column-accordion-entryDate {
+    width: 11%;
+  }
+
+  .column-accordion-eligibilityRunDate {
+    width: 13%;
+  }
+
+  .column-accordion-anchorEligibility {
+    width: 12%;
+  }
+
+  .column-accordion-effectiveStartDate {
+    width: 15%;
+  }
+
+  .column-accordion-effectiveEndDate {
+    width: 15%;
+  }
+}
+
+.contributions-table {
+  .column-payDate {
+    width: 10%;
+  }
+
+  .column-contributionAmount {
+    width: 18%;
+    justify-content: flex-end;
+  }
+
+  .column-comments {
+    margin-right: 3rem;
+    width: 20%;
+  }
+
+  .column-updatedBy {
+    width: 18%;
+  }
+
+  .column-uploadedThrough {
+    width: 17%;
+  }
+}
+
+.add-contributions-table {
+  .column-contribution-source {
+    width: 30%;
+    min-width: 0;
+
+    > div {
+      min-width: 0;
+      width: 100%;
+    }
+  }
+
+  .column-contribution-perc {
+    width: 30%;
+  }
+
+  .column-eligible-contributions {
+    width: 40%;
+  }
+
+  .form-group.md .form-control,
+  .form-group .dropSide-popup .md .form-control {
+    width: 10em;
+  }
+}
+
+.eligibility-override-table {
+  .table-head-cell {
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+    padding-left: 0.5rem;
+  }
+
+  .table-cell {
+    padding-left: 0.5rem;
+  }
+
+  .column-sourceName {
+    width: 10%;
+    padding-bottom: 1.5rem;
+  }
+
+  .column-eligibilityRequirementMetDate {
+    width: 15%;
+  }
+
+  .column-eligibilityStatus {
+    width: 9%;
+    margin-left: 11px;
+    padding-bottom: 1.5rem;
+  }
+
+  .column-entryDate {
+    width: 13%;
+  }
+
+  .column-anchorEligibility {
+    width: 10%;
+    margin-left: 16px;
+    padding-bottom: 15px;
+  }
+
+  .column-payrollBasedEligibility {
+    width: 8%;
+    margin-left: 8px;
+    padding-bottom: 1.5rem;
+  }
+
+  .column-eligibilityBasis {
+    width: 10%;
+  }
+
+  .column-eligibilityHistory {
+    width: 9%;
+    padding-left: 2%;
+    padding-bottom: 14px;
+  }
+
+  .column-computationPeriod {
+    width: 11%;
+    padding-bottom: 14px;
+  }
+}
+
+.slider-content {
+  font-size: var(--fs-14);
+
+  .header-details {
+    .label {
+      z-index: index inherit;
+    }
+
+    .value {
+      font-weight: 500;
+      color: var(--neutral-text-default);
+    }
+  }
+}
+@media screen and (min-width: 1368px) {
+  .employee-eligibility-requirement-date-override {
+    .form-group {
+      .form-control {
+        min-width: 130px;
+        width: auto;
+      }
+    }
+  }
+}
+.computation-period {
+  .table-head-cell {
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+    padding-left: 0.5rem;
+    flex: 1 1 20%;
+  }
+
+  .table-cell {
+    padding-left: 0.5rem;
+  }
+
+  .column-computationPeriodStartDate {
+    width: 25%;
+  }
+
+  .column-computationPeriodEndDate {
+    width: 25%;
+    justify-content: flex-start;
+  }
+
+  .column-computationPeriodHours {
+    width: 25%;
+    justify-content: flex-start;
+  }
+
+  .column-computationPeriodType {
+    width: 25%;
+    justify-content: flex-start;
+  }
+}
+
+.mw-450 {
+  max-width: 450px;
+}
+
+.mw-810 {
+  max-width: 810px;
+}
+
+.history-eligibility-scroll {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.slidercrossicon {
+  font-size: var(--fs-20);
+  line-height: 20px;
+  color: var(--neutral-text-default);
+  width: auto;
+}
+
+.primary-border-top-color {
+  border-top: 3px solid var(--brand-border-primary-default);
+}
+
+.primary-border-bottom-color {
+  border-bottom: 4px solid var(--brand-border-primary-default);
+}
+
+.error-border-top-color {
+  border-top: 3px solid var(--semantics-critical-border);
+}
+
+.place-holder-border-top-color {
+  border-top: 3px solid var(--neutral-border-strong);
+}
+
+@media screen and (max-width: 1368px) {
+  .eligibility-override {
+    .table-head-cell {
+      font-size: var(--fs-13);
+    }
+  }
+
+  .cspl-table.deposit-history-compensation
+    .table-head-cell
+    .core-body-text-regular-medium-s {
+    font-size: var(--fs-13);
+  }
+
+  .btn {
+    &.allocate-fund-btn {
+      font-size: var(--fs-10);
+    }
+
+    &.confirm-fund-btn {
+      font-size: var(--fs-10);
+    }
+  }
+}
+
+.no-records-found {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: var(--fs-14);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: var(--fs-16);
+  color: var(--neutral-text-default);
+}
+
+.deferrals-container {
+  .nav-tabs .nav-link {
+    border: none;
+
+    &.active {
+      font-weight: 500;
+      border-bottom: 3px solid var(--brand-border-primary-default);
+    }
+  }
+
+  .view-changes-link {
+    color: var(--brand-text-primary-default);
+    cursor: pointer;
+    width: fit-content;
+  }
+}
+.custom-wrapper.px-0 {
+  padding-left: 0;
+  padding-right: 0;
+}

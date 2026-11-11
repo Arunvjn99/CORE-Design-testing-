@@ -1,0 +1,47 @@
+@use "../shared/shared-placeholders" as *;
+
+.mapper-profile {
+  @extend %LightGrayBorderRounded;
+}
+
+.mapper-profile .my-flex {
+  @extend %FlexRowBetweenCenter;
+}
+
+.mapper-profile p,
+.mapper-profile h6 {
+  margin: 0;
+}
+
+.mapper-profile .header {
+  background-color: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 10%,
+    transparent
+  );
+}
+
+.mapper-profile .light-text {
+  @extend %DisabledTextRegular;
+}
+
+.mapper-profile .card {
+  @extend %LightGrayBackgroundNoBorder;
+}
+
+.mapper-profile .card-heading {
+  border-bottom: 2px dashed var(--neutral-border-strong);
+}
+
+.mapper-profile .card-heading h5 {
+  @extend %TitleWithRightMargin;
+  /* margin-bottom: 0; */
+}
+
+.mapper-profile .card-data div:not(:last-child) {
+  @extend %RightVerticalDivider;
+}
+
+#fromDate.txnsummarydrp .dropSide {
+  width: 135px;
+}

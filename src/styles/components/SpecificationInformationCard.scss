@@ -1,0 +1,154 @@
+@use "../shared/shared-placeholders" as *;
+.calculation-container-fee {
+  .slider-content {
+    height: auto;
+  }
+
+  .cardDetails {
+    @extend %ListItemContainerBordered;
+  }
+  .width-33 {
+    width: 33%;
+  }
+  .width-38 {
+    width: 38%;
+  }
+  .nameDetails {
+    width: 28%;
+    padding-left: 18px;
+  }
+  .descDetails {
+    width: 30%;
+    padding-left: 14px;
+  }
+  .feesType {
+    width: 15%;
+  }
+  .alloctype {
+    width: 14%;
+  }
+
+  .nameColor {
+    color: var(--brand-text-primary-default);
+  }
+
+  .descriptionText {
+    white-space: nowrap;
+    width: 25%;
+  }
+
+  .sortUp {
+    margin-right: -6.4px;
+    margin-bottom: 3px;
+  }
+
+  .displayCard {
+    @extend %GrayBackgroundBlackBorder65Percent;
+  }
+
+  .investmentCard {
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 5px;
+    width: 350px;
+    height: 123px;
+  }
+
+  .invalid-feedback-error {
+    @extend %ErrorMessageSmallRed;
+  }
+
+  .tieredParticipantCard {
+    border: 1px solid var(--neutral-border-strong);
+    height: auto;
+    width: 97%;
+    border-radius: 5px;
+  }
+
+  .removeIcon {
+    color: var(--brand-text-primary-default);
+  }
+
+  .removeText {
+    margin-left: 1%;
+    color: var(--brand-text-primary-default);
+  }
+
+  .partcipantBalanceCard {
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    border: 1px solid var(--neutral-border-strong);
+    margin-top: 10px;
+    background-color: var(--neutral-surface-layer-01);
+    .width-8 {
+      width: 8%;
+    }
+    .width-41 {
+      width: 41%;
+    }
+  }
+
+  .errorMessage {
+    color: var(--semantics-critical-text);
+    margin-top: -67px;
+  }
+
+  .error-message-spec {
+    @extend %ErrorMessageSmallRed;
+  }
+
+  .cusip-type {
+    font-size: var(--fs-12);
+    font-weight: 500px;
+    margin-left: -70px;
+  }
+
+  .investment-type {
+    font-size: var(--fs-12);
+    font-weight: 500px;
+    margin-left: 5px;
+  }
+
+  .searchFilter {
+    .form-control-seach-text input {
+      border-radius: 5px;
+      width: 220%;
+      margin-top: 27px;
+      margin-left: -124px;
+      padding-left: 24px;
+    }
+  }
+
+  .investment-slider-search {
+    display: flex;
+    border: 1px solid var(--neutral-border-strong);
+    padding-left: 0.375rem;
+    background-color: var(--neutral-surface-layer-01);
+    border-radius: 0.3rem;
+    .form-control {
+      border: none;
+      box-shadow: none;
+    }
+    .search-icon-postion-fee {
+      color: var(--neutral-text-subtle-least);
+      z-index: 6;
+      margin-left: 13px;
+      margin-top: 8px;
+    }
+  }
+  .img-hw {
+    height: 300px;
+    weight: 300px;
+  }
+}
+
+.addDisplayCard {
+  @extend %GrayBackgroundBlackBorder65Percent;
+}
+
+@media (max-width: 1024px) {
+  .feespec-table {
+    min-height: 400px;
+  }
+}

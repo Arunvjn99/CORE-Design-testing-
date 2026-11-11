@@ -1,0 +1,437 @@
+/* .cspl-table { */
+/* .column-account-number { */
+/* width: 30%; */
+/* } */
+/* .column-routing-number { */
+/* width: 30%; */
+/* } */
+/* .column-account-type { */
+/* width: 15%; */
+/* } */
+/* .column-account-status { */
+/* width: 12%; */
+/* } */
+/* .column-default-account { */
+/* width: 13%; */
+/* } */
+/* } */
+
+.planCashAccountDetailsBox {
+  background-color: var(--neutral-surface-layer-01);
+  min-height: 232px;
+  height: auto;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 20px;
+  cursor: pointer;
+
+  .column-plan-name {
+    width: 20%;
+  }
+
+  .column-plan-id {
+    width: 20%;
+  }
+
+  .column-employee {
+    width: 25%;
+  }
+
+  .column-total-funding {
+    width: 20%;
+  }
+
+  .column-source-details {
+    width: 15%;
+  }
+}
+
+.planCashAccountDetailsBox1 {
+  background-color: var(--neutral-surface-layer-01);
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.accountgrid {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-gap: 20px;
+}
+
+.planCashAccountHeader {
+  margin: 10px;
+  color: var(--neutral-text-default);
+  font-style: normal;
+  font-size: var(--fs-16);
+  line-height: 20px;
+}
+
+.toggleIcon {
+  line-height: 50px;
+  vertical-align: middle;
+  font-size: var(--fs-30);
+  margin-left: 10px;
+  margin-top: 1px;
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.planCashAccountTableHeader {
+  margin-top: 15px;
+  width: 20%;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 25px;
+  margin-bottom: 0px;
+  /* font-weight: 600; */
+  font-size: var(--fs-15);
+  line-height: 20px;
+  /* letter-spacing: 0.02em; */
+  /* color: var(--neutral-text-subtle); */
+}
+
+.planCashAccountDetailsCard {
+  border: 1px solid var(--neutral-border-strong);
+  height: 55px;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: var(--neutral-surface-layer-01);
+  font-size: var(--fs-15);
+}
+.planCashAccountDetailsCard2 {
+  border: 1px solid var(--neutral-border-strong);
+  /* height: 55px; */
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: var(--neutral-surface-layer-01);
+  font-size: var(--fs-15);
+}
+
+.planCashAccountDetailsCardData {
+  width: 20%;
+  /* padding-top: 5px; */
+  padding-right: 20px;
+  padding-left: 19px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  /* //font-weight: 500; */
+  /* //font-size: var(--fs-16); */
+  /* line-height: 24px; */
+  color: var(--neutral-text-default);
+}
+
+.ACHDebitAccountTableHeader {
+  margin-top: 15px;
+  width: 25%;
+  padding-top: 0px;
+  padding-right: 20px;
+  /* padding-left: 5px; */
+  margin-bottom: 0px;
+  /* font-weight: 600; */
+  /* font-size: var(--fs-16); */
+  line-height: 20px;
+  /* letter-spacing: 0.02em; */
+  /* color: var(--neutral-text-subtle); */
+  white-space: nowrap;
+  /* margin-left: 4px; */
+}
+
+.ACHDebitCard {
+  border: 1px solid var(--neutral-border-strong);
+  margin-top: 10px;
+  background-color: var(--neutral-surface-layer-01);
+  display: grid;
+  cursor: pointer;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+.sponsorAccountCard {
+  border: 1px solid var(--neutral-border-strong);
+  margin-right: 10px;
+  background: linear-gradient(
+      0deg,
+      color-mix(
+        in srgb,
+        var(--brand-background-primary-strong) 5%,
+        transparent
+      ),
+      color-mix(in srgb, var(--brand-background-primary-strong) 5%, transparent)
+    ),
+    var(--neutral-surface-layer-01);
+  text-decoration: underline;
+  align-self: center;
+}
+
+.activeButton {
+  /* border: 1px solid none; */
+  /* border-radius: 30px; */
+  /* //color: var(--semantics-success-text); */
+  /* width: 81px; */
+  /* text-align: center; */
+  /* //justify-content: center; */
+  /* padding: 5px; */
+  /* height: 30px; */
+  /* margin-right: 20px; */
+  /* margin-bottom: 10px; */
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.default-badge {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* .cancelButton:hover{ */
+/* pointer-events: none; */
+/* } */
+
+/* .cancelButton:focus { */
+/* outline: none; */
+/* } */
+
+.badgeIconText {
+  font-weight: 500;
+  font-size: var(--fs-12);
+  line-height: 16px;
+  color: var(--brand-text-primary-default);
+  margin-left: 2px;
+}
+
+.ACHBox {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+}
+
+.sponsorAccountCard {
+  height: 54px;
+  border: 1px solid var(--neutral-border-strong);
+  margin-left: 0px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  color: var(--brand-text-primary-default);
+}
+
+.achDiv {
+  white-space: nowrap;
+  margin-bottom: 2rem;
+}
+
+.headerArea {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 15px;
+}
+
+.labelArea {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 8px; */
+  margin-top: 5px;
+  margin-right: 8px;
+}
+
+.sortUpAndDownicon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sortUpIcon {
+  cursor: pointer;
+  position: absolute;
+}
+
+.accountgridf {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--neutral-surface-layer-01);
+  border: 1px solid var(--neutral-border-strong);
+  box-shadow: var(--elevation-01);
+}
+
+.funding-header {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: var(--fs-18);
+  margin-bottom: 8px;
+}
+
+.info-icon {
+  margin-left: 8px;
+  color: var(--neutral-text-subtle-least);
+}
+
+.toggle-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 8px;
+}
+
+.toggle-boxx {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 160px; */
+  padding: 0.625rem;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  /* background: var(--neutral-surface-layer-02); */
+  font-size: var(--fs-14);
+  font-weight: 500;
+}
+
+.toggle-red {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.625rem;
+  border: 1px solid var(--semantics-critical-border);
+  border-radius: 8px;
+  font-size: var(--fs-14);
+  font-weight: 500;
+}
+
+.toggle-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  font-size: var(--fs-14);
+  font-weight: 500;
+  width: auto;
+  text-align: center;
+}
+
+.toggle-box-with-checkbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  font-size: var(--fs-14);
+  font-weight: 500;
+  width: auto;
+  text-align: center;
+}
+
+.priority-toggle-box {
+  width: fit-content;
+  padding: 8px;
+  border-radius: 0px 0px 8px 8px;
+  background: var(--brand-background-primary-light);
+}
+.priority-toggle-text {
+  margin-left: 8px;
+  margin-bottom: 0;
+  // font-family: "Open Sans";
+  font-size: var(--fs-14);
+  font-weight: 500;
+}
+
+.toggle-button {
+  width: 30px;
+  // cursor: pointer;
+}
+
+.toggle-button-disabled {
+  width: 30px;
+}
+
+.error-message {
+  background: var(--semantics-critical-background-light);
+  color: var(--semantics-critical-text);
+  display: flex;
+  align-items: center;
+  /* border: 1px solid var(--semantics-critical-border); */
+}
+
+.error-messagebody span {
+  margin-left: 4px;
+}
+
+/* .toggle-container { */
+/* display: flex; */
+/* flex-wrap: wrap; */
+/* gap: 20px; */
+/* margin-bottom: 0; */
+
+/* } */
+
+.toggle-container {
+  display: flex;
+  justify-content: space-between; /* Ensures equal spacing */
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  width: 100%; /* Ensures it takes full width */
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+  background-color: var(--semantics-critical-background-light);
+  color: var(--semantics-critical-text);
+  /* border: 1px solid var(--semantics-critical-border); */
+  padding: 10px 15px;
+  font-weight: 500;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  border-radius: 0 0 5px 5px;
+}
+
+.error-iconn {
+  margin-right: 8px;
+  font-size: var(--fs-13);
+  color: var(--semantics-critical-text);
+}
+
+.error-icon {
+  margin-right: 8px;
+  font-size: var(--fs-16);
+  color: var(--semantics-critical-text);
+}
+
+.accountgridf {
+  position: relative;
+}
+
+.error-text {
+  font-size: var(--fs-12);
+  padding-top: 5px;
+}
+
+.borderHeight {
+  margin: 20px 5px;
+}
+
+.mainDiv {
+  margin-bottom: 15px;
+}

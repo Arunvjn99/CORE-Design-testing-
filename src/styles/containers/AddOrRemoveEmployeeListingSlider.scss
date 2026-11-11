@@ -1,0 +1,179 @@
+@use "../shared/shared-placeholders" as *;
+
+.addOrRemoveEmployeeListing {
+  position: relative;
+  bottom: 15px;
+
+  .displayDirection {
+    display: flex;
+  }
+
+  .form-group.md .form-control,
+  .form-group .dropSide-popup .md .form-control {
+    width: 300px;
+  }
+
+  .loaderWrapperScroll {
+    overflow: hidden;
+  }
+
+  .bb-2 {
+    position: relative;
+    bottom: 30px;
+    border-bottom: 1px solid var(--neutral-border-strong);
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .filterArea {
+    width: 320px;
+    background: var(--neutral-surface-layer-02);
+    border: 1px solid var(--neutral-border-strong);
+    height: 88vh;
+    position: relative;
+    bottom: 0px;
+  }
+
+  .filterHorizontalLine {
+    margin-left: 10px;
+    background-color: var(--neutral-surface-high-contrast);
+    width: 280px;
+    position: relative;
+    bottom: 14px;
+    border-bottom: 1px solid var(--neutral-border-strong);
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .tableColumnHeight {
+    height: "60px";
+  }
+
+  .oddEven:nth-child(odd) {
+    background-color: var(--neutral-surface-layer-01);
+  }
+
+  .oddEven:nth-child(odd):hover {
+    background-color: var(--neutral-surface-layer-01);
+  }
+
+  .oddEven:nth-child(even) {
+    background-color: var(--neutral-surface-layer-03);
+  }
+
+  .oddEven:nth-child(even):hover {
+    background-color: var(--neutral-surface-layer-03);
+  }
+
+  /* .tableValueWidth { */
+  /* width: 25%; */
+  /* } */
+
+  .tableHeaderWidth {
+    width: 30%;
+  }
+
+  .employmentStatus {
+    height: 35px;
+    /* width: 58px ; */
+    border-radius: 8px;
+    padding: 5px 10px 10px 10px;
+  }
+
+  .employmentStatusActive {
+    background: var(--semantics-success-background-light);
+    color: var(--semantics-success-text);
+    width: 58px;
+  }
+
+  .employmentStatusLeave {
+    background: var(--semantics-warning-background-light);
+    color: var(--semantics-warning-text);
+    width: 58px;
+  }
+
+  .employmentStatusTerminated {
+    background: var(--semantics-critical-background-light);
+    color: var(--semantics-critical-text);
+    width: 100px;
+  }
+
+  .employmentStatusOther {
+    background: var(--semantics-warning-background-light);
+    color: var(--semantics-warning-text);
+    width: 112px;
+    white-space: nowrap;
+  }
+
+  .employmentStatusOtherNormal {
+    background: var(--semantics-warning-background-light);
+    color: var(--semantics-warning-text);
+    width: 90px;
+    white-space: nowrap;
+  }
+
+  .employeeNameWidth {
+    width: 25%;
+  }
+
+  .employeeId {
+    width: 25%;
+  }
+
+  .payrollFrequency {
+    width: 25%;
+  }
+
+  .employmentStatus {
+    width: 25%;
+  }
+
+  .ssnText {
+    color: var(--neutral-text-subtle-least);
+  }
+
+  .empNameAndssn {
+    @extend %FlexColumn;
+  }
+
+  .tableRowBackground {
+    background-color: var(--neutral-surface-layer-02);
+  }
+
+  .resetButton {
+    color: var(--brand-text-primary-default);
+    text-decoration: none;
+  }
+
+  .resetButton:hover {
+    text-decoration: none;
+  }
+
+  .recordCount {
+    position: relative;
+    bottom: 10px;
+  }
+
+  .labelColor {
+    color: var(--neutral-text-subtle);
+  }
+}
+
+.payrollEmployeeTableBody {
+  .tableColumnHeight {
+    .empNameAndssn {
+      @extend %FlexColumn;
+    }
+  }
+  .even-row {
+    background-color: var(--neutral-surface-layer-02);
+  }
+
+  .odd-row {
+    background-color: var(--neutral-surface-layer-01);
+
+    &:hover {
+      background-color: var(--neutral-surface-layer-02);
+    }
+  }
+}

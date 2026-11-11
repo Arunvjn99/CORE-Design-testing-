@@ -1,0 +1,11 @@
+.functionCard {
+  min-width: 567px;
+  width: fit-content;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+
+  .delete-icon {
+    color: var(--semantics-critical-text);
+    align-items: center;
+  }
+}

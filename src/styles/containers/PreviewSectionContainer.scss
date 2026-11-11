@@ -1,0 +1,296 @@
+.preview-container {
+  background-color: var(--neutral-surface-layer-02);
+  width: 100%;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+}
+
+.preview-cardfilter {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  padding: 0px 15px;
+  width: 75%;
+  height: 60%;
+  background-color: var(--neutral-surface-layer-01);
+}
+
+.preview-container1 {
+  margin-left: -76px;
+  width: 69%;
+  background-color: var(--semantics-critical-background-strong);
+}
+
+.active-dot {
+  color: var(--semantics-success-text);
+  position: relative;
+  bottom: 5px;
+  left: 2px;
+}
+
+.preview-card {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  padding: 15px 15px;
+  background-color: var(--neutral-surface-layer-01);
+}
+
+.preview-card1 {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 35%;
+  background-color: var(--neutral-surface-layer-01);
+  margin-left: 2.5rem;
+}
+
+.preview-card-flair {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 50%;
+  background-color: var(--neutral-surface-layer-01);
+}
+
+.vertical-line {
+  margin-left: 35px;
+  border-left: 1px solid var(--neutral-border-strong);
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+
+.previewbackground {
+  width: 102%;
+  /* height: 96px; */
+  background-color: var(--neutral-surface-layer-02);
+  margin-left: -13px;
+  margin-top: 8px;
+}
+
+.previewbackgroundForFixedWidth {
+  width: 102%;
+  background-color: var(--neutral-surface-layer-02);
+  margin-left: -13px;
+  margin-top: 8.5%;
+}
+
+.previewText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-18);
+  line-height: 27px;
+  padding-left: 40px;
+  padding-top: 33px;
+}
+
+.previewBox {
+  margin-top: -3.5rem;
+  margin-left: 150px;
+  /* width: 1500px; */
+  width: 2105px;
+  height: 56px;
+  background: var(--neutral-surface-layer-01);
+  border: 1px solid var(--neutral-border-strong);
+  box-shadow: var(--elevation-01);
+  border-radius: 5px;
+}
+
+.previewLabel {
+  font-style: "normal";
+  font-weight: 500;
+  font-size: "var(--fs-12)";
+  line-height: "16px";
+  color: var(--neutral-text-default);
+  padding-left: "20px";
+  padding-top: "17px";
+}
+
+.previewValue {
+  font-style: "normal";
+  font-weight: 500;
+  font-size: var(--fs-12);
+  line-height: 16px;
+  color: var(--neutral-text-default);
+  margin-left: 12rem;
+  margin-top: -30px;
+}
+
+.viewMorePreviewBox {
+  box-sizing: "border-box";
+  position: "absolute";
+  width: 864px;
+  height: 135px;
+  background: var(--neutral-surface-layer-01);
+  border: 1px solid var(--neutral-border-strong);
+  box-shadow: var(--elevation-01);
+  border-radius: "5px";
+}
+
+.headerExpression {
+  margin-right: -10px;
+  margin-left: 32%;
+  margin-top: -90px;
+  font-style: "normal";
+  font-weight: 500;
+  font-size: var(--fs-12);
+  line-height: 16px;
+  /* font-family: "Poppins"; */
+  color: var(--neutral-text-default);
+}
+
+.headerExpressionForFieldWidth {
+  margin-right: -10px;
+  margin-left: 50%;
+  margin-top: -90px;
+  font-style: "normal";
+  font-weight: 500;
+  font-size: var(--fs-12);
+  line-height: 16px;
+  /* font-family: "Poppins"; */
+  color: var(--neutral-text-default);
+}
+
+.valueExpressionForFieldWidth {
+  margin-right: -10px;
+  margin-left: 50%;
+  margin-top: -10px;
+  font-style: "normal";
+  font-weight: 500;
+  font-size: var(--fs-12);
+  line-height: 16px;
+  /* font-family: "Poppins"; */
+  color: var(--neutral-text-default);
+}
+
+#hover-content {
+  display: none;
+  /* border:1px solid var(--brand-border-primary-default); */
+}
+
+#parent:hover #hover-content {
+  display: block;
+}
+
+.previewbackgroundForFilter {
+  background-color: var(--neutral-surface-layer-02);
+  height: 100px;
+  width: 100%;
+  margin-right: 65x;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* margin-bottom: 10px; */
+  /* margin-left: -76px; */
+}
+
+.flag {
+  position: relative;
+  width: 20px;
+  height: 50px;
+  top: -15px;
+  right: 20px;
+  margin-left: 19px;
+  bottom: 20px;
+  transform: rotate(90deg);
+  overflow: hidden;
+  border-top: 1px solid var(--semantics-success-border);
+}
+
+.flag:before,
+.flag:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+  border: 1px solid var(--semantics-success-border);
+  box-sizing: border-box;
+}
+
+.flag:before {
+  left: 0;
+  transform-origin: 0 0;
+  transform: skewY(-20deg);
+  border-width: 0 0 1px 1px;
+}
+
+.flag:after {
+  right: 0;
+  transform-origin: 100% 0;
+  transform: skewY(20deg);
+  border-width: 0 1px 1px 0;
+}
+
+#flagTextForViewMore {
+  padding-bottom: 30px;
+  padding-right: 43px;
+  padding-left: 10px;
+  transform: rotate(-90deg);
+  text-align: center;
+  font-size: var(--fs-8);
+}
+
+.flagFixedWidth {
+  margin-left: 20px;
+  position: relative;
+  width: 40px;
+  height: 80px;
+  transform: rotate(90deg);
+  overflow: hidden;
+  border-top: 1px solid var(--semantics-success-border);
+}
+
+.flagFixedWidth:before,
+.flagFixedWidth:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+  border: 1px solid var(--semantics-success-border);
+  box-sizing: border-box;
+}
+
+.flagFixedWidth:before {
+  left: 0;
+  transform-origin: 0 0;
+  transform: skewY(-20deg);
+  border-width: 0 0 1px 1px;
+}
+
+.flagFixedWidth:after {
+  right: 0;
+  transform-origin: 100% 0;
+  transform: skewY(20deg);
+  border-width: 0 1px 1px 0;
+}
+
+#flagText {
+  padding-bottom: 30px;
+  padding-right: 67px;
+  transform: rotate(-90deg);
+  text-align: center;
+  font-size: var(--fs-9);
+}
+
+.collectionValue {
+  margin-top: 0px;
+  /* margin-left: 7%; */
+  /* font-family: "Poppins"; */
+  font-style: "normal";
+  font-weight: 400;
+  font-size: var(--fs-12);
+  line-height: 18px;
+  color: var(--neutral-text-default);
+}
+
+.collectionType {
+  /* margin-left: -150%; */
+  /* font-family: "Poppins"; */
+  font-style: "normal";
+  font-weight: 400;
+  font-size: var(--fs-12);
+  line-height: 18px;
+}

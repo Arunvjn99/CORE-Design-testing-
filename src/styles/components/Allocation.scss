@@ -1,0 +1,72 @@
+.Allocation {
+  max-width: 5000px;
+  min-width: 350px;
+  padding: 20px;
+  margin: 20px 0;
+  min-height: 500px;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  background-color: var(--neutral-surface-layer-01);
+}
+
+.AllocationDropDown {
+  button {
+    width: 100px;
+    font-size: var(--fs-12);
+    color: var(--brand-text-primary-default);
+  }
+
+  .dropdown-toggle {
+    font-size: var(--fs-14);
+    font-weight: 500;
+  }
+
+  .dropdown-item {
+    font-size: var(--fs-14);
+    font-weight: 500;
+  }
+}
+
+.allocations {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.allo-header-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 16px;
+  border-radius: 5px 5px 0px 0px;
+  background: var(--Surface-layer2, var(--neutral-surface-layer-02));
+}
+
+.allo-header {
+  color: var(--brand-text-primary-default);
+  font-size: var(--fs-18);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.allocation {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.allo-color {
+  width: 5px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.pieChartDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}

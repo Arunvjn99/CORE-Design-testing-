@@ -1,0 +1,23 @@
+.m-t-5px {
+  margin-left: 1px;
+}
+
+.p-b-25px {
+  padding-bottom: 25px;
+}
+
+.flex-v3 {
+  display: flex;
+  gap: 15px;
+}
+
+.w-100p-m-t-0p5r-relative-overflow-scroll-x {
+  margin-top: 0.5rem;
+  position: relative;
+  display: inherit;
+  width: 100%;
+  /*overflow-y: scroll;*/
+  overflow-x: scroll;
+  margin-left: 0;
+  margin-right: 0;
+}

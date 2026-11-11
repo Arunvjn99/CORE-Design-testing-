@@ -1,0 +1,85 @@
+.create-contribution-reversal-payroll-add {
+  background: var(--brand-background-primary-light);
+  border: 1px solid var(--brand-border-primary-default);
+  border-radius: 4px;
+  padding: 16px;
+  width: 400px;
+}
+
+.payroll-added-details-cr {
+  width: 950px;
+  justify-content: space-between;
+}
+.payroll-added-details-BA {
+  width: 600px;
+  justify-content: space-between;
+}
+.cr-edit-payroll-edit {
+  text-decoration: underline;
+  color: var(--brand-text-primary-default);
+  font-size: var(--fs-14);
+  cursor: pointer;
+}
+
+.added-payroll-transaction-card-details {
+  width: 950px;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: var(--neutral-surface-layer-02);
+}
+.added-payroll-transaction-card-details-BatchAdjustement {
+  width: 600px;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: var(--neutral-surface-layer-02);
+}
+.listing-headers-url-cr {
+  color: var(--brand-text-primary-default);
+  text-decoration: underline;
+  font-size: var(--fs-16);
+  cursor: pointer;
+}
+
+.create-contribution-reversal-slider-panel {
+  .slider-button-group {
+    .slider-save-button {
+      margin: 0.5rem;
+      margin-left: -0.5rem;
+    }
+  }
+}
+
+.awaiting-trade-settlement-reversal-style {
+  .icon-size {
+    font-size: var(--fs-8);
+  }
+
+  font-size: var(--fs-14);
+  color: var(--semantics-warning-text);
+}
+.trade-cancelled-reversal-style {
+  .icon-size {
+    font-size: var(--fs-8);
+  }
+
+  font-size: var(--fs-14);
+  color: var(--semantics-critical-text);
+}
+
+.completed-reversal-style {
+  .icon-size {
+    font-size: var(--fs-8);
+  }
+
+  font-size: var(--fs-14);
+  color: var(--semantics-success-text);
+}
+
+.failed-reversal-style {
+  .icon-size {
+    font-size: var(--fs-8);
+  }
+
+  font-size: var(--fs-14);
+  color: var(--semantics-critical-text);
+}

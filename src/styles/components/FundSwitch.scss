@@ -1,0 +1,244 @@
+@use "../shared/shared-placeholders" as *;
+
+.leftcol-2-fs {
+  padding-left: 16px;
+  height: 80vh;
+  width: 55%;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+
+.smallOption {
+  @extend %FlexRowSpaceBetween;
+}
+
+.ss-add-investments-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.125rem;
+}
+
+.small-text {
+  color: var(--neutral-text-default);
+  font-size: var(--fs-12);
+  line-height: 1.125rem;
+  font-weight: 400;
+}
+
+.marg-left-30 {
+  margin-left: 1.875rem;
+}
+
+.marg-left-13 {
+  margin-left: 13px;
+}
+
+.marg-bot-14 {
+  margin-bottom: 12px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.col1-fees {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  /* margin-right: 1.188rem; */
+  height: 80vh;
+  overflow: scroll;
+  border: 1px solid var(--neutral-border-strong);
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  padding-right: 0.8rem;
+
+  .left-header {
+    margin-bottom: 16px;
+
+    .feesPlanGroupApply {
+      color: var(--brand-text-primary-default);
+      font-size: var(--fs-14);
+      line-height: 150%;
+      border-radius: 0.313rem;
+      border: 0.063rem solid var(--brand-border-primary-default);
+      background-color: var(--neutral-surface-layer-01);
+      box-sizing: border-box;
+      width: 3.75rem;
+      padding: 0.469rem 0.625rem 0.469rem 0.625rem;
+      margin-left: 20px;
+    }
+  }
+
+  .filtersFees {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.313rem;
+    height: 41rem;
+
+    .status-Pop {
+      box-shadow: var(--elevation-01);
+      border-radius: 6px;
+      border: 1px solid var(--neutral-border-strong);
+      padding: 20px 16px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.filtersCountApplied {
+  border-top: 0.125rem solid var(--neutral-border-strong);
+  padding: 1rem 0 0 0;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.font-edit {
+  color: var(--brand-text-primary-default);
+  font-size: var(--fs-16);
+  font-weight: 600;
+  width: 10%;
+  margin-top: 2px;
+}
+
+.addedinvestmentsheader {
+  border: 0.125rem solid var(--neutral-border-strong);
+  border-radius: 8px;
+  padding: var(--spacing-16);
+}
+
+.investments-added {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.inv-body {
+  margin-left: 15px;
+}
+
+.mb-filters {
+  border-bottom: 0.125rem solid var(--neutral-border-strong);
+  margin-top: var(--spacing-16);
+  margin-bottom: var(--spacing-16);
+}
+
+.fs-investment-card {
+  align-items: center;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  background-color: var(--neutral-surface-layer-01);
+  height: fit-content;
+  width: 100%;
+
+  .card-top {
+    background: var(--neutral-surface-layer-02);
+    /* width: 363.2px; */
+    height: 35px;
+    border-radius: 8px 8px 0px 0px;
+    align-items: center;
+    padding: 8px;
+  }
+}
+
+.searchbar-fs {
+  .searchIconPostion-fee {
+    color: var(--neutral-text-subtle-least);
+    font-size: var(--fs-14);
+    z-index: 6;
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 0.4rem;
+  }
+}
+
+.fs-plan-card {
+  align-items: center;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  background-color: var(--neutral-surface-layer-01);
+  margin-bottom: 10px;
+  width: 100%;
+  height: 108px;
+
+  .card-top {
+    background: var(--neutral-surface-layer-02);
+    /* width: 363.2px; */
+    height: 35px;
+    border-radius: 8px 8px 0px 0px;
+    align-items: center;
+    padding: 8px;
+  }
+}
+
+.investments-slider-list {
+  height: 60vh;
+  overflow-y: scroll;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.selected-fs {
+  color: var(--neutral-text-default);
+  background-color: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 10%,
+    transparent
+  );
+  border-right: 3px solid var(--brand-border-primary-default);
+}
+
+.selected-fs:hover {
+  color: var(--neutral-text-default);
+  background-color: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 10%,
+    transparent
+  );
+}
+
+.menu-hover {
+  cursor: pointer;
+  color: var(--neutral-text-default);
+}
+
+.menu-hover:hover {
+  background-color: var(--neutral-surface-layer-03);
+}
+
+.menu-hover:hover .ca-menu-link {
+  /* color:  var(--neutral-text-default); */
+  text-decoration: underline;
+}
+
+.ca-menu:hover {
+  text-decoration: underline;
+}
+
+.manage-um-column {
+  .manage-company-menu {
+    .selected-fs {
+      li {
+        a {
+          color: var(--neutral-text-default);
+        }
+      }
+    }
+  }
+}
+
+.fundSwitchSummary-line {
+  margin: 0.5rem 0rem;
+  border-top: 1px solid var(--neutral-border-subtle);
+}
+
+.transaction-border {
+  border-top: 1px solid var(--neutral-border-subtle);
+  margin-left: 10px;
+  margin-top: 20px;
+}

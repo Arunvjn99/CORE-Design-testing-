@@ -1,0 +1,97 @@
+.mainratecard {
+  height: 24vh;
+  overflow-y: scroll;
+  border-radius: var(--radius-8, 8px);
+  border: 1px solid var(--neutral-border-strong);
+  align-items: center;
+  display: flex;
+}
+
+#eligibilityrate {
+  /* color: var(--neutral-text-subtle); */
+
+  /* Body Text/Large - Bold */
+  /* font-family: Open Sans; */
+  /* font-size: var(--fs-16); */
+  font-style: normal;
+  /* font-weight: 700; */
+  line-height: normal;
+  letter-spacing: 0.32px;
+  margin-bottom: 0.2rem;
+  padding: 4px;
+}
+
+#ratevalueeligibility {
+  /* color: var(--semantics-success-text); */
+
+  /* H3 */
+  /* font-family: Open Sans; */
+  /* font-size: var(--fs-24); */
+  font-style: normal;
+  /* font-weight: 600; */
+  line-height: 32px; /* 133.333% */
+  letter-spacing: 0.24px;
+  text-transform: capitalize;
+  margin-top: 16px;
+  margin-bottom: 0.2rem;
+  padding: 4px;
+}
+
+.detailsrate {
+  margin-left: 16px;
+}
+
+.iconforrateclass {
+  margin-left: 16px;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 60px;
+  background: var(--brand-background-primary-light);
+}
+
+#iconrate {
+  color: var(--brand-text-primary-default);
+  font-family: Font Awesome 6 Free;
+  font-size: var(--fs-36);
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.subeligiblecount {
+  display: flex;
+  margin-left: 5px;
+  height: 16px;
+}
+
+#subeligiblecountid {
+  /* color: var(--neutral-text-subtle); */
+
+  /* Body Text/Large - SemiBold */
+  /* font-family: Open Sans; */
+  /* font-size: var(--fs-16); */
+  font-style: normal;
+  /* font-weight: 600; */
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+
+#subeligiblecountpara {
+  /* color: var(--neutral-text-subtle-least); */
+
+  /* Body Text/Medium - Semibold */
+  /* font-family: Open Sans; */
+  /* font-size: var(--fs-14); */
+  font-style: normal;
+  /* font-weight: 600; */
+  line-height: normal;
+  margin-left: 5px;
+}
+
+#helloblank {
+  color: var(--neutral-text-on-color);
+}

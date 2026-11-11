@@ -1,0 +1,470 @@
+@use "../foundation/typography-mixins" as *;
+.cspl-table {
+  cursor: default;
+  width: 100%;
+
+  a {
+    text-decoration: underline;
+    color: var(--brand-text-primary-default);
+
+    &:hover {
+      font-weight: 500;
+    }
+  }
+  //Commented out this scrollbar style because it made the scrollbar invisible in the UI.
+  // ::-webkit-scrollbar {
+  //   width: 0px ;
+  //   border: 0px ;
+  // }
+
+  // ::-webkit-scrollbar-track {
+  //   background-color: transparent ;
+  // }
+
+  .table-head {
+    padding: var(--spacing-8) 0px;
+    background-color: var(--brand-background-primary-light);
+    width: 100%;
+    &:has(~ .table-body .table-row) {
+      padding-right: 8px;
+    }
+
+    .table-row {
+      width: 100%;
+    }
+    &.width-max {
+      width: max-content;
+    }
+  }
+  .transparent-head {
+    background-color: transparent;
+  }
+
+  .table-head-cell {
+    padding: 0px var(--spacing-8);
+    &.w-0 {
+      width: 0;
+    }
+
+    &.w-2_5 {
+      width: 2.5%;
+    }
+
+    &.w-5 {
+      width: 5%;
+    }
+    &.w-7 {
+      width: 7%;
+    }
+    &.w-10 {
+      width: 10%;
+    }
+
+    &.w-12_5 {
+      width: 12.5%;
+    }
+
+    &.w-15 {
+      width: 15%;
+    }
+
+    &.w-17_5 {
+      width: 17.5%;
+    }
+
+    &.w-20 {
+      width: 20%;
+    }
+    &.w-16 {
+      width: 16%;
+    }
+
+    &.w-22_5 {
+      width: 22.5%;
+    }
+
+    &.w-25 {
+      width: 25%;
+    }
+
+    &.w-30 {
+      width: 30%;
+    }
+
+    &.w-35 {
+      width: 35%;
+    }
+
+    &.w-40 {
+      width: 40%;
+    }
+
+    &.w-45 {
+      width: 45%;
+    }
+
+    &.w-50 {
+      width: 50%;
+    }
+
+    &.w-55 {
+      width: 55%;
+    }
+
+    &.w-60 {
+      width: 60%;
+    }
+
+    &.w-65 {
+      width: 65%;
+    }
+
+    &.w-70 {
+      width: 70%;
+    }
+
+    &.w-75 {
+      width: 75%;
+    }
+
+    &.w-80 {
+      width: 80%;
+    }
+
+    &.w-85 {
+      width: 85%;
+    }
+
+    &.w-90 {
+      width: 90%;
+    }
+
+    &.w-95 {
+      width: 95%;
+    }
+
+    &.w-100 {
+      width: 100%;
+    }
+  }
+
+  .table-cell {
+    padding: var(--spacing-8);
+    @include body-text-large-semi-bold($color: var(--neutral-text-default));
+
+    > div:has(> .core-add-tooltip-content) {
+      min-width: 0;
+    }
+
+    &.w-2_5 {
+      width: 2.5%;
+    }
+
+    &.w-5 {
+      width: 5%;
+    }
+    &.w-7 {
+      width: 7%;
+    }
+    &.w-10 {
+      width: 10%;
+    }
+
+    &.w-12_5 {
+      width: 12.5%;
+    }
+
+    &.w-15 {
+      width: 15%;
+    }
+
+    &.w-17_5 {
+      width: 17.5%;
+    }
+
+    &.w-20 {
+      width: 20%;
+    }
+
+    &.w-22_5 {
+      width: 22.5%;
+    }
+
+    &.w-25 {
+      width: 25%;
+    }
+
+    &.w-30 {
+      width: 30%;
+    }
+
+    &.w-35 {
+      width: 35%;
+    }
+
+    &.w-40 {
+      width: 40%;
+    }
+
+    &.w-45 {
+      width: 45%;
+    }
+
+    &.w-50 {
+      width: 50%;
+    }
+
+    &.w-55 {
+      width: 55%;
+    }
+
+    &.w-60 {
+      width: 60%;
+    }
+
+    &.w-65 {
+      width: 65%;
+    }
+
+    &.w-70 {
+      width: 70%;
+    }
+
+    &.w-75 {
+      width: 75%;
+    }
+
+    &.w-80 {
+      width: 80%;
+    }
+
+    &.w-85 {
+      width: 85%;
+    }
+
+    &.w-90 {
+      width: 90%;
+    }
+
+    &.w-95 {
+      width: 95%;
+    }
+
+    &.w-100 {
+      width: 100%;
+    }
+  }
+
+  .table-body {
+    .table-row {
+      &:nth-child(odd):hover {
+        background-color: var(--neutral-surface-layer-02);
+      }
+
+      &:nth-child(odd) {
+        background-color: var(--neutral-surface-layer-01);
+      }
+
+      &:nth-child(even) {
+        background-color: var(--neutral-surface-layer-02);
+      }
+    }
+    &.transparentRow {
+      .table-row {
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.table-width-50 {
+  width: 50%;
+}
+
+.table-footer-details {
+  position: sticky;
+  bottom: 0;
+}
+
+.w-76 {
+  width: 76%;
+}
+
+.table-sort-cursor {
+  cursor: pointer;
+}
+
+.scroll-data-table {
+  height: 50vh;
+  overflow-y: scroll;
+}
+.age-tier-table .table-cell {
+  align-self: flex-start;
+}
+
+.hire-date-tier-table {
+  --tier-label-height: 1.25rem;
+  --tier-label-gap: 0.5rem;
+
+  .table-cell {
+    align-self: flex-start;
+
+    .form-control-label-class {
+      height: var(--tier-label-height);
+      line-height: var(--tier-label-height);
+      margin: 0 0 var(--tier-label-gap);
+
+      &:empty {
+        display: none;
+      }
+    }
+  }
+
+  .table-row:has(.form-control-label-class:not(:empty))
+    .table-cell:not(:has(.form-control-label-class:not(:empty))) {
+    padding-top: calc(
+      var(--spacing-8) + var(--tier-label-height) + var(--tier-label-gap)
+    );
+  }
+}
+
+.loan-table {
+  .table-head-cell.w-18,
+  .table-cell.w-18 {
+    width: 18%;
+  }
+}
+
+/* .cspl-table { */
+/* width: 100%; */
+/* background: var(--neutral-surface-layer-01); */
+/* border: none; */
+/* border-radius: 5px 5px 0px 0px; */
+/* a { */
+/* text-decoration: underline; */
+/* } */
+/* .table-row, */
+/* .table-body, */
+/* .table-head { */
+/* width: 100%; */
+/* } */
+/* .table-head-cell, */
+/* .table-cell { */
+/* flex: 1 0 auto; */
+/* padding-left: 2rem; */
+/* padding-top: 0.7rem; */
+/* padding-bottom: 0.7rem; */
+/* &:last-child { */
+/* padding-right: 2rem; */
+/* } */
+/* } */
+/* .table-head { */
+/* background-color: var(--neutral-surface-layer-01) ; */
+/* color: var(--neutral-text-subtle-least); */
+/* height: 45px; */
+/* .table-head-cell { */
+/* min-height: 40px; */
+/* align-items: center; */
+/* font-weight: 500; */
+/* font-size: var(--fs-16); */
+/* &.sortable { */
+/* position: relative; */
+/* cursor: pointer; */
+/* &.asc, */
+/* &.desc { */
+/* background-color: var(--neutral-surface-layer-05); */
+/* } */
+/* &.asc::after, */
+/* &.desc::after { */
+/* position: absolute; */
+/* right: 3px; */
+/* height: 100%; */
+/* width: 20px; */
+/* background-position: center; */
+/* background-repeat: no-repeat; */
+/* content: ""; */
+/* } */
+/* &.asc::after { */
+/* background-image: url("/assets/icons/svg/sort-icon.svg"); */
+/* transform: rotate(180deg); */
+/* } */
+/* &.desc::after { */
+/* background-image: url("/assets/icons/svg/sort-icon.svg"); */
+/* } */
+/* } */
+/* } */
+/* } */
+/* .table-body { */
+/* overflow-y: auto; */
+/* overflow-x: hidden; */
+/* .table-row:nth-child(odd) { */
+/* background-color: var(--neutral-surface-layer-03); */
+/* } */
+/* .table-row:nth-child(even) { */
+/* background-color: var(--neutral-surface-layer-01); */
+/* } */
+/* .table-row { */
+/* &:hover { */
+/* background-color: var(--neutral-surface-layer-03); */
+/* } */
+/* .table-cell { */
+/* padding-top: 0.5em; */
+/* padding-bottom: 0.5em; */
+/* font-size: var(--fs-16); */
+/* @include body-text-large-medium($color: var(--neutral-text-default)); */
+/* .form-group { */
+/* margin: 0px; */
+/* } */
+/* } */
+/* } */
+/* } */
+/* a { */
+/* &:hover { */
+/* font-weight: 500; */
+/* } */
+/* color: var(--brand-text-primary-default); */
+/* } */
+/* .null-data { */
+/* font-size: var(--fs-14); */
+/* color: var(--neutral-text-subtle-least); */
+/* } */
+/* .custom-checkbox { */
+/* .custom-control-label { */
+/* &::before, */
+/* &::after { */
+/* top: -0.5rem; */
+/* } */
+/* &::after { */
+/* background-color: var(--neutral-surface-layer-01); */
+/* border: 1px solid var(--neutral-border-strong); */
+/* } */
+/* } */
+/* .custom-control-input:checked ~ .custom-control-label::after { */
+/* top: -0.5rem; */
+/* font-family: "Font Awesome 5 Pro"; */
+/* font-weight: 400; */
+/* content: "\f00c"; */
+/* color: var(--neutral-text-on-color); */
+/* background-image: none; */
+/* background-color: var(--brand-background-primary-strong); */
+/* border-color: var(--brand-border-primary-default); */
+/* line-height: 1; */
+/* font-size: var(--fs-14); */
+/* height: 16px; */
+/* width: 16px; */
+/* } */
+/* .custom-control-input:disabled ~ .custom-control-label::before { */
+/* background-color: transparent; */
+/* border-width: 0px; */
+/* } */
+/* .custom-control-input:disabled ~ .custom-control-label::after { */
+/* border-color: var(--semantics-disabled-border); */
+/* } */
+/* .custom-control-input:checked:disabled ~ .custom-control-label::after { */
+/* background-color: var(--brand-background-primary-disabled); */
+/* border-color: var(--brand-border-primary-disabled); */
+/* } */
+/* } */
+/* } */

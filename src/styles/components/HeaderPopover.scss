@@ -1,0 +1,35 @@
+.user-popover {
+  font-size: var(--fs-13);
+  .user-item {
+    display: flex;
+    flex-direction: column;
+    color: var(--neutral-text-on-color);
+    text-transform: uppercase;
+    width: 150px;
+  }
+
+  .dropdown-item {
+    /* text-transform: uppercase; */
+    text-transform: lowercase;
+    color: var(--neutral-text-on-color);
+  }
+
+  .dropdown-item::first-letter {
+    text-transform: capitalize;
+    /* text-transform: lowercase; */
+    /* color: var(--neutral-text-on-color); */
+  }
+
+  .dropdown-item:hover {
+    color: var(--neutral-text-default);
+  }
+
+  .user-item label {
+    font-weight: normal;
+    margin: 0px;
+  }
+
+  .user-item span {
+    font-weight: bolder;
+  }
+}

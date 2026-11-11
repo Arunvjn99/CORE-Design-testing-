@@ -1,0 +1,545 @@
+@use "../foundation/typography-mixins" as *;
+
+/* ----------------------------- Sizes -----------------------------------// */
+
+.core-ft-12 {
+  font-size: var(--fs-12);
+}
+
+.core-ft-14 {
+  font-size: var(--fs-14);
+}
+
+.core-ft-16 {
+  font-size: var(--fs-16);
+}
+
+.core-ft-18 {
+  font-size: var(--fs-18);
+}
+
+.core-ft-20 {
+  font-size: var(--fs-20);
+}
+
+.core-ft-24 {
+  font-size: var(--fs-24);
+}
+
+.core-ft-28 {
+  font-size: var(--fs-28);
+}
+
+.core-ft-32 {
+  font-size: var(--fs-32);
+}
+
+.core-ft-40 {
+  font-size: var(--fs-40);
+}
+
+/* ----------------------------- typography classes -----------------------------------// */
+
+/* headers */
+.core-heading-1 {
+  @include heading-1($color: var(--neutral-text-default));
+}
+
+.core-heading-2 {
+  @include heading-2($color: var(--neutral-text-default));
+}
+
+.core-heading-3 {
+  @include heading-3($color: var(--neutral-text-default));
+}
+
+.core-heading-4 {
+  @include heading-4($color: var(--neutral-text-default));
+}
+
+.core-heading-5 {
+  @include heading-5($color: var(--neutral-text-default));
+}
+
+.core-heading-6 {
+  @include heading-6($color: var(--neutral-text-default));
+}
+
+.core-heading-6-primary {
+  @include heading-6($color: var(--brand-text-primary-default));
+}
+
+.core-page-titles {
+  @include page-titles($color: var(--neutral-text-default));
+}
+
+.core-page-titles-wt {
+  @include page-titles($color: var(--semantics-warning-text));
+}
+
+.core-heading-regular {
+  @include heading-regular($color: var(--neutral-text-default));
+}
+
+.core-heading-regular-sl {
+  @include heading-regular($color: var(--neutral-text-subtle-least));
+}
+
+.core-heading-regular-wt {
+  @include heading-regular($color: var(--semantics-warning-text));
+}
+
+.core-heading-regular-it {
+  @include heading-regular($color: var(--semantics-highlight-text));
+}
+
+.core-heading-regular-st {
+  @include heading-regular($color: var(--semantics-success-text));
+}
+
+.core-heading-regular-ct {
+  @include heading-regular($color: var(--semantics-critical-text));
+}
+
+.core-heading-6-page-menu {
+  @include heading-6-page-menu($color: var(--neutral-text-default));
+}
+
+.core-page-titles-s {
+  @include page-titles($color: var(--neutral-text-subtle));
+}
+
+/* body-text-large-medium */
+
+.core-body-text-large-medium {
+  @include body-text-large-medium($color: var(--neutral-text-default));
+}
+
+.core-body-text-large-medium-s {
+  @include body-text-large-medium($color: var(--neutral-text-subtle));
+}
+
+.core-body-text-large-medium-sl {
+  @include body-text-large-medium($color: var(--neutral-text-subtle-least));
+}
+
+.core-body-text-large-medium-d {
+  @include body-text-large-medium($color: var(--semantics-disabled-text));
+}
+
+.core-body-text-large-medium-bd {
+  @include body-text-large-medium($color: var(--brand-text-primary-default));
+}
+
+.core-body-text-large-medium-st {
+  @include body-text-large-medium($color: var(--semantics-success-text));
+}
+
+.core-body-text-large-medium-wt {
+  @include body-text-large-medium($color: var(--semantics-warning-text));
+}
+
+.core-body-text-large-medium-nt {
+  @include body-text-large-medium($color: var(--neutral-text-subtle-least));
+}
+
+.core-body-text-large-medium-link {
+  @include body-text-large-medium($color: var(--brand-text-primary-default));
+}
+
+/* body-text-large-semi-bold */
+
+.core-body-text-large-semi-bold {
+  @include body-text-large-semi-bold($color: var(--neutral-text-default));
+}
+
+.core-body-text-large-semi-bold-s {
+  @include body-text-large-semi-bold($color: var(--neutral-text-subtle));
+}
+
+.core-body-text-large-semi-bold-sl {
+  @include body-text-large-semi-bold($color: var(--neutral-text-subtle-least));
+}
+
+.core-body-text-large-semi-bold-d {
+  @include body-text-large-semi-bold($color: var(--semantics-disabled-text));
+}
+
+.core-body-text-large-semi-bold-active {
+  @include body-text-large-semi-bold($color: var(--semantics-success-text));
+}
+.core-body-text-large-bold-red {
+  @include body-text-large-bold($color: var(--semantics-critical-text));
+}
+.core-body-text-large-semi-bold-red {
+  @include body-text-large-semi-bold($color: var(--semantics-critical-text));
+}
+
+.core-body-text-large-semi-bold-p {
+  @include body-text-large-semi-bold($color: var(--brand-text-primary-default));
+}
+
+.core-body-text-large-semi-bold-bd {
+  @include body-text-large-semi-bold($color: var(--brand-text-primary-default));
+}
+
+.core-body-text-large-semi-bold-wt {
+  @include body-text-large-semi-bold($color: var(--semantics-warning-text));
+}
+
+.core-body-text-large-semi-bold-st {
+  @include body-text-large-semi-bold($color: var(--semantics-success-text));
+}
+
+.core-body-text-large-semi-bold-lk {
+  @include body-text-large-semi-bold($color: var(--brand-text-primary-default));
+}
+
+/* body-text-large-bold */
+
+.core-body-text-large-bold {
+  @include body-text-large-bold($color: var(--neutral-text-default));
+}
+
+.core-body-text-large-bold-s {
+  @include body-text-large-bold($color: var(--neutral-text-subtle));
+}
+
+.core-body-text-large-bold-sl {
+  @include body-text-large-bold($color: var(--neutral-text-subtle-least));
+}
+
+.core-body-text-large-bold-d {
+  @include body-text-large-bold($color: var(--semantics-disabled-text));
+}
+
+.core-body-text-large-bold-bd {
+  @include body-text-large-bold($color: var(--brand-text-primary-default));
+}
+
+.core-body-text-large-bold-p {
+  @include body-text-large-semi-bold($color: var(--brand-text-primary-default));
+}
+
+.core-body-text-large-bold-toolTip {
+  @include body-text-large-bold($color: var(--neutral-text-on-color));
+}
+
+/* icons */
+.core-body-text-large-bold-ct {
+  @include body-text-large-semi-bold($color: var(--semantics-critical-text));
+}
+
+.core-body-text-large-bold-wt {
+  @include body-text-large-semi-bold($color: var(--semantics-warning-text));
+}
+
+.core-body-text-large-bold-st {
+  @include body-text-large-semi-bold($color: var(--semantics-success-text));
+}
+
+.core-body-text-large-bold-ht {
+  @include body-text-large-semi-bold($color: var(--semantics-highlight-text));
+}
+
+.core-body-text-large-bold-nt {
+  @include body-text-large-semi-bold($color: var(--neutral-text-subtle-least));
+}
+
+/* body-text-regular-medium */
+
+.core-body-text-regular-medium {
+  @include body-text-regular-medium($color: var(--neutral-text-default));
+}
+
+.core-body-text-regular-medium-s {
+  @include body-text-regular-medium($color: var(--neutral-text-subtle));
+}
+
+.core-body-text-regular-medium-sl {
+  @include body-text-regular-medium($color: var(--neutral-text-subtle-least));
+}
+
+.core-body-text-regular-medium-d {
+  @include body-text-regular-medium($color: var(--semantics-disabled-text));
+}
+
+.core-body-text-regular-medium-primary {
+  @include body-text-regular-medium($color: var(--brand-text-primary-default));
+}
+
+.core-body-text-regular-medium-red {
+  @include body-text-regular-medium($color: var(--semantics-critical-text));
+}
+
+.core-body-text-regular-medium-green {
+  @include body-text-regular-medium($color: var(--semantics-success-text));
+}
+
+.core-body-text-regular-medium-ht {
+  @include body-text-regular-medium($color: var(--semantics-highlight-text));
+}
+
+.core-body-text-regular-medium-toolTip {
+  @include body-text-regular-medium($color: var(--neutral-text-on-color));
+}
+
+/* body-text-regular-semi-bold */
+
+.core-body-text-regular-semi-bold {
+  @include body-text-regular-semi-bold($color: var(--neutral-text-default));
+}
+
+.core-body-text-regular-semi-bold-s {
+  @include body-text-regular-semi-bold($color: var(--neutral-text-subtle));
+}
+
+/* for description, text below a property */
+.core-body-text-regular-semi-bold-sl {
+  @include body-text-regular-semi-bold(
+    $color: var(--neutral-text-subtle-least)
+  );
+}
+
+.core-body-text-regular-semi-bold-d {
+  @include body-text-regular-semi-bold($color: var(--semantics-disabled-text));
+}
+
+.core-body-text-regular-semi-bold-hl {
+  @include body-text-regular-semi-bold($color: var(--semantics-highlight-text));
+}
+
+.core-body-text-regular-semi-bold-red {
+  @include body-text-regular-medium($color: var(--semantics-critical-text));
+}
+
+.core-body-text-regular-semi-bold-bd {
+  @include body-text-regular-semi-bold(
+    $color: var(--brand-text-primary-default)
+  );
+}
+
+.core-body-text-regular-semi-bold-st {
+  @include body-text-regular-semi-bold($color: var(--semantics-success-text));
+}
+
+.core-body-text-regular-semi-bold-primary {
+  @include body-text-regular-semi-bold(
+    $color: var(--brand-text-primary-default)
+  );
+}
+
+.core-body-text-regular-semi-bold-wt {
+  @include body-text-regular-semi-bold($color: var(--semantics-warning-text));
+}
+
+.core-body-text-regular-semi-bold-cb {
+  @include body-text-regular-semi-bold($color: var(--neutral-text-on-color));
+}
+
+/* Export */
+.core-body-text-regular-semi-bold-bd {
+  @include body-text-regular-semi-bold(
+    $color: var(--brand-text-primary-default)
+  );
+}
+
+/* Export Disabled */
+.core-body-text-regular-semi-bold-bds {
+  @include body-text-regular-semi-bold(
+    $color: var(--brand-text-primary-disabled)
+  );
+}
+
+/* body-text-regular-bold */
+
+.core-body-text-regular-bold {
+  @include body-text-regular-bold($color: var(--neutral-text-default));
+}
+
+.core-body-text-regular-bold-s {
+  @include body-text-regular-bold($color: var(--neutral-text-subtle));
+}
+
+.core-body-text-regular-bold-sl {
+  @include body-text-regular-bold($color: var(--neutral-text-subtle-least));
+}
+
+.core-body-text-regular-bold-d {
+  @include body-text-regular-bold($color: var(--semantics-disabled-text));
+}
+
+.core-body-text-regular-bold-red {
+  @include body-text-regular-medium($color: var(--semantics-critical-text));
+}
+
+.core-body-text-regular-bold-primary {
+  @include body-text-regular-medium($color: var(--brand-text-primary-default));
+}
+
+.core-body-text-regular-bold-wt {
+  @include body-text-regular-medium($color: var(--semantics-warning-text));
+}
+
+.core-body-text-regular-bold-st {
+  @include body-text-regular-medium($color: var(--semantics-success-text));
+}
+
+/* body-text-small-medium */
+
+.core-body-text-small-medium {
+  @include body-text-small-medium($color: var(--neutral-text-default));
+}
+
+.core-body-text-small-medium-s {
+  @include body-text-small-medium($color: var(--neutral-text-subtle));
+}
+
+.core-body-text-small-medium-sl {
+  @include body-text-small-medium($color: var(--neutral-text-subtle-least));
+}
+
+.core-body-text-small-medium-d {
+  @include body-text-small-medium($color: var(--semantics-disabled-text));
+}
+
+.core-body-text-small-medium-bd {
+  @include body-text-small-medium($color: var(--brand-text-primary-default));
+}
+
+.core-body-text-small-medium-cd {
+  @include body-text-small-medium($color: var(--semantics-critical-text));
+}
+
+/* body-text-small-semi-bold */
+
+.core-body-text-small-semi-bold {
+  @include body-text-small-semi-bold($color: var(--neutral-text-default));
+}
+
+.core-body-text-small-semi-bold-s {
+  @include body-text-small-semi-bold($color: var(--neutral-text-subtle));
+}
+
+.core-body-text-small-semi-bold-sl {
+  @include body-text-small-semi-bold($color: var(--neutral-text-subtle-least));
+}
+
+.core-body-text-small-semi-bold-d {
+  @include body-text-small-semi-bold($color: var(--semantics-disabled-text));
+}
+
+.core-body-text-small-semi-bold-primary {
+  @include body-text-small-semi-bold($color: var(--brand-text-primary-default));
+}
+
+.core-body-text-small-semi-bold-st {
+  @include body-text-small-semi-bold($color: var(--semantics-success-text));
+}
+
+.core-body-text-small-semi-bold-bd {
+  @include body-text-small-semi-bold($color: var(--brand-text-primary-default));
+}
+
+.core-body-text-small-semi-bold-cd {
+  @include body-text-small-semi-bold($color: var(--semantics-critical-text));
+}
+
+/* body-text-small-bold */
+
+.core-body-text-small-bold {
+  @include body-text-small-bold($color: var(--neutral-text-default));
+}
+
+.core-body-text-small-bold-s {
+  @include body-text-small-bold($color: var(--neutral-text-subtle));
+}
+
+.core-body-text-small-bold-sl {
+  @include body-text-small-bold($color: var(--neutral-text-subtle-least));
+}
+
+.core-body-text-small-bold-d {
+  @include body-text-small-bold($color: var(--semantics-disabled-text));
+}
+
+.core-body-text-small-bold-p {
+  @include body-text-small-bold($color: var(--brand-text-primary-default));
+}
+
+.core-body-text-small-bold-ct {
+  @include body-text-small-bold($color: var(--semantics-critical-text));
+}
+
+.core-body-text-small-bold-wt {
+  @include body-text-small-bold($color: var(--semantics-warning-text));
+}
+
+.core-body-text-small-bold-bd {
+  @include body-text-small-bold($color: var(--brand-text-primary-default));
+}
+
+/* Success Message */
+.core-body-text-regular-medium-st {
+  @include body-text-regular-medium($color: var(--semantics-success-text));
+}
+
+/* for success badge */
+.core-body-text-regular-medium-success-badge {
+  @include body-text-regular-medium($color: var(--semantics-success-text));
+}
+
+/* for failure badge */
+.core-body-text-regular-medium-failure-badge {
+  @include body-text-regular-medium($color: var(--semantics-critical-text));
+}
+
+/* for info badge */
+.core-body-text-regular-medium-info-badge {
+  @include body-text-regular-medium($color: var(--semantics-highlight-text));
+}
+
+/* for warning badge */
+.core-body-text-regular-medium-warning-badge {
+  @include body-text-regular-medium($color: var(--semantics-warning-text));
+}
+
+/* for success icon */
+.core-body-icon-regular-success-medium {
+  @include body-icon-regular-medium($color: var(--semantics-success-text));
+}
+
+/* for failure icon */
+.core-body-icon-regular-failure-medium {
+  @include body-icon-regular-medium($color: var(--semantics-critical-text));
+}
+
+/* for info icon */
+.core-body-icon-regular-info-medium {
+  @include body-icon-regular-medium($color: var(--semantics-highlight-text));
+}
+
+/* for warning icon */
+.core-body-icon-regular-warning-medium {
+  @include body-icon-regular-medium($color: var(--semantics-warning-text));
+}
+
+/* for large button */
+.core-body-button-large {
+  @include body-button-large;
+}
+
+/* for medium button */
+.core-body-button-medium {
+  @include body-button-medium;
+}
+
+/* for small button */
+.core-body-button-small {
+  @include body-button-small;
+}
+
+/* error message */
+.core-body-icon-regular-warning-regular {
+  @include body-text-regular-regular($color: var(--semantics-critical-text));
+}

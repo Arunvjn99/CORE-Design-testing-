@@ -1,0 +1,61 @@
+.kendo-field-flair {
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent),
+    var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
+  border-radius: 0.75rem;
+  border-width: 1px;
+  background-color: var(--neutral-surface-layer-01);
+  border-color: var(--neutral-border-subtle);
+
+  .form-control {
+    width: 800px;
+  }
+}
+
+.send-icon-flair {
+  position: relative;
+  cursor: pointer;
+}
+
+.initial-text {
+  display: flex;
+  justify-content: center;
+  font-size: var(--fs-18);
+}
+
+.kendo-field-flair {
+  display: flex;
+  justify-content: center;
+}
+
+.outer-grid-layout {
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.outer-grid {
+  // width: fit-content ;
+  // .k-grid-content::-webkit-scrollbar{
+  //   width: 0px ;
+  //   height: 0px ;
+  // }
+  .k-grid-header {
+    padding-right: 0;
+  }
+}
+
+.dummy-search-icon-postion {
+  // align-self: center;
+}
+
+.outerlayout-of-grid {
+  height: 90%;
+  text-align: center;
+}
+
+.gpt-microphone-flair {
+  cursor: pointer;
+  left: 735px;
+  position: relative;
+  align-self: center;
+  bottom: 36px;
+}

@@ -1,0 +1,83 @@
+.trends {
+  padding: 1.2rem;
+  border-left: 1px solid var(--neutral-border-strong);
+}
+
+.trends .card {
+  margin-bottom: 1rem;
+}
+
+.trends .reddish {
+  border-left: 6px solid var(--semantics-critical-border);
+}
+
+.trends .yellowish {
+  border-left: 6px solid var(--semantics-warning-border);
+}
+
+.trends .cardmain {
+  display: flex;
+}
+
+.trends .cardmain p {
+  display: flex;
+}
+
+.buttons {
+  margin-bottom: 0.5rem;
+}
+
+.trends .btn {
+  color: var(--neutral-text-subtle);
+  border-radius: 2rem;
+  margin: 0.5rem 0.8rem 0.5rem 0;
+  font-weight: 600;
+  border: 1px solid var(--neutral-border-strong);
+}
+
+.trends .btnActive {
+  color: var(--brand-text-primary-default);
+  border: 2px solid var(--brand-border-primary-default);
+  font-weight: 700;
+}
+
+.trends p {
+  margin: 2px;
+  color: var(--neutral-text-subtle);
+  font-size: var(--fs-12);
+  /* font-family: Open Sans; */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.trends h4 {
+  font-size: var(--fs-16);
+  /* font-family: Open Sans; */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  color: var(--neutral-text-subtle);
+}
+
+.trends .cardmain div:nth-child(1) {
+  width: 80%;
+  border-right: 1px dotted var(--neutral-border-strong) 7b;
+  margin-right: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.trends .cardmain div:nth-child(2) {
+  width: 20%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .trends {
+    padding: 0.7rem;
+  }
+}

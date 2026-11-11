@@ -1,0 +1,294 @@
+@use "../shared/shared-placeholders" as *;
+.ajustmentCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .adjustmerCardResetPL {
+    color: var(--brand-text-primary-default);
+    margin-top: 17px;
+    font-weight: 600;
+    font-size: var(--fs-16);
+  }
+
+  .adjustment-listing-container {
+    overflow: auto;
+    flex-grow: 1;
+  }
+  .h-95 {
+    height: 95%;
+  }
+
+  .buttonSearch {
+    padding-top: 4px;
+    height: 36px;
+    line-height: 17px;
+    margin-top: 12px;
+    margin-left: 13px;
+    font-weight: 600;
+    font-size: var(--fs-16);
+  }
+
+  .adjustmentFilter {
+    @extend %TextBodyMediumBold;
+  }
+
+  .searchFilter {
+    .form-control-seach-text input {
+      border: 1px solid var(--neutral-border-strong);
+    }
+  }
+
+  .recordfound-font {
+    @extend %LabelBoldMedium;
+  }
+
+  .export-name {
+    color: var(--neutral-text-subtle-least);
+    font-weight: 600;
+    font-size: var(--fs-14);
+    margin-right: 25px;
+  }
+
+  .export-style {
+    color: var(--semantics-success-text);
+    margin-right: 5px;
+  }
+
+  .cardDetails {
+    height: 77px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    border: 1px solid var(--neutral-border-strong);
+    margin-top: 10px;
+  }
+
+  .nameDetails {
+    width: 20%;
+    white-space: nowrap;
+
+    .text1 {
+      @extend %HeadingSmallBold;
+    }
+
+    .text2 {
+      @extend %HeadingSmallSemiBold;
+    }
+  }
+
+  .w-23 {
+    width: 23%;
+  }
+
+  .w-21 {
+    width: 21%;
+  }
+
+  .w-20 {
+    width: 20%;
+  }
+
+  .w-18 {
+    width: 18%;
+  }
+
+  .w-17 {
+    width: 17%;
+  }
+
+  .w-4 {
+    width: 4%;
+  }
+
+  .width-Par {
+    width: 23%;
+    white-space: nowrap;
+
+    .text1 {
+      @extend %HeadingSmallBold;
+    }
+
+    .text2 {
+      @extend %HeadingSmallSemiBold;
+    }
+  }
+
+  .status-adjustmentSubmit {
+    color: var(--neutral-text-subtle);
+  }
+
+  .status-adjustmentAwaitingTrade {
+    color: var(--semantics-warning-text);
+  }
+
+  .status-adjustmentComplete {
+    color: var(--semantics-success-text);
+  }
+
+  .mra-5 {
+    margin-right: 5px;
+  }
+
+  .status-style {
+    width: 15%;
+    font-size: var(--fs-14);
+    font-weight: 500;
+  }
+
+  .w-15 {
+    width: 15%;
+  }
+
+  .ml-20 {
+    margin-left: 20px;
+    width: 100%;
+  }
+
+  .ml-10 {
+    margin-left: 10px;
+  }
+
+  .ml-15 {
+    margin-left: 25px;
+  }
+}
+
+.paddingTop-8p {
+  padding-top: var(--spacing-8);
+}
+
+.paddingTop-4p {
+  padding-top: var(--spacing-4);
+}
+
+.paddingTop-0 {
+  padding-top: 0;
+}
+
+.paddingBottom-32p {
+  padding-bottom: var(--spacing-32);
+}
+
+.paddingBottom-16p {
+  padding-bottom: var(--spacing-16);
+}
+
+.paddingBottom-8p {
+  padding-bottom: var(--spacing-8);
+}
+
+.paddingBottom-4p {
+  padding-bottom: var(--spacing-4);
+}
+
+.paddingLeft-16p {
+  padding-left: var(--spacing-16);
+}
+
+.paddingRight-16p {
+  padding-right: var(--spacing-16);
+}
+
+.paddingLeftRight-0p {
+  @extend %NoHorizontalPadding;
+}
+
+.paddingLeftRight-16p {
+  padding: 0 var(--spacing-16);
+}
+
+.mr-4p {
+  margin-right: var(--spacing-4);
+}
+
+.errorMessage-custom {
+  margin-top: 7px;
+  color: var(--semantics-critical-text);
+  font-size: var(--fs-14);
+  align-items: center;
+}
+
+.padding-8p {
+  padding: var(--spacing-8);
+}
+
+.ml-20px {
+  margin-left: 20px;
+}
+
+.marginLeft-8p {
+  margin-left: var(--spacing-8);
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.mr-9p {
+  margin-right: 9px;
+}
+
+.mr-8p {
+  margin-right: var(--spacing-8);
+}
+
+.marginTop-8p {
+  margin-top: var(--spacing-8);
+}
+
+.disableoverflowAdjustment {
+  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.search-bar-plan-adjustment {
+  margin-top: 1px;
+
+  .input-group {
+    flex-wrap: nowrap;
+  }
+
+  .input-group-text {
+    background: var(--neutral-surface-layer-01);
+    border-right: 0;
+    border: 1px solid var(--neutral-border-strong);
+    width: 10px;
+    padding: 0.375rem 0.75rem 0.375rem 0.5rem;
+  }
+
+  .form-control-seach-text input {
+    border-left: 0;
+    font-size: var(--fs-11);
+    width: 128px;
+  }
+
+  .form-control-seach-text .close-button-sponsor {
+    top: 8px;
+  }
+}
+
+.filter-component-adjustment {
+  .fields-div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .multiselect-dropdown-wrapper {
+    .form-group:first-child {
+      .form-label {
+        color: var(--neutral-text-subtle-least);
+      }
+    }
+  }
+}
+
+.source-details {
+  height: 100%;
+  align-items: center;
+}
+
+.custom-checkbox-style {
+  height: -webkit-fill-available;
+  padding-top: 1rem;
+}

@@ -1,0 +1,126 @@
+@use "../shared/shared-placeholders" as *;
+.ScheduleReportContainer {
+  .column-report-name {
+    width: 20%;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  .tooltip-wrap {
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .column-plan-details {
+    width: 60%;
+    text-align: left;
+  }
+
+  .column-requested-on {
+    width: 23%;
+    text-align: left;
+  }
+
+  .column-status {
+    width: 25%;
+    text-align: left;
+    //padding-left: 1rem;
+  }
+
+  .column-action {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0; /* Override padding */
+    text-align: center;
+  }
+
+  .status-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+    font-size: var(--fs-14);
+    white-space: nowrap;
+  }
+
+  .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .status-inprogress .status-dot {
+    background-color: var(--semantics-highlight-background-strong);
+  }
+
+  .status-completed .status-dot {
+    background-color: var(--semantics-success-background-strong);
+  }
+
+  .status-failed .status-dot {
+    background-color: var(--semantics-critical-background-strong);
+  }
+
+  .status-inprogress span:last-child {
+    color: var(--semantics-highlight-text);
+  }
+
+  .status-completed span:last-child {
+    color: var(--semantics-success-text);
+  }
+
+  .status-failed span:last-child {
+    color: var(--semantics-critical-text);
+  }
+
+  .action-button {
+    border: 1px solid;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .action-button.download {
+    border-color: var(--brand-border-primary-default);
+    color: var(--brand-text-primary-default);
+  }
+
+  .action-button.download:hover {
+    border-color: var(--brand-border-primary-default);
+    background-color: var(--semantics-success-background-strong);
+  }
+
+  .disable-icon {
+    @extend %DisabledFadedOverlay;
+  }
+
+  .mb-20 {
+    margin-bottom: 70px;
+  }
+  .ml-16 {
+    margin-left: 16px;
+  }
+
+  .no-record {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    //background: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    text-align: center;
+    z-index: 0;
+    width: 100%;
+    pointer-events: none;
+  }
+}

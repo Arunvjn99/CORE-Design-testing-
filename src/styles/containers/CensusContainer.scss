@@ -1,0 +1,1273 @@
+@use "../shared/shared-placeholders" as *;
+.manage-employee-loader-wrapper {
+  height: 90%;
+  overflow: hidden;
+}
+
+.custom-toast {
+  position: fixed;
+  top: 10rem;
+  right: 2rem;
+  z-index: 100;
+  background-color: var(--semantics-success-background-light);
+  border: 1px solid var(--semantics-success-border);
+  /* height: 60px; */
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.employee-tab-content {
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+.h-60 {
+  height: 60%;
+}
+
+.employee-container {
+  width: 100%;
+  padding: 0rem 1rem;
+  height: 100%;
+  .enrollment-detail-report-container {
+    .cspl-table {
+      .column-enroll-companyName {
+        width: 20%;
+      }
+      .column-enroll-planId {
+        width: 15%;
+      }
+
+      .column-enroll-planName {
+        width: 21%;
+      }
+
+      .column-enroll-participantsEnrolled {
+        width: 22%;
+      }
+
+      .column-enroll-participantsNotEnrolled {
+        width: 22%;
+      }
+    }
+  }
+  .enrollment-detail-report-participant-container {
+    margin-bottom: 80px;
+    .cspl-table {
+      .column-enroll-participantName {
+        width: 21%;
+      }
+      .column-enroll-status {
+        width: 18%;
+      }
+      .column-enroll-modeOfEnrollment {
+        width: 25%;
+      }
+      .column-enroll-enrollmentDate {
+        width: 18%;
+      }
+      .column-enroll-optedOutDate {
+        width: 18%;
+      }
+    }
+  }
+
+  .cspl-table {
+    .column-employeeName {
+      width: 20%;
+    }
+
+    .column-employeeId {
+      width: 15%;
+    }
+
+    .column-employeeStatus {
+      width: 15%;
+    }
+
+    .column-ssn {
+      width: 15%;
+    }
+
+    .column-company {
+      width: 15%;
+    }
+
+    .column-plan {
+      width: 20%;
+    }
+
+    .column-companyName {
+      width: 15%;
+    }
+
+    .column-planId {
+      width: 15%;
+    }
+
+    .column-planName {
+      width: 15%;
+    }
+
+    .column-processdate {
+      width: 10%;
+    }
+
+    .column-hostedMode {
+      width: 20%;
+    }
+
+    .column-participantName {
+      width: 20%;
+    }
+
+    .column-status {
+      width: 15%;
+    }
+
+    .column-entryDate {
+      width: 15%;
+    }
+
+    .column-enrollmentDate {
+      width: 15%;
+    }
+
+    .column-reason {
+      width: 35%;
+    }
+  }
+
+  .placeholder-color {
+    .dropSide-custom-select {
+      .place-holder {
+        color: var(--neutral-text-default);
+      }
+    }
+  }
+
+  .overlay-text {
+    align-items: center;
+    margin: 0;
+  }
+
+  .line-separator {
+    margin-bottom: 0px;
+  }
+
+  #divEmployeeTiles div .dropdown {
+    border: unset;
+  }
+
+  .sponsor-dropdown-toggle {
+    width: 100%;
+    border: 1px solid var(--neutral-border-strong);
+    background-color: var(--neutral-surface-layer-01);
+    color: var(--neutral-text-default);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+  }
+
+  .dropdown-menu {
+    background-color: var(--neutral-surface-layer-01);
+    padding: 15px;
+    width: 100%;
+  }
+
+  .dropdown-placeholder {
+    width: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .dropdown-item {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  .divEmployeeTiles {
+    width: 233px;
+    height: 35.57px;
+  }
+}
+
+.records-text {
+  font-size: var(--fs-14);
+  color: var(--neutral-text-default);
+  margin-bottom: var(--spacing-16);
+}
+
+.employee-slider-table {
+  .header-details {
+    margin-right: 50px;
+
+    .label {
+      color: var(--neutral-text-subtle-least);
+      font-size: var(--fs-10);
+    }
+  }
+}
+
+.eligibiliy-slider-table {
+  .header-details {
+    .label {
+      color: var(--neutral-text-subtle-least);
+      font-size: var(--fs-10);
+    }
+  }
+}
+
+.contributions-slider-table {
+  .header-details {
+    .label {
+      color: var(--neutral-text-subtle-least);
+      font-size: var(--fs-10);
+    }
+  }
+}
+
+.label-sort {
+  padding: 8px;
+  font-size: var(--fs-12);
+  border: 1px solid var(--neutral-border-strong);
+  margin-bottom: 0;
+  height: 38px;
+  color: var(--neutral-text-default);
+  border-radius: 5px 0px 0px 5px;
+  width: 90px;
+  background: var(--neutral-surface-layer-03);
+}
+
+.sort-button {
+  height: 36px;
+  line-height: 18px;
+}
+
+.w-fitContent {
+  width: auto;
+}
+
+.census-tabs-head {
+  .form-group.md .form-control {
+    width: 220px;
+  }
+
+  .add-btn {
+    background: var(--neutral-surface-layer-01);
+    border: 1px solid;
+    color: var(--neutral-text-default);
+  }
+
+  .nav.nav-tabs .nav-item .nav-link.active {
+    border-color: var(--brand-border-primary-default);
+    color: var(--brand-text-primary-default);
+  }
+
+  .nav.nav-tabs {
+    border-bottom: 1px solid var(--neutral-border-strong);
+    padding-bottom: 10px;
+    white-space: nowrap;
+
+    .nav-item .nav-link {
+      border-color: var(--neutral-border-strong);
+      border-top-width: 5px;
+      border-top-style: solid;
+      padding-top: 0.25rem;
+      font-weight: 500;
+      color: var(--neutral-text-subtle);
+      border-left: 0px;
+      border-right: 0px;
+      border-bottom: 0px;
+      width: 18%;
+      margin-right: 15px;
+      border-radius: 0px;
+    }
+
+    .nav-item .nav-link:hover {
+      border-color: var(--neutral-border-strong);
+      border-top-width: 5px;
+      border-top-style: solid;
+      padding-top: 0.25rem;
+      font-weight: 500;
+      color: var(--neutral-text-subtle);
+      border-left: 0px;
+      border-right: 0px;
+      border-bottom: 0px;
+      width: 18%;
+      margin-right: 15px;
+      border-radius: 0px;
+    }
+
+    .tabName {
+      font-weight: normal;
+    }
+
+    .error {
+      border-color: var(--semantics-critical-border)
+        var(--semantics-critical-text);
+    }
+
+    .green {
+      border-color: var(--semantics-success-border);
+      background-color: var(--neutral-surface-layer-01);
+    }
+
+    .disabled {
+      border-color: var(--semantics-disabled-border);
+    }
+
+    .pl-20 {
+      padding-left: 20px;
+    }
+
+    .nav-item {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.census-tabs-head.payroll-emp-info {
+  .nav.nav-tabs {
+    .nav-item .nav-link {
+      width: 100%;
+    }
+    .nav-item {
+      margin-bottom: 0;
+      width: 18%;
+      margin-right: 15px;
+    }
+  }
+}
+
+.link-text {
+  color: var(--brand-text-primary-default);
+  cursor: pointer;
+  font-size: var(--fs-14);
+}
+
+.border-box {
+  border: 1px solid var(--neutral-border-strong);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 35%;
+}
+
+.border-box-var {
+  border: 1px solid var(--neutral-border-strong);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.census-employee-classification {
+  .table-row {
+    align-items: flex-start;
+  }
+  .cspl-table {
+    .column-classificationType {
+      width: 20%;
+    }
+
+    .column-classificationCode {
+      width: 22%;
+    }
+
+    .column-classificationName {
+      width: 22.5%;
+    }
+
+    .column-startDate {
+      width: 24%;
+    }
+
+    .column-endDate {
+      width: 24%;
+    }
+    .column-action {
+      width: 10%;
+    }
+
+    .employee-classification-column-endDate {
+      width: 24%;
+      padding-left: 5px;
+    }
+
+    .employee-classification-column-classificationCode {
+      width: 20%;
+      /* padding-left: 4px; */
+    }
+
+    .employee-classification-column-classificationName {
+      width: 20%;
+      padding-left: 20px;
+    }
+
+    .employee-classification-column-startDate {
+      width: 22%;
+      padding-left: 15px;
+
+      .dropSide-popup {
+        left: 70vw;
+      }
+    }
+  }
+
+  .dropdown-component {
+    width: 100%;
+  }
+
+  .link-area {
+    font-size: var(--fs-14);
+    font-weight: 500;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+}
+.compensation-container {
+  .deposit-history-compensation {
+    table-layout: fixed;
+    width: 100%;
+    font-size: var(--fs-14); // Reduced font size for better fit
+  }
+
+  .table-head-cell {
+    padding: 0.5rem;
+    font-size: var(--fs-14); // 14px
+  }
+
+  .table-cell {
+    padding: 0.5rem;
+    font-size: var(--fs-14); // 14px
+  }
+
+  .column-payDate {
+    width: 10%;
+  }
+
+  .column-payPeriodPlanCompensation {
+    width: 11%;
+    white-space: normal;
+  }
+
+  .column-eligiblePlanCompensation {
+    width: 11%;
+    white-space: normal;
+  }
+
+  .column-payPeriodGrossCompensation {
+    width: 11%;
+    white-space: normal;
+  }
+
+  .column-annualSalary {
+    width: 10%;
+    white-space: normal;
+  }
+
+  .column-sourceCompensation {
+    width: 12%;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .column-updatedBy {
+    width: 11%;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .column-uploadedThrough {
+    width: 12%;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+/* text-align: right; */
+.hours-container {
+  .column-payDate {
+    width: 14%;
+  }
+
+  .column-payPeriodHours {
+    width: 18%;
+    white-space: normal;
+  }
+
+  .column-comments {
+    width: 14%;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .column-updatedBy {
+    width: 18%;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .column-updatedThrough {
+    width: 16%;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .column-dateTimeLoaded {
+    width: 20%;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.align-self {
+  align-self: flex-end;
+}
+
+.align-center {
+  align-self: center;
+  line-height: 16px;
+  margin-top: 13px;
+}
+
+.align-btn-census {
+  height: 8%;
+  margin-top: 30%;
+}
+
+.add-btn {
+  background: var(--neutral-surface-layer-01);
+  border: 1px solid var(--brand-border-primary-default);
+  color: var(--neutral-text-default);
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+.hours-container {
+  .add-btn {
+    background: var(--neutral-surface-layer-01);
+    border: 1px solid var(--brand-border-primary-default);
+    color: var(--neutral-text-default);
+  }
+
+  .mt-10 {
+    margin-top: 10px;
+  }
+
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+}
+
+.census-rehire {
+  .cspl-table {
+    .column-rehireDate {
+      width: 35%;
+    }
+
+    .column-termDate {
+      width: 35%;
+    }
+
+    .column-action {
+      width: 30%;
+    }
+  }
+}
+
+.census-rehire-ui {
+  .cspl-table {
+    .column-rehireDate {
+      width: 35%;
+    }
+
+    .column-termDate {
+      width: 35%;
+    }
+
+    .column-action {
+      width: 30%;
+    }
+  }
+}
+
+.m3r {
+  margin-right: 3rem;
+}
+
+.pd-15 {
+  padding: 15px;
+}
+
+.modal-border-top {
+  border: 5px solid var(--semantics-critical-border);
+}
+
+.remove-text {
+  padding: 15px;
+
+  h4 {
+    font-size: var(--fs-20);
+  }
+
+  p {
+    font-size: var(--fs-14);
+  }
+
+  .remove-btn {
+    background: var(--semantics-critical-background-strong);
+    color: var(--neutral-text-on-color);
+    border: 1px solid var(--semantics-critical-border);
+  }
+
+  .remove-btn:hover {
+    background: var(--semantics-critical-background-strong);
+    color: var(--neutral-text-on-color);
+    border: 1px solid var(--semantics-critical-border);
+  }
+
+  .cancel-btn.managedAccounts_cancelButton {
+    background: var(--neutral-surface-layer-01);
+    color: var(--brand-text-primary-default);
+    border: 1px solid var(--brand-border-primary-default);
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: var(--neutral-surface-layer-01);
+      color: var(--brand-text-primary-default);
+      border: 1px solid var(--brand-border-primary-default);
+    }
+
+    &:focus {
+      outline: 2px solid var(--brand-border-primary-default);
+      outline-offset: 2px;
+    }
+  }
+
+  .draft-cancel-btn {
+    color: var(--semantics-warning-text);
+    background: var(--neutral-surface-layer-01);
+    border: 1px solid var(--semantics-warning-border);
+  }
+
+  .draft-save-btn {
+    background: var(--semantics-warning-background-strong);
+    color: var(--neutral-text-on-color);
+    border: 1px solid var(--semantics-warning-border);
+  }
+
+  .draft-save-btn:hover {
+    background: var(--brand-background-primary-strong);
+    color: var(--neutral-text-on-color);
+    border: 1px solid var(--brand-border-primary-default);
+  }
+}
+
+.hours-table {
+  .add-btn {
+    background: var(--neutral-surface-layer-01);
+    border: 1px solid var(--brand-border-primary-default);
+    color: var(--neutral-text-default);
+  }
+
+  .cspl-table {
+    .column-payDate {
+      width: 20%;
+    }
+
+    .column-payPeriodHours {
+      width: 20%;
+    }
+
+    .column-comments {
+      width: 20%;
+    }
+
+    .column-updatedThrough {
+      width: 20%;
+    }
+
+    .column-updatedBy {
+      width: 20%;
+    }
+  }
+}
+
+.loan-container {
+  margin-top: 30px;
+
+  .cspl-table {
+    .column-loadId {
+      width: 10%;
+    }
+
+    .column-repaymentDate {
+      width: 18%;
+    }
+
+    .column-repaymentAmount {
+      width: 20%;
+    }
+
+    .column-updatedThrough {
+      width: 20%;
+    }
+
+    .column-dateTimeLoaded {
+      width: 17%;
+    }
+
+    .column-comments {
+      width: 15%;
+    }
+  }
+}
+
+.eligibility-placeholder-color {
+  .dropSide-custom-select {
+    .place-holder {
+      color: var(--neutral-text-default);
+    }
+  }
+}
+
+.employee-card-list-wrapper {
+  /* display: flex; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  padding-top: 8px;
+  padding-left: 3px;
+  padding-right: 8px;
+  height: 100%;
+
+  .employee-card-item {
+    @extend %BlackLinkNoUnderline;
+
+    &:hover {
+      @extend %PlainLink;
+    }
+
+    .employee-card-item-content {
+      padding: 10px;
+      width: 100%;
+      height: 209px;
+      background: var(--neutral-surface-layer-01);
+      border: 1px solid var(--neutral-border-subtle);
+      box-sizing: border-box;
+      box-shadow: var(--elevation-01);
+      border-radius: 5px;
+      position: relative;
+      margin: 0px;
+
+      &:hover {
+        @extend %PrimaryOutlineBox;
+      }
+
+      .employee-name {
+        width: 60%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      .employee-icon-wrapper {
+        width: 40%;
+      }
+
+      // .plan-details-wrapper {
+      //   width: 80%;
+      // }
+
+      .planTitle-text {
+        font-size: var(--fs-12);
+        margin-bottom: 0;
+        color: var(--neutral-text-subtle-least);
+      }
+
+      .planName-text {
+        font-size: var(--fs-14);
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+
+      .employee-card-tile-text {
+        color: var(--neutral-text-default);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 111px;
+        padding: 0px;
+        position: absolute;
+        left: 132px;
+        top: 16px;
+        bottom: 82px;
+      }
+    }
+  }
+}
+
+/* .active-status { */
+/* color: var(--semantics-success-text); */
+/* } */
+
+.card-line-separator {
+  position: absolute;
+  width: 274px;
+  height: 0px;
+  left: 14px;
+  top: 143px;
+  /* bottom: 66px; */
+  border-bottom: 1px solid var(--neutral-border-strong);
+  /* margin: 1rem 0rem 1.25rem 0rem; */
+}
+
+.card-plan-details {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  width: 153px;
+  height: 21px;
+  left: 132px;
+  top: 166px;
+}
+
+.width-48 {
+  width: 48px;
+}
+
+.plan-text {
+  position: static;
+  width: 95px;
+  height: 21px;
+  left: 58px;
+  top: 0px;
+  font-size: var(--fs-12);
+  margin-bottom: 0;
+  margin: 0px 10px;
+}
+
+.margin-6 {
+  left: 21px;
+  margin: 0px 6px;
+}
+
+.company-logo {
+  position: absolute;
+  width: 56px;
+  height: 19px;
+  left: 34px;
+  top: 166px;
+}
+
+.image-upload-tab {
+  /* width: 628px; */
+  height: 450px;
+}
+.image-upload-body {
+  /* width: 476px; */
+  height: 340px;
+  margin-left: 6%;
+
+  .success-message-text {
+    font-size: var(--fs-16);
+    font-weight: 500;
+    height: 27px;
+    width: 402px;
+  }
+
+  .image-upload-text {
+    /* height: 285px; */
+    border-radius: 5%;
+    width: 402px;
+  }
+
+  .margin-left-40 {
+    margin-left: 40%;
+  }
+
+  .margin-left-30 {
+    margin-left: 30%;
+  }
+
+  .margin-left-20 {
+    margin-left: 20%;
+    margin-top: 4%;
+  }
+
+  .padding-16 {
+    padding: 16px;
+  }
+}
+
+.sort-and-length {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+  margin: 20px 0px 20px 0px;
+  justify-content: space-between;
+}
+
+.company-initials {
+  background-color: transparent;
+  font-size: var(--fs-24);
+  padding: 0;
+}
+
+.investment-card {
+  margin-top: 15px;
+  border: 1px solid var(--neutral-border-strong);
+  padding-top: 15px;
+  border-radius: 5px;
+  width: 100%;
+  overflow: hidden;
+
+  .plr-15 {
+    padding: 0px 15px;
+  }
+}
+
+.border-line-seperator {
+  border-top: 1px solid var(--neutral-border-strong);
+  margin-bottom: 0;
+}
+
+.search-bar-investment {
+  width: 100%;
+
+  .input-group {
+    flex-wrap: nowrap;
+  }
+
+  .input-group-text {
+    background: var(--neutral-surface-layer-01);
+    border-right: 0;
+  }
+
+  .form-control-seach-text input {
+    /* border-left: 0; */
+    border-radius: 0.3rem;
+    font-size: var(--fs-14);
+    width: 100%;
+  }
+}
+
+.search-bar-investment-var {
+  width: 300px;
+
+  .input-group {
+    flex-wrap: nowrap;
+  }
+
+  .input-group-text {
+    background: var(--neutral-surface-layer-01);
+    border-right: 0;
+  }
+
+  .form-control-seach-text input {
+    border-left: 0;
+    /* border-radius: 0.3rem; */
+    font-size: var(--fs-14);
+    width: 100%;
+  }
+}
+
+.top-corners {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.census-information-menu {
+  max-height: 100%;
+  overflow-y: auto;
+  margin: 0px;
+  padding: 0 12px;
+}
+
+.performance-div {
+  border: 1px solid var(--neutral-border-strong);
+  margin-top: 20px;
+  border-radius: 5px;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.performance-body {
+  padding: 20px;
+  background-color: var(--neutral-surface-layer-02);
+  overflow-y: scroll;
+}
+
+.perfomance-card-div {
+  @extend %FlexRowBetweenCenter;
+}
+
+.perfomance-filter-div {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: var(--fs-20);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid var(--neutral-border-strong);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: var(--neutral-surface-layer-01);
+  cursor: not-allowed;
+}
+
+.Perfomance-button {
+  border-radius: 20px;
+  border: 1px solid var(--brand-border-primary-default);
+  color: var(--brand-text-primary-default);
+  background: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 10%,
+    transparent
+  );
+  margin-bottom: 10px;
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: var(--fs-14);
+  padding: 5px 10px;
+  height: 33px;
+}
+
+.performance-button-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.performance-button-div > span {
+  text-decoration: underline;
+  color: var(--brand-text-primary-default);
+  cursor: pointer;
+}
+
+.header-div {
+  width: 100%;
+  border-bottom: 1px solid var(--neutral-border-strong);
+  padding: 15px;
+}
+
+.header-div > p {
+  font-size: var(--fs-24);
+  font-weight: 600;
+  margin-bottom: 0;
+  color: var(--brand-text-primary-default);
+}
+
+.performance-info-div {
+  border: 1px solid var(--neutral-border-strong);
+  padding: 20px;
+  padding-top: 0px;
+  margin-bottom: 20px;
+}
+
+.attribute-col-height {
+  height: 25rem;
+}
+
+.empstatpopvalid {
+  .searchable-list-input-text {
+    border-color: var(--brand-border-primary-default);
+  }
+
+  /* .dropSide-custom-select .form-group.invalid .form-control { */
+
+  /* } */
+}
+
+.emppopvalid {
+  .form-control {
+    border-color: var(--neutral-border-strong);
+  }
+
+  .invalid {
+    .form-control {
+      border-color: var(--semantics-critical-border);
+    }
+  }
+}
+
+.emp-date-flair {
+  .form-group {
+    .dropSide-popup {
+      bottom: 53vh;
+    }
+  }
+}
+
+.manage-census-left-menu {
+  margin: 0px -15px;
+
+  .unselected {
+    color: var(--semantics-success-text);
+  }
+
+  .selected {
+    border-right: 3px solid var(--semantics-critical-border);
+    color: var(--neutral-text-subtle);
+
+    .a {
+      color: var(--neutral-text-subtle);
+    }
+  }
+
+  .unselected-link {
+    font-weight: 600;
+    color: var(--neutral-text-subtle-least);
+    font-size: var(--fs-18);
+  }
+
+  .selected-link {
+    font-weight: 600;
+    color: var(--neutral-text-subtle);
+    font-size: var(--fs-18);
+  }
+}
+
+.employee-card-flair {
+  border: 1px solid var(--neutral-border-subtle);
+  border-radius: 8px;
+  background: var(--neutral-surface-layer-01);
+  padding: 0.5rem;
+  margin: 16px;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 1368px) {
+  .employee-eligibility-requirement-date {
+    .form-group {
+      .form-control {
+        width: 110px;
+      }
+    }
+  }
+}
+
+.rebalance-transfer-container {
+  &::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 1368px) {
+  .rebalance-transfer-container {
+    &::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+    }
+
+    height: 64vh;
+    overflow-y: scroll;
+  }
+}
+
+.h-60vh {
+  height: 60vh;
+}
+
+.emp-classification-table-fields {
+  .form-control {
+    width: 125px;
+  }
+}
+
+@media screen and (max-width: 1368px) {
+  .emp-classification-table-fields {
+    .form-control {
+      width: 100px;
+    }
+  }
+}
+
+.dob-emp-classification {
+  margin-left: 16px;
+  margin-top: 32px;
+}
+.transfer-amount-border {
+  border-radius: 8px;
+  border: 1px solid var(--neutral-border-strong);
+  border-top: 0px;
+  margin-top: 16px;
+  .inner-text-border {
+    background-color: var(--semantics-disabled-background);
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--neutral-border-strong);
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+  }
+  .inner-border {
+    padding: 0px 16px 16px 16px;
+  }
+}
+.inv-card-transfer-request {
+  height: 48vh;
+  overflow: auto;
+}
+
+.pb-72 {
+  padding-bottom: 72px;
+}
+
+.emp-det-car-flair {
+  font-size: var(--fs-16);
+  cursor: pointer;
+  white-space: nowrap;
+  margin-right: 1rem;
+  margin-left: -2rem;
+}
+.p-2r.remove-text {
+  padding: 2rem;
+}
+.p-0px.modal-body {
+  padding: 0px;
+}
+.non-pay-period-table {
+  .w-8 {
+    width: 8%;
+  }
+  .w-5 {
+    width: 5%;
+  }
+  .w-35 {
+    width: 35%;
+  }
+  .table-body {
+    padding-right: 8px;
+  }
+}
+
+.form-group.mb-0px {
+  margin-bottom: 0px;
+}

@@ -1,0 +1,47 @@
+.inplanroth-card-transaction-details {
+  width: 35%;
+
+  .img-size {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+/* .inplanroth-card-request-type { */
+/* width: 20%; */
+/* } */
+
+.inplanroth-card-action {
+  width: 10%;
+  justify-items: left;
+}
+
+.inplanroth-transaction-card-body {
+  border: 1px solid var(--neutral-border-strong);
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.inplanroth-transaction-card-header {
+  padding-left: 12px;
+  padding-right: 20px;
+}
+
+.in-plan-roth-card-vertical-line {
+  border: 1px solid var(--neutral-border-strong);
+  margin-left: auto;
+  margin-right: 0.5rem;
+}
+
+.hr-dashed {
+  height: 1px;
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--neutral-surface-layer-05) 0,
+    var(--neutral-surface-layer-05) 3px,
+    transparent 3px,
+    transparent 6px
+  );
+  opacity: 1;
+  border: none;
+}

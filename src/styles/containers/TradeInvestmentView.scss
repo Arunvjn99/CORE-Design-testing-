@@ -1,0 +1,42 @@
+@use "../shared/shared-placeholders" as *;
+.investment-trade-component {
+  background: var(--neutral-surface-layer-02);
+
+  .w-1225 {
+    width: 12.25%;
+  }
+
+  .w-17 {
+    width: 17%;
+  }
+
+  .investment-cusip-col {
+    @extend %FlexColumn;
+
+    .transaction-card-top-row {
+      font-weight: 600;
+      font-size: var(--fs-16);
+      line-height: 22px;
+      color: var(--neutral-text-default);
+    }
+
+    .transaction-card-bottom-row {
+      font-weight: 500;
+      font-size: var(--fs-14);
+      line-height: 21px;
+      display: flex;
+      color: var(--neutral-text-subtle-least);
+
+      .plan-Id {
+        color: var(--neutral-text-default);
+      }
+    }
+  }
+}
+.w-17 {
+  width: 17%;
+}
+
+.height-28 {
+  height: 28vh;
+}

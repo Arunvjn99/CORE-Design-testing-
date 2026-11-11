@@ -1,0 +1,89 @@
+@use "../shared/shared-placeholders" as *;
+.tablePagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border: 1px solid var(--neutral-border-subtle);
+  background-color: var(--neutral-surface-layer-02);
+  border-radius: 4px;
+
+  cursor: default;
+  .btn-primary {
+    @extend %GhostButtonBorderless;
+  }
+  .btn-primary:hover {
+    @extend %GhostButtonBorderless;
+  }
+
+  .dropdown {
+    margin-right: 20px;
+    background-color: var(--neutral-surface-layer-04);
+  }
+  x .pagination-controls {
+    @extend %FlexCenterGap8px;
+    /* Space between pagination items */
+  }
+  .pagination-controls {
+    @extend %FlexCenterGap8px;
+    /* Space between pagination items */
+  }
+
+  .spacing-space-8px {
+    @extend %HorizontalMargin8px;
+  }
+
+  .spacing-space-16px {
+    @extend %HorizontalMargin16px;
+  }
+
+  .spacing-space-auto {
+    @extend %CenterBlockAutoMargins;
+  }
+  .pg-icon {
+    margin-top: 6px;
+  }
+  .dg-box {
+    @extend %DisabledFadedOverlay;
+    .dg-box:hover {
+      border-color: var(--brand-border-primary-default);
+    }
+  }
+}
+
+.tablePaginationDisabled {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border: 1px solid var(--neutral-border-subtle);
+  background-color: var(--neutral-surface-layer-02);
+  border-radius: 4px;
+  width: 500px;
+  pointer-events: none;
+  opacity: 0.5;
+
+  .dropdown {
+    margin-right: 20px;
+  }
+
+  .pagination-controls {
+    @extend %FlexCenterGap8px;
+    /* Space between pagination items */
+  }
+
+  .spacing-space-8px {
+    @extend %HorizontalMargin8px;
+  }
+
+  .spacing-space-16px {
+    @extend %HorizontalMargin16px;
+  }
+
+  .spacing-space-auto {
+    @extend %CenterBlockAutoMargins;
+  }
+  .pg-icon {
+    margin-top: 6px;
+  }
+}

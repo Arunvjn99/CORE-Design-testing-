@@ -1,0 +1,93 @@
+.cspl-table {
+  overflow-y: scroll;
+  max-height: 100%;
+
+  .column-classification-type {
+    width: 25%;
+  }
+
+  .column-classification-type-required {
+    width: 25%;
+  }
+
+  .column-client-eligibility {
+    width: 25%;
+  }
+
+  .column-codes {
+    width: 25%;
+  }
+}
+
+.background-eligibles {
+  position: relative;
+  top: 4px;
+}
+
+bg-grey-elig {
+  background-color: var(--neutral-surface-layer-03);
+}
+
+bg-white-elig {
+  background-color: var(--neutral-surface-layer-01);
+}
+
+.icon-elig {
+  padding-left: 10px;
+  padding-top: 10px;
+  color: var(--neutral-text-subtle-least);
+  font-size: var(--fs-25);
+}
+
+.text-elig {
+  padding-left: 7px;
+  padding-top: 7px;
+  font-size: var(--fs-14);
+  font-weight: 600;
+  color: var(--neutral-text-subtle-least);
+}
+
+.dash-elig {
+  border-bottom: 1px dashed var(--neutral-border-strong);
+  width: 40px;
+  height: 46px;
+}
+
+.and-elig {
+  padding: 10px;
+  background-color: var(--neutral-surface-layer-03);
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.container-elig {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: var(--neutral-surface-layer-01);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.cont-elig {
+  background-color: var(--neutral-surface-layer-01);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.containers-elig {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: var(--neutral-surface-layer-01);
+  border-radius: 8px;
+  padding: 8px;
+  height: fit-content;
+  padding-right: 10px;
+}
+
+@media screen and (max-height: 500px) {
+  .record-keeper-drop-down {
+    .searchable-list {
+      height: 142px;
+    }
+  }
+}

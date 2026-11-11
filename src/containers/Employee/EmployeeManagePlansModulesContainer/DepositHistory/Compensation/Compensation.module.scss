@@ -1,0 +1,17 @@
+.m-t-28px-v3 {
+  align-self: flex-start;
+  margin-top: 28px;
+}
+
+.min-width-100px {
+  min-width: 100px;
+}
+
+.exportAction:active svg {
+  color: var(--neutral-text-on-color);
+}
+
+.exportAction:active a {
+  text-decoration: none;
+  color: var(--neutral-text-on-color);
+}

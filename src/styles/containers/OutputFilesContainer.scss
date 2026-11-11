@@ -1,0 +1,35 @@
+.tile-container {
+  /* height: 62vh; */
+  /* overflow: auto; */
+  position: relative;
+  //height: 50vh;
+  overflow: hidden;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+
+  @media screen and (max-width: 1400px) {
+    height: 33vh;
+  }
+}
+
+.pt-4-px {
+  padding-top: 4px;
+}
+
+.p-4-px {
+  padding: 4px;
+}
+
+.ml-4-px {
+  margin-left: 4px;
+}
+
+.ml-23-px {
+  margin-left: 23px;
+}
+
+.pt-0-6-rem {
+  padding-top: 0.6rem;
+}

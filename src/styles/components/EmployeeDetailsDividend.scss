@@ -1,0 +1,90 @@
+.employee-details-dividend {
+  .dividend-clearing-partner-table-header {
+    color: var(--neutral-text-subtle-least);
+    font-weight: 700;
+    font-size: var(--fs-12);
+  }
+
+  .dividend-clearingPartner-investment-card {
+    border-radius: 5px;
+    color: var(--neutral-text-subtle);
+    border: 1px solid var(--neutral-border-strong);
+    /* background: var(--neutral-surface-layer-02); */
+    padding: var(--spacing-16);
+  }
+
+  .dividend-clearing-partner-table-data {
+    color: var(--neutral-text-subtle);
+    font-weight: 600;
+    font-size: var(--fs-12);
+    white-space: nowrap;
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+    border-color: var(--neutral-border-strong);
+  }
+
+  .employee-details-data {
+    height: 35vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .slider-content {
+    .loader-wrapper {
+      height: auto;
+    }
+  }
+}
+
+.employee-slider-height {
+  height: 92vh;
+}
+
+.investment-details-card-dividend {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  padding: 15px;
+  width: 900px;
+
+  .bg-grey-dividend {
+    background-color: var(--neutral-surface-layer-02);
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+
+    .cspl-table-with-sort {
+      margin-top: 20px;
+    }
+  }
+}
+
+.search-btn {
+  line-height: 19px;
+  align-self: center;
+}
+
+.pr-9 {
+  padding-right: 9px;
+}
+
+.ml-18 {
+  margin-left: 18px;
+}
+
+.sort-icon-flex {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+  align-self: center;
+}
+
+.trans-total {
+  margin-top: 8px;
+  padding-left: 3px;
+}
+
+.fund-amt {
+  margin-top: 8px;
+  margin-left: 70px;
+}

@@ -1,0 +1,75 @@
+.summaryCard_layout {
+  width: 286px;
+  padding: 5px;
+  background-color: var(--neutral-surface-layer-03);
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 8px;
+}
+
+.summaryCard_Header {
+  font-size: var(--fs-16);
+  font-weight: 600;
+  color: var(--neutral-text-default);
+  line-height: 21.79px;
+}
+
+.summaryCard_Body {
+  font-size: var(--fs-12);
+  font-weight: 400;
+  color: var(--neutral-text-subtle-least);
+  line-height: 16px;
+  margin-top: 0.5rem;
+}
+.summaryCard_BodyAmount {
+  font-size: var(--fs-14);
+  font-weight: 400;
+  line-height: 19.07px;
+  color: var(--neutral-text-subtle);
+  margin-left: auto;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.summaryCard_Heading {
+  margin-left: 20px;
+  margin-top: 10px;
+  line-height: 24px;
+}
+
+.summaryCard_DetailsHeader {
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
+.summaryCard_DetailsBody {
+  margin-left: 20px;
+  margin-bottom: 1rem;
+}
+.summaryCard_HeaderLine {
+  position: initial;
+  height: 0px;
+  left: 14px;
+  top: 143px;
+  border-bottom: 1px solid var(--neutral-border-strong);
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.summaryCard_Line {
+  position: initial;
+  width: 250px;
+  height: 2px;
+  left: 14px;
+  top: 143px;
+  border-bottom: 1px solid var(--neutral-border-strong);
+  margin-top: 5px;
+}
+
+.mt-36 {
+  margin-top: 36px;
+}
+
+.margin-botttom-finch {
+  margin-bottom: 24px;
+}

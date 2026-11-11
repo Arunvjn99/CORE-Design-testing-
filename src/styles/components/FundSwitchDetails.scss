@@ -1,0 +1,39 @@
+.fsd-card {
+  background-color: var(--neutral-surface-layer-01);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.fsd-card-header {
+  font-size: var(--fs-18);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.fsd-investments {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.fsd-investment-header {
+  font-size: var(--fs-16);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.fsd-planGroupTitle {
+  /* display: flex; */
+  /* font-family: Poppins; */
+  font-size: var(--fs-18);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: left;
+  /* border:0.125rem solid var(--brand-border-primary-default); */
+  width: 18.75rem;
+}
+
+.ml-25r {
+  margin-left: 25rem;
+}

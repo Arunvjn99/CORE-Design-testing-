@@ -1,0 +1,55 @@
+.new-employee-report {
+  .label-sort {
+    width: 80px;
+    background: var(--neutral-surface-layer-03);
+  }
+  .cspl-table-loader-wrapper {
+    overflow-x: auto;
+  }
+  .cspl-table {
+    .column-companyName {
+      width: 14%;
+      word-break: break-word;
+    }
+    .column-planId {
+      width: 6%;
+    }
+    .column-planName {
+      width: 13%;
+      word-break: break-word;
+    }
+    .column-statusPlan {
+      width: 12%;
+    }
+    .column-statusSource {
+      width: 13%;
+    }
+    .column-processDate {
+      width: 15%;
+    }
+    .column-hostedMode {
+      width: 15%;
+    }
+    .column-updatedBy {
+      width: 15%;
+    }
+  }
+}
+
+.eligibility-manual-run-row {
+  .w-10 {
+    width: 10%;
+  }
+  .w-12 {
+    width: 12%;
+  }
+  .w-12_5 {
+    width: 12.5%;
+  }
+  .w-14 {
+    width: 14%;
+  }
+  .w-20 {
+    width: 20%;
+  }
+}

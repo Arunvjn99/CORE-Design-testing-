@@ -1,0 +1,77 @@
+export const mapper = {
+  getMappingProfiles: "/api/Mapping",
+  searchProfiles: "/api/Mapping/SearchProfiles",
+  getProfileData: "/api/Mapping",
+  getProfiles: "/api/Mapping/GetProfiles",
+  getInputProfiles: "/api/Mapping/GetInputProfiles",
+  getInputProfilesByFileType: "/api/Mapping/GetInputProfilesByFileType",
+  getOutputProfiles: "/api/OutputProfile/GetOutPutProfiles",
+  //getOutputProfiles: "/api/Mapping/GetOutputProfiles",
+  getTargetDetails: "/api/Mapping/GetTargetDetails",
+  getTargetModelValues: "/api/Mapping/GetTargetModelValues",
+  getOutputProfileName: "/api/OutputProfile/GetOutPutProfilesName",
+  verifyMapService: "/api/Mapping/VerfiyObjectMap",
+  saveOnProfileCreate: "/api/Mapping/SaveOnProfileCreate",
+  SaveOnTempMappingProfileCreate: "/api/Mapping/SaveOnTempMappingProfileCreate",
+  SaveBasicInformation: "/api/Mapping/SaveBasicInformation",
+  deleteInputPlanGroupOutputById: "/api/Mapping/DeleteInputPlanGroupOutputById",
+  cloneProfile: "/api/Mapping/CloneProfile",
+  UpdateStatus: "/api/Mapping/UpdateStatus",
+  mappingChange: "/api/Mapping/SaveOnMappingChange",
+  profileNameChange: "/api/Mapping/UpdateProfileName",
+  getActivePlans: "/api/Mapping/GetFilteredPlans",
+  onAggregateSave: "/api/Mapping/SaveOnDeDupChange",
+  onFilterSave: "/api/Mapping/SaveOnFilter",
+  updatePlans: "/api/Mapping/UpdatePlans",
+  updateInputPlanGroups: "/api/Mapping/UpdateInputPlanGroups",
+  saveTargetType: "/api/Mapping/SaveTargetType",
+  onSchedulerSave: "/api/Mapping/SaveOnChannelChange",
+  checkProfileNameExists: "/api/Mapping/CheckProfileNameExists",
+  onFixedLengthFileCreate: "/api/Mapping/SaveOnFixedWidth",
+  deleteMappingProfile: "/api/Mapping",
+  saveProfileFromYaml: "/api/Mapping/SaveProfileFromYaml",
+  downloadProfileAsYaml: "/api/Mapping/DownloadProfileAsYaml",
+
+  //output mapper
+  saveOutputTarget: "/api/OutputProfile/SaveOutputTarget",
+  deleteOutputProfile: "/api/OutputProfile/DeleteOutputProfile",
+  validateOutputProfile: "/api/OutputProfile/ValidateOutputProfile",
+  cloneOutputProfile: "/api/OutputProfile/CloneOutputProfile",
+  downloadSampleFixedWidthFile:
+    "/api/OutputProfile/DownloadSampleFixedWidthFile",
+  onOutputFilterSave: "/api/OutputProfile/SaveOnFilter",
+  saveMapAndTransformOutput: "/api/OutputProfile/SaveMapAndTransformOutput",
+  fixedWidthOutputMappingSave: "/api/OutputProfile/FixedWidthOutputMappingSave",
+  DeletePlanGroupOutputById: "/api/OutputProfile/DeletePlanGroupOutputById",
+  outputSaveBasicInformation: "/api/OutputProfile/SaveBasicInformation",
+  getOutputProfileData: "/api/OutputProfile",
+  updatePlanGroups: "/api/OutputProfile/UpdatePlanGroups",
+  updateOutputPlans: "/api/OutputProfile/UpdateOutputPlans",
+
+  //passthrough
+  passthroughSaveBasicInformation: "/api/Passthrough/SaveBasicInformation",
+  getPassthroughProfileData: "/api/Passthrough",
+  saveOnSourceProfileCreate: "/api/Passthrough/SaveOnSourceProfileCreate",
+  saveOnTargetProfileCreate: "/api/Passthrough/SaveOnTargetProfileCreate",
+  savePassthroughTarget: "/api/Passthrough/SavePassthroughTarget",
+  savePreview: "/api/Passthrough/SavePreview",
+  saveSplit: "/api/Passthrough/SaveSplit",
+  savePassthroughMapAndTransform:
+    "/api/Passthrough/SavePassthroughMapAndTransform",
+  onPassthroughFilterSave: "/api/Passthrough/SaveOnPassthroughFilter",
+  saveValidation: "/api/Passthrough/SaveValidation",
+  getValidationRules: "/api/Passthrough/getValidationRules",
+  saveOnPassthroughAggregate: "/api/Passthrough/SaveOnPassthroughAggregate",
+};
+
+export const outputFiles = {
+  getOutputFiles: "/api/v1/Payroll/OutputFile/GetOutputFiles",
+  getDownloadSubmittedFile: "/api/v1/Payroll/OutputFile/DownloadSubmittedFile",
+};
+
+export const mappingTemplates = {
+  post: "/api/v1/GenerateProfile/Post",
+  createRule: "/api/v1/GenerateProfile/CreateRule",
+  createSettings: "/api/v1/GenerateProfile/CreateSettings",
+  generateOutputProfile: "/api/v1/GenerateProfile/GenerateOutputProfile",
+};

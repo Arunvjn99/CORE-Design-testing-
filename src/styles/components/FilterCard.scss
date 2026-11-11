@@ -1,0 +1,95 @@
+.filter-header {
+  border: 1px solid var(--neutral-border-subtle);
+  padding: 10px 40px;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: var(--fs-16);
+  color: var(--brand-text-primary-default);
+  margin: 0 -30px;
+  border-left: none;
+  border-right: none;
+}
+
+.see-all-btn {
+  color: var(--brand-text-primary-default);
+  text-decoration: underline;
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+}
+
+.no-filters {
+  color: var(--brand-text-primary-default);
+  text-decoration: none;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+}
+
+.filter-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--brand-background-primary-strong);
+  color: var(--neutral-text-on-color);
+  border-radius: 50%;
+  margin: 0;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.count-drop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-end;
+
+  .filter-item {
+    flex: 1 1 auto;
+    min-width: 180px;
+  }
+
+  .date-range {
+    display: flex;
+    gap: 5px; // Reduced gap between "From Date" and "To Date"
+  }
+
+  .search-box {
+    position: relative;
+    width: 200px;
+
+    input {
+      width: 100%;
+      padding-right: 35px; // Space for search icon
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--neutral-text-subtle-least);
+      cursor: pointer;
+    }
+  }
+}
+
+.pills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+// Responsive Design
+@media (max-width: 1024px) {
+  .filter-container {
+    flex-direction: column;
+  }
+}

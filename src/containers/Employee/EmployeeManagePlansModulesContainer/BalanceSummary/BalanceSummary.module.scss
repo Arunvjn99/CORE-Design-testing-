@@ -1,0 +1,19 @@
+.p-t-10px-p-b-7px-m-b-10px-flex-items-center {
+  padding-top: 10px;
+  border-bottom: 1px solid var(--neutral-border-strong);
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.m-t-0p2r {
+  margin-top: 0.2rem;
+}
+
+.w-p-r-4px {
+  cursor: pointer;
+  padding-right: 4px;
+  width: auto;
+}

@@ -1,0 +1,295 @@
+@use "../shared/shared-placeholders" as *;
+
+.fund-switch-details {
+  padding: 16px 0;
+}
+
+.fsd-header {
+  width: 100%;
+  background-color: var(--neutral-surface-layer-02);
+  height: Hug (56px);
+  padding: 16px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.stocksplot-details-card {
+  width: 70%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--neutral-border-strong);
+}
+
+.stock-split-details-card {
+  margin-top: 16px;
+  width: 75%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--neutral-border-strong);
+}
+
+.fsd-header-stock {
+  margin-left: 13px;
+
+  width: 90%;
+}
+
+.stock-font {
+  @extend %TextMediumBold;
+}
+
+.fsd-units-stock {
+  margin-left: 10px;
+  font-size: var(--fs-18);
+  font-weight: 600;
+  color: var(--neutral-text-default);
+  margin-top: 20px;
+}
+
+.source-details-bg {
+  background-color: var(--neutral-surface-layer-02);
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.source-details-border {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 8px;
+}
+
+.stock-inc-2 {
+  border-left: 1px solid var(--neutral-border-strong);
+  width: 50%;
+  padding: 15px;
+}
+
+.fsd-investment-header-stock {
+  width: 90%;
+  margin-left: 13px;
+  margin-bottom: 8px;
+}
+
+.stockunits {
+  @extend %FlexRow;
+}
+
+.fsd-body-stock {
+  margin-bottom: 20px;
+  background-color: var(--neutral-surface-layer-02);
+  border-radius: 0.5rem;
+  padding-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.fm-tm-body-merge {
+  margin-bottom: 20px;
+  background-color: var(--neutral-surface-layer-02);
+  border-radius: 0.5rem;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 85%;
+}
+
+.fsd-investment-box {
+  display: flex;
+  background-color: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 5%,
+    transparent
+  );
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.options-field-header {
+  display: flex;
+  font-size: var(--fs-14);
+  font-weight: 600;
+  color: var(--neutral-text-subtle-least);
+  margin-bottom: 6px;
+  align-items: center;
+}
+
+.style-headSplit {
+  overflow-y: auto;
+  padding-left: 0px;
+}
+
+.associated-plans {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  margin-bottom: 1rem;
+}
+
+.associated-plans-var {
+  /* border: 1px solid var(--neutral-border-strong); */
+  /* border-radius: 8px; */
+  width: 219px;
+  height: 50px;
+  /* display: flex; */
+  align-items: center;
+  padding-right: 24px;
+  padding-left: 0px;
+  /* margin-bottom: 1rem; */
+}
+
+.fs-plan-icon {
+  background-color: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 25%,
+    transparent
+  );
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.fs-heading {
+  padding-bottom: 16px;
+}
+
+.pg-header {
+  font-size: var(--fs-16);
+  font-weight: 600;
+  width: 188px;
+  height: 22px;
+}
+
+.allocdetailscontainer {
+  width: 75%;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+
+.tablehead {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.fs-rundetails {
+  width: 75%;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.fs-runheadings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: var(--spacing-16);
+}
+
+.fsdetailsleft {
+  @extend %FlexColumn;
+}
+
+.fsdetailsright {
+  @extend %FlexColumn;
+}
+
+.fs-table {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  padding: 16px;
+  padding-top: 0px;
+}
+
+.invrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-16) 0px;
+}
+
+.rownameandId {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.Separator {
+  margin: 0px -16px;
+  border-bottom: 1px solid var(--neutral-border-strong);
+}
+
+.iconinfo {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 0px 0px 6px 6px;
+  border: 1px solid var(--neutral-border-strong);
+  background-color: var(--neutral-surface-layer-05);
+}
+
+.infomessage {
+  font-size: var(--fs-14);
+  font-weight: 600;
+  color: var(--neutral-text-subtle);
+}
+
+.infoicon {
+  font-size: var(--fs-16);
+  font-weight: 400;
+  color: var(--neutral-text-subtle);
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.fsd-invetsment-container {
+  margin: 8px 0px 16px 0px;
+  display: inline-block;
+  width: 100%;
+  background: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 5%,
+    transparent
+  );
+  width: 60%;
+  border-radius: 5px;
+}
+
+.marginLeft-fm {
+  margin-left: 11px;
+}
+
+.fm-investment-card {
+  width: fit-content;
+  text-align: right;
+}
+
+.td-st {
+  /* margin: "8px 0px 16px 0px", */
+  /* display: "inline-block", */
+  /* width: "100%", */
+  /* background: "color-mix(in srgb, var(--brand-background-primary-strong) 5%, transparent)", */
+  /* width: "60%", */
+  /* borderRadius: "5px" */
+  margin: 8px 0px 30px 0px;
+  display: inline-block;
+  width: 100%;
+  background: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 5%,
+    transparent
+  );
+  width: 60%;
+  border-radius: 5px;
+  /* background-color: var(--semantics-critical-background-strong); */
+}

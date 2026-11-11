@@ -1,0 +1,80 @@
+@use "../shared/shared-placeholders" as *;
+
+.FilterAndGroupingSelectedColCSS {
+  width: 30%;
+  border-right: 2px solid var(--neutral-border-strong);
+  background-color: var(--neutral-surface-layer-02);
+  height: 100%;
+  margin-bottom: 2rem;
+}
+
+.filterP1 {
+  color: var(--neutral-text-default);
+
+  /* H6 (Page Menu) */
+  // font-family: Open Sans;
+  font-size: var(--fs-18);
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 1%;
+  line-height: 24px;
+  /* 133.333% */
+  letter-spacing: 0.18px;
+  text-transform: capitalize;
+}
+
+.filterP1Opt {
+  @extend %LargeDisabledHeadingCapitalized;
+
+  /* H6 (Page Menu) */
+}
+
+.filterClick {
+  color: var(--brand-text-primary-default);
+  // font-family: Open Sans;
+  font-size: var(--fs-16);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  text-decoration-line: underline;
+}
+
+.filterP2 {
+  // font-family: Open Sans;
+  font-size: var(--fs-16);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+
+.fliterClass {
+  margin-left: 3%;
+  margin-top: 3%;
+}
+
+.fliterBackDiv {
+  border-radius: 6px;
+  background: var(--neutral-surface-layer-02);
+  display: flex;
+  padding: 16px;
+  align-items: flex-end;
+  gap: 24px;
+  align-self: stretch;
+}
+/* CSS for Slider Panel */
+.slider-panel {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -300px; /* Adjust the width based on your design */
+  background-color: var(--neutral-surface-layer-03);
+  transition: right 0.3s ease;
+  overflow-y: auto;
+}
+
+.slider-panel.open {
+  right: 0;
+}

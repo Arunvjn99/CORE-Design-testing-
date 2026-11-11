@@ -1,0 +1,65 @@
+.dropdown-excel-button {
+  background: var(--neutral-surface-layer-01);
+  border: 0px;
+}
+
+.dropdown-excel {
+  background: var(--neutral-surface-layer-01);
+  border: 1px solid var(--brand-border-primary-default);
+  box-shadow: var(--elevation-01);
+  border-radius: 5px;
+  list-style: none;
+  padding: 10px;
+  margin-top: 10px;
+  width: fit-content;
+  position: absolute;
+
+  .dropdown-item {
+    padding: 0px;
+    font-size: var(--fs-12);
+    color: var(--neutral-text-default);
+    line-height: 26px;
+    cursor: pointer;
+
+    &:focus {
+      background-color: transparent;
+    }
+  }
+
+  .dropdown-header {
+    padding: 0px;
+    padding-bottom: 0.25rem;
+    font-size: var(--fs-12);
+  }
+}
+
+.excel-button-container {
+  .dropdown-toggle::after {
+    display: none;
+  }
+
+  .btn {
+    padding: 0px;
+    padding-left: 0.5rem;
+    display: flex;
+  }
+
+  .dropdown-item:hover {
+    color: var(--brand-text-primary-default);
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}
+
+.download-dropdown {
+  background: var(--neutral-surface-layer-01);
+  border: 1px solid var(--brand-border-primary-default);
+  box-shadow: var(--elevation-01);
+  border-radius: 5px;
+  list-style: none;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: -94px;
+  /* width: fit-content ; */
+  /* position: absolute; */
+}

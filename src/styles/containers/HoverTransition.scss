@@ -1,0 +1,12 @@
+.cloneHoverTransition {
+  &:hover {
+    border-radius: 50%;
+    box-shadow: 0 0 0 7px var(--brand-background-primary-strong);
+    background-color: var(--brand-background-primary-strong);
+    color: var(--neutral-text-on-color);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    transition: 0.5s;
+  }
+}

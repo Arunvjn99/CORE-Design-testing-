@@ -1,0 +1,52 @@
+@use "../shared/shared-placeholders" as *;
+
+.items3CSS {
+  display: flex;
+  margin-top: 2%;
+}
+
+.itemSub1CSS {
+  @extend %GrayBackgroundLabelOpenSans;
+
+  /* Body Text/Medium - Semibold */
+}
+
+.payDateMainCSS {
+  @extend %CardContainerGrayBackground;
+}
+
+.payDateDiv {
+  @extend %CardHeadingOpenSans;
+
+  /* Body Text/Large - SemiBold */
+}
+
+.dateRangeCSS {
+  color: var(--neutral-text-subtle-least);
+  // font-family: Open Sans;
+  font-size: var(--fs-16);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+
+.dateRangeCSSStar {
+  color: var(--semantics-critical-text);
+  // font-family: Open Sans;
+  font-size: var(--fs-16);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+
+.inputDivMain {
+  margin-top: 7px;
+  background-color: var(--neutral-surface-layer-01);
+  padding: 5px 5px;
+}
+
+.departmentMainCSS {
+  @extend %CardContainerGrayBackground;
+}

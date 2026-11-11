@@ -1,0 +1,50 @@
+.wrapperStyle {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  margin: 0 2%;
+  margin-top: 10px;
+
+  &.wrapperStyleWithPadding {
+    padding: 8px;
+  }
+}
+
+.goButton {
+  border: 1px solid var(--brand-border-primary-default);
+  color: transparent;
+  -webkit-text-stroke: 1px var(--brand-text-primary-default);
+  background: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-left: 5px;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+
+  .tableSession {
+    width: 60%;
+    padding: 10px;
+  }
+
+  .trendsSession {
+    width: 40%;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 0;
+
+    .tableSession {
+      width: 100%;
+      border: none;
+    }
+
+    .trendsSession {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.errors-card {
+  margin: 0rem auto;
+  padding: 6px;
+  .error-head {
+    background: var(--neutral-surface-layer-01);
+    color: var(--neutral-text-default);
+    font-size: var(--fs-12);
+    font-weight: 600;
+    /* border-radius: 5px 5px 0px 0px; */
+    padding: 10px;
+  }
+  .error-body {
+    background: var(--neutral-surface-layer-01);
+    list-style: none;
+    font-size: var(--fs-12);
+    font-weight: 500;
+    color: var(--neutral-text-default);
+    /* border-radius: 0px 0px 5px 5px; */
+    border-top: 1px solid var(--neutral-border-strong);
+    padding-left: 0;
+    li {
+      padding: 10px;
+      border-bottom: 1px solid var(--neutral-border-strong);
+      cursor: pointer;
+      position: relative;
+      color: var(--neutral-text-subtle-least);
+    }
+    li:last-child {
+      border-bottom: 0;
+    }
+    .active-text {
+      background: color-mix(
+        in srgb,
+        var(--brand-background-primary-strong) 20%,
+        transparent
+      );
+      color: var(--neutral-text-default);
+    }
+    .inactive-text {
+      background: var(--neutral-surface-layer-01);
+      /* white-space: nowrap; */
+      width: 282px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .arrow-left {
+      position: absolute;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-right: 7px solid var(--neutral-border-strong);
+      left: -6px;
+      margin-top: 5px;
+    }
+  }
+}
+.payroll-error-listing {
+  padding: 5px;
+  border: 1px solid var(--neutral-border-strong);
+  margin: 1rem 0;
+  background: var(--neutral-surface-layer-01);
+  border-radius: 5px;
+}
+
+.progress-status {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  margin-bottom: 0;
+  align-items: center;
+  border: 0;
+  background: var(--neutral-surface-layer-01);
+  .progress-active {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding-top: 3px;
+    color: var(--brand-text-primary-default);
+    border: 1px solid var(--brand-border-primary-default);
+    background: var(--neutral-surface-layer-01);
+    border-radius: 50px;
+  }
+  li {
+    margin-left: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding-top: 3px;
+    background: var(--neutral-surface-layer-02);
+    color: var(--neutral-text-default);
+    border-radius: 50px;
+    border: 1px solid var(--neutral-border-strong);
+  }
+  .awaiting-bg {
+    background: var(--semantics-success-background-strong);
+    border: 1px solid var(--semantics-success-border);
+    color: var(--neutral-text-on-color);
+  }
+  .awaiting-blue {
+    border: 1px solid var(--brand-border-primary-default);
+    color: var(--brand-text-primary-default);
+  }
+}

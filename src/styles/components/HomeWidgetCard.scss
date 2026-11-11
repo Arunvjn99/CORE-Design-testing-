@@ -1,0 +1,260 @@
+@use "../shared/shared-placeholders" as *;
+.home-widget-card {
+  position: relative;
+  background-color: var(--neutral-surface-layer-01);
+  box-shadow: var(--elevation-01);
+  border-radius: 15px;
+  transition: transform 0.2s;
+
+  height: 287px;
+  width: 300px;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  margin: 20px;
+  border: 1px solid var(--neutral-border-strong);
+
+  .img-box {
+    height: 200px;
+    width: 280px;
+    border-radius: 15px;
+    margin-top: 5px;
+  }
+
+  .Company {
+    background: url("/assets/icons/gif/Company.svg") no-repeat center center,
+      var(--brand-background-primary-light);
+
+    &:hover {
+      background: url("/assets/icons/gif/Company.gif") no-repeat center center,
+        var(--brand-background-primary-light);
+      background-size: 200px;
+    }
+  }
+
+  .Plan {
+    background: url("/assets/icons/gif/Plan.svg") no-repeat center center,
+      var(--brand-background-primary-light);
+
+    &:hover {
+      background: url("/assets/icons/gif/Plan.gif") no-repeat center center,
+        var(--brand-background-primary-light);
+      background-size: 200px;
+    }
+  }
+
+  .Employees {
+    background: url("/assets/icons/gif/Employees.svg") no-repeat center center,
+      var(--brand-background-primary-light);
+
+    &:hover {
+      background: url("/assets/icons/gif/Employees.gif") no-repeat center center,
+        var(--brand-background-primary-light);
+      background-size: 200px;
+    }
+  }
+
+  .Eligibility {
+    background: url("/assets/icons/gif/Eligibility.svg") no-repeat center center,
+      var(--brand-background-primary-light);
+
+    &:hover {
+      background: url("/assets/icons/gif/Eligibility.gif") no-repeat center
+          center,
+        var(--brand-background-primary-light);
+      background-size: 200px;
+    }
+  }
+
+  .Enrollment {
+    background: url("/assets/icons/gif/Enrollment.svg") no-repeat center center,
+      var(--brand-background-primary-light);
+
+    &:hover {
+      background: url("/assets/icons/gif/Enrollment.gif") no-repeat center
+          center,
+        var(--brand-background-primary-light);
+      background-size: 200px;
+    }
+  }
+
+  .Payroll {
+    background: url("/assets/icons/gif/Payroll.svg") no-repeat center center,
+      var(--brand-background-primary-light);
+
+    &:hover {
+      background: url("/assets/icons/gif/Payroll.gif") no-repeat center center,
+        var(--brand-background-primary-light);
+      background-size: 200px;
+    }
+  }
+
+  .Reports {
+    background: url("/assets/icons/gif/Reports.svg") no-repeat center center,
+      var(--brand-background-primary-light);
+
+    &:hover {
+      background: url("/assets/icons/gif/Reports.gif") no-repeat center center,
+        var(--brand-background-primary-light);
+      background-size: 200px;
+    }
+  }
+
+  .Mapper {
+    background: url("/assets/icons/gif/Templates.svg") no-repeat center center,
+      var(--brand-background-primary-light);
+
+    &:hover {
+      background: url("/assets/icons/gif/Templates.gif") no-repeat center center,
+        var(--brand-background-primary-light);
+      background-size: 200px;
+    }
+  }
+
+  .Calculators {
+    background: url("/assets/svg/calculator.svg") no-repeat center center,
+      var(--brand-background-primary-light);
+
+    &:hover {
+      background: url("/assets/icons/gif/Calculator.gif") no-repeat center
+          center,
+        var(--brand-background-primary-light);
+      background-size: 200px;
+    }
+  }
+
+  .Maintenance {
+    background: url("/assets/icons/gif/Maintenance.svg") no-repeat center center,
+      var(--brand-background-primary-light);
+
+    &:hover {
+      background: url("/assets/icons/gif/Maintenance.gif") no-repeat center
+          center,
+        var(--brand-background-primary-light);
+      background-size: 200px;
+    }
+  }
+
+  .OutputFiles {
+    background: url("/assets/icons/gif/Outputfile.svg") no-repeat center center,
+      var(--brand-background-primary-light);
+
+    &:hover {
+      background: url("/assets/icons/gif/Outputfile.svg") no-repeat center
+          center,
+        var(--brand-background-primary-light);
+      background-size: 200px;
+    }
+  }
+
+  .Communication {
+    background: url("/assets/icons/svg/Communication.svg") no-repeat center
+        center,
+      var(--brand-background-primary-light);
+
+    &:hover {
+      background: url("/assets/icons/svg/Communication.svg") no-repeat center
+          center,
+        var(--brand-background-primary-light);
+      background-size: 200px;
+    }
+  }
+
+  .Transaction {
+    background: url("/assets/icons/svg/transaction.svg") no-repeat center center,
+      var(--brand-background-primary-light);
+
+    &:hover {
+      background: url("/assets/icons/svg/transaction.svg") no-repeat center
+          center,
+        var(--brand-background-primary-light);
+      background-size: 200px;
+    }
+  }
+
+  .Forfeiture {
+    background: url("/assets/icons/svg/forfeiture.svg") no-repeat center center,
+      var(--brand-background-primary-light);
+
+    &:hover {
+      background: url("/assets/icons/svg/forfeiture.svg") no-repeat center
+          center,
+        var(--brand-background-primary-light);
+      background-size: 200px;
+    }
+  }
+
+  .Trade {
+    background: url("/assets/icons/svg/Trade.svg") no-repeat center center,
+      var(--brand-background-primary-light);
+
+    &:hover {
+      background: url("/assets/icons/svg/Trade.svg") no-repeat center center,
+        var(--brand-background-primary-light);
+      background-size: 200px;
+    }
+  }
+
+  .content-container {
+    line-height: 35px;
+    padding-left: 10px;
+    font-size: var(--fs-18);
+  }
+
+  &.disabled {
+    @extend %DisabledFadedOverlay;
+  }
+
+  .widget-icon {
+    padding: 10px;
+    max-width: 100px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .widget-content {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: flex-start;
+
+    .widget-label {
+      font-size: var(--fs-18);
+      line-height: 27px;
+      padding-bottom: 10px;
+      text-transform: capitalize;
+    }
+
+    .widget-count {
+      font-weight: 300;
+      font-size: var(--fs-18);
+      line-height: 27px;
+      text-transform: capitalize;
+      font-feature-settings: "tnum" on, "lnum" on;
+    }
+  }
+
+  .spinner-row {
+    font-size: var(--fs-7);
+  }
+
+  .spinner-border-sm {
+    height: 10px;
+    width: 10px;
+    border-width: 0.4em;
+  }
+
+  .add-icon {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  @media only screen and (max-width: 1439px) {
+    &:hover:not(.disabled) {
+      transform: scale(1.1);
+    }
+  }
+}

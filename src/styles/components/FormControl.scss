@@ -1,0 +1,65 @@
+@use "../foundation/typography-mixins" as *;
+.form-control + .check-cirle {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-top: 0px;
+  svg {
+    font-size: var(--fs-16);
+    align-self: center;
+  }
+  &.valid {
+    color: var(--semantics-success-text);
+  }
+  &.invalid {
+    color: var(--semantics-critical-text);
+  }
+  &.invalid-warning {
+    color: var(--semantics-warning-text);
+  }
+  .spinner-border {
+    border-width: 0.1em;
+  }
+}
+
+.form-no-label {
+  margin-top: 1.813rem;
+}
+
+.form-no-label.mt-0,
+.mt-0.form-no-label,
+.form-no-label.m-0,
+.m-0.form-no-label {
+  margin-top: 0;
+}
+
+.form-no-label.mt-8 {
+  margin-top: 8px;
+}
+
+.form-no-label2 {
+  margin-top: 1.313rem;
+}
+
+form {
+  .form-label {
+    position: relative;
+    .optional-side-text {
+      @include body-text-regular-medium(
+        $color: var(--neutral-text-subtle-least)
+      );
+      padding: 0.05rem 0.3rem;
+      font-size: var(--fs-14);
+      color: var(--neutral-text-subtle-least);
+      position: absolute;
+      left: 97%;
+    }
+  }
+}
+.mt-0-3 {
+  margin-top: 0.3rem;
+}
+.form-group .form-control.form-button-group.field-button-group-new {
+  width: max-content;
+  font-size: var(--fs-12);
+}

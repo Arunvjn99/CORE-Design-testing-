@@ -1,0 +1,39 @@
+@use "../shared/shared-placeholders" as *;
+.cspl-table {
+  /*height: 100%;*/
+  overflow: hidden;
+  a {
+    &:hover {
+      font-weight: 500;
+    }
+    color: var(--brand-text-primary-default);
+  }
+  .w-90 {
+    width: 90%;
+  }
+  .w-75 {
+    width: 75%;
+  }
+  .w-15 {
+    width: 15%;
+  }
+  .w-10 {
+    width: 10%;
+  }
+  .column-custodianName {
+    width: 25%;
+  }
+  .column-custodianMail {
+    width: 25%;
+  }
+  .column-custodianPhone {
+    width: 25%;
+  }
+  .column-custodianPlan {
+    width: 25%;
+    justify-content: center;
+  }
+  .btn-theme {
+    @include PrimarySolidButton;
+  }
+}

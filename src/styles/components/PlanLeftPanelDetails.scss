@@ -1,0 +1,100 @@
+.plan-name-details {
+  font-size: var(--fs-12);
+  padding: 0px 16px 0px 16px;
+
+  .planSideCard-title {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .planCard-row {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .planCard-col {
+    flex: 1 1 50%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .planCard-col-left {
+    padding-right: 8px;
+  }
+
+  .planCard-col-right {
+    padding-left: 8px;
+  }
+
+  .planCard-badge {
+    display: flex;
+    align-items: center;
+    border-radius: var(--spacing-4);
+    padding: 0.25rem 0.5rem;
+    font-size: var(--fs-14);
+    font-weight: var(--font-medium);
+    overflow: hidden;
+    max-width: 100%;
+
+    .planCard-badge-icon {
+      font-size: var(--fs-12);
+      flex-shrink: 0;
+      margin-right: 0.25rem;
+    }
+
+    .planCard-badge-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      min-width: 0;
+    }
+
+    &.success-secondary {
+      background-color: var(--semantics-success-background-light);
+      color: var(--semantics-success-text);
+    }
+
+    &.warning-secondary {
+      background-color: var(--semantics-warning-background-light);
+      color: var(--semantics-warning-text);
+    }
+
+    &.danger-secondary {
+      background-color: var(--semantics-critical-background-light);
+      color: var(--semantics-critical-text);
+    }
+
+    &.info-secondary {
+      background-color: var(--semantics-highlight-background-light);
+      color: var(--semantics-highlight-text);
+    }
+
+    &.neutral-secondary {
+      background-color: var(--neutral-surface-layer-02);
+      color: var(--brand-text-primary-default);
+    }
+  }
+
+  .plan-name {
+    font-size: var(--fs-16);
+    font-weight: 500;
+    line-height: 2;
+  }
+
+  .plan-id {
+    text-transform: capitalize;
+    margin-top: 0.15rem;
+  }
+
+  .plan-status {
+    margin-top: 0.5rem;
+    background: var(--neutral-surface-layer-01);
+    border: 1px solid var(--semantics-success-border);
+    text-transform: none;
+    width: max-content;
+    padding: 0.25rem 1rem;
+    border-radius: 5px;
+    color: var(--semantics-success-text);
+    font-weight: 600;
+  }
+}

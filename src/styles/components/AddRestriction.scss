@@ -1,0 +1,27 @@
+@use "../shared/shared-placeholders" as *;
+.restriction {
+  .restriction-date-range-effective {
+    .dropSide-popup {
+      top: 205px;
+      left: 550px;
+    }
+  }
+
+  .restrictionSubHeadings {
+    margin-top: 1.25rem;
+    color: var(--neutral-text-default);
+    font-weight: 600;
+  }
+
+  .form-control-seach-text .close-button-sponsor .icon-size {
+    margin-top: 6px;
+  }
+  .search-text-restriction-container {
+    .form-control-seach-text .close-button-sponsor .icon-size {
+      margin-top: 0px;
+    }
+  }
+}
+.flex-direction-column {
+  @extend %FlexColumn;
+}

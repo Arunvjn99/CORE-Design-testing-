@@ -1,0 +1,326 @@
+.loan-container {
+  .form-group.xs .form-control {
+    width: 100px;
+  }
+}
+
+.plan-name-header {
+  color: var(--neutral-text-subtle-least);
+  font-weight: 600;
+  font-size: var(--fs-14);
+  margin-bottom: 5px;
+}
+
+.plan-name-value {
+  font-weight: 600;
+  font-size: var(--fs-16);
+  color: var(--neutral-text-subtle);
+  margin-bottom: 5px;
+}
+
+.plan-details-card {
+  background-color: var(--neutral-surface-layer-02);
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  padding: 8px 16px;
+}
+
+.classification-count-card {
+  background-color: color-mix(
+    in srgb,
+    var(--semantics-highlight-background-strong) 10%,
+    transparent
+  );
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.fee-classification-card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  padding: 16px;
+  margin-bottom: 15px;
+}
+
+.fee-classification-group-header {
+  background-color: var(--neutral-surface-layer-02);
+  border-radius: 4px;
+  font-weight: 600;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 5px 4px;
+}
+
+.classification-cards {
+  height: 45vh;
+  overflow-y: auto;
+}
+
+.excluded-classification {
+  color: var(--neutral-text-subtle-least);
+  margin-bottom: 20px;
+}
+
+.excluded-classification-box {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  /* width: 45% ; */
+  padding: 15px;
+}
+
+.fee-edit-icon {
+  cursor: pointer;
+  color: var(--brand-text-primary-default);
+  font-size: var(--fs-26);
+  font-weight: 300;
+  margin-right: 40px;
+}
+
+.fee-delete-icon {
+  cursor: pointer;
+  color: var(--semantics-critical-text);
+  font-size: var(--fs-26);
+  font-weight: 300;
+}
+
+.excluded-classification-box-empty {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  padding: 15px;
+  width: 45%;
+}
+
+.Fee-section-head {
+  color: var(--neutral-text-default);
+  font-size: var(--fs-20);
+  font-weight: 600;
+  margin: 20px 0px;
+}
+
+.hierarchy-component-text {
+  color: var(--neutral-text-subtle-least);
+  font-size: var(--fs-14);
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.hierarchy-component {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  padding: 15px 15px 0px 15px;
+  justify-items: center;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.hierarchy-component-var {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  padding: 15px 15px 0px 15px;
+  justify-items: center;
+  text-align: center;
+  margin-bottom: 15px;
+
+  .form-group.xxs .form-control {
+    width: 60px;
+  }
+}
+
+.investment-card-add {
+  height: 77px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: var(--elevation-01);
+}
+
+.investment-card-add-top {
+  background-color: var(--neutral-surface-layer-02);
+  padding: 10px;
+  height: 35px;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px 8px 0px 0px;
+}
+
+.investment-card-add-bottom {
+  padding: 10px;
+  height: 42px;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 0px 0px 8px 8px;
+}
+
+.eligibility-container {
+  font-size: var(--fs-24);
+  position: absolute;
+  right: 37px;
+  top: 15px;
+}
+
+.eligibility-container-excel-export:hover {
+  color: var(--brand-text-primary-default);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.outer-body {
+  width: 429px;
+  border: 1px solid var(--neutral-border-strong);
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-bottom: 25px;
+  margin-bottom: 10px;
+}
+
+.inner-body1 {
+  width: 427px;
+  height: 45px;
+  background: var(--neutral-surface-layer-03);
+  border-radius: 4px 4px 0px 0px;
+}
+
+.loanrefinance {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+      0deg,
+      color-mix(
+        in srgb,
+        var(--brand-background-primary-strong) 5%,
+        transparent
+      ),
+      color-mix(in srgb, var(--brand-background-primary-strong) 5%, transparent)
+    ),
+    var(--neutral-surface-layer-02);
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.loansuspension {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  color: var(--neutral-text-subtle-least);
+  width: 100%;
+  height: 100%;
+
+  background: var(--neutral-surface-layer-01);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.form-control-days-right-text {
+  border: 0px solid var(--neutral-border-strong);
+  border-radius: 0px 6px 6px 0px;
+  width: 59px;
+}
+
+.loanrefinancelabel {
+  font-size: var(--fs-12);
+  margin-bottom: 0.5rem;
+}
+
+.text-body1 {
+  font-style: normal;
+  display: inline-block;
+  font-weight: 500;
+  font-size: var(--fs-14);
+  line-height: 150%;
+  color: var(--neutral-text-default);
+  margin: 13px 290px 11px 9px;
+  /* padding: 13px 290px 11px 9px; */
+}
+
+.inner-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-12);
+  color: var(--neutral-text-subtle-least);
+  margin-left: 16px;
+  margin-top: 20px;
+}
+
+.inner-text2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-12);
+  color: var(--neutral-text-subtle-least);
+  margin-right: 28px;
+  margin-top: 20px;
+}
+
+.inner-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 19px;
+}
+
+.inner-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: auto;
+  margin-right: 25px;
+  border: 1px solid var(--neutral-border-strong);
+  width: 134px;
+  height: 36px;
+  border-radius: 5px;
+}
+
+.arrow-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 10.24px;
+}
+
+.inner-txt {
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--fs-12);
+  color: var(--neutral-text-default);
+  margin-left: 16px;
+  padding-top: 4px;
+}
+
+.inner-hierarchy {
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--fs-12);
+  color: var(--brand-text-primary-default);
+  padding-left: 16px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.loan-error {
+  display: block;
+  color: var(--semantics-critical-text);
+  margin-bottom: 15px;
+}
+
+.loan-tenure-refinance {
+  .form-group {
+    margin-bottom: 0rem;
+  }
+}

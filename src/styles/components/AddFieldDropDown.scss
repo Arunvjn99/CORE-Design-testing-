@@ -1,0 +1,28 @@
+.add-field-dropdown {
+  .drop-down-toggle-text {
+    color: var(--brand-text-primary-default);
+  }
+
+  .dropdown-menu {
+    width: 108px;
+
+    a {
+      border-bottom: 1px solid var(--neutral-border-strong);
+      /* font-family: "Poppins"; */
+      font-style: normal;
+      font-weight: 400;
+      font-size: var(--fs-16);
+      color: var(--neutral-text-subtle-least);
+    }
+
+    :last-child {
+      border-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .active {
+      color: var(--neutral-text-default);
+      background-color: var(--neutral-surface-layer-01);
+    }
+  }
+}

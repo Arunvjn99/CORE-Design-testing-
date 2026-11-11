@@ -1,0 +1,25 @@
+.review-wizard-wrapper {
+  .wizard-progress {
+    border-top-width: 5px;
+    border-top-style: solid;
+    padding-top: 0.25rem;
+    &.todo {
+      border-color: var(--neutral-border-strong);
+      svg {
+        color: var(--neutral-text-subtle-least);
+      }
+    }
+    &.done {
+      border-color: var(--semantics-success-border);
+      svg {
+        color: var(--semantics-success-text);
+      }
+    }
+    &.wip {
+      border-color: var(--brand-border-primary-default);
+      svg {
+        color: var(--brand-text-primary-default);
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@use "../shared/shared-placeholders" as *;
+.transaction-maintenance-stock-split-dates {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 16px;
+  background-color: var(--neutral-surface-layer-02);
+  border-radius: 8px;
+}
+
+.TransactionBreakDownStockSplit {
+  margin: 16px 0;
+  width: 100%;
+  height: 38vh;
+  overflow: auto;
+}
+.TransactionBreakDownFundMerger {
+  margin: 16px 0;
+  height: 38vh;
+  overflow: auto;
+}
+
+.tm-ss-footer {
+  background-color: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 25%,
+    transparent
+  );
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: -16px 0;
+  padding: 8px;
+}
+.tm-fm-footer {
+  display: flex;
+  width: 85%;
+  background-color: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 25%,
+    transparent
+  );
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: -16px 0;
+  padding: 8px;
+}
+
+.tm-ss-units {
+  min-width: 50%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.tm-ss-footer-merger-duplicate-footer {
+  background-color: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 25%,
+    transparent
+  );
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: -16px 0;
+  padding: 8px;
+  width: 100%;
+}

@@ -1,0 +1,37 @@
+@use "../shared/shared-placeholders" as *;
+.taskmanagementrow {
+  border: 1px solid var(--neutral-border-strong);
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 8px;
+  background-color: var(--neutral-surface-layer-02);
+}
+.border-left-red {
+  border-left: 3px solid var(--semantics-critical-border);
+}
+.border-left-blue {
+  border-left: 3px solid var(--semantics-highlight-border);
+}
+.border-left-green {
+  border-left: 3px solid var(--semantics-success-border);
+}
+.bl-3px-solid-warning {
+  border-left: 3px solid var(--semantics-warning-border);
+}
+
+#paratext {
+  padding-left: 15px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  width: 80%;
+  font-size: var(--fs-14);
+  font-weight: 400;
+}
+
+#paratext.approval-task-text {
+  text-wrap: wrap;
+}
+
+.innertaskrow {
+  @extend %FlexAlignCenter;
+}

@@ -1,0 +1,79 @@
+.date-picker-popup {
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--neutral-surface-layer-01);
+  padding: 20px;
+  border: 1px solid var(--neutral-border-strong);
+  box-shadow: var(--elevation-01);
+}
+
+.date-picker-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.done-button {
+  padding: 5px 10px;
+  background-color: var(--semantics-success-background-strong);
+  color: var(--neutral-text-on-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.date-picker-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+.date-range-button {
+  position: relative;
+  width: fit-content;
+  padding: 8px 12px;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.date-field {
+  padding: 0 8px;
+}
+
+.arrow-icon {
+  margin: 0 8px;
+}
+
+.date-picker-popup {
+  border: 1px solid var(--neutral-border-strong);
+  background-color: var(--neutral-surface-layer-01);
+  padding: 16px;
+}
+.arrow-icon {
+  margin: 5px;
+}
+.select-range-text {
+  position: absolute;
+  left: 2%;
+}
+.transparent-button {
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.reset-button {
+  margin-right: 10px;
+}
+
+/* Rest of the CSS styles for the component */

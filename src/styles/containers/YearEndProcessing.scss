@@ -1,0 +1,233 @@
+@use "../shared/shared-placeholders" as *;
+.manage-yep-column {
+  background: color-mix(
+    in srgb,
+    var(--neutral-surface-layer-03) 50%,
+    transparent
+  );
+  position: relative;
+  z-index: 1;
+}
+
+.manage-yep-menu {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 270px;
+}
+
+.padding-ctn {
+  padding: 0px 12px 0px 12px;
+}
+
+.yep-ctn {
+  background: var(--neutral-surface-layer-01);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  border: 1px solid var(--neutral-border-strong);
+  width: 100%;
+  height: 240px;
+  padding: 8px;
+}
+
+.disable_filling {
+  color: var(--neutral-text-subtle-least);
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.result-documents {
+  background-color: var(--neutral-surface-layer-01);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  /* width: 245px; */
+  height: 90px;
+}
+
+.mark-as-completed {
+  background-color: var(--neutral-surface-layer-01);
+  border-radius: 8px;
+}
+
+.borderradius-8 {
+  border-radius: 8px;
+  margin-left: 25px;
+}
+
+.textOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 1;
+}
+
+.green {
+  color: var(--semantics-success-text);
+  width: 244px;
+  border-radius: 5px;
+  width: Fill (244.52px) px;
+  height: Fill (25.56px) px;
+  padding: 4px 0px 0px 0px;
+  gap: 4px;
+  opacity: 0px;
+}
+
+.red {
+  color: var(--semantics-critical-text);
+  width: 244px;
+  border-radius: 5px;
+  width: Fill (244.52px) px;
+  height: Fill (25.56px) px;
+  /* padding: 4px 0px 0px 0px; */
+  /* gap: 4px; */
+  opacity: 0px;
+}
+
+/* .CT-sidebox1 { */
+/* padding-left: 8px; */
+
+/* margin-left: -8px; */
+/* } */
+
+.parent-container {
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* padding-top: 8px; */
+  /* justify-content: space-between; */
+  /* margin: 16px; */
+
+  display: grid;
+  grid-template-rows: 208px;
+  grid-template-columns: 6fr 8fr 5fr;
+  gap: 8px;
+  margin-top: 16px;
+
+  p {
+    margin-bottom: 0px;
+  }
+
+  .emp-ctn {
+    background-color: var(--neutral-surface-layer-02);
+    border-radius: 8px;
+    gap: 8px;
+  }
+
+  .contribution-ctn {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--neutral-surface-layer-02);
+    border-radius: 8px;
+
+    .container-1 {
+      flex-grow: 2;
+      display: grid;
+      grid-template-columns: 5fr 4fr;
+      margin-top: 10px;
+
+      .container-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+
+      .total-ctn {
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid var(--neutral-border-subtle);
+        padding-left: 16px;
+        justify-content: center;
+
+        .totals {
+          margin-bottom: 2px;
+        }
+      }
+    }
+  }
+
+  .CT-sidebox1 {
+    height: 208px;
+
+    background-color: var(--neutral-surface-layer-02);
+    border-radius: 8px;
+    padding: 8px;
+  }
+}
+
+.card-border {
+  border-bottom: 1px solid var(--neutral-border-light);
+  margin-bottom: 1px;
+}
+
+.ml-75 {
+  margin-left: 90px;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.ml_40 {
+  margin-left: -40px;
+}
+
+.pr-50 {
+  padding-right: 150px;
+}
+
+.planCdBorder {
+  border-right: 1px solid var(--neutral-border-light);
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.compliance-link {
+  list-style: none;
+  padding-left: 16px;
+  margin-bottom: 5px;
+}
+
+.filing-link {
+  list-style: none;
+  padding-left: 16px;
+  display: flex;
+}
+
+.selected-ct {
+  background-color: var(--brand-background-primary-light);
+  min-width: 100%;
+  padding: 8px 16px;
+  list-style: none;
+}
+
+.ctlink {
+  list-style: none;
+}
+
+.horizontal-line-ms {
+  border: none;
+  border-top: 1px solid var(--neutral-border-strong);
+  width: 100%;
+  margin: 0;
+}
+
+._5500-error-slider {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  width: 568px;
+  height: auto;
+}
+
+.ctlink li {
+  @extend %FlexAlignCenter;
+}
+
+.ctlink li .menuicon {
+  margin-right: 8px; /* Adjust spacing between icon and text */
+}
+
+.form-layout.pt-0 {
+  padding-top: 0px;
+}

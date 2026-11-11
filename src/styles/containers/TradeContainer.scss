@@ -1,0 +1,899 @@
+@use "../shared/shared-placeholders" as *;
+.search-bar {
+  .input-group {
+    flex-wrap: nowrap;
+  }
+
+  .input-group-text {
+    background: var(--neutral-surface-layer-01);
+    border-right: 0;
+  }
+}
+
+.compensation-search-bar {
+  .form-control-seach-text input {
+    font-size: var(--fs-14);
+    width: 250px;
+  }
+}
+
+.manage-trade-content {
+  /* margin-left: 16px; */
+  background-color: var(--neutral-surface-layer-01);
+  /* border-radius: 8px; */
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* max-height: calc(100vh - 100px); */
+}
+
+.investment-count {
+  color: var(--neutral-text-default);
+  font-size: var(--fs-12);
+  margin-bottom: 0;
+}
+
+.trade-container {
+  .cspl-table {
+    /* overflow-y: scroll; */
+    max-height: 100%;
+
+    .column-investment-name {
+      width: 20%;
+    }
+
+    .column-investment-type {
+      width: 20%;
+    }
+
+    .column-investment-ticker {
+      width: 20%;
+    }
+
+    .column-investment-cusip {
+      width: 20%;
+    }
+
+    .column-investment-status {
+      width: 20%;
+    }
+  }
+
+  .loader-wrapper {
+    height: auto;
+  }
+}
+
+.market-timing-table {
+  .cspl-table {
+    .table-cell {
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+
+    .column-road-trip-occurance {
+      width: 18%;
+    }
+
+    .column-days-between-transfer {
+      width: 18%;
+    }
+
+    .column-failed-rule-result {
+      width: 18%;
+    }
+
+    .column-block-future-transfers {
+      width: 26%;
+    }
+
+    .column-action {
+      width: 20%;
+    }
+  }
+}
+
+.performance-results {
+  .cspl-table {
+    .table-cell {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      width: 50%;
+    }
+
+    .column-period {
+      width: 50%;
+    }
+
+    .column-rate-of-return {
+      width: 50%;
+    }
+  }
+}
+
+.tab-width {
+  .nav-tabs {
+    white-space: nowrap;
+
+    .nav-link {
+      width: auto;
+    }
+  }
+}
+
+.addInvestment-tabs-head {
+  .icon-spacing {
+    margin-right: 4px;
+  }
+
+  .form-group.md .form-control {
+    width: 270px;
+  }
+
+  .nav-tabs {
+    border-bottom: 1px solid var(--neutral-border-strong);
+    margin-bottom: 1rem;
+    padding-bottom: 2px;
+
+    .nav-link {
+      font-size: var(--fs-13);
+      font-weight: 450;
+      border-left: 0px;
+      border-right: 0px;
+      border-top: 0px;
+      border-bottom-width: 5px;
+      border-bottom-style: solid;
+      width: 18%;
+      margin-right: 15px;
+      border-radius: 0px;
+    }
+
+    .nav-link:hover {
+      .tabName {
+        color: var(--neutral-text-default);
+      }
+    }
+
+    .tabName {
+      font-weight: normal;
+    }
+
+    .active {
+      border-color: var(--brand-border-primary-default);
+
+      .tabName {
+        color: var(--neutral-text-default);
+      }
+    }
+
+    .green {
+      background-color: var(--neutral-surface-layer-01);
+    }
+
+    .pl-20 {
+      padding-left: 20px;
+    }
+
+    .nav-item {
+      margin-bottom: 0;
+    }
+  }
+
+  .tabName {
+    color: var(--neutral-text-subtle-least);
+    text-align: start;
+  }
+}
+
+.addInvestment-tabs-head-var {
+  /* .form-group.md .form-control { */
+  /* width: 270px; */
+  /* } */
+  .tab-content {
+    height: 100%;
+  }
+
+  .nav-tabs {
+    border-bottom: 0px;
+    justify-content: space-between;
+
+    .nav-link {
+      font-size: var(--fs-13);
+      font-weight: 450;
+      border-left: 0px;
+      border-right: 0px;
+      border-top: 0px;
+      border-bottom-width: 5px;
+      border-bottom-style: solid;
+      width: 14%;
+      margin-right: 15px;
+      border-radius: 0px;
+      padding: 0;
+    }
+
+    .nav-link:hover {
+      .tabName {
+        color: var(--neutral-text-default);
+      }
+    }
+
+    .tabName {
+      font-weight: normal;
+    }
+
+    .active {
+      border-color: var(--brand-border-primary-default);
+
+      .tabName {
+        color: var(--neutral-text-default);
+      }
+    }
+
+    .green {
+      background-color: var(--neutral-surface-layer-01);
+    }
+
+    .pl-20 {
+      padding-left: 20px;
+    }
+
+    .nav-item {
+      margin-bottom: 0;
+    }
+  }
+
+  .tabName {
+    color: var(--neutral-text-subtle-least);
+  }
+}
+
+.tier-container {
+  max-width: 90%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.tier-card {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  margin: 15px 0 15px 0;
+  padding: 15px;
+}
+
+.redemption-gate-table {
+  .cspl-table {
+    .table-cell {
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+
+    .column-restriction-gate-fromDate {
+      width: 18%;
+    }
+
+    .column-restriction-gate-fromTime {
+      width: 18%;
+    }
+
+    .column-restriction-gate-toDate {
+      width: 18%;
+    }
+
+    .column-restriction-gate-toTime {
+      width: 26%;
+    }
+
+    .column-action {
+      width: 20%;
+    }
+  }
+}
+
+.custodian-card-list-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  padding-top: 50px;
+  padding-left: 3px;
+  padding-right: 8px;
+  overflow: hidden auto;
+  height: 100%;
+  justify-content: space-between;
+
+  .custodian-card-item {
+    margin-bottom: 25px;
+    color: inherit;
+    text-decoration: none;
+    padding-right: 0px;
+
+    &:hover {
+      font-weight: normal;
+    }
+
+    .custodian-card-item-content {
+      padding: 10px;
+      width: 304px;
+      height: 209px;
+      background: var(--neutral-surface-layer-01);
+      border: 1px solid var(--neutral-border-subtle);
+      box-sizing: border-box;
+      box-shadow: var(--elevation-01);
+      border-radius: 5px;
+      position: relative;
+      margin: 0px;
+
+      &:hover {
+        border: 1px solid var(--brand-border-primary-default);
+        border-radius: 5px;
+      }
+
+      .custodian-name {
+        width: 60%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      .custodian-icon-wrapper {
+        width: 40%;
+      }
+
+      .plan-details-wrapper {
+        width: 80%;
+      }
+
+      .planTitle-text {
+        font-size: var(--fs-12);
+        margin-bottom: 0;
+        color: var(--neutral-text-subtle-least);
+      }
+
+      .planName-text {
+        font-size: var(--fs-14);
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+
+      .custodian-card-tile-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 111px;
+        padding: 0px;
+        position: absolute;
+        left: 132px;
+        top: 16px;
+        bottom: 82px;
+      }
+    }
+
+    .card-line-separator {
+      position: initial;
+      width: 150px;
+      height: 0px;
+      left: 14px;
+      top: 143px;
+      /* bottom: 66px; */
+      border-bottom: 1px solid var(--neutral-border-strong);
+      margin-bottom: 10px;
+      /* margin: 1rem 0rem 1.25rem 0rem; */
+    }
+  }
+}
+
+.custodian-detail-card {
+  width: 100%;
+  /* height: 18.75rem; */
+  padding-top: 0.938rem;
+  padding-bottom: 0.938rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: fit-content;
+  /* height: 5.688rem; */
+  /* min-height: 5.688rem; */
+  background-color: var(--neutral-surface-layer-01);
+  border: 0.063rem solid var(--neutral-border-strong);
+
+  border-radius: 0.313rem;
+  margin-bottom: 1rem;
+
+  :last-child {
+    border-right: none;
+  }
+
+  .custodian-Card {
+    display: flex;
+    flex-direction: column;
+    border-right: 0.063rem solid var(--neutral-border-strong);
+    width: 100%;
+    padding: 0rem 1.875rem 0rem 1.25rem;
+
+    height: auto;
+    min-height: 3.18rem;
+  }
+
+  .custodian-image {
+    padding: 0rem 1rem 0rem 1.25rem;
+    border-right: var(--neutral-border-inverse);
+    width: fit-content;
+  }
+
+  .custodian-account-detail-card {
+    border-right: var(--neutral-border-inverse);
+  }
+}
+
+.sub-layout-header {
+  width: 100%;
+  background-color: var(--neutral-surface-layer-01);
+  padding: 0.5em; /* padding: 0.5em 2.25em; */
+  padding-bottom: 0px;
+  position: relative;
+
+  h6 {
+    color: var(--neutral-text-default);
+    font-weight: 500;
+    margin: 5px 0px;
+  }
+
+  &::after {
+    padding-top: 0.5em;
+    border-bottom: 1px solid var(--neutral-border-strong);
+    display: block;
+    content: "";
+    margin-bottom: 16px;
+  }
+}
+
+.custodian-slide-out {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.time-component-styling {
+  .btn {
+    padding: 0px 15px;
+  }
+}
+
+.custom-reports-header {
+  font-size: var(--fs-19);
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: 500;
+}
+
+.investmentSide-header {
+  font-size: var(--fs-18);
+  color: var(--neutral-text-subtle);
+  padding: 0px 16px 8px 16px;
+}
+
+.padding {
+  padding: 0px 16px 8px 16px;
+}
+
+.investmentSideCard {
+  background: var(--neutral-surface-layer-01);
+  box-shadow: var(--elevation-01);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  border: 1px solid var(--neutral-border-subtle);
+  background-color: var(--neutral-surface-layer-01);
+  width: 100%;
+  /* padding: 10px; */
+}
+
+.planSideCard {
+  background: var(--neutral-surface-layer-01);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  border: 1px solid var(--neutral-border-strong);
+  width: 100%;
+  /* height: 140px; */
+  padding: 8px;
+}
+
+.planCardBorder {
+  border-bottom: 1px solid var(--neutral-border-light);
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.planSeparatory {
+  border-bottom: 1px solid var(--neutral-border-light);
+  margin-bottom: 8px;
+}
+
+.planCard_verticalBorder {
+  border-left: 1px solid var(--neutral-border-subtle);
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.investmentCardStyle1 {
+  font-weight: 700;
+  font-size: var(--fs-16);
+  color: var(--neutral-text-subtle);
+}
+
+.investmentCardStyle2 {
+  @extend %LabelBoldMedium;
+}
+
+.investmentCardBorder1 {
+  border-bottom: 1px solid var(--neutral-border-strong);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pad-20-0-0-0 {
+  padding: 20px 0px 0px 0px;
+}
+
+.addInv-child {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.investmentCardStyle3Header {
+  @extend %TextBodyMediumBold;
+}
+
+.investmerntCard_verticalBorder {
+  border-left: 1px solid var(--neutral-border-strong);
+  margin-top: 10px;
+}
+
+.investmentCard-Style4 {
+  color: var(--brand-text-primary-default);
+  font-weight: 600;
+  font-size: var(--fs-16);
+  padding: 16px 16px 8px 16px;
+  cursor: pointer;
+}
+
+.pad-0-20-20-20 {
+  padding: 0px 20px 20px 20px;
+}
+
+.investmentDelete-var {
+  margin-top: 15px;
+  justify-content: center;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.investmentTrashStyle {
+  margin-right: 4px;
+  margin-top: 3px;
+}
+
+.investmentLeftSideTab {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  background-color: color-mix(
+    in srgb,
+    var(--neutral-surface-layer-02) 50%,
+    transparent
+  );
+}
+
+.investmentLeftSideTab-var {
+  width: 20%;
+  background-color: color-mix(
+    in srgb,
+    var(--neutral-surface-layer-02) 50%,
+    transparent
+  );
+  overflow: auto;
+  height: 100%;
+  .left-tab-head-investment-plan {
+    flex-direction: column;
+
+    .nav-item .nav-link {
+      /* padding: 8px 0px 8px 0 px; */
+      color: var(--neutral-text-subtle-least);
+      font-size: var(--fs-16);
+      justify-content: flex-start;
+    }
+
+    .nav-item :hover {
+      color: var(--brand-text-primary-default);
+    }
+
+    .nav-link.active {
+      .tabName {
+        color: var(--neutral-text-default);
+      }
+
+      background-color: color-mix(
+        in srgb,
+        var(--brand-background-primary-strong) 10%,
+        transparent
+      );
+      border-radius: 0px;
+      border-right: 3px solid var(--brand-border-primary-default);
+      color: var(--neutral-text-default);
+    }
+  }
+  .nav-tabs {
+    border-bottom: 0;
+  }
+}
+
+.investmentRightSideCard {
+  padding: 16px;
+  width: 80%;
+  height: 100%;
+  overflow: auto;
+}
+
+.investmentRightSideCard .cspl-table .table-cell {
+  font-size: var(--fs-14);
+}
+
+.plan-investment-nav-tabs {
+  .nav-tabs {
+    flex-direction: column;
+  }
+}
+
+.investmentLeftSideTab .left-tab-head-investment .nav-link.active {
+  background-color: var(--brand-background-primary-light);
+}
+
+.left-tab-head-investment {
+  .nav-item {
+    /* padding: 8px 16px 8px 16px; */
+    width: 100%;
+  }
+
+  .nav-link.active {
+    .tabName {
+      color: var(--neutral-text-default);
+    }
+
+    background-color: var(--brand-background-primary-light);
+    border-radius: 0px;
+    border-right: 3px solid var(--neutral-border-strong);
+    width: 100%;
+  }
+}
+
+.left-tab-head-investment-plan {
+  flex-direction: column;
+
+  .nav-item {
+    /* padding: 8px 0px 8px 0 px; */
+    color: var(--neutral-text-subtle-least);
+  }
+
+  .nav-item :hover {
+    color: var(--brand-text-primary-default);
+  }
+
+  .nav-link.active {
+    .tabName {
+      color: var(--neutral-text-default);
+    }
+
+    background-color: color-mix(
+      in srgb,
+      var(--brand-background-primary-strong) 10%,
+      transparent
+    );
+    border-radius: 0px;
+    border-right: 3px solid var(--brand-border-primary-default);
+    color: var(--neutral-text-default);
+  }
+}
+
+.view-breakdown-link {
+  text-decoration: underline;
+  font-size: var(--fs-14);
+  font-weight: 600;
+}
+
+.warning-msg {
+  @extend %FlexRow;
+}
+
+.warning-msg-border {
+  border: 1px solid var(--semantics-warning-border);
+  border-radius: 5px;
+  padding: 16px;
+  margin-bottom: var(--spacing-24);
+  width: 105%;
+}
+
+.warning-background {
+  background-color: var(--semantics-warning-background-light);
+}
+
+.marginstyle {
+  margin-top: 0.4rem;
+  margin-right: 0.4rem;
+}
+
+.table-red-fee {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  height: auto;
+}
+
+.table-red-fee-row {
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table-red-fee-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.listStyle {
+  list-style: none;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.icon-line-attachment {
+  position: relative;
+}
+
+.icon-head {
+  height: 11px;
+  border-left: 1px solid var(--brand-border-primary-default);
+  position: absolute;
+  top: 23px;
+  left: 16.5px;
+}
+
+.className {
+  @extend %TextMediumBold;
+}
+
+.rf-tree ul:before {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: 1.5px;
+  border-left: 1px solid;
+  color: var(--brand-text-primary-default);
+}
+
+.rf-tree li .tier-list::before {
+  color: var(--neutral-text-subtle-least);
+}
+
+.rf-tree li {
+  margin: 0;
+  padding: 0 0em;
+  padding-bottom: 15px;
+  line-height: 2em;
+  font-size: var(--fs-14);
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+}
+
+.rf-tree li .sub-list:before {
+  color: var(--neutral-text-subtle-least);
+}
+
+.rf-tree ul li:last-child:before {
+  background: none;
+  height: auto;
+  top: 1em;
+  bottom: 0;
+}
+
+.rf-1-tree ul li:last-child:before {
+  background: none;
+  height: auto;
+  top: 1em;
+  bottom: 0;
+}
+
+.rf-tree ul.tier-list-1:last-child:before {
+  height: 1em;
+}
+
+.rf-1-tree ul.tier-list-1:last-child:before {
+  height: 1em;
+}
+
+.rf-tree .tier-list-1:last-child:before {
+  color: var(--brand-text-primary-default);
+  height: auto;
+  top: 0em;
+  bottom: 7.1em;
+}
+
+.rf-1-tree ul:before {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: 1px;
+  border-left: 1px solid;
+  color: var(--brand-text-primary-default);
+}
+
+.solidline {
+  border-bottom: 1px solid var(--neutral-border-strong);
+  margin: 0px 0px 0px 32px;
+}
+
+.dashedline {
+  border-bottom: 1px dashed var(--neutral-border-strong);
+  margin: 0px 0px 0px 44px;
+}
+
+.list-container {
+  background-color: var(--neutral-surface-layer-02);
+  border-radius: 6px;
+  margin-bottom: 16px;
+  padding-right: 8px;
+}
+
+/* .pRight-6px { */
+/* padding-right: 6px; */
+/* } */
+.mLeft-22 {
+  margin-left: 22px;
+}
+
+.pLeft-2 {
+  padding-left: 2px;
+}
+
+.mLeft-24 {
+  margin-left: 24px;
+}
+
+/* .width-36p7 { */
+/* width: 36.7%; */
+/* } */
+
+.width-65 {
+  width: 36rem;
+}
+
+.pBottom-12 {
+  padding-bottom: 12px;
+}
+
+.pRight-8px {
+  padding-right: 8px;
+}
+
+.line-height {
+  line-height: 1;
+}
+
+.redemption-fee {
+  word-break: break-word;
+  flex: 1;
+  white-space: normal;
+}

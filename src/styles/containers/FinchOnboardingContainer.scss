@@ -1,0 +1,507 @@
+@use "../foundation/typography-mixins" as *;
+
+@use "../shared/shared-placeholders" as *;
+.finch-onboarding {
+  .heading-text {
+    margin-bottom: 0.5rem;
+    @include body-text-large-medium($color: var(--neutral-text-default));
+  }
+
+  .details-card {
+    background-color: var(--neutral-surface-layer-02);
+    padding: 10px;
+
+    .finch-value {
+      font-weight: 600;
+      font-size: var(--fs-14);
+      color: var(--neutral-text-subtle);
+    }
+
+    .finch-value-var {
+      font-weight: 600;
+      font-size: var(--fs-14);
+      color: var(--neutral-text-default);
+    }
+
+    .finch-header {
+      @extend %SubheadingText;
+    }
+
+    .finch-name {
+      font-weight: 700;
+      font-size: var(--fs-16);
+      color: var(--neutral-text-default);
+    }
+
+    .finch-status {
+      font-size: var(--fs-14);
+      font-weight: 600;
+      color: var(--semantics-success-text);
+    }
+
+    .finch-status-disconnected-card {
+      font-size: var(--fs-14);
+      font-weight: 600;
+      color: var(--semantics-critical-text);
+    }
+  }
+
+  .finch-company-tables {
+    .cspl-table .table-head .table-head-cell {
+      font-size: var(--fs-14);
+    }
+
+    margin-bottom: 25px;
+    margin-top: 20px;
+
+    .finch-bank-account {
+      border-radius: 5px;
+
+      .column-routingNumber {
+        width: 20%;
+      }
+
+      .column-institutionName {
+        width: 20%;
+      }
+
+      .column-accountNumber {
+        width: 20%;
+      }
+
+      .column-accountName {
+        width: 20%;
+      }
+
+      .column-accountType {
+        width: 20%;
+      }
+    }
+
+    .finch-department {
+      border-radius: 0px 0px 5px 5px;
+      border: 1px solid var(--neutral-border-strong);
+
+      .table-head {
+        padding: 0px;
+        height: 45px;
+        .table-head-cell {
+          height: 45px;
+        }
+      }
+
+      .even-row {
+        background-color: var(--neutral-surface-layer-04);
+      }
+
+      .column-departmentName {
+        width: 50%;
+        align-items: center;
+        align-content: center;
+      }
+
+      .column-code {
+        width: 50%;
+        border-left: 1px solid var(--neutral-border-strong);
+      }
+    }
+
+    .finch-location {
+      border-radius: 0px 0px 5px 5px;
+      border: 1px solid var(--neutral-border-strong);
+
+      .table-head {
+        padding: 0px;
+        height: 45px;
+        .table-head-cell {
+          height: 45px;
+        }
+      }
+
+      .even-row {
+        background-color: var(--neutral-surface-layer-04);
+      }
+      .table-cell {
+        align-items: center;
+      }
+
+      .column-companyName {
+        width: 14%;
+      }
+
+      .column-city {
+        width: 14%;
+      }
+
+      .column-state {
+        width: 14%;
+      }
+
+      .column-country {
+        width: 14%;
+      }
+
+      .column-postalCode {
+        width: 14%;
+      }
+
+      .column-code {
+        width: 25%;
+        border-left: 1px solid var(--neutral-border-strong);
+      }
+    }
+  }
+}
+
+.finch-employee-card {
+  .cspl-table .table-head .table-head-cell {
+    font-size: var(--fs-14);
+  }
+
+  margin-bottom: 35px;
+
+  .employee-table-finch {
+    .finch-emp {
+      border-radius: 5px;
+      border: 1px solid var(--neutral-border-strong);
+
+      .table-head {
+        background-color: var(--neutral-surface-layer-02);
+      }
+
+      .even-row {
+        background-color: var(--neutral-surface-layer-04);
+      }
+
+      .column-companyName {
+        width: 14%;
+      }
+
+      .column-city {
+        width: 14%;
+      }
+
+      .column-state {
+        width: 14%;
+      }
+
+      .column-country {
+        width: 14%;
+      }
+
+      .column-postalCode {
+        width: 14%;
+      }
+
+      .column-code {
+        width: 25%;
+        border-left: 1px solid var(--neutral-border-strong);
+      }
+    }
+
+    .color-Active {
+      color: var(--semantics-success-text);
+    }
+
+    .color-Critical {
+      color: var(--semantics-critical-text);
+    }
+
+    .color-Inactive {
+      color: var(--semantics-warning-text);
+    }
+
+    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    .column-employeeName-header {
+      width: 25%;
+      align-items: center;
+    }
+
+    .column-employeeName {
+      width: 25%;
+      align-items: center;
+      color: var(--neutral-text-default);
+      font-weight: 500;
+    }
+
+    .column-status {
+      width: 25%;
+      align-items: center;
+    }
+
+    .column-sourceSystem {
+      width: 25%;
+      align-items: center;
+    }
+
+    .column-ssn {
+      width: 25%;
+      align-items: center;
+    }
+
+    .column-planName {
+      width: 14%;
+    }
+  }
+
+  margin-top: 10px;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 10px;
+
+  .finch-comparison-card {
+    border-radius: 10px 10px 0px 0px;
+    background-color: color-mix(
+      in srgb,
+      var(--brand-background-primary-strong) 10%,
+      transparent
+    );
+    justify-content: space-between;
+    padding: 15px;
+
+    .finch-emp-header {
+      @extend %TextLabelSmallBold;
+    }
+
+    .finch-emp-value {
+      color: var(--neutral-text-default);
+      font-weight: 700;
+      font-size: var(--fs-16);
+    }
+  }
+}
+
+.finch-header {
+  @extend %SubheadingText;
+}
+
+.finch-authentication {
+  border-radius: 5px;
+  border: 1px dashed var(--brand-border-primary-default);
+  background-color: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 10%,
+    transparent
+  );
+  margin-top: 3rem;
+  align-items: center;
+  padding: 5px;
+
+  .go-to-finch-button {
+    border-radius: 5px;
+    padding: 6px 12px 6px 12px;
+    background-color: var(--brand-background-primary-strong);
+    height: 40px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    align-content: center;
+
+    /* margin-top: 4.5rem; */
+    .inner-text-finch {
+      color: var(--neutral-text-on-color);
+      font-size: var(--fs-16);
+    }
+  }
+}
+
+.finch-authentication-sponsor {
+  border-radius: 5px;
+  border: 1px dashed var(--neutral-border-light);
+  margin-top: 3rem;
+  align-items: center;
+  padding: 5px;
+}
+
+.finch-authentication-var {
+  border-radius: 5px;
+  border: 1px dashed var(--brand-border-primary-default);
+  background-color: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 10%,
+    transparent
+  );
+  margin-top: 1rem;
+  align-items: center;
+  padding: 5px;
+
+  .go-to-finch-button {
+    border-radius: 5px;
+    padding: 6px 12px 6px 12px;
+    background-color: var(--brand-background-primary-strong);
+    height: 40px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    align-content: center;
+
+    /* margin-top: 4.5rem; */
+    .inner-text-finch {
+      color: var(--neutral-text-on-color);
+      font-size: var(--fs-16);
+    }
+  }
+}
+
+.center-no-records-finch {
+  width: 100%;
+  margin-top: 22%;
+  justify-content: center;
+  font-size: var(--fs-20);
+  font-weight: 400;
+  display: flex;
+}
+
+.go-to-finch-disable {
+  opacity: 0.6;
+}
+
+.finch-onboarding-container {
+  width: 100%;
+  overflow: hidden;
+
+  .pr-9px {
+    padding-right: 9px;
+  }
+}
+
+.finch-onboarding-container {
+  height: 100%;
+
+  .layout-content {
+    height: calc(95vh - 100px);
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+
+  .loader-wrapper {
+    overflow: visible;
+  }
+}
+
+.pr-9px {
+  padding-right: 9px;
+}
+
+.finch-onboarding-progressbar {
+  max-width: 20vw;
+  height: 100%;
+  background-color: var(--neutral-surface-layer-02);
+
+  .spinner-parent {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--semantics-success-background-strong);
+
+    .progress-icon {
+      color: var(--neutral-text-on-color);
+      font-size: var(--fs-14);
+    }
+  }
+
+  .spinner-parent.finch-progress {
+    background-color: var(--semantics-highlight-background-strong);
+  }
+
+  .spinner-parent.finch-progress-grey {
+    background-color: var(--neutral-surface-layer-05);
+  }
+
+  .content-1 {
+    height: 20px;
+    margin-left: 38px;
+    margin-top: 10px;
+    border-left: 3px solid var(--semantics-success-border);
+  }
+
+  .content-1.finch-progress {
+    border-left: 3px solid var(--semantics-highlight-border);
+  }
+
+  .content-1.finch-progress-grey {
+    border-left: 3px solid var(--neutral-border-strong);
+  }
+
+  .content-2 {
+    height: 30px;
+    margin-left: 38px;
+    border-left: 3px solid var(--semantics-success-border);
+  }
+
+  .content-2.finch-progress {
+    border-left: 3px solid var(--semantics-highlight-border);
+  }
+
+  .content-2.finch-progress-grey {
+    border-left: 3px solid var(--neutral-border-strong);
+  }
+
+  .status-capsule {
+    padding: 0px;
+    border: 1px solid var(--brand-border-primary-default);
+    width: 85px;
+    border-radius: 90px;
+    margin-top: 10px;
+    text-align: center;
+    background: linear-gradient(
+        0deg,
+        color-mix(
+          in srgb,
+          var(--semantics-highlight-background-strong) 10%,
+          transparent
+        ),
+        color-mix(
+          in srgb,
+          var(--semantics-highlight-background-strong) 10%,
+          transparent
+        )
+      ),
+      var(--neutral-surface-layer-01);
+  }
+
+  .status-text {
+    padding: 3px;
+    font-weight: 600;
+    font-size: var(--fs-11);
+    color: var(--semantics-success-text);
+    font-style: normal;
+  }
+
+  .status-text.finch-progress {
+    color: var(--semantics-highlight-text);
+  }
+}
+
+.finch-delete-record {
+  color: var(--semantics-critical-text);
+  margin-top: 16px;
+}
+.pt-0-8 {
+  padding-top: 0.7rem;
+}
+
+.summary-details-card {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px 5px 5px 5px;
+}
+.assistedConnectionBanner {
+  width: fit-content;
+  background-color: var(--semantics-highlight-background-light);
+  border-radius: 5px;
+  padding: 10px;
+}
+.finch-spinner-for-retry {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  border: 1px solid var(--brand-text-primary-default);
+}

@@ -1,0 +1,12 @@
+.w-80px-p-0px-p-l-5px {
+  width: 80px;
+  text-align: left;
+  padding: 0px;
+  padding-left: 5px;
+}
+
+.selected {
+  background-color: var(--brand-background-primary-strong);
+  color: var(--neutral-text-on-color);
+  caret-color: transparent;
+}

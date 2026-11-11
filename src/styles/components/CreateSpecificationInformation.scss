@@ -1,0 +1,117 @@
+.create-specification-form {
+  .opacity-75 {
+    opacity: 0.6;
+  }
+
+  .title-text {
+    font-weight: 600;
+    font-size: var(--fs-18);
+    color: var(--neutral-text-subtle-least);
+  }
+
+  .label-text-spec {
+    /* color:  var(--neutral-text-subtle-least); */
+    /* font-weight: 600 ; */
+    font-size: var(--fs-12);
+  }
+
+  .display-text-spec {
+    color: var(--neutral-text-default);
+    font-weight: 600;
+    font-size: var(--fs-16);
+  }
+
+  .count-text {
+    color: var(--neutral-text-subtle-least);
+    font-size: var(--fs-14);
+    font-weight: 500;
+  }
+  .no-of-rec-color {
+    color: var(--neutral-text-subtle);
+  }
+  .tiered-fees-table {
+    .tiered-fees-table-header {
+      display: flex;
+      color: var(--neutral-text-subtle-least);
+      padding: 16px;
+    }
+
+    .account-balance-from-to {
+      display: flex;
+      gap: 10px;
+    }
+
+    .checkIcon {
+      margin-left: -35px;
+      margin-top: 30px;
+      color: var(--semantics-success-text);
+    }
+
+    .resetIcon {
+      margin-left: -25px;
+      margin-top: 30px;
+      color: var(--semantics-critical-text);
+    }
+
+    .infoIcon {
+      font-weight: 300;
+      font-size: var(--fs-16);
+      color: var(--neutral-text-default);
+    }
+
+    .tiered-fees-card {
+      display: flex;
+      background: var(--neutral-surface-layer-01);
+      border-radius: 8px;
+      border: 1px solid var(--neutral-border-strong);
+      margin-bottom: 15px;
+      padding: 16px;
+
+      .fa-edit {
+        color: var(--brand-text-primary-default);
+        margin-left: 10px;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: var(--fs-24);
+      }
+
+      .fa-trash {
+        color: var(--semantics-critical-text);
+        margin-left: 10px;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: var(--fs-24);
+      }
+
+      .fa-check {
+        color: var(--semantics-success-text);
+        margin-left: 10px;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: var(--fs-24);
+      }
+
+      .fa-times {
+        color: var(--semantics-critical-text);
+        margin-left: 10px;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: var(--fs-24);
+      }
+    }
+  }
+}
+
+.white-space-wrap {
+  white-space: wrap;
+}
+
+.create-specification-form-scroll {
+  overflow: auto;
+}
+
+@media (max-width: 1024px) {
+  .create-specification-form-scroll {
+    overflow-y: hidden;
+  }
+}

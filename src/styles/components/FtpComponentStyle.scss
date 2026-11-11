@@ -1,0 +1,22 @@
+@use "../shared/shared-placeholders" as *;
+#ftpPath .invalid-feedback {
+  @extend %NoTopPaddingNoMargin;
+}
+
+#ftpUrl .invalid-feedback {
+  @extend %NoTopPaddingNoMargin;
+}
+
+#username .invalid-feedback {
+  @extend %NoTopPaddingNoMargin;
+}
+
+#password .invalid-feedback {
+  padding-top: 0;
+  margin: 0;
+  user-select: none;
+}
+
+#targetFields {
+  user-select: none;
+}

@@ -1,0 +1,60 @@
+.new-employee-vesting-report {
+  .label-sort {
+    width: 80px;
+    background: var(--neutral-surface-layer-03);
+  }
+  .new-employee-vesting-report-container {
+    .cspl-table {
+      .column-companyName {
+        width: 20%;
+        word-break: break-all;
+      }
+      .column-planId {
+        width: 15%;
+      }
+      .column-planName {
+        width: 20%;
+        word-break: break-all;
+      }
+      .column-statusPlan {
+        width: 25%;
+        word-break: break-all;
+      }
+      .column-processDate {
+        width: 20%;
+        word-break: break-all;
+      }
+    }
+  }
+}
+
+.column-vesting-employeeId {
+  width: 31%;
+  margin-left: 5rem;
+}
+
+.vesting-label {
+  font-weight: 1000;
+  font-size: var(--fs-12);
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+
+.align-btn-mt {
+  margin-top: 1.7rem;
+}
+
+.date-range-eligibility {
+  width: 418px;
+  position: relative;
+  .date-from-position {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .date-to-position {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

@@ -1,0 +1,238 @@
+$panel-minimize-width: 87px;
+$panel-maximize-width: 100px;
+
+.sidebar-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  overflow: scroll;
+  scrollbar-width: none;
+
+  .sidebar {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: $panel-maximize-width;
+    /* background-color: var(--brand-background-primary-strong); */
+    box-shadow: var(--elevation-01);
+    transition: 1s;
+    z-index: 15002;
+    overflow-y: auto;
+  }
+
+  .sidebar-placeholder {
+    height: 100%;
+    width: $panel-minimize-width;
+  }
+
+  .sidebar-icon-holder-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .sidebar-icon-holder {
+    height: 100%;
+    width: $panel-minimize-width;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .sidebar-app {
+    width: inherit;
+    overflow: hidden;
+  }
+
+  .sidebar-overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: none;
+    transition: 0.5s;
+    z-index: 1990;
+  }
+
+  &.expanded {
+    .sidebar {
+      left: 0px;
+
+      transition: 1s;
+    }
+
+    .homeMenu {
+      position: relative;
+      width: calc(#{$panel-minimize-width} + #{$panel-maximize-width});
+    }
+
+    .nonHome {
+      position: fixed;
+      width: $panel-maximize-width;
+    }
+
+    .sidebar-overlay {
+      display: block;
+    }
+  }
+}
+
+.sidebar-container-new {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+
+  .app-layout {
+    position: relative;
+  }
+
+  .sidebar {
+    /* position: absolute; */
+    border-radius: 0px 30px 0px 0px;
+    top: 0;
+    left: calc(#{$panel-minimize-width} - #{$panel-maximize-width});
+    height: 100%;
+    width: $panel-maximize-width;
+    background-color: var(--brand-background-primary-strong);
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 15002;
+  }
+
+  .sidebar-placeholder {
+    height: 100%;
+    width: $panel-minimize-width;
+  }
+
+  .sidebar-icon-holder-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .sidebar-icon-holder {
+    height: 100%;
+    width: $panel-minimize-width;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .sidebar-app {
+    width: inherit;
+  }
+
+  .sidebar-overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: color-mix(
+      in srgb,
+      var(--neutral-surface-layer-03) 60%,
+      transparent
+    );
+    transition: 0.5s;
+    z-index: 1990;
+  }
+
+  &.expanded {
+    .sidebar {
+      left: 0px;
+      width: $panel-maximize-width;
+    }
+
+    .sidebar-overlay {
+      display: block;
+    }
+  }
+}
+
+.SideBarOtherCard {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  border: 2px solid var(--neutral-border-subtle);
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 15px;
+  height: 130px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.OtherCardflex-wrap {
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.SideBarOtherCard:hover {
+  border: 2px solid var(--brand-border-primary-default);
+}
+
+.OtherCardHeading {
+  font-weight: 600;
+  font-size: var(--fs-16);
+  margin-bottom: 5px;
+}
+
+.OtherCardDesc {
+  font-weight: normal;
+  font-size: var(--fs-12);
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+}
+
+.OtherCardTextDiv {
+  width: 65%;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-block: 0.5rem;
+}
+
+.OtherCardIconDiv {
+  border-radius: 50%;
+  background-color: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 10%,
+    transparent
+  );
+  width: 70px;
+  height: 70px;
+  align-self: center;
+}
+
+.othersIconStyle {
+  color: var(--brand-text-primary-default);
+  height: 25px;
+  width: 25px;
+}
+
+.OthersMainHeading {
+  font-size: var(--fs-22);
+  color: var(--neutral-text-default);
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.overflow-cards {
+  height: calc(95vh - 65px);
+  overflow: scroll;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 0;
+}

@@ -1,0 +1,133 @@
+@use "../shared/shared-placeholders" as *;
+
+.details {
+  padding: 20px;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  margin: 12px 0px 12px 0px;
+}
+.details-var {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  background-color: var(--semantics-disabled-background);
+}
+
+.name {
+  line-height: 12px;
+  font-size: var(--fs-14);
+  font-weight: 500;
+}
+
+.detail {
+  padding: 15px;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  margin: 8px 0px 8px 0px;
+  width: 75%;
+}
+
+.div-width {
+  width: fit-content;
+  padding: 12px;
+}
+
+.transaction-active-status {
+  color: var(--semantics-success-text);
+  background-color: color-mix(
+    in srgb,
+    var(--semantics-success-background-strong) 10%,
+    transparent
+  );
+  border-radius: 5px;
+  padding: 4px 8px;
+  display: inline;
+}
+
+.link-tag-var {
+  cursor: pointer;
+  color: var(--brand-text-primary-default);
+
+  .p-tag {
+    font-weight: 500;
+    font-size: var(--fs-16);
+    color: var(--brand-text-primary-default);
+  }
+}
+
+.link-tag-var:hover {
+  text-decoration: underline;
+}
+
+.loan-payment-card {
+  @extend %FlexColumn;
+}
+
+.loan-amount-card {
+  border-bottom: 0.5px dashed var(--neutral-border-strong);
+}
+
+.loan-trade {
+  border-radius: 6px;
+  background: var(--semantics-success-background-light);
+  padding: 3px 7px;
+  width: fit-content;
+}
+
+.withdrawalSlider {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+
+.loan-repayment {
+  width: 81%;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.loan-request {
+  padding: 15px;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  margin: 16px 0px 16px 0px;
+  width: 81%;
+}
+
+.detail-adj {
+  padding: 15px;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  margin: 8px 0px 0px 0px;
+  width: 75%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.trade-message-tm {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--neutral-surface-layer-03);
+  border: 1px solid var(--neutral-border-strong);
+  width: 45%;
+  border-radius: 5px;
+  margin-top: 16px;
+  padding: 3px;
+}
+.height-600-px {
+  height: 600px;
+}
+.warning-background-picture {
+  background-color: var(--semantics-warning-background-light);
+  border-radius: 8px;
+  margin-bottom: 90px;
+  width: 99%;
+}
+.warning-loan-background-color {
+  background-color: var(--semantics-warning-background-light);
+  color: var(--semantics-warning-text);
+  width: 97%;
+  max-width: none;
+}

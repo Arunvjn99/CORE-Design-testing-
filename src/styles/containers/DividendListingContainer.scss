@@ -1,0 +1,214 @@
+.dividend-listing-container {
+  .fw-700 {
+    font-weight: 700;
+  }
+
+  .fw-650 {
+    font-weight: 650;
+  }
+
+  .dividend-listing-details-data {
+    // height: 54vh;
+
+    // @media (max-height: 650px) {
+    //   height: 70vh;
+    // }
+
+    /* overflow-y: scroll; */
+    /* overflow-x: hidden; */
+  }
+
+  .filter-component-dividend {
+    padding-top: var(--spacing-16);
+
+    .fields-div {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .multiselect-dropdown-wrapper {
+      .form-group:first-child {
+        .form-label {
+          color: var(--neutral-text-subtle-least);
+        }
+      }
+    }
+  }
+
+  .textfilterhead-dividend {
+    color: var(--neutral-text-subtle-least);
+    font-weight: 500;
+    margin-left: 4px;
+    font-size: var(--fs-12);
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+    border-color: var(--neutral-border-strong);
+  }
+
+  /* .form-label { */
+  /* color: var(--neutral-text-subtle-least); */
+  /* font-weight: 500; */
+  /* font-size: var(--fs-12); */
+  /* margin-bottom: 0.3rem; */
+  /* } */
+
+  .fields-div:first-child {
+    .form-group {
+      margin-right: 0.5rem;
+
+      .dropdown-items {
+        .form-group {
+          margin-right: 0rem;
+        }
+      }
+    }
+  }
+
+  .padding-search-usermanagement {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+
+  .dividend-clearing-partner-table-header {
+    color: var(--neutral-text-subtle-least);
+    font-weight: 700;
+    font-size: var(--fs-14);
+  }
+
+  .dividend-clearingPartner-investment-card {
+    border-radius: 5px;
+    color: var(--neutral-text-subtle);
+    border: 1px solid var(--neutral-border-strong);
+    /* background: var(--neutral-surface-layer-02); */
+    padding: var(--spacing-16);
+    font-size: var(--fs-14);
+  }
+
+  .dividend-clearingPartner-investment-card {
+    border-radius: 5px;
+    color: var(--neutral-text-subtle);
+    border: 1px solid var(--neutral-border-strong);
+    /* background: var(--neutral-surface-layer-02); */
+    padding: var(--spacing-16);
+    font-size: var(--fs-14);
+    cursor: pointer;
+  }
+
+  .dividend-table-data {
+    white-space: nowrap;
+    display: flex;
+  }
+
+  .container-row {
+    justify-content: space-around;
+    padding: 0px 16px;
+  }
+
+  .dvd-header-label {
+    width: fit-content;
+    white-space: nowrap;
+  }
+}
+
+.dividend-summary-side {
+  height: 100%;
+  overflow-y: auto;
+  border-left: 1px solid var(--neutral-border-strong);
+
+  .details-card {
+    border: 1px solid var(--neutral-border-subtle-least);
+    padding: var(--spacing-16) var(--spacing-16) 0px var(--spacing-16);
+    border-radius: 10px;
+    background-color: var(--neutral-surface-layer-02);
+    flex: 1, 1, auto;
+  }
+
+  .headerDetails {
+    color: var(--neutral-text-subtle-least);
+    font-size: var(--fs-14);
+  }
+
+  .valueDetails {
+    color: var(--neutral-text-subtle);
+    font-size: var(--fs-14);
+  }
+
+  .line-seperator {
+    border-top: 1px solid var(--neutral-border-strong);
+    margin-bottom: var(--spacing-16);
+    margin-top: var(--spacing-16);
+  }
+
+  .mt-15px {
+    margin-top: 15px;
+  }
+}
+
+.manage-company-wrapper {
+  .create-dividend-body {
+    // height: calc(100vh - 155px);
+  }
+}
+
+.dividend-run-details-component {
+  font-weight: 600;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--neutral-surface-layer-02);
+  margin-top: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+
+  .display-row-data-list {
+    padding: 20px 0px;
+  }
+
+  .dashed-line-dividend-run {
+    border: 0.1px dashed var(--neutral-border-strong);
+    margin: 15px 0 20px;
+    width: 100%;
+  }
+
+  .display-row-data {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .dividend-details-section {
+    margin-left: auto;
+    border-radius: 8px;
+    background-color: var(--neutral-surface-layer-01);
+    padding: 15px;
+    margin-left: 50px;
+    font-size: var(--fs-14);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 6px;
+
+    .currency {
+      font-weight: 700;
+      font-size: var(--fs-26);
+    }
+
+    .units {
+      display: flex;
+      justify-content: center;
+    }
+
+    .blue-text-hyperlink {
+      color: var(--brand-text-primary-default);
+      text-decoration: underline;
+      font-size: var(--fs-16);
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .bg-grey-dividend {
+    background-color: var(--neutral-surface-layer-02);
+  }
+}

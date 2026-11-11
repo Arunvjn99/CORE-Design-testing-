@@ -1,0 +1,33 @@
+.summarybutton {
+  width: 10.5rem;
+  height: 6rem;
+
+  border-radius: 8px;
+  font-size: var(--fs-18);
+  font-weight: 600;
+  border: 1px solid var(--semantics-warning-border);
+  background: var(--semantics-warning-background-light);
+
+  /* background-color:  var(--semantics-warning-background-light); */
+}
+.draft-hover {
+  color: var(--neutral-text-subtle);
+  padding: 20px;
+}
+
+.draft-hover:hover {
+  text-decoration: none;
+}
+
+.margin16 {
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+.countvalue {
+  font-size: var(--fs-26);
+  margin-top: -8%;
+  color: var(--semantics-warning-text);
+  font-weight: 700;
+  margin-left: 15%;
+}

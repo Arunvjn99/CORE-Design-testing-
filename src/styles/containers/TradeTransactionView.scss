@@ -1,0 +1,251 @@
+@use "../shared/shared-placeholders" as *;
+.transaction-view-trade {
+  .width-date-field {
+    .form-group.md {
+      .form-control {
+        width: 260px;
+      }
+    }
+  }
+  .width-search-field {
+    .form-group.md {
+      .form-control {
+        width: 320px;
+      }
+    }
+  }
+  .search-fields-trade {
+    @extend %FlexGap8px;
+  }
+  .mx-90 {
+    max-width: 90%;
+  }
+
+  .recently-added-with-export {
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    .recently-added-text {
+      font-size: var(--fs-14);
+      .main-text {
+        font-size: var(--fs-16);
+        margin-bottom: 8px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .trade-tr-view-font-flair {
+    margin-top: 2rem;
+    .form-label {
+      color: var(--neutral-text-subtle-least);
+      font-size: var(--fs-14);
+      font-style: normal;
+      font-weight: 600;
+    }
+  }
+
+  .column-filters {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    justify-content: space-between;
+    font-size: var(--fs-14);
+  }
+  .width-30 {
+    width: 30%;
+  }
+  .width-20 {
+    width: 20%;
+  }
+  .width-10 {
+    width: 10%;
+  }
+  .completed-tag {
+    color: var(--semantics-success-text);
+    background-color: color-mix(
+      in srgb,
+      var(--semantics-success-background-strong) 10%,
+      transparent
+    );
+    border-radius: 5px;
+  }
+
+  .rejected-tag {
+    color: var(--semantics-critical-text);
+    background-color: color-mix(
+      in srgb,
+      var(--semantics-critical-background-strong) 10%,
+      transparent
+    );
+    border-radius: 5px;
+  }
+
+  .partial-tag {
+    color: var(--semantics-warning-text);
+    background-color: color-mix(
+      in srgb,
+      var(--semantics-warning-background-strong) 10%,
+      transparent
+    );
+    border-radius: 5px;
+  }
+
+  .buy-tag {
+    color: var(--semantics-success-text);
+  }
+
+  .sell-tag {
+    color: var(--semantics-critical-text);
+  }
+  .settled-tag {
+    background-color: color-mix(
+      in srgb,
+      var(--semantics-success-background-strong) 10%,
+      transparent
+    );
+    color: var(--semantics-success-text);
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .rejected-tag {
+    background: color-mix(
+      in srgb,
+      var(--semantics-critical-background-strong) 10%,
+      transparent
+    );
+    color: var(--semantics-critical-text);
+    border-radius: 5px;
+  }
+  .pending-tag {
+    background: color-mix(
+      in srgb,
+      var(--semantics-warning-background-strong) 10%,
+      transparent
+    );
+    color: var(--semantics-warning-text);
+    border-radius: 5px;
+    font-size: var(--fs-13);
+  }
+  .data-check {
+    position: relativel;
+    right: 25px;
+  }
+  .net-tag {
+    color: var(--semantics-warning-text);
+  }
+
+  .trade-transaction-card {
+    justify-content: space-between;
+  }
+
+  .grey-text-head {
+    color: var(--neutral-text-subtle-least);
+  }
+
+  .black-text-value {
+    color: var(--neutral-text-default);
+  }
+  .grey-text {
+    color: var(--neutral-text-subtle-least);
+    font-size: var(--fs-12);
+  }
+  .investmentView_lineHeight {
+    line-height: 1.8rem;
+  }
+  .generic-table-component1 {
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .awaiting-trade {
+    border-left: 4px solid var(--semantics-warning-border);
+  }
+  .trade-rejected {
+    border-left: 4px solid var(--semantics-critical-border);
+  }
+  .trade-completed {
+    border-left: 4px solid var(--semantics-success-border);
+  }
+  .generic-table-component {
+    display: flex;
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    .trade-flex-column {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0.75rem;
+      width: 25%;
+
+      .transaction-card-top-row {
+        font-weight: 500;
+        font-size: var(--fs-14);
+        line-height: 19px;
+        color: var(--neutral-text-default);
+      }
+
+      .transaction-status {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 4px 8px;
+        gap: 5px;
+        color: var(--semantics-success-text);
+        height: 29px;
+        width: fit-content;
+        background: color-mix(
+          in srgb,
+          var(--semantics-success-background-strong) 10%,
+          transparent
+        );
+        border-radius: 6px;
+      }
+    }
+
+    .trade-ssn-column {
+      @extend %FlexAlignCenter;
+    }
+
+    .w-15 {
+      width: 15%;
+    }
+
+    .w-10 {
+      width: 10%;
+    }
+
+    .w-20 {
+      width: 20%;
+    }
+  }
+}
+.trade-back-icon-flair {
+  display: flex;
+  padding: 0rem 0rem 0rem 0.35rem;
+  font-weight: 600;
+  font-size: var(--fs-16);
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  color: var(--brand-text-primary-default);
+}
+.date-range-field-width {
+  .form-group.smd .form-control {
+    width: 185px;
+  }
+  .textfilterhead {
+    font-size: var(--fs-13);
+    margin-bottom: 7px;
+  }
+}
+.h-94 {
+  height: 94vh;
+}

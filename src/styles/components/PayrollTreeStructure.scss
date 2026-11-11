@@ -1,0 +1,55 @@
+.Payrolltree,
+.Payrolltree ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.Payrolltree ul {
+  margin-left: 1em;
+  position: relative;
+}
+.Payrolltree ul ul {
+  margin-left: 0.5em;
+}
+.Payrolltree ul:before {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: -8px;
+  border-left: 1px solid;
+  color: var(--brand-text-primary-default);
+}
+.Payrolltree li {
+  margin: 0;
+  padding-bottom: 5px;
+  line-height: 2em;
+  font-weight: 400;
+  position: relative;
+}
+.Payrolltree i {
+  margin-right: 15px;
+  color: var(--brand-text-primary-default);
+}
+.Payrolltree ul li:before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 0;
+  border-top: 1px solid;
+  margin-top: -1px;
+  margin-left: -8px;
+  position: absolute;
+  top: 1em;
+  left: 0;
+  color: var(--brand-text-primary-default);
+}
+.Payrolltree ul li:last-child:before {
+  background: var(--neutral-surface-layer-01);
+  height: auto;
+  top: 1em;
+  bottom: 0;
+}

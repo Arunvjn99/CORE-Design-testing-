@@ -1,0 +1,96 @@
+.downloadColorBatAdj {
+  border: 1px solid var(--semantics-success-border);
+}
+
+.downloadColorBatAdj:hover {
+  background-color: var(--semantics-success-background-strong);
+}
+
+.downloadColorBatAdj:hover svg {
+  color: var(--neutral-text-on-color);
+}
+
+.batch-adj-filters-count {
+  padding: 0.5rem 0rem;
+  background-color: var(--neutral-surface-layer-02);
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.file-validation {
+  .card-Details {
+    padding: 1rem;
+    background-color: var(--neutral-surface-layer-02);
+    margin-bottom: 1rem;
+  }
+
+  .processing-Card {
+    width: 50%;
+    background-color: var(--semantics-highlight-background-light);
+    padding: 16px;
+    border-radius: 6px;
+    text-wrap: auto;
+    margin-bottom: 16px;
+
+    .icon-cl {
+      margin-right: 8px;
+      color: var(--semantics-highlight-text);
+    }
+  }
+
+  .success-Card {
+    width: 50%;
+    background-color: var(--semantics-success-background-light);
+    padding: 16px;
+    border-radius: 6px;
+    text-wrap: auto;
+    margin-bottom: 16px;
+
+    .icon-cl {
+      margin-right: 8px;
+      color: var(--semantics-success-text);
+    }
+  }
+
+  .error-card {
+    width: 100%;
+    background-color: var(--semantics-critical-background-light);
+    border-radius: 6px;
+    padding: 16px;
+
+    .icon-ec {
+      margin-right: 8px;
+    }
+
+    .header {
+      justify-content: space-between;
+
+      .download {
+        align-self: flex-end;
+        cursor: pointer;
+      }
+
+      .download:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .mr-4 {
+      margin-right: 4px;
+    }
+
+    .chevron {
+      margin-left: 8px;
+      cursor: pointer;
+      color: var(--brand-text-primary-default);
+      text-align: center;
+    }
+
+    .chevron:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.batch-adj-document-header {
+  background: var(--neutral-surface-layer-05);
+}

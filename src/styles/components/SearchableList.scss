@@ -1,0 +1,121 @@
+@use "../foundation/typography-mixins" as *;
+@use "../shared/shared-placeholders" as *;
+.searchable-list {
+  overflow: auto;
+  padding: 0;
+  /* margin: 1rem 0rem; */
+}
+
+.searchable-list .dropdown-item {
+  text-transform: none;
+  color: var(--neutral-text-default);
+  /* padding-left: var(--dropside-paddingx-width); */
+  /* padding-right: var(--dropside-paddingx-width); */
+  /* padding: 0 ; */
+
+  &:active {
+    background-color: transparent;
+    color: var(--neutral-text-default);
+
+    .custom-control .custom-control-label {
+      /* color: var(--neutral-text-on-color) ; */
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.selected {
+    background-color: var(--brand-background-primary-light);
+    font-weight: 500;
+  }
+
+  &:hover {
+    background-color: var(--brand-background-primary-light);
+  }
+}
+
+.searchable-list .dropdown-item {
+  padding-top: var(--spacing-8);
+  padding-bottom: var(--spacing-8);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* .searchable-list { */
+/* :not(:first-child) { */
+/* padding-top : var(--spacing-8); */
+/* } */
+/* } */
+
+.searchable-list-wrapper {
+  padding: var(--spacing-8);
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  .searchable-list-input {
+    @extend %FlexColumn;
+
+    /* padding: 0.25rem var(--dropside-paddingx-width); */
+    .form-group,
+    .w-fit-content,
+    .form-control-search-text,
+    .searchable-list-input-text.form-control {
+      width: 100%;
+    }
+    &.form-group {
+      margin-bottom: 0px;
+
+      &.invalid .form-control {
+        border-color: initial;
+      }
+    }
+  }
+}
+
+.searchable-list-wrapper-var {
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: var(--spacing-8);
+
+  .dropSide-popup {
+    padding: 0px;
+  }
+
+  .form-group {
+    padding: 0px;
+  }
+
+  .searchable-list-label {
+    .form-label {
+      padding-left: 1rem;
+    }
+  }
+
+  .searchable-list-input {
+    display: flex;
+    flex-direction: column;
+    /* padding: 0.25rem var(--dropside-paddingx-width); */
+    padding: 0px 0px 0px 0px;
+
+    &.form-group {
+      margin-bottom: 0px;
+      padding: 0px 0px 0px 0px;
+
+      &.invalid .form-control {
+        border-color: initial;
+      }
+    }
+  }
+}
+
+.searchable-list-input-text::placeholder {
+  @include body-text-small-medium($color: var(--neutral-text-subtle));
+}

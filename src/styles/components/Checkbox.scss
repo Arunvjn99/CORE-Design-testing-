@@ -1,0 +1,108 @@
+@use "../shared/shared-placeholders" as *;
+.custom-checkbox {
+  .custom-control-input {
+    &:focus + .custom-control-label {
+      cursor: pointer;
+
+      &:before {
+        border-radius: 0;
+        box-shadow: none;
+        border-color: var(--neutral-border-strong);
+      }
+    }
+
+    &:checked + .custom-control-label {
+      &::before {
+        @extend %WhiteBackgroundBlackBorder;
+      }
+    }
+  }
+
+  .custom-control-label:before {
+    border-radius: 0;
+  }
+
+  &.medium {
+    .custom-control-label:before {
+      @extend %IconSize24px;
+    }
+
+    .custom-control-label::after {
+      @extend %IconSize24px;
+    }
+  }
+}
+
+.custom-radio {
+  .custom-control-input {
+    &:focus + .custom-control-label {
+      &:before {
+        box-shadow: 0 0 0 1px var(--neutral-surface-layer-01),
+          0 0 0 0.2rem
+            color-mix(
+              in srgb,
+              var(--semantics-critical-background-strong) 50%,
+              transparent
+            );
+        border-color: var(--semantics-critical-border);
+      }
+    }
+
+    + .custom-control-label {
+      color: var(--neutral-text-default);
+
+      &::before {
+        @extend %WhiteBackgroundBlackBorder;
+      }
+    }
+  }
+
+  .custom-control-label:before {
+    border-radius: 0;
+  }
+
+  &.medium {
+    .custom-control-label:before {
+      @extend %IconSize24px;
+    }
+
+    .custom-control-label::after {
+      @extend %IconSize24px;
+    }
+  }
+}
+
+.custom-switch.custom-control {
+  align-items: flex-start;
+
+  .custom-control-label {
+    top: 0px;
+
+    &::before {
+      top: 0;
+      background-color: var(--neutral-surface-layer-03);
+      border-color: var(--neutral-border-subtle);
+      height: 1.5rem;
+      width: 3rem;
+      border-radius: 15px;
+      left: -2.45rem;
+    }
+
+    &::after {
+      top: 3px;
+      background-color: var(--neutral-surface-layer-01);
+      height: calc(1.25rem - 3px);
+      width: calc(1.25rem - 3px);
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::before {
+    border-color: var(--brand-border-primary-default);
+    background-color: var(--brand-background-primary-strong);
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::after {
+    right: 3px;
+    left: -1.5rem;
+  }
+}

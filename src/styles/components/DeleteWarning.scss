@@ -1,0 +1,105 @@
+@use "../shared/shared-placeholders" as *;
+.msg-headtext {
+  padding: 15px;
+
+  h4 {
+    font-size: var(--fs-18);
+  }
+
+  p {
+    font-size: var(--fs-13);
+    margin: 0px;
+  }
+
+  .removeButtonWarning {
+    background: var(--semantics-critical-background-strong);
+    color: var(--neutral-text-on-color);
+    border: 1px solid var(--semantics-critical-border);
+  }
+
+  .removeButtonWarning:hover {
+    background: var(--semantics-critical-background-strong);
+    color: var(--neutral-text-on-color);
+    border: 1px solid var(--semantics-critical-border);
+  }
+
+  .removeButtonWarningMapper {
+    background: var(--semantics-critical-background-strong);
+    color: var(--neutral-text-on-color);
+    margin-right: 20px;
+    border: 1px solid var(--semantics-critical-border);
+  }
+
+  .removeButtonWarningMapper:hover {
+    background: var(--semantics-critical-background-strong);
+    color: var(--neutral-text-on-color);
+    border: 1px solid var(--semantics-critical-border);
+  }
+
+  .cancelButtonWarning {
+    background: var(--neutral-surface-layer-01);
+    color: var(--semantics-critical-text);
+    border: 1px solid var(--semantics-critical-border);
+  }
+
+  .cancelButtonWarningMapper {
+    background: var(--neutral-surface-layer-01);
+    color: var(--brand-text-primary-default);
+    border: 1px solid var(--brand-border-primary-default);
+  }
+
+  .thirdMessage {
+    @extend %HeadingSmallSemiBold;
+  }
+}
+
+.close-buttonWarningModal {
+  color: var(--neutral-text-subtle-least);
+  background-color: var(--neutral-surface-layer-01);
+  margin-left: 1.875rem;
+  /* margin-bottom: 1.25rem; */
+}
+
+.delete-sponsor-bank {
+  background: linear-gradient(
+      0deg,
+      var(--semantics-critical-background-light),
+      var(--semantics-critical-background-light)
+    ),
+    var(--neutral-surface-layer-01);
+}
+
+.onboadringProgressBar {
+  background: linear-gradient(
+      0deg,
+      color-mix(
+        in srgb,
+        var(--semantics-highlight-background-strong) 10%,
+        transparent
+      ),
+      color-mix(
+        in srgb,
+        var(--semantics-highlight-background-strong) 10%,
+        transparent
+      )
+    ),
+    var(--neutral-surface-layer-01);
+}
+
+/* .enableFunding1 { */
+/* background: linear-gradient( */
+/* 0deg, */
+/* color-mix(in srgb, var(--semantics-success-background-strong) 10%, transparent), */
+/* color-mix(in srgb, var(--semantics-success-background-strong) 10%, transparent) */
+/* ), */
+/* var(--neutral-surface-layer-01); */
+/* } */
+
+/* .enableFunding2 { */
+/* background: linear-gradient( */
+/* 0deg, */
+/* color-mix(in srgb, var(--semantics-critical-background-strong) 10%, transparent), */
+/* color-mix(in srgb, var(--semantics-critical-background-strong) 10%, transparent) */
+/* ), */
+/* var(--neutral-surface-layer-01); */
+/* } */

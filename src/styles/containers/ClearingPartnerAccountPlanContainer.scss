@@ -1,0 +1,55 @@
+@use "../shared/shared-placeholders" as *;
+.clearing-partner-account-plan-container {
+  @extend %FlexColumn;
+
+  .search-component-clearing-partner {
+    width: 60%;
+  }
+
+  .header-label {
+    display: flex;
+
+    .clearing-partner-subjects {
+      @extend %FlexColumn;
+
+      .clearing-partner-recently-added {
+        font-size: var(--fs-16);
+        font-style: normal;
+        font-weight: 600;
+      }
+
+      .clearing-partner-records {
+        color: var(--neutral-text-subtle-least);
+      }
+    }
+  }
+
+  .clearing-partner-table {
+    display: flex;
+    margin-top: 1.25rem;
+    width: 100%;
+    padding-left: 0.5rem;
+
+    .header-clearing-partner {
+      width: 50%;
+
+      .table-header-clearing-partner {
+        color: var(--neutral-text-subtle-least);
+        font-size: var(--fs-16);
+        font-style: normal;
+        font-weight: 700;
+      }
+    }
+  }
+  .clearing-partner-table-scroll {
+    overflow-y: auto;
+    height: 65vh;
+  }
+  .details-table {
+    margin: 1rem 0.5rem;
+    margin-bottom: 5rem;
+    .table-details {
+      width: 50%;
+    }
+  }
+}

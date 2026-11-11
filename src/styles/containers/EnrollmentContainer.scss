@@ -1,0 +1,156 @@
+@use "../shared/shared-placeholders" as *;
+/* Default Election Css */
+
+.investment-manual-enrollment-name {
+  @extend %FlexColumn;
+  gap: 6px;
+}
+
+.add-button-inside {
+  display: flex;
+  width: 55px;
+  height: 24px;
+  background: var(--neutral-surface-layer-01);
+  border: 1px solid var(--brand-border-primary-default);
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button-inner-text {
+  width: 21px;
+  height: 15px;
+  color: var(--brand-text-primary-default);
+  font-weight: 500;
+  font-size: var(--fs-10);
+  margin: 4.5px 17px 4.5px 17px;
+}
+
+.added-button-inside {
+  display: flex;
+  width: 55px;
+  height: 24px;
+  background: var(--neutral-surface-layer-01);
+  border: 1px solid var(--neutral-border-strong);
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.added-button-inner-text {
+  width: 34px;
+  height: 15px;
+  color: var(--neutral-text-subtle-least);
+  font-weight: 500;
+  font-size: var(--fs-10);
+  margin: 5px 10px 4px 11px;
+}
+
+.inside-content {
+  margin-top: -30px;
+}
+
+.investment-heading {
+  height: 24px;
+  font-weight: 500;
+  font-size: var(--fs-15);
+  color: var(--neutral-text-default);
+}
+
+.search-bar-investment {
+  width: 100%;
+}
+
+.investment-side-content {
+  margin-top: 7px;
+  height: 18px;
+  font-weight: normal;
+  font-size: var(--fs-12);
+  color: var(--neutral-text-subtle-least);
+}
+
+.investment-name {
+  line-height: 18px;
+  color: var(--neutral-text-default);
+}
+
+.main-contribution-heading {
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-16);
+  line-height: 24px;
+}
+
+.investment-basedon-icons {
+  .btn-link {
+    font-size: var(--fs-20);
+  }
+}
+
+.was-validated {
+  .form-control-seach-text {
+    .form-control:valid {
+      border-color: var(--neutral-border-strong);
+      background-image: none;
+      box-shadow: none;
+    }
+  }
+
+  .form-control:valid:focus {
+    box-shadow: none;
+    border-color: var(--neutral-border-strong);
+  }
+}
+
+.gap-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.plan-details-gap.gap-3 {
+  gap: 1rem;
+}
+
+.fieldSuggestionDE {
+  color: var(--neutral-text-subtle-least);
+  font-size: var(--fs-12);
+  padding-bottom: 8px;
+}
+
+.enrollment-deferal-card {
+  .form-group.p-xs {
+    width: 120px;
+    flex-shrink: 0;
+  }
+  .form-group.xs {
+    width: var(--w-xs);
+    flex-shrink: 0;
+  }
+  .input-critical-tag {
+    white-space: nowrap;
+    overflow: visible;
+
+    .input-critical-text-flair {
+      white-space: nowrap;
+      overflow: visible;
+    }
+  }
+}
+
+.fieldSuggestionDE1 {
+  color: var(--neutral-text-default);
+  font-size: var(--fs-12);
+  padding-bottom: 8px;
+}
+
+.defaultElectionInfo {
+  font-size: var(--fs-15);
+  margin-right: 5px;
+}
+
+.future-capital-logo-var {
+  width: 50px;
+  height: 40px;
+  margin-top: 5px;
+}

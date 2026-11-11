@@ -1,0 +1,427 @@
+@use "../shared/shared-placeholders" as *;
+
+.communicationCard {
+  height: 104px;
+  border: 1px solid var(--neutral-border-strong);
+  margin-bottom: 25px;
+
+  .labels {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    margin-left: 15px;
+
+    .component {
+      @extend %FlexColumn;
+
+      .label {
+        /* font-family: Poppins; */
+        font-style: normal;
+        font-weight: 700;
+        font-size: var(--fs-14);
+        line-height: 21px;
+      }
+
+      .item {
+        /* font-family: Poppins; */
+        font-style: normal;
+        font-weight: 500;
+        font-size: var(--fs-16);
+        line-height: 24px;
+      }
+    }
+
+    .levelDetail {
+      padding-left: 40px;
+      width: 20%;
+    }
+
+    .eventDetail {
+      padding-right: 10px;
+    }
+
+    .eventCategory {
+      /* padding-left: 25px; */
+      width: 30%;
+    }
+
+    .type {
+      padding-left: 30px;
+      width: 15%;
+    }
+
+    .layoutName {
+      /* padding-left: 30px; */
+      width: 25%;
+    }
+
+    .eventOrScheduleName {
+      /* margin-left: 20px; */
+      width: 30%;
+    }
+
+    .numberOfCommunications {
+      padding-left: 20px;
+      width: 15%;
+    }
+
+    .eventType {
+      width: 10%;
+    }
+
+    .channel {
+      width: 15%;
+    }
+
+    .configuredCommunications {
+      border-left: 1px solid var(--neutral-border-strong);
+      height: 100%;
+      width: 35%;
+      padding: 10px 0 10px 30px;
+    }
+  }
+}
+
+.communicationNotMapedCard {
+  height: 104px;
+  width: 100%;
+  border: 1px solid var(--neutral-border-strong);
+  margin-bottom: 25px;
+
+  &.no-left-border {
+    border-left: none;
+  }
+
+  &.no-right-border {
+    border-right: none;
+  }
+
+  .labels {
+    display: flex;
+    justify-content: flex-start;
+
+    &.left-box {
+      padding-left: 60px;
+    }
+
+    &.right-box {
+      padding-left: 60px;
+    }
+
+    height: 100%;
+    align-items: center;
+
+    .component {
+      display: flex;
+      flex-direction: column;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 200px;
+
+      .label {
+        font-style: normal;
+        font-weight: normal;
+        font-size: var(--fs-14);
+        line-height: 21px;
+      }
+
+      .item {
+        font-style: normal;
+        font-weight: 500;
+        font-size: var(--fs-16);
+        line-height: 24px;
+      }
+    }
+
+    .communicationDetail {
+      padding-left: 25px;
+      width: 30%;
+    }
+
+    .eventDetail {
+      padding-left: 25px;
+      width: 30%;
+    }
+
+    .levelDetail {
+      padding-left: 20px;
+      width: 20%;
+    }
+
+    .type {
+      padding-left: 30px;
+      width: 15%;
+    }
+
+    .layoutName {
+      padding-left: 30px;
+      width: 25%;
+    }
+
+    .eventOrScheduleName {
+      margin-left: 20px;
+      width: 23%;
+    }
+
+    .numberOfCommunications {
+      padding-left: 20px;
+      width: 15%;
+    }
+
+    .eventType {
+      width: 10%;
+    }
+
+    .channel {
+      width: 15%;
+    }
+
+    .configuredCommunications {
+      border-left: 1px solid var(--neutral-border-strong);
+      height: 100%;
+      width: 35%;
+      padding: 10px 0 10px 30px;
+    }
+  }
+}
+
+.communicationCard:hover {
+  @extend %PrimaryOutlineBox;
+}
+
+.emailLayout {
+  /* height: 290px; */
+  width: 166px;
+  margin-right: 45px;
+
+  .newOuterDiv {
+    height: 196px;
+    width: 166px;
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    height: 197px;
+    width: 166px;
+    border-radius: 5px;
+    background: var(--neutral-surface-layer-01);
+    border: 1px solid var(--neutral-border-strong);
+    box-sizing: border-box;
+    margin-bottom: 11px;
+  }
+
+  .footer {
+    /* font-family: Poppins; */
+    font-size: var(--fs-14);
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--neutral-text-default);
+  }
+}
+
+.newLayout {
+  /* height: 290px; */
+  width: 166px;
+  margin-right: 40px;
+
+  .newOuterDiv {
+    height: 196px;
+    width: 166px;
+    border: 1px dotted var(--neutral-border-strong);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .newInnerDiv {
+    height: 174px;
+    width: 144px;
+    background-color: color-mix(
+      in srgb,
+      var(--brand-background-primary-strong) 25%,
+      transparent
+    );
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .newCircle {
+    height: 55px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--neutral-surface-layer-01);
+    border-radius: 50%;
+  }
+
+  .container {
+    height: 197px;
+    width: 166px;
+    border-radius: 5px;
+    background: var(--neutral-surface-layer-01);
+    border: 1px dashed var(--neutral-border-strong);
+    box-sizing: border-box;
+    margin-bottom: 11px;
+
+    .img {
+      height: 172px;
+      width: 144px;
+      border-radius: 4px;
+      background: color-mix(
+        in srgb,
+        var(--brand-background-primary-strong) 25%,
+        transparent
+      );
+
+      .circle {
+        height: 55px;
+        width: 55px;
+        border-radius: 45px;
+        background: var(--neutral-surface-layer-01);
+      }
+    }
+  }
+
+  .footer {
+    /* font-family: Poppins; */
+    font-size: var(--fs-14);
+    font-weight: 400;
+    line-height: 21px;
+  }
+}
+
+.PlanLevelContainer {
+  .header1 {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: flex-start;
+
+    .element {
+      margin-top: 28px;
+
+      .padding-search-clear-filters {
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+      }
+    }
+  }
+
+  .bodyContent {
+    height: 49%;
+    overflow-y: auto;
+    padding-right: 5px;
+  }
+}
+
+.bodyContent {
+  /* max-height: 380px; */
+  overflow-y: scroll;
+  padding-right: 5px;
+}
+
+.EmailLayoutContainer {
+  height: 100%;
+
+  .header1 {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .element {
+      margin-top: 25px;
+    }
+  }
+
+  .header2 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+  }
+
+  .bodyContentEmail {
+    padding-left: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* height: 70%; */
+    /* overflow: scroll; */
+    /* max-width: 1100px; */
+  }
+}
+
+.Non-card-labels {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding-bottom: 20px;
+
+  /* .Non-card-label { */
+  /* // font-family: Poppins; */
+  /* font-style: normal; */
+  /* font-weight: 700; */
+  /* font-size: var(--fs-14); */
+  /* line-height: 21px; */
+  /* color: var(--neutral-text-default); */
+  /* } */
+  .m-left {
+    width: 30%;
+    padding-left: 40px;
+  }
+
+  .m-right {
+    width: 30%;
+  }
+
+  .m-middle {
+    width: 30%;
+  }
+}
+
+.Non-card-non-mapped-labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+
+  .Non-card-non-mapped-label {
+    /* font-family: Poppins; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--fs-14);
+    line-height: 21px;
+    color: var(--neutral-text-default);
+  }
+
+  .m-left {
+    /* margin-left: 60px; */
+    padding-left: 44px;
+    width: 30%;
+  }
+
+  .m-middle {
+    width: 30%;
+    padding-left: 67px;
+  }
+
+  .m-right {
+    width: 30%;
+    margin-right: 150px;
+  }
+}
+
+.mb-7 {
+  margin-bottom: 7px;
+}

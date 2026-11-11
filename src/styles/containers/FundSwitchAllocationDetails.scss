@@ -1,0 +1,90 @@
+@use "../shared/shared-placeholders" as *;
+.transaction-fund-switch-allocation-details {
+  border-radius: 8px;
+  border: 1px solid var(--neutral-border-strong);
+  background: var(--neutral-surface-layer-01);
+  width: 50%;
+  .header {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    .inv-name {
+      @extend %FlexAlignCenter;
+    }
+    .allocation-per {
+      @extend %FlexAlignCenter;
+    }
+  }
+}
+
+.fund-switch-participant-transaction-breakdown {
+  display: flex;
+  width: 100%;
+
+  padding: 1rem;
+  .fund-switch-participant-from {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    .fund-switch-participant-from-header {
+      @extend %FullWidthColumnSection;
+      .mainn {
+        @extend %CardTitle;
+      }
+      .secondd {
+        display: flex;
+        .bold-text {
+          @extend %LabelTextBold;
+        }
+        .normal-text {
+          @extend %PlaceholderTextGray;
+        }
+      }
+    }
+    .investment-details-card-dividends {
+      @extend %GrayBorderedInputWrapper;
+
+      .bg-grey-dividend {
+        @extend %LightGrayBackgroundBlock;
+        .cspl-table-with-sort {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .seperatorline {
+    border-left: 1px solid var(--neutral-border-strong);
+    height: auto;
+    margin: 0px 16px;
+  }
+  .fund-switch-participant-to {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    .fund-switch-participant-from-header {
+      @extend %FullWidthColumnSection;
+      .mainn {
+        @extend %CardTitle;
+      }
+      .secondd {
+        display: flex;
+        .bold-text {
+          @extend %LabelTextBold;
+        }
+        .normal-text {
+          @extend %PlaceholderTextGray;
+        }
+      }
+    }
+    .investment-details-card-dividends {
+      @extend %GrayBorderedInputWrapper;
+      .bg-grey-dividend {
+        @extend %LightGrayBackgroundBlock;
+        .cspl-table-with-sort {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,214 @@
+.basic-plan-details {
+  width: 100%;
+  .data-item {
+    margin-right: 3rem;
+    .label {
+      font-size: var(--fs-10);
+      color: var(--neutral-text-subtle-least);
+      line-height: 2;
+    }
+    .value {
+      font-size: var(--fs-14);
+      color: var(--neutral-text-default);
+      font-weight: 500;
+      line-height: 1.5;
+      white-space: nowrap;
+    }
+  }
+}
+.k-sorted .k-i-sort-asc-sm {
+  display: none;
+}
+.k-sorted .k-i-sort-desc-sm {
+  display: none;
+}
+.headerRecords {
+  .k-grid-norecords {
+    display: none;
+  }
+}
+
+.ae-card-item {
+  margin-bottom: 16px;
+  color: inherit;
+  text-decoration: none;
+
+  /* padding: 16px; */
+  .ae-card-item-content {
+    padding: 16px;
+    background: var(--neutral-surface-layer-01);
+    border-radius: 8px;
+    position: relative;
+    border: 1px solid var(--neutral-border-strong);
+
+    &:hover {
+      border: 1px solid;
+      font-weight: normal;
+      border-color: var(--brand-border-primary-default);
+    }
+
+    .company-name {
+      width: 80%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: var(--fs-18);
+      font-weight: 700;
+    }
+
+    .company-icon-wrapper {
+      width: 40%;
+      border-right: 1px solid var(--neutral-border-subtle);
+    }
+
+    .plan-details-wrapper {
+      width: 60%;
+    }
+
+    .planTitle-text {
+      font-size: var(--fs-12);
+      margin-bottom: 0;
+      color: var(--neutral-text-subtle-least);
+    }
+
+    .planName-text {
+      font-size: var(--fs-14);
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.basic-plan-details-card-var .sliding-panel-container .glass {
+  width: 30vw;
+}
+
+.basic-plan-details-card-var .sliding-panel-container .panel {
+  width: 70vw;
+}
+
+.basic-slider-table {
+  .cspl-table {
+    .column-planName {
+      width: 20%;
+    }
+    .column-companyName {
+      width: 30%;
+    }
+    .column-planId {
+      width: 25%;
+    }
+    .column-action {
+      width: 25%;
+    }
+  }
+}
+
+.plan-group-box {
+  width: 100%;
+  height: 150px;
+  border: 1px solid var(--neutral-border-subtle);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.marg-left {
+  margin-left: 30px;
+}
+.associated-plans-container-kendo-grid-table {
+  width: 100%;
+  margin-bottom: 1rem;
+  .center-no-records {
+    width: 100%;
+    margin-top: 32%;
+    justify-content: center;
+    font-size: var(--fs-20);
+    font-weight: 400;
+    display: flex;
+  }
+  .k-grid {
+    max-height: 72vh;
+    border: none;
+    .k-grid-content {
+      table {
+        tbody tr:nth-child(even) {
+          padding: 0.5rem;
+          background-color: var(--neutral-surface-layer-01);
+        }
+
+        tbody tr:nth-child(odd) {
+          padding: 0.5rem;
+          background-color: var(--neutral-surface-layer-03);
+        }
+        tbody td {
+          padding: 0.5rem;
+          border: none;
+          font-size: var(--fs-16);
+          font-weight: 600;
+        }
+
+        thead th {
+          border: none;
+        }
+        border: none;
+      }
+      border: none;
+    }
+    .k-grid-header {
+      padding-right: 4px;
+      background-color: var(--neutral-surface-layer-01);
+      color: var(--neutral-text-subtle-least);
+      border: none;
+      .k-grid-header-wrap {
+        border: none;
+      }
+      .k-header {
+        padding: 0.5rem;
+        border: none;
+        font-weight: 500;
+        .associatedplans-label {
+          font-size: var(--fs-16);
+        }
+        .associatedplans-label-icon {
+          font-size: var(--fs-16);
+          color: var(--neutral-text-subtle-least);
+        }
+        .k-link,
+        .k-link:hover {
+          cursor: default;
+          .k-icon.k-i-sort-desc-sm {
+            display: none;
+          }
+          .k-icon.k-i-sort-asc-sm {
+            display: none;
+          }
+        }
+      }
+    }
+    .k-grid-norecords {
+      display: none;
+    }
+  }
+}
+.basic-plan-details-card-var {
+  background-color: var(--neutral-surface-layer-02);
+  padding: 16px;
+  border-radius: 8px;
+  .plan-details-card-label {
+    color: var(--neutral-text-subtle-least);
+    font-size: var(--fs-14);
+    font-weight: 500;
+    line-height: 19.07px;
+  }
+  .plan-details-card-value {
+    color: var(--neutral-text-subtle);
+    font-size: var(--fs-16);
+    font-weight: 600;
+    line-height: 21.79px;
+    margin-top: 4px;
+  }
+}
+
+.background-image-none {
+  background-image: none;
+}

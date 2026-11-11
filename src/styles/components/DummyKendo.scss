@@ -1,0 +1,58 @@
+.kendo-field-flair {
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent),
+    var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
+  border-radius: 0.75rem;
+  border-width: 1px;
+  background-color: var(--neutral-surface-layer-01);
+  border-color: var(--neutral-border-subtle);
+
+  .form-control {
+    width: 800px;
+  }
+}
+
+.grid-header-flair {
+  padding: 0rem 1.25rem 0rem 2rem;
+  overflow: scroll;
+}
+
+.send-icon-flair {
+  position: relative;
+  left: -37px;
+}
+.initial-text {
+  display: flex;
+  justify-content: center;
+  font-size: var(--fs-18);
+  margin-top: 150px;
+}
+.kendo-field-flair {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.dummy-kendo-search-form {
+  height: 2.55rem;
+}
+
+.dummy-search {
+  text-align: -webkit-center;
+  width: fit-content;
+  height: fit-content;
+
+  .close-button-pg {
+    left: 92%;
+  }
+}
+
+.outer-grid {
+  // .k-grid-content::-webkit-scrollbar{
+  //   width: 0px ;
+  //   height: 0px ;
+  // }
+}
+
+.dummy-search-icon-postion {
+  margin-top: -65px;
+  margin-left: 820px;
+}

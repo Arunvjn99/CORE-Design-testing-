@@ -1,0 +1,104 @@
+@use "../foundation/typography-mixins" as *;
+
+.add-slider-component {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  .slider-button-group {
+    flex-direction: row-reverse;
+  }
+  .slider-content {
+    display: grid;
+    grid-template-rows: min-content auto;
+    padding-top: 0px;
+    overflow: auto;
+  }
+  .add-slider-content {
+    padding-top: 0px;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 2fr 1.25fr;
+    gap: 1rem;
+  }
+  .add-slider-border {
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 0.5rem;
+  }
+  .border-right-strong {
+    border-right: 1px solid var(--neutral-border-strong);
+  }
+  .border-bottom-strong {
+    border-bottom: 1px solid var(--neutral-border-strong);
+  }
+  .filter-investment-component {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    /* overflow: auto; */
+    padding: 1rem;
+    /* height: calc(100vh - 6rem); */
+  }
+  .filter-investment-component-changes {
+    /* display: grid; */
+    /* grid-template-rows: min-content min-content min-content; */
+    height: 100%;
+    /* padding: 1rem; */
+    .w-fit-content {
+      width: 100%;
+    }
+    .w-100 {
+      width: 100%;
+    }
+    a {
+      cursor: pointer;
+      text-decoration: underline;
+      color: var(--brand-text-primary-default);
+
+      &:hover {
+        font-weight: 500;
+      }
+    }
+  }
+  .filter-component-changes {
+    display: grid;
+    grid-template-rows: min-content auto;
+    height: 100%;
+    padding: 1rem;
+    .w-fit-content {
+      width: 100%;
+    }
+    .w-100 {
+      width: 100%;
+    }
+  }
+  .pill-close-icon {
+    color: var(--neutral-text-subtle-least);
+    font-size: var(--fs-10);
+  }
+  .pill-component {
+    background-color: var(--neutral-surface-layer-02);
+    @include body-text-small-semi-bold(
+      $color: var(--neutral-text-subtle-least)
+    );
+  }
+  .overflow-y-scroll {
+    overflow-y: auto;
+  }
+  .height-min-content {
+    height: min-content;
+  }
+  .text-decoration-underline-ct {
+    text-decoration: underline;
+    color: var(--semantics-critical-text);
+  }
+  a {
+    cursor: pointer;
+  }
+}
+
+.investment-table {
+  width: 106%;
+}
+
+.border-bottom-strong {
+  border-bottom: 1px solid var(--neutral-border-strong);
+}

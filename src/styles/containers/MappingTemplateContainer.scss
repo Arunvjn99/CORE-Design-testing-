@@ -1,0 +1,16 @@
+@use "../shared/shared-placeholders" as *;
+.error-banner {
+  @extend %CollapsibleErrorPopup;
+
+  .error-heading {
+    @extend %ValidationErrorText;
+  }
+
+  .error-reason {
+    @extend %CaptionText;
+  }
+
+  &.enable {
+    @extend %ExpandedPopupContent;
+  }
+}

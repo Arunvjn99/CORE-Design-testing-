@@ -1,0 +1,35 @@
+@use "../shared/shared-placeholders" as *;
+.ft-18 {
+  font-size: var(--fs-18);
+}
+
+.ft-18 {
+  font-size: var(--fs-18);
+}
+.Account-Holder {
+  @extend %ResetSpacing;
+}
+.withdrawal-card {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 0.5px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  padding: 15px;
+}
+.loan-label {
+  font-weight: 500;
+  font-size: var(--fs-14);
+  color: var(--neutral-text-default);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.withdrawalCard-header {
+  @extend %FlexRowSpaceBetween;
+}
+.vestedbalance-header {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 15px 0px 15px;
+  justify-content: space-between;
+  background-color: var(--neutral-surface-layer-03);
+}

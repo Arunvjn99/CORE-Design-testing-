@@ -1,0 +1,579 @@
+@use "../shared/shared-placeholders" as *;
+.main-history-detail-tile {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  justify-content: space-between;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px 6px 6px 5px;
+
+  .history-detail-view-more-tile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .history-detail-tile {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+      .image-transaction-history-detail {
+        width: 50px;
+        height: 50px;
+      }
+
+      .history-detail-main-Text {
+        font-weight: 500;
+        font-size: var(--fs-14);
+        line-height: 21px;
+        text-transform: capitalize;
+        color: var(--neutral-text-default);
+      }
+
+      .history-detail-normal-Text {
+        font-weight: 400;
+        font-size: var(--fs-14);
+        line-height: 21px;
+        color: var(--neutral-text-subtle-least);
+      }
+
+      .more-history-details-button {
+        font-weight: 400;
+        font-size: var(--fs-14);
+        line-height: 21px;
+        color: var(--brand-text-primary-default);
+        cursor: pointer;
+      }
+
+      .seperator-transaction-history-detail {
+        border: 0.5px solid var(--neutral-border-strong);
+        min-height: 100%;
+      }
+    }
+
+    .view-more-bottom {
+      display: flex;
+      width: 100%;
+      padding-top: 1rem;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 0.5px solid var(--neutral-border-strong);
+
+      .image-transaction-history-detail {
+        width: 50px;
+        height: 50px;
+      }
+
+      .history-detail-main-Text {
+        font-weight: 500;
+        font-size: var(--fs-14);
+        line-height: 21px;
+        text-transform: capitalize;
+        color: var(--neutral-text-default);
+      }
+
+      .history-detail-normal-Text {
+        font-weight: 400;
+        font-size: var(--fs-14);
+        line-height: 21px;
+        color: var(--neutral-text-subtle-least);
+      }
+    }
+  }
+}
+
+.history-distribution-transaction {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+  background: var(--neutral-surface-layer-01);
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 6px;
+
+  .header-content-rolloverin {
+    background: var(--neutral-surface-layer-03);
+    border-radius: 6px 6px 0px 0px;
+    width: 100%;
+    padding: 1rem;
+    font-weight: 500;
+    font-size: var(--fs-16);
+    line-height: 150%;
+    color: var(--neutral-text-default);
+  }
+
+  .sub-header-distribution-transaction {
+    padding: 1rem;
+    font-weight: 500;
+    font-size: var(--fs-16);
+    line-height: 150%;
+    color: var(--neutral-text-default);
+  }
+
+  .cards-distribution-transaction {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 0 1rem;
+
+    .title-names-transaction {
+      font-weight: 400;
+      font-size: var(--fs-14);
+      line-height: 21px;
+      color: var(--neutral-text-subtle-least);
+    }
+
+    .response-names-transaction {
+      font-weight: 500;
+      font-size: var(--fs-14);
+      line-height: 21px;
+      color: var(--neutral-text-default);
+    }
+  }
+
+  .distribution-transaction-table {
+    margin: 1rem;
+
+    .distribution-transaction-history-table {
+      .column-source {
+        width: 25%;
+      }
+
+      .column-contributions {
+        width: 25%;
+      }
+
+      .column-earning {
+        width: 25%;
+      }
+
+      .column-total {
+        width: 25%;
+      }
+
+      .cell-data-width {
+        width: 25%;
+      }
+    }
+  }
+}
+
+.source-allocation-mapping {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 0;
+
+  .source-allocation-header {
+    font-weight: 600;
+    font-size: var(--fs-16);
+    line-height: 22px;
+    color: var(--neutral-text-default);
+    margin-bottom: 0.6rem;
+  }
+
+  .investment-mapping-table {
+    .column-name {
+      max-width: 50%;
+    }
+
+    .column-percentage {
+      max-width: 50%;
+    }
+  }
+}
+
+.transaction-history-withdrawal {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  .transaction-history-withdrawal-header {
+    font-weight: 500;
+    font-size: var(--fs-16);
+    line-height: 24px;
+    color: var(--neutral-text-default);
+    margin-bottom: 1rem;
+  }
+
+  .transaction-history-withdrawal-inner-box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 6px;
+    padding: 1rem;
+
+    .inner-header {
+      font-weight: 500;
+      font-size: var(--fs-14);
+      line-height: 21px;
+      color: var(--neutral-text-default);
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--neutral-border-strong);
+    }
+
+    .requested-amount {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      padding: 1rem;
+
+      .requested-text {
+        font-weight: 500;
+        font-size: var(--fs-14);
+        line-height: 21px;
+        color: var(--neutral-text-default);
+      }
+    }
+
+    .detailed-tree {
+      padding: 1rem;
+
+      .tree-inner-flex {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .transaction-history-payee-inner-box {
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid var(--neutral-border-strong);
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 0.5rem 0;
+
+    .cash-distribution-transaction-history {
+      width: 100%;
+      font-weight: 500;
+      font-size: var(--fs-14);
+      line-height: 21px;
+      color: var(--neutral-text-default);
+      border-bottom: 1px solid var(--neutral-border-strong);
+      padding: 0.6rem;
+    }
+
+    .bottom-payee-card {
+      display: flex;
+      padding: 1rem;
+      width: 100%;
+      justify-content: space-between;
+
+      .seperator-transaction-history-detail {
+        border: 0.5px solid var(--neutral-border-strong);
+        min-height: 100%;
+      }
+
+      .bottom-payee-card-text-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0.3rem;
+
+        .text-area-payee {
+          font-weight: 500;
+          font-size: var(--fs-16);
+          line-height: 24px;
+          color: var(--neutral-text-default);
+        }
+
+        .secondary-text-payee {
+          font-weight: 400;
+          font-size: var(--fs-16);
+          line-height: 24px;
+          color: var(--neutral-text-subtle-least);
+        }
+      }
+
+      .block-payee {
+        display: flex;
+        background: var(--neutral-surface-layer-03);
+        border-radius: 6px;
+        width: 45%;
+        padding: 1rem;
+        justify-content: space-evenly;
+      }
+    }
+  }
+
+  .source-detail-transfer {
+    @extend %FlexColumn;
+
+    .card-source-detail {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border: 1px solid var(--neutral-border-strong);
+      border-radius: 6px;
+      padding-top: 0.5rem;
+      margin: 0.5rem 0;
+
+      .small-card-source-detail {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+
+        .card-header-text {
+          margin: 0.5rem 0;
+          font-weight: 500;
+          font-size: var(--fs-18);
+          line-height: 27px;
+          color: var(--neutral-text-default);
+        }
+      }
+
+      .expanded-sorce-detail-card {
+        display: flex;
+        width: 100%;
+
+        .current-holdings-header {
+          font-weight: 500;
+          font-size: var(--fs-16);
+          line-height: 24px;
+          color: var(--neutral-text-default);
+        }
+
+        .investment-number {
+          font-weight: 400;
+          font-size: var(--fs-14);
+          line-height: 21px;
+          color: var(--neutral-text-subtle-least);
+        }
+
+        .left-side-pane {
+          display: flex;
+          flex-direction: column;
+          width: 40%;
+          background: var(--neutral-surface-layer-02);
+          padding: 1rem;
+
+          .investment-card-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background: var(--neutral-surface-layer-01);
+            padding: 1rem;
+            margin: 1.2rem;
+            border: 1px solid var(--neutral-border-strong);
+            border-radius: 6px;
+
+            .investment-name-text {
+              font-weight: 500;
+              font-size: var(--fs-14);
+              line-height: 21px;
+              color: var(--neutral-text-default);
+            }
+
+            .investment-amount-details {
+              display: flex;
+              justify-content: space-between;
+              margin-top: 1.1rem;
+
+              .investment-amount-column {
+                @extend %FlexColumn;
+
+                .investment-amount-number {
+                  font-weight: 500;
+                  font-size: var(--fs-16);
+                  line-height: 24px;
+                  color: var(--neutral-text-default);
+                }
+
+                .amount-header {
+                  font-weight: 400;
+                  font-size: var(--fs-14);
+                  line-height: 21px;
+                  color: var(--neutral-text-subtle-least);
+                }
+              }
+            }
+          }
+        }
+
+        .right-side-pane {
+          display: flex;
+          flex-direction: column;
+          width: 60%;
+          padding: 1rem;
+
+          .future-investment-table {
+            margin: 1rem 0;
+            height: fit-content;
+          }
+
+          .future-holdings-footer {
+            font-weight: 500;
+            font-size: var(--fs-18);
+            line-height: 27px;
+            color: var(--neutral-text-default);
+            display: flex;
+            justify-content: space-evenly;
+          }
+        }
+      }
+    }
+  }
+
+  .loan-transaction-history-main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 6px;
+
+    .header-loan-transaction {
+      font-weight: 500;
+      font-size: var(--fs-14);
+      line-height: 21px;
+      color: var(--neutral-text-default);
+      padding: 0.2rem 0 1rem 0;
+      border-bottom: 0.5px solid var(--neutral-border-strong);
+    }
+
+    .inner-content-loans {
+      display: flex;
+      justify-content: space-between;
+      margin: 0.5rem 0;
+    }
+
+    .bb-loan {
+      border-bottom: 0.5px dashed var(--neutral-border-strong);
+    }
+  }
+
+  .total-fee-amount-text {
+    font-weight: 500;
+    font-size: var(--fs-14);
+    line-height: 21px;
+    color: var(--neutral-text-default);
+    padding: 0.2rem 0 1rem 0;
+  }
+
+  .inner-card-loan-payment {
+    display: flex;
+    justify-content: space-between;
+    background: var(--neutral-surface-layer-03);
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    padding: 1rem;
+  }
+
+  .trade-main-block {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    color: var(--neutral-text-default);
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    .status-trade-history {
+      display: flex;
+      background: color-mix(
+        in srgb,
+        var(--semantics-success-background-strong) 15%,
+        transparent
+      );
+      border-radius: 6px;
+      align-items: center;
+      padding: 0.3rem;
+      gap: 10px;
+      margin: 0.3em;
+
+      .status-font-trade {
+        font-weight: 400;
+        font-size: var(--fs-14);
+        line-height: 14px;
+        text-align: center;
+        color: var(--semantics-success-text);
+      }
+    }
+
+    .main-font {
+      font-weight: 500;
+      font-size: var(--fs-16);
+      line-height: 24px;
+      color: var(--neutral-text-default);
+    }
+
+    .minimal-font {
+      font-weight: 400;
+      font-size: var(--fs-14);
+      line-height: 21px;
+      text-transform: capitalize;
+      color: var(--neutral-text-default);
+      margin-top: 0.3rem;
+    }
+
+    .below-font {
+      font-weight: 400;
+      font-size: var(--fs-14);
+      line-height: 21px;
+      text-transform: capitalize;
+      color: var(--neutral-text-subtle-least);
+    }
+
+    .first-element-trade-inner {
+      display: flex;
+      justify-content: space-between;
+      border-right: 1px dashed var(--neutral-border-strong);
+      padding: 1rem;
+
+      .inner-text-trade {
+        display: flex;
+        font-weight: 500;
+        font-size: var(--fs-14);
+        line-height: 21px;
+        color: var(--semantics-success-text);
+      }
+    }
+
+    .last-element-trade-inner {
+      display: flex;
+      border-left: 1px dashed var(--neutral-border-strong);
+      padding: 1rem;
+
+      .inner-text-trade-status {
+        display: flex;
+        padding: 0.3rem;
+        font-weight: 400;
+        font-size: var(--fs-14);
+        line-height: 14px;
+        text-align: center;
+        color: var(--semantics-warning-text);
+        background: color-mix(
+          in srgb,
+          var(--semantics-warning-background-strong) 15%,
+          transparent
+        );
+        border-radius: 6px;
+      }
+    }
+  }
+
+  .investment-heading-trade-font {
+    font-weight: 500;
+    font-size: var(--fs-14);
+    line-height: 21px;
+    color: var(--neutral-text-default);
+  }
+
+  /* style={{ */
+  /* display: "flex", */
+  /* width: "100%", */
+  /* alignItems: "start", */
+  /* gap: "10px", */
+  /* flexWrap: "nowrap", */
+  /* color: "var(--neutral-text-default)", */
+  /* border: "1px solid var(--neutral-border-strong)", */
+  /* borderRadius: "6px", */
+  /* padding: */
+  /* }} */
+}

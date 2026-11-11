@@ -1,0 +1,165 @@
+@use "../shared/shared-placeholders" as *;
+
+.horizontal-nPayPeriod {
+  border: 1px solid var(--neutral-border-strong);
+  margin-top: 10px;
+}
+
+.header-nPayPeriod .textfilterhead,
+.optional-header-nPayPeriod .form-label {
+  margin-bottom: 0.4rem;
+  color: var(--neutral-text-subtle-least);
+  font-weight: 500;
+}
+
+.header-nPayPeriod .starstyle {
+  margin-top: -2px;
+}
+
+.small-box {
+  width: 500px;
+  display: inline-block;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 6px;
+  background-color: var(--neutral-surface-layer-01);
+  overflow: hidden;
+}
+
+.row-box {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  column-gap: 30px;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+.row-box:nth-child(odd) {
+  background-color: var(--neutral-surface-layer-02);
+}
+
+.row-box:nth-child(even) {
+  background-color: var(--neutral-surface-layer-01);
+}
+
+.col-left {
+  font-weight: 500;
+  color: var(--neutral-text-default);
+  white-space: nowrap;
+}
+
+.col-right {
+  font-weight: 500;
+  color: var(--neutral-text-default);
+  text-align: right;
+  justify-self: end;
+}
+
+.header-nPayPeriod {
+  .invalid .invalid-feedback {
+    margin-bottom: -22px;
+  }
+
+  .form-group.invalid .invalid-feedback {
+    margin-top: 28px;
+  }
+
+  font-size: var(--fs-14);
+  margin-bottom: 0.4rem;
+  color: var(--neutral-text-subtle-least);
+  font-weight: 500;
+}
+
+.buttons-nonPayPeriod {
+  .btn-primary:disabled {
+    background-color: var(--brand-background-primary-strong);
+    //border: 2px solid var(--brand-border-primary-default);
+    border-color: transparent;
+  }
+}
+
+.toastNonPayPeriod {
+  position: fixed;
+  top: 3rem;
+  right: 2rem;
+  z-index: 2;
+  background-color: var(--semantics-success-background-light);
+  border: 2px solid var(--semantics-success-border);
+  height: 110px;
+
+  .success-toast-align {
+    .sub-header-npay {
+      font-size: var(--fs-10);
+      margin-top: -12px;
+    }
+  }
+}
+
+.nonPayPeriodGrid {
+  .k-grid {
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 5px;
+  }
+
+  .k-grid-header {
+    background-color: var(--neutral-surface-layer-01);
+    border: none;
+    padding-right: 5px;
+  }
+
+  .k-grid-header-wrap {
+    border-style: none;
+  }
+
+  .k-grid table {
+    .k-master-row,
+    .k-master-row .k-alt {
+      border: 1px solid var(--neutral-border-strong);
+      line-height: 60px;
+    }
+  }
+
+  .k-grid th,
+  .k-grid td {
+    @extend %TransparentButton;
+  }
+
+  .k-grid-content {
+    font-size: var(--fs-14);
+  }
+}
+
+.alternativeColor {
+  .k-master-row {
+    background-color: var(--neutral-surface-layer-02);
+  }
+
+  .k-alt {
+    background-color: var(--neutral-surface-layer-01);
+  }
+}
+
+.tableIcon {
+  margin-top: 25px;
+  margin-right: 10px;
+}
+
+.download-npayPeriod {
+  line-height: 20px;
+  cursor: pointer;
+
+  .btn-link:disabled {
+    color: var(--brand-text-primary-disabled);
+    cursor: default;
+  }
+}
+
+.nonPayPeriodSlider .sliding-panel-container .panel-container-right-enter-done {
+  .panel .panel-content {
+    overflow: hidden;
+  }
+}
+
+.nonPayPeriodScroll {
+  height: 85vh;
+  overflow: scroll;
+}

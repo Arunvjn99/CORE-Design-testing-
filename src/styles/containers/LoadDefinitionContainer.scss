@@ -1,0 +1,265 @@
+#fade-in-aggcontainer {
+  position: absolute;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+  overflow: hidden;
+  /* width:0px; */
+  transition: all 0.75s ease;
+}
+
+#fade-in-aggcontainer.show {
+  opacity: 1;
+  width: 21.875rem;
+  box-shadow: var(--elevation-01);
+}
+
+#fade-in-aggcontainer.box {
+  opacity: 0;
+  width: 0px;
+}
+
+.click-to-select-aggkeys:hover {
+  cursor: pointer;
+}
+.click-to-select-aggkeys {
+  color: var(--brand-text-primary-default);
+}
+
+.category-selection-container {
+  /* border: 2px solid var(--neutral-border-strong); */
+  padding: 0px;
+  height: 23rem;
+  width: 35rem;
+  margin-right: 0;
+}
+
+.category-selection-selectFirstRecord {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--brand-background-primary-strong);
+}
+
+.category-selection-selectLastRecord {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--brand-background-primary-strong);
+}
+
+.category-selection-selectCustomStrategy {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--brand-background-primary-strong);
+}
+
+.category-selection-cardContainer {
+  padding-top: 0.938rem;
+  /* border: 2px solid darksalmon; */
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.category-selection-icon {
+  /* border: 2px solid teal; */
+  width: 3rem;
+  height: 30%;
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  top: 20%;
+  right: 5%;
+  font-size: var(--fs-12);
+  cursor: pointer;
+}
+
+/* for the slideout custom field select */
+a:hover.text-decoration-tile {
+  text-decoration: none;
+}
+
+a.text-decoration-tile {
+  text-decoration: none;
+}
+
+/* .mapper-aggregate-container { */
+
+/* } */
+
+/* .aggregate-container { */
+/* border: 2px solid var(--neutral-border-strong); */
+/* padding: 0px; */
+/* height: 23rem; */
+/* width: 35rem; */
+/* margin-left: auto; */
+/* margin-right: 0; */
+/* } */
+
+/* .aggregate-title { */
+/* border: 2px solid var(--brand-border-primary-default); */
+/* height: 3rem; */
+/* padding-top: 0.5rem; */
+/* margin-left: 0; */
+/* margin-right: auto; */
+/* font-family: Poppins; */
+/* font-size: var(--fs-12); */
+/* font-style: normal; */
+/* font-weight: 500; */
+/* line-height: 16px; */
+/* letter-spacing: 0px; */
+/* text-align: left; */
+/* } */
+
+/* .listOfCategory { */
+/* border: 2px solid brown; */
+/* width: 30rem; */
+/* height: 2rem; */
+/* display: flex; */
+/* justify-content: space-between; */
+/* } */
+
+/* .listOfCategory label { */
+/* font-family: Poppins; */
+/* font-size: var(--fs-12); */
+/* font-style: normal; */
+/* font-weight: 500; */
+/* line-height: 16px; */
+/* letter-spacing: 0px; */
+/* text-align: left; */
+/* } */
+
+/* #selectFirstRecord { */
+/* width: 16px; */
+/* height: 16px; */
+/* } */
+
+/* #selectLastRecord { */
+/* width: 16px; */
+/* height: 16px; */
+/* } */
+
+/* #selectCustomStrategy { */
+/* width: 16px; */
+/* height: 16px; */
+/* } */
+
+/* .cardContainer { */
+/* width: 18rem; */
+/* height: 18rem; */
+/* padding-top: 0.938rem; */
+/* border: 2px solid darksalmon; */
+/* overflow-y: scroll; */
+/* overflow-x: hidden; */
+/* } */
+
+/* .cardSolo { */
+/* border: 2px solid maroon; */
+/* width: 16.75rem; */
+/* height: 4rem; */
+/* border-radius: 0.313rem; */
+/* margin-bottom: 0.938rem; */
+/* cursor: context-menu; */
+/* background: var(--neutral-surface-layer-02); */
+/* display: flex; */
+/* font-family: Poppins; */
+/* font-size: var(--fs-12); */
+/* font-style: normal; */
+/* font-weight: 500; */
+/* line-height: 16px; */
+/* letter-spacing: 0px; */
+/* text-align: left; */
+/* min-width: 0; */
+/* } */
+
+/* .titleField { */
+/* border: 2px solid fuchsia; */
+/* width: 10rem; */
+/* height: 30%; */
+/* position: absolute; */
+/* left: 5%; */
+/* top: 20%; */
+/* text-align: left; */
+/* overflow: hidden; */
+/* text-overflow: ellipsis; */
+/* white-space: nowrap; */
+/* } */
+/* .titleField:hover { */
+/* overflow: visible; */
+/* } */
+
+/* .aggregate-icon { */
+/* border: 2px solid teal; */
+/* width: 3rem; */
+/* height: 30%; */
+/* position: absolute; */
+/* display: flex; */
+/* justify-content: right; */
+/* align-items: center; */
+/* top: 20%; */
+/* right: 5%; */
+/* font-size: var(--fs-12); */
+/* } */
+
+/* .exampleData { */
+/* border: 2px solid deeppink; */
+/* position: absolute; */
+/* bottom: 20%; */
+/* left: 5%; */
+/* width: 5rem; */
+/* color: var(--neutral-text-subtle-least); */
+/* overflow: hidden; */
+/* text-overflow: ellipsis; */
+/* white-space: nowrap; */
+/* } */
+
+/* .cardType { */
+/* border: 2px solid darkslateblue; */
+/* width: 3rem; */
+/* position: absolute; */
+/* left: 50%; */
+/* bottom: 20%; */
+/* color: var(--neutral-text-subtle-least); */
+/* overflow: hidden; */
+/* text-overflow: ellipsis; */
+/* white-space: nowrap; */
+/* } */
+
+/* .aggregate-category { */
+/* border: 2px solid springgreen; */
+/* width: 3rem; */
+/* position: absolute; */
+/* bottom: 20%; */
+/* right: 5%; */
+/* color: var(--neutral-text-default); */
+/* text-align: right; */
+/* overflow: hidden; */
+/* text-overflow: ellipsis; */
+/* white-space: nowrap; */
+/* } */
+
+/* #fade-in { */
+/* position:absolute; */
+/* height: 100%; */
+/* right:0px; */
+/* top:0px; */
+/* z-index: 1; */
+/* overflow: hidden; */
+/* width:0px; */
+/* transition: all 0.75s ease; */
+/* } */
+
+/* #fade-in.show { */
+/* opacity: 1; */
+/* width:21.875rem; */
+/* box-shadow: var(--elevation-01); */
+/* } */
+
+/* #fade-in.box { */
+/* opacity: 0; */
+/* width:0px; */
+/* } */
+
+/* .click-to-select:hover{ */
+/* cursor: pointer; */
+/* } */

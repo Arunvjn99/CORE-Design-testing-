@@ -1,0 +1,16 @@
+/* .custom-button { */
+/* //   transition: background-color 0.3s ease-in-out; */
+/* } */
+.btn-outline-primary:hover {
+  color: var(--brand-text-primary-default);
+  background-color: var(--neutral-surface-layer-01);
+  border-color: var(--brand-border-primary-default);
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-primary.dropdown-toggle {
+  color: var(--neutral-text-on-color);
+  background-color: var(--brand-background-primary-strong);
+  border-color: var(--brand-border-primary-default);
+}

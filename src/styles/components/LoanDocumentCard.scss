@@ -1,0 +1,46 @@
+.loan-document-container {
+  width: 40%;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  padding: 4px;
+}
+.add-document-btn {
+  background: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 10%,
+    transparent
+  );
+  border-radius: 5px;
+  padding: 15px;
+  color: var(--brand-text-primary-default);
+}
+.create-new-document {
+  border-radius: 3px;
+  border: 1px solid var(--brand-border-primary-default);
+  padding: 5px;
+  background: linear-gradient(
+    0deg,
+    color-mix(in srgb, var(--brand-background-primary-strong) 10%, transparent),
+    color-mix(in srgb, var(--brand-background-primary-strong) 10%, transparent)
+  );
+}
+.doc-check {
+  color: var(--semantics-success-text);
+  border-radius: 20px;
+  background-color: var(--neutral-surface-layer-01);
+  padding: 0px 5px;
+  &:hover {
+    background-color: var(--semantics-success-background-strong);
+    color: var(--neutral-text-on-color);
+  }
+}
+.doc-cross {
+  color: var(--semantics-critical-text);
+  border-radius: 20px;
+  background-color: var(--neutral-surface-layer-01);
+  padding: 0px 7px;
+  &:hover {
+    background-color: var(--semantics-critical-background-strong);
+    color: var(--neutral-text-on-color);
+  }
+}

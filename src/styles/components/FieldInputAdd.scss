@@ -1,0 +1,38 @@
+button.field-input-add-button,
+button.field-input-add-button:hover {
+  padding: 0px;
+  background-color: transparent;
+  color: var(--semantics-success-text);
+  border: none;
+  box-shadow: none;
+  font-size: var(--fs-16);
+  font-weight: var(--font-regular);
+  position: absolute;
+  right: 45px;
+}
+
+.input-add-separator {
+  border-right: 1px solid;
+  margin: 10px 0px;
+  position: relative;
+  right: 30px;
+}
+
+button.field-input-clear-button,
+button.field-input-clear-button:hover {
+  color: var(--semantics-critical-text);
+  padding-right: 10px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  font-size: var(--fs-16);
+  font-weight: var(--font-regular);
+  position: absolute;
+  right: 10px;
+}
+
+.field-input-add {
+  .form-control {
+    padding: 0.5rem 4.25rem 0.5rem 0.5rem;
+  }
+}

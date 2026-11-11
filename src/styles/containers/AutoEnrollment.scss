@@ -1,0 +1,52 @@
+.additional-enrollment-table {
+  /* max-width: 90%; */
+
+  .column-addtional-Enrollment-description {
+    width: 80%;
+  }
+
+  .column-action {
+    width: 20%;
+  }
+}
+
+.add-rules-button {
+  margin-right: 10%;
+}
+
+.different-participants-election-table {
+  .table-head-cell,
+  .table-cell {
+    flex: 1 0 auto;
+    padding-left: 2rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+
+    &:last-child {
+      padding-right: 2rem;
+    }
+  }
+
+  max-width: 100%;
+
+  .column-investment {
+    width: 10%;
+    min-width: 0;
+    flex: 1 1 10%;
+    overflow: hidden;
+  }
+
+  .column-action {
+    width: 10%;
+  }
+
+  .investment-name-truncate {
+    overflow: hidden;
+    white-space: nowrap;
+    padding-right: 60%;
+  }
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}

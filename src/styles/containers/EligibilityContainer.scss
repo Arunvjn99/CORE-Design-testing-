@@ -1,0 +1,40 @@
+@use "../shared/shared-placeholders" as *;
+.cspl-table {
+  /*height: 100%;*/
+  overflow: hidden;
+
+  a {
+    &:hover {
+      font-weight: 500;
+    }
+
+    color: var(--brand-text-primary-default);
+  }
+
+  .column-eligibilityName {
+    width: 40%;
+  }
+
+  .column-eligibilityFor {
+    width: 60%;
+    align-items: flex-start;
+  }
+
+  .column-eligibilityType {
+    width: 30%;
+  }
+
+  .btn-theme {
+    @include PrimarySolidButton;
+  }
+}
+
+textarea {
+  @extend %StandardInputField;
+}
+
+.cspl-table {
+  .column-employee-classification-name {
+    width: 100%;
+  }
+}

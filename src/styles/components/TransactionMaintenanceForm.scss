@@ -1,0 +1,27 @@
+.formgrey {
+  /* color: var(--neutral-text-subtle-least); */
+  background-color: color-mix(
+    in srgb,
+    var(--neutral-surface-layer-04) 80%,
+    transparent
+  );
+  padding-top: 16px;
+  //overflow-x: auto;
+}
+
+.formgrey-corp-actions {
+  /* color: var(--neutral-text-subtle-least); */
+  background-color: var(--neutral-surface-layer-02);
+  /* padding-top: 10px; */
+  /* padding-right: 10px; */
+  /* padding-bottom: 0px; */
+  /* padding-left: 20px; */
+}
+
+.searchplaceholder-fs::placeholder {
+  font-size: var(--fs-14);
+}
+
+.searchplaceholder-fs {
+  padding: 8px;
+}

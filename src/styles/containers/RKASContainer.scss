@@ -1,0 +1,202 @@
+.border-grey {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+}
+
+.employee-details {
+  justify-content: center;
+  background-color: var(--neutral-surface-layer-02);
+  border-right: 1px solid var(--neutral-border-strong);
+  border-radius: 5px 0px 0px 5px;
+  align-items: center;
+}
+
+.amount-details {
+  justify-content: center;
+  /* background-color: var(--neutral-surface-layer-02); */
+  /* border-right: 1px solid var(--neutral-border-strong); */
+  border-radius: 5px 0px 0px 5px;
+  align-items: center;
+  text-align: right;
+}
+
+.emp-name {
+  color: var(--neutral-text-default);
+  font-weight: 700;
+}
+
+.card-box-rkaas {
+  border: 1px solid var(--neutral-border-strong);
+  position: relative;
+  background: var(--neutral-surface-layer-01);
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+  width: 18%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-bar-Rkaas {
+  .input-group {
+    flex-wrap: nowrap;
+  }
+
+  .input-group-text {
+    background: var(--neutral-surface-layer-01);
+    border-right: 0;
+  }
+
+  .form-control-seach-text input {
+    border-left: 0;
+    font-size: var(--fs-14);
+    /* width: 260px; */
+  }
+}
+
+.kendo-header-styling-RKaas {
+  padding-bottom: 15px;
+
+  .k-grid col.k-sorted,
+  .k-grid th.k-sorted {
+    background-color: var(--neutral-surface-layer-01);
+  }
+
+  .k-grid .k-grid-header-wrap > table {
+    width: 100%;
+  }
+
+  .k-grid .k-grid-table {
+    width: 100%;
+  }
+
+  .k-grid {
+    font-size: var(--fs-16);
+    max-height: 100vh;
+    border: none;
+
+    .k-grid-content {
+      table {
+        tbody tr:nth-child(even) {
+          padding: 8px 16px 8px, 16px;
+          background-color: var(--neutral-surface-layer-01);
+        }
+
+        tbody tr:nth-child(odd) {
+          padding: 8px 16px 8px, 16px;
+          background-color: var(--neutral-surface-layer-03);
+        }
+
+        tbody td {
+          padding: 8px 16px 8px, 16px;
+          border: none;
+        }
+
+        thead th {
+          border: none;
+        }
+
+        border: none;
+      }
+
+      border: none;
+    }
+
+    .k-grid-header {
+      background-color: var(--neutral-surface-layer-01);
+      color: var(--neutral-text-subtle-least);
+      padding-right: 0px;
+      border: none;
+
+      .k-grid-header-wrap {
+        border: none;
+      }
+
+      .k-header {
+        padding: 8px 16px 8px, 16px;
+        font-weight: 600;
+        border: none;
+        margin-right: 16px;
+        padding-left: 1.3rem;
+      }
+
+      .k-header:first-child {
+        padding: 8px 16px 8px, 16px;
+        font-weight: 600;
+        border: none;
+        margin-right: 16px;
+        padding-left: 0rem;
+      }
+    }
+  }
+}
+
+.plans-kendo-grid {
+  width: 100%;
+
+  .k-grid {
+    width: 100%;
+    border: none;
+  }
+
+  .k-grid-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .k-grid-header-wrap {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .k-grid-header-wrap > table,
+  .k-grid-content > table {
+    width: 100%;
+    min-width: 100%;
+    margin-left: 0;
+  }
+
+  // Remove left space before "Plan name"
+  .k-header:first-child {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .k-header:first-child .k-cell-inner {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .k-header:first-child .k-link {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .k-grid-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .k-grid-table {
+    margin-left: 0;
+  }
+
+  // Hide Kendo's built-in sort arrow
+  .k-grid .k-cell-inner > .k-link > .k-sort-icon {
+    display: none;
+  }
+}
+
+.form-label-var {
+  font-size: var(--fs-12);
+  white-space: nowrap;
+  text-transform: none;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.2rem;
+}
+
+.to-hold-period-flair {
+  .invalid-feedback {
+    width: 140px;
+  }
+}

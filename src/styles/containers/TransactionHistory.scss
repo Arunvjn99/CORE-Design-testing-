@@ -1,0 +1,43 @@
+@use "../shared/shared-placeholders" as *;
+.transaction-history-table {
+  display: flex;
+  padding: 0 1rem 1rem 1rem;
+  .header-transaction-history {
+    @extend %FlexAlignCenter;
+    .table-header-transaction-history {
+      font-style: normal;
+      font-weight: 500;
+      font-size: var(--fs-14);
+      line-height: 21px;
+      color: var(--neutral-text-default);
+      padding: 0.2rem;
+    }
+  }
+}
+.inner-table-transaction-history {
+  max-height: -webkit-fill-available;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  .image-transaction-history {
+    height: 50px;
+    width: 50px;
+    margin-right: 0.4rem;
+  }
+
+  .main-font {
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--fs-14);
+    line-height: 21px;
+    text-transform: capitalize;
+    color: var(--neutral-text-default);
+  }
+
+  .below-font {
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-14);
+    line-height: 21px;
+    color: var(--neutral-text-subtle-least);
+  }
+}

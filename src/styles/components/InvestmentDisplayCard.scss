@@ -1,0 +1,14 @@
+.inv-display-card {
+  border: 1px solid var(--neutral-border-strong);
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+.inv-display-card-data {
+  display: flex;
+  flex: row;
+}
+.text-align-end {
+  text-align: end;
+}

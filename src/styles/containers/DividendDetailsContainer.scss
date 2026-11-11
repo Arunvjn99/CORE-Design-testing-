@@ -1,0 +1,204 @@
+@use "../foundation/typography-mixins" as *;
+
+.dividend-details-container {
+  .dividendDetailsLabel {
+    @include heading-6($color: var(--neutral-text-default));
+    color: var(--neutral-text-subtle-least);
+  }
+
+  .investMethod {
+    color: var(--neutral-text-subtle);
+    @include heading-6($color: var(--neutral-text-default));
+  }
+
+  .infoCircleIcon {
+    font-weight: 400;
+    font-size: var(--fs-16);
+    color: var(--neutral-text-subtle);
+  }
+
+  .accrualCard {
+    height: 150px;
+    width: 500px;
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 5px;
+    padding: var(--spacing-16);
+  }
+
+  .accrualDescription {
+    color: var(--neutral-text-subtle-least);
+  }
+
+  .accrualLink {
+    text-decoration: underline;
+    color: var(--brand-text-primary-default);
+    cursor: pointer;
+  }
+
+  .accuralSliderHeader {
+    margin-left: 20px;
+    margin-top: -65px;
+    color: var(--neutral-text-default);
+    font-size: var(--fs-22);
+    font-weight: 600;
+  }
+
+  .accrualRecordCount {
+    margin-top: -15px;
+    margin-left: 20px;
+  }
+
+  .accrualCardData {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+
+    border: 1px solid var(--neutral-border-inverse);
+    border-radius: 5px;
+  }
+
+  .scheduleDividendCard {
+    margin-top: 1rem;
+  }
+
+  .accrualCardBox {
+    /* height: 70px; */
+    display: flex;
+  }
+
+  .dividendInfo {
+    margin-top: -9px;
+  }
+
+  .accrualTableNoData {
+    @include heading-6($color: var(--neutral-text-default));
+    text-align: center;
+    margin-top: 20px;
+    color: var(--neutral-text-subtle-least);
+  }
+
+  .sectionHeader {
+    @include heading-regular($color: var(--neutral-text-default));
+  }
+
+  .labelHeader {
+    @include body-text-large-semi-bold(
+      $color: var(--neutral-text-subtle-least)
+    );
+  }
+
+  .dataSection {
+    @include body-text-large-semi-bold($color: var(--neutral-text-subtle));
+  }
+
+  .statusCard {
+    width: 108px;
+    height: 29px;
+    border-radius: 1px solid var(--neutral-border-strong);
+    background-color: var(--semantics-success-background-light);
+    border-radius: 5px;
+  }
+
+  .status {
+    color: var(--semantics-success-text);
+  }
+
+  .sm.form-group {
+    .input-group {
+      width: 130px;
+    }
+  }
+}
+
+.units-mismatch-modal {
+  padding-top: 200px;
+
+  .modal-content {
+    width: 400px;
+    border-radius: 10px;
+  }
+
+  .modal-body {
+    border-top: 5px solid var(--semantics-warning-border);
+  }
+
+  .heading {
+    @include heading-5($color: var(--neutral-text-default));
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .save-and-proceed-btn {
+    background-color: var(--semantics-warning-background-strong);
+    border-color: var(--semantics-warning-border);
+    text-transform: none;
+    margin-right: 21px;
+  }
+}
+
+.schedule-dividend-container {
+  .form-group.sm {
+    .form-control {
+      width: 130px;
+    }
+  }
+}
+
+.record-date-units {
+  .input-group {
+    width: fit-content;
+  }
+}
+
+.ml-1-rem {
+  margin-left: 0.1rem;
+}
+
+.dividend-exclusion-details-container {
+  .reports-container {
+    min-width: 100px;
+    width: 100%;
+  }
+
+  .info-div {
+    margin-top: 20px;
+  }
+
+  .dvd-heading-span {
+    @include heading-6($color: var(--neutral-text-subtle));
+  }
+}
+
+.dvd-schedule-cont {
+  min-width: 100px;
+  width: 100%;
+
+  .dividend-details-container {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .info-msg {
+    margin-left: 0.25rem;
+    @include heading-6($color: var(--neutral-text-default));
+  }
+}
+
+.dvd-summary-cont {
+  .dividend-details-container {
+    overflow: scroll;
+    max-height: 100%;
+  }
+
+  .heading-text {
+    @include heading-regular($color: var(--neutral-text-default));
+  }
+}
+
+.maxheight-100 {
+  max-height: 100%;
+}

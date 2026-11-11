@@ -1,0 +1,16 @@
+.w-23p75p-p-20px {
+  background-color: var(--neutral-surface-layer-05);
+  padding: 20px;
+  width: 23.75%;
+}
+
+.employeemanageplansmodulescontainer-v2 {
+  min-height: 0;
+  flex: 1;
+}
+
+@media (max-width: 1024px) {
+  .employeemanageplansmodulescontainer-v2 {
+    min-height: 400px;
+  }
+}

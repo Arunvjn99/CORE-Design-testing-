@@ -1,0 +1,108 @@
+@use "../shared/shared-placeholders" as *;
+
+.grey-style {
+  background-color: var(--neutral-surface-layer-03);
+}
+
+.transactionExpandableCard_layout {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 6px;
+  background: var(--neutral-surface-layer-01);
+}
+.transactionExpandableCard_layout_breakdown {
+  width: 100%;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 6px;
+  background: var(--neutral-surface-layer-01);
+
+  &.true {
+    border: 1px solid var(--brand-border-primary-default);
+    background-color: var(--neutral-surface-layer-02);
+    .wd-expandable-children {
+      background-color: var(--neutral-surface-layer-01);
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      /* ::-webkit-scrollbar { */
+      /* width: 8px ; */
+      /* border: 0.25px solid var(--neutral-border-light) ; */
+      /* } */
+
+      /* ::-webkit-scrollbar-track { */
+      /* background-color: var(--neutral-surface-layer-03) ; */
+      /* } */
+      .inner-table {
+        background-color: var(--neutral-surface-layer-01);
+      }
+    }
+  }
+}
+
+.transactionExpandableCard_layout_assest {
+  width: 100%;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 6px;
+  background: var(--neutral-surface-layer-01);
+}
+
+.transaction-source-allocation-table-component {
+  .header-tile {
+    padding: 10px 20px 10px 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.clearing-partner-dashed-border-bottom {
+  border: 0.7px dashed var(--neutral-border-strong);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* .padding-top-2{ */
+/* padding-top: -1px; */
+/* } */
+
+.w-81 {
+  width: 81%;
+}
+.breakdown-header-icon {
+  color: var(--neutral-text-subtle);
+  margin-top: 5px;
+  margin-left: 2px;
+}
+.accordion-title {
+  background: var(--neutral-surface-layer-03);
+  height: 50px;
+  padding: 16px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.height-min-content {
+  height: min-content;
+}
+.inner-table-title {
+  margin-bottom: 8px;
+  color: var(--neutral-text-default);
+}
+
+.inner-table {
+  background-color: var(--neutral-surface-layer-02);
+  border-radius: 0px 0px 8px 8px;
+  padding: 16px;
+}
+
+.outer-table {
+  border-radius: "8px";
+  width: "100%";
+}
+
+.summary-distribution {
+  white-space: nowrap;
+  margin-right: 10px;
+  padding: 10px;
+}
+.on-active-color-block:focus {
+  border: var(--neutral-border-strong);
+}

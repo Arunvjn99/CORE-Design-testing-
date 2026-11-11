@@ -1,0 +1,122 @@
+@use "../shared/shared-placeholders" as *;
+
+.left-panel-outline {
+  width: 21.563rem;
+  height: 49.375rem;
+  border-radius: 0rem 0.625rem 0rem 0rem;
+  background-color: var(--neutral-surface-layer-01);
+  padding-left: 7.625rem;
+}
+
+.img {
+  width: 7rem;
+  height: 2.188rem;
+  margin-bottom: 1.875rem;
+}
+
+.left-panel {
+  width: 21.563rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.875rem;
+}
+
+.box1 {
+  width: 12.688rem;
+  height: 2.813rem;
+  border: 0.063rem solid var(--neutral-border-strong);
+  color: var(--neutral-text-default);
+  margin-bottom: 1.25rem;
+  border-radius: 0.313rem;
+  display: flex;
+  padding: 0.625rem;
+  line-height: 1.438rem;
+}
+
+.box2 {
+  width: 12.688rem;
+  height: 3.875rem;
+  color: var(--neutral-text-default);
+  border: 0.063rem solid var(--neutral-border-strong);
+  border-radius: 0.313rem;
+  padding: 0.625rem;
+  line-height: 1rem;
+}
+
+.ft-21 {
+  font-size: var(--fs-21);
+}
+
+.tab-container {
+  width: 12.813rem;
+  height: 20.625rem;
+  margin-top: 1.375rem;
+  border: 0.063rem solid var(--neutral-border-strong);
+  border-radius: 0.313rem;
+}
+
+.border-bottom {
+  width: 100%;
+  border-bottom: 0.063rem solid var(--neutral-border-strong);
+  padding-bottom: 0.5rem;
+}
+
+.tabs {
+  margin-top: 0.625rem;
+
+  .tabs-item1 {
+    width: 3.125rem;
+    color: var(--neutral-text-subtle-least);
+    padding: 0.313rem;
+    border: 0.063rem solid var(--neutral-border-strong);
+    margin-bottom: 0.938rem;
+    margin-right: 1.438rem;
+    border-radius: 0rem;
+  }
+
+  .tabs-item2 {
+    width: 5rem;
+    color: var(--neutral-text-subtle-least);
+    padding: 0.313rem;
+    border: 0.063rem solid var(--neutral-border-strong);
+    margin-bottom: 0.938rem;
+    border-radius: 0rem;
+  }
+
+  :hover {
+    border: 0.063rem solid var(--neutral-border-strong);
+  }
+
+  .active {
+    border-bottom: 0.125rem solid var(--brand-border-primary-default);
+    color: var(--neutral-text-default);
+  }
+}
+
+.errors-box {
+  width: 11.563rem;
+  height: 4.25rem;
+  background-color: color-mix(
+    in srgb,
+    var(--semantics-critical-background-strong) 5%,
+    transparent
+  );
+  border: 0.063rem solid var(--semantics-critical-border);
+  border-radius: 0.313rem;
+  padding: 0.625rem;
+  line-height: 1rem;
+}
+
+.warn-box {
+  width: 11.563rem;
+  height: 4.25rem;
+  background-color: color-mix(
+    in srgb,
+    var(--semantics-warning-background-strong) 5%,
+    transparent
+  );
+  border: 0.063rem solid var(--semantics-warning-border);
+  border-radius: 0.313rem;
+  padding: 0.625rem;
+  line-height: 1rem;
+}

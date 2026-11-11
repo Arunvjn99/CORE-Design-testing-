@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Favicon -->
+    <link rel="icon" id="favicon" href="" />
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#000000" />
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Experience next-gen recordkeeping- efficient, automated, AI-powered, SECURE 2.0–ready, with modern UX and seamless integration on a scalable platform."
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:image"
+      content="https://coreqastorage.blob.core.windows.net/imagecontainer/corelogo.png?v=2"
+    />
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="/logo192.webp" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="%VITE_FONT_URL%" />
+
+    <!-- Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <title>CORE 2.0: Future-Ready Retirement Solutions</title>
+
+    <script
+      src="/loadFavicon.js"
+      data-api-base-url="%VITE_API_BASE_URL%"
+      integrity="sha384-UuYyFxULxNCDoATmB4rDVLvx38Lj4Y8vsTnKMek3UsTDES+u09c3SZJJoUHWiW4W"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      html,
+      body,
+      #root {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #root .initial-loader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: #ffffff;
+        overflow: hidden;
+      }
+
+      #root .initial-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      #root .initial-spinner {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 12px solid
+          color-mix(in srgb, var(--primary, #004dcb) 8%, transparent);
+        position: relative;
+        flex-shrink: 0;
+        transform: rotate(45deg);
+      }
+
+      #root .initial-spinner::before {
+        content: "";
+        position: absolute;
+        inset: -12px;
+        border-radius: 50%;
+        border: 12px solid transparent;
+        animation: initialSpinner 2s linear infinite;
+      }
+
+      #root .initial-text {
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--text-color, #292929);
+        display: inline-flex;
+        align-items: center;
+        margin: 0;
+      }
+
+      #root .loader-dot {
+        opacity: 0;
+        animation: dotFade 1.5s infinite;
+      }
+
+      #root .loader-dot:nth-child(2) {
+        animation-delay: 0.3s;
+      }
+      #root .loader-dot:nth-child(3) {
+        animation-delay: 0.6s;
+      }
+
+      @keyframes dotFade {
+        0%,
+        100% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes initialSpinner {
+        0% {
+          border-color: var(--primary, #004dcb) transparent transparent
+            transparent;
+        }
+        25% {
+          border-color: transparent var(--primary, #004dcb) transparent
+            transparent;
+        }
+        50% {
+          border-color: transparent transparent var(--primary, #004dcb)
+            transparent;
+        }
+        75% {
+          border-color: transparent transparent transparent
+            var(--primary, #004dcb);
+        }
+        100% {
+          border-color: var(--primary, #004dcb) transparent transparent
+            transparent;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div
+      id="root"
+      style="
+        --primary: %VITE_PRIMARY_COLOR%;
+        --text-color: %VITE_TEXT_PRIMARY_COLOR%;
+      "
+    >
+      <div class="initial-loader" role="status" aria-live="polite">
+        <div class="initial-content">
+          <div class="initial-spinner" aria-hidden="true"></div>
+          <div class="initial-text">
+            Loading<span class="loader-dot">.</span
+            ><span class="loader-dot">.</span><span class="loader-dot">.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vite Entry: load the app entry as early as possible; React will replace the initial loader when it mounts -->
+    <script
+      type="module"
+      src="/src/poc/main.jsx"
+      onerror="const t=document.querySelector('.initial-text'); if(t) t.textContent='Failed to load. Please refresh.'"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+@use "../shared/shared-placeholders" as *;
+.cspl-table {
+  /*height: 100%;*/
+  overflow: hidden;
+  a {
+    &:hover {
+      font-weight: 500;
+    }
+    color: var(--brand-text-primary-default);
+  }
+  .w-90 {
+    width: 90%;
+  }
+  .w-75 {
+    width: 75%;
+  }
+  .w-15 {
+    width: 15%;
+  }
+  .w-10 {
+    width: 10%;
+  }
+  .column-irslimit {
+    width: 25%;
+  }
+  .column-year1 {
+    width: 25%;
+  }
+  .column-year2 {
+    width: 25%;
+  }
+  .column-customyear {
+    width: 25%;
+    .dropdown-component .btn.btn-primary {
+      font-size: var(--fs-12);
+      width: 70px;
+    }
+  }
+  .btn-theme {
+    @include PrimarySolidButton;
+  }
+}
+
+.table-head-cell.column-irslimit .form-group.m-0 {
+  margin-bottom: 0;
+}

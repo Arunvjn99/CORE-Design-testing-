@@ -1,0 +1,99 @@
+.different-participant-election-table {
+  position: relative;
+  .table-head {
+    height: 100%;
+  }
+  .main-table {
+    .table-cell {
+      height: 50px;
+    }
+
+    .main-table-last-row {
+      .table-cell {
+        height: 70px;
+      }
+    }
+  }
+
+  .table-cell.column-action {
+    justify-content: end;
+  }
+
+  .table-head-cell.column-action {
+    justify-content: end;
+  }
+
+  .table-head-cell.ageGroup {
+    justify-content: space-around;
+  }
+
+  .sub-table-parent {
+    display: flex;
+    justify-content: space-around;
+    .loader-wrapper {
+      display: flex;
+      justify-content: space-around;
+      position: static;
+    }
+  }
+
+  .sub-table-child {
+    margin-top: 10px;
+    min-width: 100%;
+    width: fit-content;
+    .table-head {
+      height: 100%;
+    }
+  }
+
+  .sub-table {
+    width: 70%;
+    margin-left: 10%;
+    position: absolute;
+    overflow-x: scroll;
+    border: 0px;
+
+    top: 52px;
+
+    &.percentage-type {
+      top: 52px;
+    }
+
+    .table-head {
+      background-color: var(--neutral-surface-layer-05);
+      overflow-x: visible;
+      overflow-y: visible;
+      width: 100%;
+    }
+
+    .table-body {
+      overflow-x: visible;
+      overflow-y: visible;
+    }
+
+    .table-cell,
+    .table-head-cell {
+      flex: 0 0 200px;
+      width: 200px;
+      white-space: normal;
+      word-break: break-word;
+    }
+
+    .error-message-style {
+      display: block;
+      color: var(--semantics-critical-text);
+      font-size: var(--fs-12);
+      margin-top: 0rem;
+    }
+
+    .text-secondary-scss {
+      color: var(--neutral-text-subtle-least);
+    }
+
+    .total-box-cell {
+      .table-cell {
+        align-items: flex-start;
+      }
+    }
+  }
+}

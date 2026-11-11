@@ -1,0 +1,243 @@
+@use "../foundation/typography-mixins" as *;
+@use "../shared/shared-placeholders" as *;
+.dropSide-popup {
+  .multiselect-dropdown-wrapper {
+    padding: 0.5rem;
+  }
+
+  .search-text-restriction-container {
+    .form-control-seach-text {
+      padding: 0px;
+    }
+
+    .company-search-button {
+      border-color: var(--neutral-border-strong);
+    }
+  }
+}
+
+.multiselect-dropdown-wrapper {
+  overflow: auto;
+  .select-all-clear-text {
+    @include body-text-small-medium($color: var(--neutral-text-subtle));
+    color: var(--brand-text-primary-default);
+    cursor: pointer;
+  }
+
+  .blue-text {
+    color: var(--brand-text-primary-default);
+    font-weight: 500;
+  }
+
+  min-width: 16rem;
+
+  /* background-color: var(--neutral-surface-layer-01); */
+  /* position: absolute; */
+  /* z-index: 2; */
+  &.disabled {
+    background-color: var(--semantics-disabled-background);
+    border-radius: 6px;
+
+    .custom-control.custom-checkbox {
+      padding-left: 0px;
+
+      input[type="checkbox"]:disabled + label {
+        &::before,
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+
+  .custom-control.custom-checkbox {
+    &:hover,
+    &:focus {
+      background-color: var(--neutral-surface-layer-02);
+    }
+
+    .custom-control-input {
+      position: static;
+    }
+
+    .custom-control-label {
+      width: 90%;
+      cursor: pointer;
+      padding-left: 0.65rem;
+
+      &::before,
+      &::after {
+        left: -0.55rem;
+      }
+    }
+  }
+
+  .button-wrapper {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+  }
+
+  .dropdown-items {
+    @extend %FlexColumn;
+
+    .multi-select-drop-down-scroll {
+      max-height: 50vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      .multi-select-drop-down-hov:hover {
+        background-color: var(--brand-background-primary-light);
+      }
+    }
+
+    .search-wrapper {
+      input {
+        width: 100%;
+      }
+
+      .close-button svg {
+        font-size: var(--fs-16);
+      }
+
+      input,
+      .input-group-text {
+        height: 26px;
+        width: 40px;
+      }
+
+      .input-group-text img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .selected-options {
+      padding: 0.25rem var(--dropside-paddingx-width);
+      max-width: 350px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .selected-options-item {
+        background: var(--neutral-surface-layer-02);
+        border-radius: 5px;
+        padding: 0.25rem 0.65rem;
+        margin-bottom: 0.25rem;
+        margin-right: 0.25rem;
+
+        .btn {
+          padding: 0px 0.5rem;
+        }
+      }
+    }
+
+    .options {
+      overflow-y: visible;
+      overflow-x: visible;
+
+      /* margin-top: 0.5rem; */
+      /* margin-bottom: 0.5rem; */
+      .custom-control {
+        padding-left: var(--dropside-paddingx-width);
+
+        &.focus {
+          background-color: var(--neutral-surface-layer-02);
+        }
+      }
+
+      .custom-checkbox {
+        .custom-control-label {
+          &::before,
+          &::after {
+            top: 4px;
+          }
+
+          &::after {
+            background-color: var(--neutral-surface-layer-01);
+            border: 1px solid var(--neutral-border-strong);
+          }
+        }
+
+        .custom-control-input:checked ~ .custom-control-label {
+          font-weight: 500;
+        }
+
+        .custom-control-input:checked ~ .custom-control-label::after {
+          /* top: 0rem; */
+          font-family: "Font Awesome 5 Pro";
+          font-weight: 400;
+          content: "\f00c";
+          color: var(--neutral-text-on-color);
+          background-image: none;
+          background-color: var(--brand-background-primary-strong);
+          border-color: var(--brand-border-primary-default);
+          line-height: 1;
+          font-size: var(--fs-14);
+          height: 16px;
+          width: 16px;
+        }
+
+        .custom-control-input:disabled ~ .custom-control-label::before {
+          background-color: transparent;
+          border-width: 0px;
+        }
+
+        .custom-control-input:disabled ~ .custom-control-label::after {
+          border-color: var(--semantics-disabled-border);
+        }
+
+        .custom-control-input:checked:disabled ~ .custom-control-label::after {
+          background-color: var(--brand-background-primary-disabled-strong);
+          border-color: var(--brand-border-primary-disabled);
+        }
+      }
+    }
+
+    .input-group-prepend,
+    .company-search-button {
+      background-color: var(--neutral-surface-layer-01);
+      border-right: 0px;
+    }
+
+    .form-control-seach-text {
+      border-left: 0px;
+
+      .form-control {
+        border-left: 0px;
+      }
+
+      .form-control:focus {
+        border-color: var(--neutral-border-strong);
+      }
+    }
+
+    > .form-group:first-child {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0px;
+
+      .form-label {
+        color: var(--neutral-text-default);
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.additional-rule-alignment {
+  position: relative;
+  left: 28px;
+  display: flex;
+}
+
+.additional-field-align {
+  .multiselect-dropdown-wrapper .dropdown-items .options {
+    margin: 0;
+  }
+}
+
+.hover-underline {
+  div:hover {
+    text-decoration: underline;
+  }
+}

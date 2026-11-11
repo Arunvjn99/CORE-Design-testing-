@@ -1,0 +1,10 @@
+@use "../shared/shared-placeholders" as *;
+.border-Left {
+  border-left: 2px solid var(--brand-border-primary-default);
+}
+.padding-header {
+  padding: 15px 0px 15px 15px;
+}
+.bg-none {
+  background: none;
+}

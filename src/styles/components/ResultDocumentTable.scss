@@ -1,0 +1,131 @@
+@use "../shared/shared-placeholders" as *;
+.ResultDocumentTable {
+  .k-grid {
+    height: auto;
+    width: 98%;
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 4px;
+  }
+
+  .hrLine {
+    width: 97%;
+    margin-left: 20px;
+  }
+
+  .cnlBtn {
+    /* margin-left: 64%; */
+  }
+
+  .k-grid-header-wrap > table {
+    width: 100%;
+  }
+
+  .k-grid table {
+    width: 100%;
+  }
+
+  .k-grid .k-grid-header .k-header .k-link {
+    color: var(--neutral-text-subtle-least);
+    background-color: var(--neutral-surface-layer-03);
+  }
+
+  .k-i-more-vertical::before {
+    content: "\e129";
+  }
+
+  .k-grid .k-grid-header .k-header .k-icon {
+    /* margin-right:  650px ; */
+  }
+
+  /* .k-grid-header [data-field="action"] .k-column-menu { */
+  /* display: none ; */
+  /* } */
+
+  .docName {
+    width: 50%;
+  }
+
+  .uploadedDate {
+    width: 30%;
+  }
+
+  .action {
+    width: 10%;
+  }
+
+  .uploadDetailsTable {
+    @extend %FlexColumn;
+  }
+
+  .labels-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--neutral-surface-layer-03);
+  }
+
+  .scheduler-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .schedule-data {
+    display: flex;
+  }
+
+  .schedule-name {
+    width: 50%;
+  }
+
+  .schedule-data:nth-child(odd) {
+    background-color: var(--neutral-surface-layer-01);
+  }
+
+  .schedule-data:nth-child(even) {
+    background-color: var(--neutral-surface-layer-02);
+  }
+
+  .actionSection {
+    display: flex;
+  }
+
+  .createdOn {
+    width: 30%;
+  }
+
+  .circle {
+    height: 25px;
+    width: 25px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .downloadColor {
+    border: 1px solid var(--semantics-highlight-border);
+  }
+
+  .downloadColor:hover {
+    background-color: var(--semantics-highlight-background-strong);
+    cursor: pointer;
+  }
+
+  .downloadColor:hover .fa-download {
+    color: var(--neutral-text-on-color);
+    /* Change icon color to this on hover */
+  }
+
+  .trashColor {
+    border: 1px solid var(--semantics-critical-border);
+  }
+
+  .trashColor:hover {
+    background-color: var(--semantics-critical-background-strong);
+    cursor: pointer;
+  }
+
+  .trashColor:hover .fa-trash-alt {
+    color: var(--neutral-text-on-color);
+    /* Change icon color to this on hover */
+  }
+}

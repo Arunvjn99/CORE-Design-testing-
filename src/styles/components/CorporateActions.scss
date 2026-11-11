@@ -1,0 +1,556 @@
+@use "../foundation/typography-mixins" as *;
+
+@use "../shared/shared-placeholders" as *;
+.fund-switch-card {
+  padding: var(--spacing-16);
+  max-height: 50vh;
+  overflow-y: auto;
+  display: flex;
+}
+
+.fund-merger-outer-layout {
+  overflow: scroll;
+  height: 80vh;
+}
+
+.fund-merger-header {
+  padding: 1rem;
+  background: var(--neutral-surface-layer-02);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.fund-merger-details-card {
+  width: 80%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--neutral-border-strong);
+}
+
+.merge-investment-card {
+  border-radius: 0px 0px 6px 6px;
+  border-top: 1px solid var(--neutral-border-strong);
+  padding: 1rem;
+}
+
+.merge-investment-flair {
+  @extend %CardHeadingOpenSans;
+}
+
+.select-investment-card {
+  justify-content: space-between;
+  display: flex;
+  padding: 1.5rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  background: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 5%,
+    transparent
+  );
+}
+
+.first-investment-card {
+  @extend %CardHalfWidthWhiteRounded;
+}
+
+.second-investment-card {
+  @extend %CardHalfWidthWhiteRounded;
+}
+
+.select-investment-outer {
+  border-top: 1px solid;
+  background: vae(--neutral-surface-layer-05);
+}
+
+.select-investment-header-class {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  margin-bottom: 0;
+  color: var(--neutral-text-default);
+  // font-family: Open Sans;
+  font-size: var(--fs-20);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+}
+
+.investment-search-field {
+  background-color: var(--neutral-surface-layer-01);
+  margin-bottom: 0.75rem;
+}
+
+.slider-search-flair {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  color: var(--neutral-text-subtle-least);
+  text-align: center;
+  // font-family: Open Sans;
+  font-size: var(--fs-14);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.slider-records-found {
+  @extend %DisabledLabelOpenSans;
+}
+
+.slider-text-flair {
+  color: var(--neutral-text-subtle-least);
+  // font-family: Open Sans;
+  font-size: var(--fs-16);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+
+.slider-merger-card {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  height: 14%;
+  border-radius: var(--radius-8, 8px);
+  border: 1px solid var(--neutral-border-strong);
+}
+
+.slider-merger-card-outer {
+  overflow: scroll;
+  height: 63vh;
+}
+
+.formgrey-corp-actions-merge {
+  background-color: var(--neutral-surface-layer-02);
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+}
+.corporateactions-search-filter {
+  padding: 10px 10px 0px 20px;
+}
+
+.export-name {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.export-icon {
+  color: var(--semantics-success-text);
+  margin-right: 4px;
+}
+
+.export-text {
+  color: var(--brand-text-primary-default);
+  text-decoration: underline;
+}
+.export-text:hover {
+  color: var(--brand-text-primary-default);
+  text-decoration: underline;
+}
+
+.fund-merger-titles {
+  text-wrap: wrap;
+  line-height: normal;
+}
+
+.card-merger-width {
+  cursor: pointer;
+  text-align: start;
+  padding: 1rem;
+  max-height: 50vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-bottom: 1rem;
+  display: flex;
+  border-radius: 8px;
+  border: 1px solid var(--color-roles-dark-label, var(--neutral-border-strong));
+}
+
+.back-text-flair {
+  color: var(--brand-text-primary-default);
+  text-align: center;
+  // font-family: Open Sans;
+  font-size: var(--fs-16);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.18px;
+  margin-bottom: 0;
+  margin-left: 0.3rem;
+}
+
+.fund-merge-summary-layout {
+  min-width: none;
+}
+
+.merge-summary-back-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.summary-header-flair {
+  color: var(--neutral-text-default);
+  // font-family: Open Sans;
+  font-size: var(--fs-22);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.22px;
+}
+
+.summary-line {
+  margin: 1rem 0rem;
+  border-top: 1px solid var(--neutral-border-subtle);
+}
+
+.merge-summary-details {
+  display: flex;
+  border-radius: var(--radius-8, 0.5rem);
+  border: 1px solid var(--neutral-border-strong);
+  padding: 1rem;
+}
+
+.summary-transactionid {
+  margin-right: 0;
+}
+
+.summary-mergeinvestments {
+  margin-right: 0;
+}
+
+.summary-mergeratio {
+  margin-right: 0;
+}
+
+.summary-details-flair {
+  color: var(--neutral-text-subtle-least);
+  // font-family: Open Sans;
+  font-size: var(--fs-14);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+.summary-details-data-flair {
+  color: var(--neutral-text-default);
+  // font-family: Open Sans;
+  font-size: var(--fs-16);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+
+  .form-control {
+    width: 70px;
+  }
+}
+
+.summary-details-status-flair {
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+  width: fit-content;
+}
+
+.summary-investment-details {
+  overflow: scroll;
+  height: 60vh;
+  padding-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.record-effective-card {
+  margin-top: 1rem;
+  border-radius: var(--radius-8, 8px);
+  width: 40%;
+  background: var(--neutral-surface-layer-02);
+  padding: 1rem;
+}
+
+.merger-details-card-header {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  display: flex;
+  padding: 1rem;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  background: var(--neutral-surface-layer-02);
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.summary-merger-details-card {
+  margin-top: 1rem;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 0.5rem;
+  width: 80%;
+}
+
+.merge-investment-detailcard {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-radius: var(--radius-8, 8px);
+  background: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 5%,
+    transparent
+  );
+}
+
+.first-investment-detailcard {
+  @extend %CardHalfWidthWhiteRounded;
+}
+
+.second-investment-detailcard {
+  @extend %CardHalfWidthWhiteRounded;
+}
+
+.merge-updated-details {
+  border-radius: var(--radius-8, 8px);
+  background: var(--neutral-surface-layer-02);
+  padding: 1rem;
+}
+
+.summary-updated-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0rem 2rem 2rem 2rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 5%,
+    transparent
+  );
+}
+
+.updated-details-data {
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+  border-radius: var(--radius-8, 8px);
+  background: var(--neutral-surface-layer-02);
+}
+
+.updated-details-left {
+  margin-right: 10rem;
+}
+
+.updated-details-right {
+  align-self: center;
+  margin-left: 3rem;
+}
+
+.create-details-data-flair {
+  color: var(--neutral-text-subtle);
+  // font-family: Open Sans;
+  font-size: var(--fs-12);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.current-units-new-fund {
+  border-radius: 4px;
+  border: 1px solid var(--neutral-border-strong);
+  background: var(--neutral-surface-layer-01);
+  width: 25%;
+  height: 25%;
+}
+
+.current-units-flair {
+  padding: 0.3rem 0.5rem;
+}
+
+.select-merger-ratio {
+  background: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 5%,
+    transparent
+  );
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0rem 2rem 2rem 2rem;
+}
+
+.select-merger-ratio-details {
+  display: flex;
+  border-radius: var(--radius-8, 8px);
+  background: var(--neutral-surface-layer-02);
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.with-edit-flair {
+  width: fit-content;
+  position: relative;
+  top: -15%;
+  left: 83%;
+  color: var(--brand-text-primary-default);
+  // font-family: Open Sans;
+  font-size: var(--fs-16);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  cursor: pointer;
+}
+
+.search-box-position-flair {
+  .close-button-pg {
+    left: 88%;
+  }
+}
+
+.transaction-date-range-effective {
+  .dropSide-popup {
+    left: 600px;
+  }
+}
+
+.transaction-date-range-record {
+  .dropSide-popup {
+    left: 375px;
+  }
+}
+
+.search-icon-postion-merger {
+  color: var(--neutral-text-subtle-least);
+  font-size: var(--fs-14);
+  z-index: 6;
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+.search-select-invest-merge {
+  width: 58%;
+
+  .close-button-sponsor {
+    right: 25px;
+  }
+}
+
+.search-box-position-flair-merger {
+  .close-button-pg {
+    left: 90%;
+  }
+}
+
+.search-select-merge-invest {
+  padding-right: 30px;
+  width: 325px;
+}
+
+.long-arrow-merger {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+.status-submit-merger {
+  align-self: center;
+  width: fit-content;
+}
+
+.dividend-layout {
+  .dvd-header {
+    @include body-text-large-semi-bold($color: var(--neutral-text-subtle));
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .dvd-heading,
+  .dvd-cusip {
+    @include heading-6($color: var(--neutral-text-subtle-least));
+
+    .optional {
+      padding: 0.05rem 0.3rem;
+      color: var(--neutral-text-subtle-least);
+      font-size: var(--fs-16);
+    }
+  }
+
+  .dvd-cusip {
+    margin-top: -12px;
+  }
+
+  .pl-4p {
+    padding-left: 4%;
+  }
+
+  .pt-1p {
+    padding-top: 1%;
+  }
+
+  .units-tracked-parent {
+    width: 90%;
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 10px;
+
+    .units-tracked {
+      padding: var(--spacing-8) var(--spacing-16);
+      background-color: var(--neutral-surface-layer-05);
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+
+      .ml-20px {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.width-12p5 {
+  width: 12.5%;
+}
+
+.width-14p5 {
+  width: 14.5%;
+}
+
+.width-5px {
+  width: 5px;
+}
+
+.opacity-35 {
+  opacity: 0.35;
+}
+
+.opacity-70 {
+  opacity: 0.7;
+}
+
+.padding-8-16 {
+  padding: 8px 16px 8px 16px;
+}
+
+.ptop-6 {
+  padding-top: 6px;
+}
+
+.paddingTopLeftRight-16p {
+  padding: var(--spacing-16) var(--spacing-16) 0 var(--spacing-16);
+}
+
+.back-flair {
+  margin-bottom: 0;
+  margin-left: 0.3rem;
+  text-align: center;
+}
+
+.summary-stockSplit-data-flair {
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+
+  .form-control {
+    width: 70px;
+  }
+}

@@ -1,0 +1,145 @@
+.ssn-search-tabs-content {
+  width: 84%;
+}
+
+.cspl-table {
+  &.contribution-details,
+  &.compensation-details,
+  &.loan-details-table,
+  &.investment-history-table {
+    .column-investment-date {
+      width: 20%;
+    }
+    .column-investment-price {
+      width: 30%;
+    }
+    .column-investment-accural-factor {
+      width: 50%;
+    }
+  }
+  &.error-report-table {
+    .table-cell {
+      align-items: flex-start;
+    }
+    .column-error-cusip {
+      width: 15%;
+      min-width: 150px;
+    }
+    .column-error-message {
+      width: 80%;
+      min-width: 300px;
+      white-space: normal;
+    }
+  }
+  &.contribution-details {
+    .column-select {
+      width: 10%;
+    }
+    .column-contribution-description {
+      width: 25%;
+    }
+    .column-contribution-amount {
+      width: 25%;
+    }
+    .column-contribution-errormessage {
+      width: 40%;
+      white-space: normal;
+    }
+  }
+  &.compensation-details {
+    .table-head-cell {
+      padding-left: 0.5rem;
+    }
+    .table-cell {
+      padding-left: 0.5rem;
+    }
+    .column-select {
+      width: 8%;
+    }
+    .column-compensation-planid {
+      width: 12%;
+      word-break: break-all;
+    }
+    .column-compensation-contribution-src {
+      width: 18%;
+    }
+    .column-compensation-contribution-amt {
+      width: 25%;
+    }
+    .column-contribution-amt {
+      width: 30%;
+    }
+    .column-ytd-contribution-amt {
+      width: 15%;
+    }
+    .column-compensation-calculated-value {
+      width: 15%;
+    }
+    .column-removebutton {
+      width: 10%;
+    }
+    .column-compensation-errormessage {
+      width: 25%;
+    }
+  }
+  &.loan-details-table {
+    .column-loan-id {
+      width: 10%;
+    }
+    .column-outstanding-loan-amount {
+      width: 15%;
+    }
+    .column-periodic-payment-amount {
+      width: 15%;
+    }
+    .column-loan-status {
+      width: 10%;
+    }
+    .column-plan-status {
+      width: 10%;
+    }
+    .column-loan-amortization {
+      width: 18%;
+    }
+  }
+  &.error-report-table {
+    .column-loan-id {
+      width: 20%;
+    }
+    .column-outstanding-loan-amount {
+      width: 30%;
+    }
+    .column-errormessage {
+      width: 50%;
+    }
+  }
+  &.loan-details-view-table {
+    .column-installmentCount {
+      width: 10%;
+    }
+    .column-paymentDate {
+      width: 10%;
+    }
+    .column-paydate {
+      width: 10%;
+    }
+    .column-expectedRepaymentAmount {
+      width: 10%;
+    }
+    .column-loanRepaymentAmount {
+      width: 10%;
+    }
+    .column-principalPayment {
+      width: 10%;
+    }
+    .column-interestPayment {
+      width: 10%;
+    }
+    .column-outstandingPrincipalBalance {
+      width: 10%;
+    }
+    .column-loanStatus {
+      width: 10%;
+    }
+  }
+}

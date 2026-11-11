@@ -1,0 +1,127 @@
+.termsAndConditions {
+  background-color: var(--brand-background-primary-light);
+  border: 1px solid var(--brand-background-primary-light);
+  padding: 10px;
+  align-items: center;
+  display: flex;
+
+  .checkBox {
+    border-color: var(--neutral-border-strong);
+    align-self: center;
+  }
+
+  .termsAndConditionsText {
+    margin-left: 8px;
+
+    .link-text {
+      cursor: pointer;
+      color: var(--brand-text-primary-default);
+      margin-left: 4px;
+    }
+  }
+}
+
+.sliderTerms {
+  li {
+    margin-bottom: 16px;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.reversal {
+  display: flex;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  height: 75vh;
+
+  .leftSide {
+    width: 35%;
+    background-color: var(--neutral-surface-layer-02);
+    border-radius: 8px 0 0 8px;
+    padding: 16px;
+  }
+
+  .rightSide {
+    width: 65%;
+    padding: 16px;
+  }
+
+  .marginBottom-16 {
+    margin-bottom: 16px;
+  }
+
+  .marginRight-4 {
+    margin-right: 4px;
+  }
+
+  .marginBottom-8 {
+    margin-bottom: 8px;
+  }
+}
+
+.FeeReversal {
+  display: flex;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+
+  .leftSide {
+    width: 35%;
+    background-color: var(--neutral-surface-layer-02);
+    border-radius: 8px 0 0 8px;
+    padding: 16px;
+  }
+
+  .rightSide {
+    width: 65%;
+    padding: 16px;
+  }
+
+  .marginBottom-16 {
+    margin-bottom: 16px;
+  }
+
+  .marginRight-4 {
+    margin-right: 4px;
+  }
+
+  .marginBottom-8 {
+    margin-bottom: 8px;
+  }
+}
+
+.w-32-5 {
+  width: 32.5%;
+}
+
+.summary-reversal {
+  display: flex;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+
+  .leftSide {
+    width: 25%;
+    background-color: var(--neutral-surface-layer-02);
+    border-radius: 8px 0 0 8px;
+    padding: 16px;
+  }
+
+  .rightSide {
+    width: 75%;
+    padding: 16px;
+  }
+
+  .marginBottom-16 {
+    margin-bottom: 16px;
+  }
+
+  .marginRight-4 {
+    margin-right: 4px;
+  }
+
+  .marginBottom-8 {
+    margin-bottom: 8px;
+  }
+}

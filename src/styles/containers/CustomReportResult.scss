@@ -1,0 +1,71 @@
+@use "../shared/shared-placeholders" as *;
+.CustomReportResultContainer {
+  .info-bar {
+    .Basic-info {
+      .name-desc {
+        margin: 1rem;
+        padding-right: 4rem;
+      }
+
+      .data-models {
+        .render-data-models {
+          margin-top: 5px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 5px;
+
+          .dm-item {
+            border-radius: 5px;
+            background-color: var(--neutral-surface-layer-05);
+            padding: 3px 9px 3px 9px;
+            font-size: var(--fs-12);
+            width: fit-content;
+          }
+        }
+      }
+
+      .options {
+        margin: 1rem;
+
+        .btn-option {
+          box-shadow: var(--elevation-01);
+          background: var(--neutral-surface-layer-01);
+        }
+      }
+    }
+    .filter-info-parent {
+      background-color: var(--neutral-surface-layer-05);
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      .filter-info {
+        padding: 0.1rem 0.5rem 0.1rem 1.5rem;
+
+        .badge-filters {
+          border-radius: 2rem;
+          background-color: var(--neutral-surface-layer-01);
+          border: 1px solid var(--neutral-border-strong);
+          padding: 0.5rem 1rem 0.5rem 1rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+  .Kendo-report-table {
+    margin-top: 2rem;
+  }
+}
+
+.render-filters {
+  @extend %FlexGap8px;
+
+  .custom-review-body-items {
+    padding: 8px 16px 8px 16px;
+    border-radius: 30px;
+    border: 1px solid var(--neutral-border-strong);
+    font-size: var(--fs-14);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+}

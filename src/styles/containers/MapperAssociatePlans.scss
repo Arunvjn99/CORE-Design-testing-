@@ -1,0 +1,248 @@
+.PlansAssociatedCard {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  height: 10rem;
+  width: 17.125rem;
+  border-radius: 0.625rem;
+  /* position: absolute; */
+  border: 0.063rem solid var(--neutral-border-strong);
+  box-sizing: border-box;
+  border-radius: 0.625rem;
+}
+
+.NumOfPlans {
+  margin-top: 1.125rem;
+  /* font-family: Poppins; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-18);
+  color: var(--neutral-text-default);
+  width: auto;
+  height: 1.563rem;
+}
+
+.AddPlan {
+  color: var(--brand-text-primary-default);
+  /* font-family: Poppins; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-14);
+  line-height: 1.313rem;
+  border: 0.063rem solid var(--brand-border-primary-default);
+  box-sizing: border-box;
+  border-radius: 0.313rem;
+  background-color: var(--neutral-surface-layer-01);
+  padding: 0.313rem 0.625rem;
+  height: 1.938rem;
+  width: 3.75rem;
+  margin-top: 0;
+}
+
+.AddPlan:hover {
+  background-color: var(--neutral-surface-layer-01);
+  text-decoration: underline;
+  color: var(--brand-text-primary-default);
+}
+
+.AddPlan:focus {
+  background-color: var(--neutral-surface-layer-01);
+  text-decoration: underline;
+}
+
+.AddedPlansText {
+  /* font-family: Poppins; */
+  font-size: var(--fs-16);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: left;
+  height: 1.25rem;
+}
+
+.manage-added-plans-text {
+  .panel-content {
+    overflow: hidden;
+  }
+  .addplan-scroll {
+    overflow-y: hidden;
+  }
+}
+
+.planGroupTextContainer {
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  padding: 0rem;
+  margin-top: 1.563rem;
+}
+
+.PlanGroupText {
+  position: static;
+  width: 7.5rem;
+  height: 1.688rem;
+
+  /* font-family: Poppins; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-18);
+  line-height: 1.688rem;
+  color: var(--neutral-text-default);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.NumOfPlanGroupsText {
+  position: static;
+  width: 6.25rem;
+  height: 1.313rem;
+  margin-top: 0rem;
+
+  /* font-family: Poppins; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--fs-14);
+  color: var(--neutral-text-subtle-least);
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.AddGroup {
+  color: var(--brand-text-primary-default);
+  /* font-family: Poppins; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-14);
+  line-height: 1.313rem;
+  border: 0.063rem solid var(--brand-border-primary-default);
+  box-sizing: border-box;
+  border-radius: 0.313rem;
+  background-color: var(--neutral-surface-layer-01);
+  padding: 0.313rem 0.625rem;
+  height: 1.938rem;
+  width: 7.5rem;
+  position: relative;
+  top: 15%;
+  margin-left: 44.063rem;
+  /* left: 665%; */
+}
+
+.AddGroup:hover {
+  background-color: var(--neutral-surface-layer-01);
+  text-decoration: underline;
+  color: var(--brand-text-primary-default);
+}
+
+.AddGroup:focus {
+  background-color: var(--neutral-surface-layer-01);
+  text-decoration: underline;
+  color: var(--brand-text-primary-default);
+}
+
+.PlanGroupHeader {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-18);
+  line-height: 27px;
+  color: var(--neutral-text-default);
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.recordCount {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--fs-14);
+  line-height: 21px;
+  color: var(--neutral-text-subtle-least);
+  margin-left: 10px;
+}
+
+.planGroupHeader {
+  width: 786px;
+  height: 27px;
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-18);
+  line-height: 27px;
+  color: var(--neutral-text-subtle-least);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.sliderCard {
+  width: 100%;
+  margin-top: 10px;
+  padding: 0 0 0 10px;
+  border-radius: 5px;
+  border: 1px solid var(--neutral-border-strong);
+}
+
+.mappedPlanGroupCard {
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--neutral-border-strong);
+  height: 150px;
+}
+
+.targetCustomBox {
+  width: 300px;
+  height: 40px;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.errorTargetCustomBox {
+  width: 300px;
+  height: 40px;
+  border: 1px solid var(--semantics-critical-border);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.targetSelectedCustomData {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 230px;
+  height: 18px;
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--fs-12);
+  line-height: 18px;
+  color: var(--neutral-text-default);
+}
+
+.customEdit {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* margin-top: 1rem; */
+  margin-left: 2rem;
+  color: var(--brand-text-primary-default);
+}
+
+.customEdit-mapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* margin-top: 1rem; */
+  margin-left: 2rem;
+  color: var(--brand-text-primary-default);
+  cursor: pointer;
+}
+
+.file-name-header {
+  font-size: var(--fs-12);
+  margin-bottom: -1rem;
+}

@@ -1,0 +1,66 @@
+.transaction-history-container {
+  margin: 16px 0px;
+  .text-grey {
+    color: var(--neutral-text-subtle-least);
+  }
+  .grey-box {
+    padding: 3px 5px;
+    border-radius: 5px;
+    background-color: var(--neutral-surface-layer-05);
+  }
+
+  .grey-box-light {
+    background-color: var(--neutral-surface-layer-03);
+    border-radius: 5px;
+  }
+
+  .grey-box-surface-layer {
+    background-color: var(--neutral-surface-layer-02);
+    border-radius: 5px;
+  }
+
+  .transaction-date {
+    color: var(--neutral-text-subtle-least);
+    background-color: var(--neutral-surface-layer-02);
+    border-radius: 3px;
+    padding: 3px 5px;
+    height: 24px;
+  }
+  .history-icon {
+    margin-top: 3px;
+  }
+  .history-bottom-line {
+    border-left: 2px solid var(--semantics-success-border);
+    height: 2.98rem;
+    /* margin-top: -0.1rem; */
+    /* position: absolute; */
+    margin-left: 0.45rem;
+    /* border-radius: 5px; */
+  }
+  .history-bottom-line-disbursement {
+    border-left: 2px solid var(--neutral-border-strong);
+    height: 85%;
+    margin-left: 0.45rem;
+    min-height: 2.98rem;
+  }
+
+  .mbtm-5 {
+    margin-bottom: 5px;
+  }
+
+  // Disbursement History Styles
+  .disbursement-history-container {
+    max-width: 600px;
+    width: 35vw;
+  }
+
+  .vertical-line-disbursement {
+    border-right: 2px solid var(--neutral-border-strong);
+  }
+
+  // Disbursement History Static Labels Container
+  .disbursement-static-labels {
+    width: 120px;
+    flex-shrink: 0;
+  }
+}

@@ -1,0 +1,17 @@
+.app-outer-layout {
+  overflow: hidden;
+  background: var(--neutral-surface-layer-01);
+  box-shadow: var(--elevation-01);
+  /* padding: 3rem 0 0 0 ; */
+  padding-bottom: 2.5rem;
+  height: -webkit-fill-available;
+}
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+  height: calc(100vh - 65px - var(--footer-height, 0px));
+  margin-left: 100px;
+}

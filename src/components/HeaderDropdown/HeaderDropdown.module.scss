@@ -1,0 +1,53 @@
+.headerDropdown {
+  padding-top: 7px;
+  display: none;
+}
+
+.triggerButton {
+  padding: var(--spacing-6) var(--spacing-8);
+  border-radius: var(--spacing-6);
+  border: 1px solid var(--layer-3);
+  background: var(--neutral-surface-layer-02);
+  font-size: var(--fs-12);
+  width: 160px;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonText {
+  // Button text styles
+}
+
+.selectedText {
+  font-weight: var(--font-semi-bold);
+  font-size: var(--fs-12);
+}
+
+.dropdownIcon {
+  font-size: var(--fs-8);
+  transition: transform 0.2s ease;
+  transform: rotate(180deg);
+}
+
+.dropdownContainer {
+  background: var(--neutral-surface-layer-01);
+  border: 2px solid var(--brand-border-primary-default);
+  border-radius: var(--spacing-6);
+  padding: var(--spacing-8);
+  min-width: 190px;
+  box-shadow: var(--elevation-01);
+  z-index: 1000000;
+}
+
+.dropdownItem {
+  padding: var(--spacing-8) var(--spacing-12);
+  cursor: pointer;
+  border-radius: var(--spacing-6);
+  transition: background-color 0.2s ease;
+  font-weight: var(--font-semi-bold); // keep constant
+  font-size: var(--fs-12);
+  box-sizing: border-box;
+}

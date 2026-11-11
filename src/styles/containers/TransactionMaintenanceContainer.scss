@@ -1,0 +1,39 @@
+.head {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.containerstyle {
+  /* height: "100%" ; */
+  width: "100%";
+}
+
+.allocation {
+  font-size: var(--fs-16);
+  font-weight: 700;
+}
+
+.Details {
+  padding: 10px 10px 0px 10px;
+  margin: 5px 5px 0px 5px;
+}
+
+.allocation-card-header {
+  padding: 15px;
+  margin: 10px 10px 0px 10px;
+}
+
+.recipientDetails {
+  padding: 15px;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.padding-24 {
+  padding: 0px 24px 0px 24px;
+}
+
+.mpsliderp-0 {
+  padding: 0px 0px 0px 0px;
+  //margin: 0px 5px 0px 5px;
+}

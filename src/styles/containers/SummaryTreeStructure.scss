@@ -1,0 +1,142 @@
+.summary-tree,
+.summary-tree ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* font-family: "Poppins"; */
+}
+
+.summary-tree ul {
+  margin-left: 1em;
+  position: relative;
+}
+
+.summary-tree ul ul {
+  margin-left: 0.5em;
+}
+
+.summary-tree ul:before {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: -20px;
+  border-left: 1px solid;
+  color: var(--brand-text-primary-default);
+  background: var(--neutral-surface-layer-02);
+}
+
+.summary-tree li {
+  margin: 0;
+  padding: 0 3em;
+  padding-bottom: 15px;
+  line-height: 2em;
+  font-size: var(--fs-14);
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+}
+
+.summary-tree i {
+  padding-left: 10px;
+  margin-right: 15px;
+  color: var(--brand-text-primary-default);
+}
+
+.summary-tree ul li:before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 0;
+  border-top: 1px solid;
+  margin-top: -1px;
+  position: absolute;
+  top: 1em;
+  left: 0;
+  margin-left: -20px;
+  color: var(--brand-text-primary-default);
+  background: var(--neutral-surface-layer-02);
+}
+
+.summary-tree ul li:last-child:before {
+  background: var(--neutral-surface-layer-02);
+  height: auto;
+  top: 1em;
+  bottom: 0;
+}
+
+.summary-tree-brand-default {
+  color: var(--brand-text-primary-default);
+  font-size: var(--fs-16);
+  font-weight: var(--font-medium);
+  margin-left: -25px;
+}
+
+.summary-tree-strucuture-li-gap {
+  float: right;
+  margin-top: -30px;
+  /* margin-right: "-40px"; */
+  color: var(--neutral-text-default);
+  margin-right: -75px;
+  /* backgroundColor: "var(--neutral-surface-layer-02)", */
+}
+
+.distribution-card {
+  width: 99%;
+  border: 0.063rem solid var(--neutral-border-strong);
+  position: relative;
+  background: var(--neutral-surface-layer-01);
+  border-radius: 0.313rem;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
+
+.fileName {
+  font-size: var(--fs-15);
+  color: var(--neutral-text-subtle-least);
+}
+
+.withdrawal-summary-plan-detials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 99%;
+  margin-bottom: var(--spacing-16);
+  padding: 16px;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  background-color: var(--neutral-surface-layer-02);
+}
+
+.withdrawal-summary-mb-24 {
+  margin-bottom: var(--spacing-24);
+}
+
+.withdrawal-plan-name {
+  width: 500px;
+  margin-right: 32px;
+}
+
+.withdrawal-plan-id {
+  width: 700px;
+  margin-left: 10%;
+}
+
+.withdrawal-tree-align {
+  margin-left: -30px;
+  margin-right: -13px;
+}
+
+.currency-tab {
+  /* fontSize: "var(--fs-16)", */
+  /* float: "right", */
+  /* marginTop: "-30px", */
+  /* marginRight: "-35px", */
+  float: right;
+  margin-top: -30px;
+  margin-right: -35px;
+}

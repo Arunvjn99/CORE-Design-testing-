@@ -1,0 +1,72 @@
+@use "../shared/shared-placeholders" as *;
+.managed-accounts-card {
+  display: flex;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  width: 100%;
+  /* justify-content: space-between; */
+  .service-provider-name {
+    color: var(--neutral-text-default);
+    font-weight: 700;
+    font-size: var(--fs-16);
+  }
+  .service-status-active {
+    font-size: var(--fs-14);
+    font-weight: 600;
+    color: var(--semantics-success-text);
+  }
+  .service-status-disconnected {
+    font-size: var(--fs-14);
+    font-weight: 600;
+    color: var(--semantics-critical-text);
+  }
+  .service-status-inprogress {
+    font-size: var(--fs-14);
+    font-weight: 600;
+    color: var(--semantics-warning-text);
+  }
+  .service-action {
+    color: var(--brand-text-primary-default);
+    font-weight: 600;
+    font-size: var(--fs-16);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .btn-opacity {
+    opacity: 0.5;
+  }
+  .service-name-connection-details {
+    padding: 10px 10px 10px 12px;
+  }
+  .service-provider-action {
+    padding: 10px;
+  }
+  .Service-provider-message {
+    @extend %TextLabelSmallBold;
+  }
+  .service-provier-mail {
+    @extend %SubheadingText;
+  }
+  .service-provider-name-var {
+    font-weight: 600;
+    font-size: var(--fs-14);
+    color: var(--neutral-text-subtle);
+  }
+  .service-provider-contact {
+    margin-top: 12px;
+  }
+  .service-provider-enabledon {
+    @extend %SectionTitleWithTopMargin;
+  }
+  .service-provider-employee-count {
+    @extend %SectionTitleWithTopMargin;
+  }
+}
+.disconnect-times {
+  color: var(--brand-text-primary-default);
+  /* background-color: color-mix(in srgb, var(--brand-background-primary-strong) 10%, transparent); */
+  align-items: center;
+  align-content: center;
+  margin-left: 10px;
+  margin-top: 50px;
+}

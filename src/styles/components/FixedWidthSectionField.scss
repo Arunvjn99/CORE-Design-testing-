@@ -1,0 +1,44 @@
+.section-field-box {
+  height: 79px;
+  width: 394px;
+  background: var(--neutral-surface-layer-02);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section-field-value {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-12);
+  line-height: 16px;
+  color: var(--neutral-text-subtle-least);
+  margin-top: 0.5rem;
+}
+
+.section-indicator {
+  display: flex;
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-12);
+  line-height: 18px;
+  /* identical to box height */
+
+  /* Green 1 */
+
+  color: var(--semantics-success-text);
+
+  background: color-mix(
+    in srgb,
+    var(--semantics-success-background-strong) 15%,
+    transparent
+  );
+  /* Green 1 */
+
+  border: 1px solid var(--semantics-success-border);
+  border-radius: 5px;
+}

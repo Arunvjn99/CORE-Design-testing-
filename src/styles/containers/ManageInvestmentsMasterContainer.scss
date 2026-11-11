@@ -1,0 +1,30 @@
+.plan-investment-master {
+  .cspl-table {
+    max-height: 100%;
+    .column-investment-name {
+      width: 18%;
+    }
+    .column-investment-type {
+      width: 18%;
+    }
+    .column-investment-ticker {
+      width: 18%;
+    }
+    .column-investment-cusip {
+      width: 18%;
+    }
+    .column-investment-status {
+      width: 18%;
+    }
+  }
+}
+
+.add-inv-slider-hdr {
+  height: 75px;
+  background-color: var(--neutral-surface-layer-03);
+  padding: 16px;
+}
+
+.inv-hdr-body-padding {
+  margin: 16px;
+}

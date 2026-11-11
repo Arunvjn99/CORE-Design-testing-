@@ -1,0 +1,78 @@
+.btn-group.multi-select-button {
+  width: max-content;
+  height: auto;
+
+  .btn {
+    min-width: auto;
+    text-align: start;
+    margin-right: 10px;
+    font-size: var(--fs-16);
+    font-weight: 500;
+    border-radius: 0.25rem;
+    background-color: var(--neutral-surface-layer-01);
+    border: 1px solid var(--neutral-border-strong);
+    transition: background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out;
+    &:focus,
+    &.focus {
+      border-color: var(--brand-border-primary-default);
+      box-shadow: none;
+    }
+    &:hover {
+      background-color: var(--brand-background-primary-strong);
+      border-color: var(--brand-border-primary-default);
+      color: var(--neutral-text-on-color);
+    }
+    &.disabled,
+    &:disabled {
+      background-color: var(--semantics-disabled-background);
+      color: var(--semantics-disabled-text);
+      cursor: not-allowed;
+      * {
+        cursor: not-allowed;
+      }
+    }
+    &[readonly] {
+      background-color: var(--neutral-surface-layer-01);
+    }
+    &.active {
+      background-color: color-mix(
+        in srgb,
+        var(--brand-background-primary-strong) 10%,
+        transparent
+      );
+      color: var(--brand-text-primary-default);
+      border-color: var(--brand-border-primary-default);
+    }
+    &.btn-primary.active {
+      background-color: color-mix(
+        in srgb,
+        var(--brand-background-primary-strong) 10%,
+        transparent
+      );
+      color: var(--brand-text-primary-default);
+      border-color: var(--brand-border-primary-default);
+    }
+  }
+  .btn.btn-primary {
+    border-radius: 0.25rem;
+  }
+  .active {
+    background-color: color-mix(
+      in srgb,
+      var(--brand-background-primary-strong) 10%,
+      transparent
+    );
+    color: var(--brand-text-primary-default);
+    border: 1px solid var(--brand-border-primary-default);
+    opacity: 1;
+  }
+}
+
+.invalid {
+  .btn-group.multi-select-button {
+    .btn {
+      border-color: var(--semantics-critical-border);
+    }
+  }
+}

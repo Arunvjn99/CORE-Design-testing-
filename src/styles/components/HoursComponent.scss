@@ -1,0 +1,19 @@
+.hours-table {
+  thead {
+    background: var(--neutral-surface-layer-02);
+    // font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--fs-14);
+    line-height: 21px;
+    /* textAlign: "center", */
+    color: var(--neutral-text-default);
+    height: 53px;
+
+    th {
+      width: 1rem;
+      vertical-align: middle;
+      padding: 1rem;
+    }
+  }
+}

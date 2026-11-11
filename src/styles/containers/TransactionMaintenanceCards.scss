@@ -1,0 +1,153 @@
+@use "../shared/shared-placeholders" as *;
+.employee-enrollment-container {
+  padding-bottom: 45px;
+  .enrollment-status-card {
+    padding: 15px;
+    border-radius: 5px;
+    background: var(--neutral-surface-layer-02);
+    margin: 15px 0px;
+  }
+  .enrollment-deferal-card {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--neutral-border-strong);
+    margin: 15px 0px;
+  }
+  .managed-account-card {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--neutral-border-strong);
+    margin: 10px 0px;
+  }
+  .provider-logo {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 10px;
+  }
+  .active {
+    color: var(--semantics-success-text);
+  }
+  .in-progress {
+    color: var(--semantics-warning-text);
+  }
+  .table-header-color {
+    background-color: var(--neutral-surface-layer-02);
+  }
+  .link-text {
+    @extend %PrimaryLinkUnderline;
+  }
+  .cspl-table {
+    border-radius: 5px;
+    max-height: 100%;
+    .table-cell {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+    }
+    .table-row:nth-child(even) {
+      background-color: var(--neutral-surface-layer-03);
+    }
+    .column-investment-name {
+      width: 50%;
+    }
+    .column-investment-percentage {
+      width: 50%;
+    }
+    .column-investment-name-own {
+      width: 45%;
+    }
+    .column-investment-percentage-own {
+      width: 40%;
+    }
+    .column-investment-action-own {
+      width: 15%;
+    }
+  }
+}
+.cusstyrow {
+  @extend %FlexRow;
+}
+.cusstyrowstr {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.cusstyrowspcard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 1368px) {
+  .header-width {
+    width: min-content;
+  }
+}
+
+.cusstycol {
+  @extend %FlexColumn;
+}
+
+.cusstycolcen {
+  @extend %FlexColumnCentered;
+}
+
+.cusstyrowspcbtw {
+  @extend %FlexRowSpaceBetween;
+}
+
+.cusstycolspcbtw {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dashrhtbrdr {
+  border-right: 1px dashed var(--neutral-border-strong);
+}
+/* base line alignment */
+
+.cusstycolcen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.txncollefamt {
+  padding-right: 29px;
+}
+
+.empsrclefpad {
+  padding-left: 10px;
+  font-size: var(--fs-14);
+  font-weight: 500;
+  color: var(--neutral-text-subtle-least);
+}
+
+.history {
+  padding-top: 2%;
+  border-radius: 4px;
+  background-color: var(--neutral-surface-layer-02);
+  height: 75px;
+}
+
+.fm-emp {
+  margin: 10px;
+  display: flex;
+}
+
+.fm-emp-card-1 {
+  padding-left: 29px;
+  margin-top: 0.35rem;
+}
+
+.fm-emp-card-2 {
+  padding-left: 35px;
+  margin-top: 0.35rem;
+}
+
+.fm-emp-card-3 {
+  padding-left: 45px;
+  margin-top: 0.35rem;
+}

@@ -1,0 +1,239 @@
+.avt-wrapper {
+  position: relative;
+  width: fit-content;
+
+  &.lg {
+    .img-fluid-test {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .name-initials-test {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      overflow: hidden;
+      color: var(--neutral-text-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .avt-Status {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0.7rem;
+      left: 4.5rem;
+      background-color: var(--neutral-surface-layer-01);
+    }
+  }
+
+  &.smd {
+    .img-fluid-test {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      overflow: hidden;
+      color: var(--neutral-text-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &.md {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    .avt-Status {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 39px;
+      left: 86px;
+      background-color: var(--neutral-surface-layer-01);
+    }
+  }
+
+  &.sm {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    .avt-Status {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 39px;
+      left: 86px;
+      background-color: var(--neutral-surface-layer-01);
+    }
+  }
+
+  &.esm {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    .avt-Status {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 39px;
+      left: 86px;
+      background-color: var(--neutral-surface-layer-01);
+    }
+  }
+
+  .avt-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .active {
+    color: var(--semantics-success-text);
+  }
+
+  .cancelled {
+    color: var(--semantics-critical-text);
+  }
+
+  .locked {
+    color: var(--neutral-text-subtle-least);
+  }
+
+  .disabled-status-employee {
+    color: var(--semantics-disabled-text);
+  }
+}
+
+// .d-flex justify-content-between{
+//   background-color: var(--neutral-surface-layer-01);
+// }
+// .kjfheruoghrowug{
+//   background-color: var(--semantics-critical-background-strong);
+// }
+
+.tenantCard {
+  background-color: var(--neutral-surface-layer-01);
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 6px;
+  width: 100%;
+  height: auto;
+}
+
+.tenant-Table {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.tenant-Table .k-grid {
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--neutral-border-subtle);
+}
+
+.toggleSwitch {
+  //padding-left: 20px;
+  padding-right: 40px;
+}
+
+.tenantTable {
+  padding-left: 15px;
+  //padding-right: 20px;
+  padding-bottom: 20px;
+  padding-right: 15px;
+}
+
+.tsearchbar {
+  margin-top: -25px;
+}
+
+.gridBox {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 6px;
+  margin: 20px 30px;
+  margin-left: 20px;
+  // margin-left: 20px;
+  // margin-right: 30px;
+}
+
+.underlineModule {
+  text-decoration: underline;
+  text-decoration-color: var(--brand-text-primary-default);
+}
+
+.editCircle {
+  border: 1px solid var(--semantics-success-border);
+}
+
+@media screen and (max-width: 1368px) {
+  .avt-wrapper {
+    .name-initials {
+      font-size: var(--fs-17);
+      font-weight: 500;
+    }
+
+    &.lg {
+      .name-initials-test {
+        width: 54px;
+        height: 54px;
+      }
+
+      .img-fluid-test {
+        width: 54px;
+        height: 54px;
+      }
+
+      .avt-Status {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0.25rem;
+        left: 2.3rem;
+        background-color: var(--neutral-surface-layer-01);
+      }
+    }
+  }
+}
+
+// .avt-Status {
+//   position: absolute ;
+//   width: 16px ;
+//   height: 16px ;
+//   border-radius: 50% ;
+//   display: flex ;
+//   justify-content: center ;
+//   align-items: center ;
+//   top: 39px ;
+//   left: 86px  ;
+//   background-color: var(--neutral-surface-layer-01);
+// }

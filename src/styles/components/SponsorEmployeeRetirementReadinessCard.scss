@@ -1,0 +1,10 @@
+@use "../shared/shared-placeholders" as *;
+.retirement-readiness-card {
+  @extend %SecondaryBackgroundRounded;
+
+  .age {
+    position: relative;
+    right: 0rem;
+    top: 0rem;
+  }
+}

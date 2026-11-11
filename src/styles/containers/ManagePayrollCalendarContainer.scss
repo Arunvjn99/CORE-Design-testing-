@@ -1,0 +1,24 @@
+.cspl-table {
+  .column-frequency-name {
+    width: 25%;
+  }
+  .column-frequency {
+    width: 25%;
+  }
+  .column-frequency-source {
+    width: 25%;
+    margin-left: 10px;
+  }
+  .column-schedule-start-date {
+    width: 20%;
+  }
+  .column-schedule-end-date {
+    width: 15%;
+  }
+  .column-next-pay-date {
+    width: 15%;
+  }
+}
+.late-payroll-slider {
+  margin-top: -30px;
+}

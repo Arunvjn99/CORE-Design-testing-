@@ -1,0 +1,17 @@
+.excelimg {
+  margin-right: 10px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+.excel-text {
+  font-size: var(--fs-12);
+  color: var(--neutral-text-default);
+  color: var(--brand-text-primary-default);
+  font-weight: 500;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+  }
+}

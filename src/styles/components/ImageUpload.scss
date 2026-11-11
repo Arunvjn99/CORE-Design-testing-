@@ -1,0 +1,112 @@
+.upload-image {
+  width: 310px;
+  height: 121px;
+  text-align: center;
+  border: 1px dashed var(--neutral-border-strong);
+  padding-top: 24px;
+  margin-bottom: 0px;
+  margin-left: 12%;
+  background-color: var(--neutral-surface-layer-01);
+  border-radius: 5%;
+
+  p {
+    margin-bottom: 0px;
+    font-size: var(--fs-14);
+  }
+
+  .link-text {
+    font-size: var(--fs-12);
+    color: var(--brand-text-primary-default);
+  }
+}
+
+.uploaded-image {
+  width: 310px;
+  height: 121px;
+  text-align: center;
+  border: 1px dashed var(--neutral-border-strong);
+  /* background-color: var(--neutral-surface-layer-02); */
+  padding-top: 10px;
+  padding-left: 14px;
+  padding-bottom: 15px;
+  margin-left: 12%;
+  background-color: var(--neutral-surface-layer-01);
+  border-radius: 5%;
+
+  p {
+    margin-bottom: 0px;
+    font-size: var(--fs-14);
+  }
+
+  .link-text {
+    font-size: var(--fs-12);
+    color: var(--brand-text-primary-default);
+  }
+}
+
+.h-187 {
+  height: 250px;
+}
+
+.error {
+  border: 1px dashed var(--semantics-critical-border);
+}
+
+.file-type {
+  color: var(--neutral-text-subtle-least);
+  font-size: var(--fs-12);
+  /* margin-bottom: 1rem ; */
+  margin-left: 12%;
+}
+
+.file-size {
+  color: var(--neutral-text-subtle-least);
+  font-size: var(--fs-12);
+  /* margin-bottom: 1rem ; */
+  margin-left: 3%;
+}
+
+.label-text {
+  font-size: var(--fs-12);
+  white-space: nowrap;
+  margin-left: 12%;
+}
+
+.FileUploadDoc {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.dropzone {
+  width: 310px;
+}
+
+.upload-doc-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.highlight-border {
+  border: 1px solid var(--brand-border-primary-default);
+  transition: border 0.24s ease-in-out;
+}
+
+.padding-top-11 {
+  padding-top: -13px;
+}
+
+.image-boundary {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: flex;
+  float: left;
+}
+
+.grey-bg {
+  background-color: var(--neutral-surface-layer-02);
+}

@@ -1,0 +1,389 @@
+@use "../shared/shared-placeholders" as *;
+.canc-but {
+  margin-left: 660px;
+}
+
+.manage-report {
+  margin-right: -15px;
+
+  &.layout-height {
+    height: 90vh;
+  }
+
+  .breadcrumb {
+    padding: 7px 0px;
+    margin: 0px;
+    background-color: transparent;
+    font-weight: 500;
+    line-height: 18px;
+
+    a {
+      font-size: var(--fs-12);
+      color: var(--brand-text-primary-default);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+      content: ">";
+      color: var(--brand-text-primary-default);
+    }
+  }
+
+  .layout-header {
+    width: 100%;
+    background-color: var(--neutral-surface-layer-01);
+    padding: 0.5em;
+    padding-bottom: 0px;
+    position: relative;
+
+    &.p-0 {
+      padding: 0;
+    }
+
+    h5 {
+      color: var(--neutral-text-default);
+      font-weight: 500;
+      margin: 5px 0px;
+    }
+
+    &::after {
+      padding-top: 16px;
+      border-bottom: 1px solid var(--neutral-border-strong);
+      display: block;
+      content: "";
+    }
+  }
+
+  .tab-wrapper {
+    align-self: flex-end;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: 20px;
+  }
+
+  .layout-content {
+    padding: 10px;
+  }
+
+  .error-banner {
+    @extend %CollapsibleErrorPopup;
+
+    .error-heading {
+      @extend %ValidationErrorText;
+    }
+
+    .error-reason {
+      @extend %CaptionText;
+    }
+
+    &.enable {
+      @extend %ExpandedPopupContent;
+    }
+  }
+}
+
+.company-name-component {
+  padding: 8px;
+
+  .heading {
+    font-size: 0.75em;
+    line-height: 24px;
+  }
+}
+
+.manage-report-column {
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: var(--neutral-surface-layer-02);
+  position: relative;
+  z-index: 1;
+  width: 20%;
+  max-height: 100vh;
+
+  .parent-expanded {
+    background-color: var(--neutral-surface-layer-03);
+  }
+
+  &.manage-menu-items {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - var(--footer-height, 0px));
+    padding: 16px 0 60px 0;
+    overflow-y: auto; /* Single scroll for entire sideba */
+
+    /* Style section titles to eliminate gaps */
+    .sidebartitle {
+      margin: 0;
+      padding: 4px 16px 2px 16px;
+      font-weight: 600;
+      font-size: var(--fs-14);
+      color: var(--neutral-text-default);
+
+      &:not(:first-child) {
+        margin-top: 8px; /* Small gap only between sections */
+      }
+    }
+
+    .manage-company-menu {
+      margin: 0; /* Remove margins that create gaps */
+      padding: 0; /* Remove padding that creates gaps */
+      list-style-type: none;
+      font-size: var(--fs-14);
+      color: var(--neutral-text-subtle-least);
+      padding-bottom: 20px;
+
+      /* Remove individual scrolling - let parent handle it */
+      overflow: visible;
+      height: auto; /* Remove fixed height */
+
+      /* Hide individual scrollbars since parent scrolls */
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      li {
+        white-space: nowrap;
+        padding: 6px 16px;
+        margin: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: var(--fs-14);
+        min-height: 36px;
+        line-height: 1.3;
+        gap: 12px; /* Gap between icon and text */
+
+        .menuicon {
+          flex-shrink: 0;
+          width: 8px;
+          height: 8px;
+
+          &.selected-icon {
+            color: var(--neutral-text-default);
+          }
+        }
+        li:last-child {
+          margin-bottom: 150px; /* Add space for bottom padding */
+        }
+        .menu-text {
+          flex: 1;
+          margin: 0;
+          padding: 0;
+          cursor: pointer;
+          color: var(--neutral-text-subtle-least);
+          transition: color 0.3s ease;
+          overflow-x: hidden;
+          text-decoration: none;
+          overflow: hidden;
+
+          &:hover {
+            @extend %PrimaryLinkUnderline;
+          }
+        }
+
+        .angle-icon {
+          margin-left: auto;
+          flex-shrink: 0;
+          cursor: pointer;
+          padding: 4px;
+        }
+        a {
+          color: var(--neutral-text-subtle-least);
+          transition: color 0.3s ease;
+          overflow-x: hidden;
+          text-decoration: none;
+          flex: 1;
+          margin: 0;
+          padding: 0;
+
+          &:hover {
+            @extend %PrimaryLinkUnderline;
+          }
+        }
+
+        &.selected {
+          background-color: var(--brand-background-primary-light);
+          border-right: 3px solid var(--brand-border-primary-default);
+
+          .menu-text,
+          a {
+            font-weight: 600;
+            color: var(--neutral-text-default);
+          }
+        }
+
+        &.selected-var {
+          background-color: var(--brand-background-primary-light);
+          font-weight: 500;
+          color: var(--brand-text-primary-default);
+
+          .menu-text,
+          a {
+            font-weight: 500;
+            color: var(--brand-text-primary-default);
+          }
+        }
+
+        &.childmenu {
+          padding: 4px 16px 4px 32px;
+          min-height: 32px;
+          font-size: var(--fs-13);
+        }
+
+        &.disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+          pointer-events: none;
+
+          .menu-text,
+          a {
+            cursor: not-allowed;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .submenu-container {
+        background-color: color-mix(
+          in srgb,
+          var(--neutral-surface-high-contrast) 2%,
+          transparent
+        );
+        border-left: 2px solid var(--neutral-border-strong);
+        margin-left: 16px;
+      }
+    }
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--neutral-surface-layer-02);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--neutral-surface-layer-05);
+      border-radius: 3px;
+    }
+  }
+  .overflow-menu {
+    overflow: auto;
+  }
+
+  .report-name-component,
+  .report-bottom-component {
+    padding: 1em;
+    background-color: var(--neutral-surface-layer-02);
+  }
+
+  .report-bottom-component {
+    height: 100%;
+  }
+}
+
+.manage-report-menu {
+  font-size: var(--fs-14);
+
+  &.selected {
+    background-color: var(--brand-background-primary-light);
+    font-weight: 500;
+    color: var(--neutral-text-default);
+  }
+
+  .card-header {
+    border-bottom: none;
+  }
+
+  li {
+    list-style-type: none;
+    white-space: nowrap;
+    padding: 0.5em 0em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: var(--fs-14);
+
+    a {
+      color: var(--neutral-text-default);
+      text-decoration: none;
+
+      &:hover {
+        @extend %PrimaryLinkUnderline;
+      }
+    }
+
+    &.selected {
+      background-color: var(--brand-background-primary-light);
+      font-weight: 500;
+      color: var(--neutral-text-default);
+
+      a {
+        font-weight: 500;
+        color: var(--neutral-text-default);
+      }
+    }
+
+    &.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      pointer-events: none;
+
+      a {
+        cursor: not-allowed;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.itemBold {
+  font-weight: var(--font-semi-bold);
+  color: var(--neutral-text-default);
+}
+
+.selectedreport {
+  font-weight: var(--font-semi-bold);
+  color: var(--neutral-text-default);
+  background-color: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 10%,
+    transparent
+  );
+}
+
+.sidemenu {
+  color: var(--neutral-text-subtle-least);
+
+  :hover {
+    color: var(--brand-text-primary-default);
+  }
+}
+
+.active:hover {
+  cursor: pointer;
+}
+
+.manage-report-menu-content {
+  background-color: var(--neutral-surface-layer-01);
+  padding: 1rem;
+  width: 80%;
+}
+
+.mt-28 {
+  margin-top: 28px;
+}
+
+.horizontal-line-reports {
+  border-bottom: 1px solid var(--neutral-border-light);
+  margin: 1rem 0rem;
+}
+
+.width-68 {
+  width: 68%;
+}

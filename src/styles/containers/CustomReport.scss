@@ -1,0 +1,16 @@
+@use "../shared/shared-placeholders" as *;
+.custom-list-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  .custom-list-title {
+    display: contents;
+  }
+}
+.search-list-report {
+  @extend %FlexColumn;
+}
+.grey-box-with-flat-corners {
+  background-color: var(--neutral-surface-layer-02);
+  padding: 8px 16px 8px 16px;
+}

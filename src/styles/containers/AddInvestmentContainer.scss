@@ -1,0 +1,390 @@
+@use "../shared/shared-placeholders" as *;
+.allocation-container {
+  .cspl-table {
+    .column-investment-details {
+      width: 30%;
+    }
+
+    .column-type {
+      width: 20%;
+    }
+
+    .column-ticker {
+      width: 16%;
+    }
+
+    .column-status {
+      width: 16%;
+    }
+
+    .column-allocation-perc {
+      width: 18%;
+    }
+    .table-head:has(~ .table-body .table-row) {
+      padding-right: 0;
+    }
+  }
+}
+.cspl-table {
+  .column-investment-name {
+    width: 35%;
+  }
+
+  .column-allocation-perc {
+    width: 35%;
+  }
+
+  .column-new-allocation-perc {
+    width: 30%;
+  }
+
+  .column-inv-effective-start-date-var {
+    width: 25%;
+  }
+
+  .column-inv-effective-end-date-var {
+    width: 25%;
+  }
+
+  .column-inv-applicable-types-var {
+    width: 35%;
+  }
+
+  .column-action-var {
+    width: 15%;
+  }
+}
+
+.kendo-header-styling-investment-history {
+  padding-bottom: 15px;
+
+  .k-grid col.k-sorted,
+  .k-grid th.k-sorted {
+    background-color: var(--neutral-surface-layer-01);
+  }
+
+  .k-grid-header-wrap > table {
+    width: 100%;
+  }
+
+  .k-grid-table {
+    width: 100%;
+  }
+
+  .k-grid {
+    /* font-size: var(--fs-16); */
+    /* max-height: 100vh; */
+    border: none;
+
+    .k-grid-content {
+      table {
+        tbody tr:nth-child(even) {
+          /* padding: 8px 16px 8px, 16px; */
+          background-color: var(--neutral-surface-layer-01);
+        }
+
+        tbody tr:nth-child(odd) {
+          /* padding: 8px 16px 8px, 16px; */
+          background-color: var(--neutral-surface-layer-03);
+        }
+
+        tbody td {
+          /* padding: 8px 16px 8px, 16px; */
+          border: none;
+        }
+
+        thead th {
+          border: none;
+        }
+
+        border: none;
+      }
+
+      border: none;
+    }
+
+    .k-grid-header {
+      background-color: var(--neutral-surface-layer-01);
+      color: var(--neutral-text-subtle-least);
+      /* padding-right: 0px ; */
+      border: none;
+
+      .k-grid-header-wrap {
+        border: none;
+      }
+
+      .k-header {
+        /* padding: 8px 16px 8px, 16px; */
+        font-weight: 600;
+        border: none;
+        /* margin-right: 16px; */
+        /* padding-left: 1.3rem; */
+      }
+
+      .k-header:first-child {
+        /* padding: 8px 16px 8px, 16px; */
+        font-weight: 600;
+        border: none;
+        /* margin-right: 16px; */
+        /* padding-left: 0.75rem; */
+      }
+    }
+  }
+}
+
+.investment-history-master {
+  .investment-history-date-range-selector {
+    .dropSide-popup {
+      left: 520px;
+    }
+
+    .date-range-selector {
+      padding: 10px;
+
+      .border-bottom {
+        border-bottom: 1px solid var(--neutral-border-strong);
+        margin: 5px 0px;
+      }
+
+      .rdrStaticRangeLabel {
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+
+        &.active {
+          background-color: color-mix(
+            in srgb,
+            var(--brand-background-primary-strong) 10%,
+            transparent
+          );
+          border-right: 1px solid var(--brand-border-primary-default);
+        }
+      }
+
+      .text-color {
+        color: var(--neutral-text-subtle-least);
+      }
+
+      .rdrStaticRanges {
+        width: 100%;
+      }
+
+      .rdrDefinedRangesWrapper {
+        width: 150px;
+        display: flex;
+        /* align-items: center; */
+      }
+
+      .rdrCalendarWrapper {
+        width: 500px;
+        font-size: var(--fs-10);
+      }
+
+      .rdrDay {
+        line-height: 1em;
+        height: 2em;
+      }
+
+      .rdrDayPassive {
+        line-height: 1em;
+        height: 2em;
+      }
+
+      .rdrDayWeekend {
+        line-height: 1em;
+        height: 2em;
+      }
+
+      .rdrDayStartOfWeek {
+        line-height: 1em;
+        height: 2em;
+      }
+
+      .rdrDayToday:not(.rdrDayPassive) {
+        .rdrInRange,
+        .rdrStartEdge,
+        .rdrEndEdge,
+        .rdrSelected {
+          & ~ .rdrDayNumber span:after {
+            background: var(--neutral-surface-layer-01);
+          }
+        }
+      }
+
+      .rdrDayToday .rdrDayNumber span {
+        font-weight: 500;
+
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 4px;
+          top: 14px;
+          left: 50%;
+          transform: translate(-50%, 0);
+          width: 18px;
+          height: 1px;
+          border-radius: 2px;
+          background: var(--brand-background-primary-strong);
+        }
+      }
+
+      .rdrInputRanges {
+        display: none;
+      }
+
+      .rdrDateDisplayWrapper {
+        display: none;
+      }
+
+      .rdrMonthName {
+        padding: 0.25rem;
+      }
+
+      .rdrWeekDay {
+        line-height: 1em;
+      }
+
+      .form-group button {
+        font-size: var(--fs-8);
+      }
+
+      .rdrMonthAndYearWrapper {
+        padding-top: 0px;
+      }
+
+      .rdrStaticRangeSelected {
+        background-color: color-mix(
+          in srgb,
+          var(--brand-background-primary-strong) 10%,
+          transparent
+        );
+        color: var(--neutral-text-default);
+        border-right: 2px solid var(--brand-border-primary-default);
+      }
+
+      .rdrMonth {
+        padding-bottom: 5px;
+      }
+
+      .rdrMonthAndYearWrapper {
+        height: 25px;
+      }
+    }
+  }
+
+  .form-control {
+    transition: none;
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+    border-color: var(--neutral-border-strong);
+  }
+}
+
+.investment-tier-label-details {
+  .w-150 {
+    width: 150px;
+  }
+
+  .w-10 {
+    width: 10%;
+  }
+
+  .w-20 {
+    width: 20%;
+  }
+
+  .w-25 {
+    width: 25%;
+  }
+
+  .w-12_5 {
+    width: 12.5%;
+  }
+
+  .w-15 {
+    width: 15%;
+  }
+}
+
+.field-remove-bottom {
+  .form-group {
+    margin-bottom: 0;
+  }
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
+.transactions-tab-padding {
+  padding: 8px 16px 0px 16px;
+}
+
+.model-portfolio-card {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+
+  .model-portfolio-card-top {
+    background-color: var(--neutral-surface-layer-03);
+    padding: 8px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+
+  .model-portfolio-card-bottom {
+    padding: 8px;
+  }
+}
+
+.status-Pop-model-portfolio {
+  box-shadow: var(--elevation-01);
+  border-radius: 6px;
+  border: 1px solid var(--neutral-border-strong);
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.status-Pop-integration {
+  border-radius: 4px;
+  border: 1px solid var(--neutral-border-strong);
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.mt-0-6-5-rem {
+  margin-top: 0.65rem;
+}
+.gap-8-px {
+  gap: 8px;
+}
+
+.inactiveRestriction {
+  opacity: 0.45;
+}
+
+.applicableTypes {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 47px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.applicableTypes > * {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.restrictionCell {
+  height: 47px;
+  display: flex;
+  align-items: center;
+}

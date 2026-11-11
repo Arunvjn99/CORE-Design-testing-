@@ -1,0 +1,42 @@
+.transaction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--neutral-border-strong);
+  margin: 0rem 2rem 0rem 2rem;
+
+  .heading {
+    font-size: var(--fs-16);
+  }
+  .transaction-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .transaction-title {
+      /* font-family: Poppins; */
+      font-style: normal;
+      font-weight: 500;
+      font-size: var(--fs-16);
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      color: var(--neutral-text-subtle-least);
+    }
+
+    .transaction-date {
+      /* font-family: Poppins; */
+      font-style: normal;
+      font-weight: normal;
+      font-size: var(--fs-14);
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      color: var(--neutral-text-subtle-least);
+    }
+  }
+}
+
+.transaction:last-child {
+  border-bottom: none;
+}

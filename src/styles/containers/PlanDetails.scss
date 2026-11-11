@@ -1,0 +1,28 @@
+@use "../shared/shared-placeholders" as *;
+.details {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  background: var(--neutral-surface-layer-02);
+  margin: 12px 0px 12px 0px;
+}
+
+.details-new {
+  padding: 15px;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 5px;
+  margin: 16px 0px 0px 0px;
+}
+
+.sponsor-bank-account-slider-edit {
+  .slider-button-group {
+    flex-direction: row-reverse;
+  }
+  .slider-delete-button {
+    .btn-danger {
+      @extend %CriticalOutlineBox;
+      &:not(:disabled):not(.disabled):active {
+        @extend %CriticalOutlineBox;
+      }
+    }
+  }
+}

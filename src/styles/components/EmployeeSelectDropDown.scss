@@ -1,0 +1,94 @@
+@use "../shared/shared-placeholders" as *;
+.payroll-census-tabs {
+  .select-form-control {
+    @extend %DropdownInputStyled;
+  }
+
+  .dropdown-option {
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 8px;
+    padding: 10px;
+    justify-content: space-evenly;
+  }
+
+  .dropdown-component {
+    background-color: var(--neutral-surface-layer-01);
+    .dropdown-toggle {
+      padding: 8px 10px;
+      border-radius: 5px;
+      color: var(--neutral-text-default);
+      background: url("/assets/svg/arrow-icon.svg") no-repeat;
+      background-position: right;
+      background-position-x: 94%;
+      -webkit-appearance: none;
+      text-transform: capitalize;
+      background-size: 18px;
+      background-position-y: 12px;
+    }
+    .btn.btn-primary {
+      border: 1px solid var(--neutral-border-strong);
+      width: 100%;
+      height: auto;
+      padding: 8px;
+      text-align: left;
+    }
+    .btn-primary:hover {
+      @extend %WhiteBackgroundBlackText;
+    }
+    .show > .btn-primary.dropdown-toggle {
+      @extend %InputDefaultState;
+    }
+    .dropdown-toggle::after {
+      display: none;
+    }
+    .dropdown-toggle::before {
+      display: none;
+    }
+    .dropdown-toggle {
+      &:focus {
+        border-color: var(--brand-border-primary-default);
+      }
+    }
+
+    .dropdown-title {
+      white-space: pre-wrap;
+    }
+    .dropdown-menu.show {
+      width: 100%;
+      transform: translate(1px, 37px);
+      border: 1px solid var(--brand-border-primary-default);
+      max-height: 400px;
+      overflow: auto;
+    }
+    .dropdown-menu.show::-webkit-scrollbar {
+      display: none;
+    }
+    .dropdown-menu.show {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      transform: translate3d(0px, 67.2px, 0px);
+    }
+    .dropdown-menu {
+      border-radius: 8px;
+      .dropdown-item {
+        font-size: var(--fs-12);
+        border: none;
+        padding: 0.25rem 0rem;
+        margin-left: 8px;
+        &:active,
+        &:focus,
+        &:hover,
+        &.selected {
+          background-color: var(--brand-background-primary-light);
+          border: 1px solid var(--brand-border-primary-default);
+          color: var(--neutral-text-default);
+          padding: 0rem 0rem;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
+.options-title {
+  @extend %BodyTextRegular;
+}

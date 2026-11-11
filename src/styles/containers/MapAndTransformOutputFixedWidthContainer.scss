@@ -1,0 +1,102 @@
+.sections-tab-container {
+  background: var(--neutral-surface-layer-03);
+  border-radius: 5px 0px 0px 5px;
+  margin: 1rem 0rem 1rem 1rem;
+  height: 100%;
+  /* overflow-y: scroll; */
+}
+
+.sections-tab-content {
+  width: 456px;
+  height: auto;
+  overflow-y: scroll;
+  border: 1px solid var(--neutral-border-strong);
+  margin: 1rem 1rem 1rem 0rem;
+  border-radius: 0px 5px 5px 5px;
+}
+
+.add-section-button {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-14);
+  line-height: 21px;
+
+  cursor: pointer;
+
+  color: var(--brand-text-primary-default);
+}
+
+.sections-title {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-16);
+  line-height: 24px;
+  /* identical to box height */
+
+  /* Headings */
+
+  color: var(--neutral-text-default);
+}
+
+.configure-new-field-button {
+  border: 1px dashed var(--neutral-border-strong);
+  border-radius: 5px;
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-14);
+  line-height: 21px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Blue 1 */
+
+  color: var(--brand-text-primary-default);
+  border-color: var(--brand-border-primary-default);
+
+  width: 394px;
+  height: 79px;
+
+  cursor: pointer;
+  justify-content: center;
+}
+
+.section-name {
+  cursor: pointer;
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--fs-14);
+  line-height: 21px;
+  color: var(--neutral-text-subtle-least);
+}
+
+.active-section {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-14);
+  line-height: 21px;
+  width: 100%;
+  color: var(--neutral-text-default);
+  background: var(--neutral-surface-layer-01);
+}
+
+.add-blueline {
+  border-left: 5px solid var(--brand-border-primary-default);
+  line-height: 21px;
+  margin-right: 2px;
+  padding-left: 6px;
+}
+
+.add-greyline {
+  border-left: 5px solid var(--neutral-border-subtle);
+  line-height: 21px;
+  margin-right: 2px;
+  padding-left: 6px;
+}

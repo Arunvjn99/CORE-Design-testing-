@@ -1,0 +1,45 @@
+@use "../shared/shared-placeholders" as *;
+.exp-card-slider-finch {
+  width: 70%;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 6px;
+  .header {
+    background: var(--neutral-surface-layer-02);
+    padding: 8px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  .pln,
+  .bnft-hd {
+    @extend %TextBodyMediumBold;
+  }
+  .fncharlinearow {
+    height: 11px;
+    width: 11px;
+    position: absolute;
+    top: calc(50% - 6px);
+    left: 92px;
+    rotate: 45deg;
+    border-top: 2px solid var(--neutral-border-strong);
+    border-right: 2px solid var(--neutral-border-strong);
+  }
+
+  .pln-txt,
+  .bnft-txt {
+    font-weight: bold;
+    font-size: var(--fs-14);
+    color: var(--neutral-text-default);
+  }
+  .hdr-alg {
+    justify-content: start;
+  }
+  .gap1 {
+    width: 100px;
+  }
+  .gap2 {
+    width: 30px;
+  }
+  .exp-area {
+    padding: 8px;
+  }
+}

@@ -1,0 +1,22 @@
+.ce-download-all {
+  color: var(--brand-text-primary-default);
+  cursor: pointer;
+  font-size: var(--fs-14);
+}
+
+.census-extract {
+  .k-grid {
+    height: calc(100vh - 450px);
+  }
+  .download-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--semantics-highlight-text);
+    border: 1px solid var(--semantics-highlight-border);
+    padding: 5px;
+
+    cursor: pointer;
+  }
+}

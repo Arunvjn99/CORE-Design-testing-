@@ -1,0 +1,144 @@
+.source-card {
+  border: 1px solid var(--neutral-border-strong);
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 15%;
+}
+
+.source-card-active {
+  border: 1px solid var(--brand-border-primary-default);
+  background-color: var(--brand-background-primary-light);
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 15%;
+}
+
+.restricted-card-style {
+  background-color: var(--semantics-warning-background-light);
+  border-radius: 5px;
+  padding: 5px;
+  color: var(--semantics-warning-text);
+  width: 80%;
+  font-size: var(--fs-12);
+  display: flex;
+  align-items: center;
+}
+
+.edit-source {
+  text-decoration: underline;
+  color: var(--brand-text-primary-default);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.source-card-box {
+  background: var(--neutral-surface-layer-02);
+  border-radius: 5px;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.current-hisRebalanceoldings {
+  background-color: var(--neutral-surface-layer-02);
+}
+
+.buySellWarningBanner {
+  width: 100%;
+  background-color: var(--semantics-warning-background-light);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.viewBuySellSlide {
+  font-weight: 400;
+  font-size: var(--fs-14);
+  color: var(--brand-text-primary-default);
+}
+
+.sourceDetailsCard {
+  padding-left: 10px;
+  padding-top: 20px;
+  margin-top: 16px;
+  width: 100%;
+  height: 103px;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+}
+
+.valueData {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.sourceData {
+  font-size: var(--fs-18);
+  font-weight: 600;
+  color: var(--neutral-text-subtle);
+  margin-left: 1px;
+}
+
+.current-hisRebalanceoldings,
+.current-hisRebalanceoldings-investment {
+  .heading-div {
+    font-size: var(--fs-16);
+    font-weight: 500;
+  }
+
+  .investment-name {
+    font-weight: 500;
+    font-size: var(--fs-14);
+  }
+
+  .investment-amount {
+    font-size: var(--fs-16);
+    font-weight: 500;
+  }
+
+  .investment-percentage {
+    font-size: var(--fs-16);
+    font-weight: 500;
+  }
+}
+
+.source-investment-card {
+  border: 1px solid var(--neutral-border-strong);
+  padding: 10px;
+  border-radius: 5px;
+  background: var(--neutral-surface-layer-01);
+
+  .mr-10 {
+    margin-right: 5rem;
+  }
+}
+
+.errorMessageBox {
+  padding: 5px;
+  margin-bottom: -9px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.softErrorBg {
+  background-color: color-mix(
+    in srgb,
+    var(--semantics-warning-background-strong) 5%,
+    transparent
+  );
+}
+
+.source-investment-card-restricted {
+  border: 1px solid var(--neutral-border-strong);
+  padding: 10px 0px 0px;
+  border-radius: 5px;
+  overflow: hidden;
+
+  .plr-10 {
+    padding: 0px 10px;
+  }
+
+  .mr-10 {
+    margin-right: 5rem;
+  }
+}

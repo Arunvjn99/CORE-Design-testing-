@@ -1,0 +1,145 @@
+.inside-content {
+  .clearing-partner-table {
+    display: flex;
+    padding-left: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+
+    .w-20 {
+      width: 20%;
+    }
+
+    .w-40 {
+      width: 40%;
+    }
+
+    .w-30 {
+      width: 30%;
+    }
+
+    .w-10 {
+      width: 10%;
+    }
+
+    .header-clearing-partner {
+      display: flex;
+      align-items: center;
+      margin-right: 0.7rem;
+
+      .table-header-clearing-partner {
+        font-style: normal;
+        font-weight: 500;
+        font-size: var(--fs-14);
+        line-height: 21px;
+        color: var(--neutral-text-default);
+        /* padding: 0.2rem; */
+      }
+    }
+  }
+
+  .clearance-time-detail-tiles {
+    margin: 1rem 0rem;
+
+    .time-tile {
+      margin: 0.5rem;
+      display: flex;
+      border: 1px solid var(--neutral-border-strong);
+      border-radius: 6px;
+      padding: 1rem;
+
+      .time-component {
+        width: 10%;
+      }
+
+      .clearance-name {
+        width: 40%;
+        padding: 0 1rem;
+      }
+
+      .clearance-name-var {
+        width: 25%;
+        padding: 0 1rem;
+      }
+
+      .clearance-type {
+        width: 30%;
+        padding-left: 12px;
+      }
+
+      .clearance-type-var {
+        width: 30%;
+        padding-left: 12px;
+      }
+
+      .clearance-action {
+        display: flex;
+        width: 20%;
+        justify-content: space-evenly;
+        padding-right: 40px;
+        font-size: var(--fs-20);
+        line-height: 20px;
+
+        .clearing-partner-account-edit-icon {
+          cursor: pointer;
+          color: var(--semantics-highlight-text);
+          padding: 0.5rem;
+        }
+
+        .clearing-partner-account-edit-icon:hover {
+          background-color: var(--semantics-highlight-text);
+          padding: 0.5rem;
+          border-radius: 25px;
+          color: var(--neutral-text-on-color);
+        }
+
+        .clearing-partner-account-delete-icon {
+          color: var(--semantics-critical-text);
+          cursor: pointer;
+          padding: 0.5rem;
+        }
+
+        .clearing-partner-account-delete-icon:hover {
+          background-color: var(--semantics-critical-background-strong);
+          padding: 0.5rem;
+          border-radius: 25px;
+          color: var(--neutral-text-on-color);
+        }
+      }
+
+      .clearance-action-var {
+        display: flex;
+        width: 20%;
+        justify-content: space-evenly;
+        padding-right: 40px;
+        font-size: var(--fs-20);
+        line-height: 20px;
+
+        .clearing-partner-account-edit-icon {
+          cursor: pointer;
+          color: var(--semantics-highlight-text);
+          padding: 0.5rem;
+        }
+
+        .clearing-partner-account-edit-icon:hover {
+          background-color: var(--semantics-highlight-text);
+          padding: 0.5rem;
+          border-radius: 25px;
+          color: var(--neutral-text-on-color);
+        }
+
+        .clearing-partner-account-delete-icon {
+          color: var(--semantics-critical-text);
+          cursor: pointer;
+          padding: 0.5rem;
+        }
+
+        .clearing-partner-account-delete-icon:hover {
+          background-color: var(--semantics-critical-background-strong);
+          padding: 0.5rem;
+          border-radius: 25px;
+          color: var(--neutral-text-on-color);
+        }
+      }
+    }
+  }
+}

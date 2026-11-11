@@ -1,0 +1,25 @@
+.home-container {
+  height: -webkit-fill-available;
+  width: 100%;
+  /* margin-top: 50px; */
+  margin-bottom: auto;
+  padding-left: 55px;
+  @media only screen and (device-width: 768px) {
+    width: 100%;
+    padding-left: 15px;
+  }
+  @media only screen and (max-width: 1439px) {
+    height: 90%;
+  }
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

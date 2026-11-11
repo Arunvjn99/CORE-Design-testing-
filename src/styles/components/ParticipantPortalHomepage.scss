@@ -1,0 +1,161 @@
+//component 1 css
+
+.homePageMenuData_svg {
+  margin-left: 6%;
+}
+
+.homePageMenuData_p {
+  font-size: var(--fs-19);
+  color: var(--brand-text-primary-default);
+  font-weight: 500;
+  margin-left: 8%;
+  width: 100%;
+}
+
+.comp1MainDiv:hover {
+  background-color: var(--neutral-surface-layer-01);
+  border: 3px solid var(--neutral-border-strong);
+  // border: 1px solid var(--neutral-border-strong);
+}
+
+//component 2 css - PART 1
+
+.accountBalance_amount {
+  font-weight: 700;
+  font-size: var(--fs-30);
+  color: var(--brand-text-primary-default);
+}
+
+.vestedBalance_amount {
+  font-weight: 700;
+  font-size: var(--fs-25);
+  color: var(--brand-text-primary-default);
+}
+
+//component 2 css - PART 2
+
+//component 2 css - PART 2 -----part 1
+
+.comp2Part2_p1 {
+  font-size: var(--fs-28);
+  font-weight: 500;
+  color: var(--brand-text-primary-default);
+  margin-left: 3%;
+  margin-top: 3%;
+}
+
+.comp2Part2_p2 {
+  font-size: var(--fs-20);
+  color: var(--brand-text-primary-default);
+  margin-left: 3%;
+}
+
+//component 2 css - PART 2-----part 2
+.planNameCSS {
+  margin-left: 5%;
+  width: 100%;
+  font-size: var(--fs-18);
+  color: var(--brand-text-primary-default);
+  font-weight: 500;
+  margin-top: -3%;
+}
+
+.planIDCSS1 {
+  width: 60px;
+  margin-left: 5%;
+  font-weight: 500;
+  color: var(--neutral-text-subtle-least);
+}
+
+.planIDCSS2 {
+  width: 67px;
+  font-weight: 500;
+  color: var(--brand-text-primary-default);
+}
+
+.planTypeCSS1 {
+  margin-left: 2%;
+  width: 43px;
+  font-weight: 500;
+  color: var(--neutral-text-subtle-least);
+}
+
+//component 2 css - PART 2-----part 3
+.planType1MainComp {
+  margin-left: 3%;
+  background-color: color-mix(
+    in srgb,
+    var(--semantics-highlight-background-light) 50%,
+    transparent
+  );
+  margin-right: 3%;
+  padding-bottom: 5%;
+  border-radius: 10px;
+}
+
+.planType1NameCSS {
+  margin-left: 15%;
+  width: 100%;
+  font-size: var(--fs-18);
+  color: var(--brand-text-primary-default);
+  font-weight: 500;
+  margin-top: 20%;
+}
+
+.planType1AmountCSS {
+  margin-left: 15%;
+  width: 100%;
+  font-size: var(--fs-18);
+  color: var(--brand-text-primary-default);
+  font-weight: 500;
+  margin-top: -5%;
+}
+
+.planType1AllocationCSS {
+  font-size: var(--fs-18);
+  color: var(--brand-text-primary-default);
+  font-weight: 600;
+  margin-top: 3%;
+}
+
+//component 2 css - PART 2-----part 2
+
+.planType2NameCSS {
+  margin-left: 5%;
+  width: 100%;
+  font-size: var(--fs-18);
+  color: var(--brand-text-primary-default);
+  font-weight: 500;
+  // margin-top: 20%;
+  margin-top: 4%;
+}
+
+.planType2AmountCSS {
+  margin-left: 5%;
+  width: 100%;
+  font-size: var(--fs-18);
+  color: var(--brand-text-primary-default);
+  font-weight: 500;
+  // margin-top: -5%;
+}
+
+.planType2SubAmountDescription {
+  margin-left: 15%;
+  width: 100%;
+  color: var(--neutral-text-subtle-least);
+}
+
+.planType2AmountDate1 {
+  margin-top: 5%;
+  margin-left: 46%;
+  font-size: var(--fs-18);
+  color: var(--brand-text-primary-default);
+  font-weight: 500;
+}
+
+.planType2AmountDate2 {
+  margin-left: 39%;
+  font-size: var(--fs-15);
+  color: var(--neutral-text-subtle-least);
+  font-weight: 500;
+}

@@ -1,0 +1,450 @@
+@use "../shared/shared-placeholders" as *;
+
+.fnchtable-container {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+.fnch-container-flex {
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+}
+.fnch-container-scroll {
+  overflow: auto;
+  flex-grow: 1;
+  width: 99%;
+}
+
+.fnchtpdiv {
+  border-bottom: 1px solid var(--neutral-surface-layer-05);
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  padding-right: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
+}
+
+.btntpdfnch {
+  padding-top: 30px;
+  .btn-primary:hover {
+    background-color: var(--neutral-surface-layer-01);
+  }
+}
+.fnchtitl {
+  font-weight: 600;
+  font-size: var(--fs-20);
+}
+.fnchtable-heading {
+  display: flex;
+  padding: 13px;
+  background-color: transparent;
+}
+.fnttable-column {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  margin: 3px;
+  margin-bottom: 8px;
+  /* padding: 12px; */
+  border: 1px solid var(--neutral-border-strong);
+}
+.fnchAssisted {
+  background-color: var(--neutral-surface-layer-02);
+  padding-left: 15px;
+  border-radius: 8px 0px;
+}
+.fnchReconnecting {
+  border-radius: 0px 0px 8px 8px;
+}
+
+.fnchtable-cell {
+  flex: 1;
+  padding: 5px;
+  text-align: start;
+}
+
+.fnchtable-cell:last-child {
+  border-right: none;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.fnccl10 {
+  @extend %HeadingSmallBold;
+}
+.pl-10px {
+  padding-left: 10px;
+}
+.fnccl11 {
+  @extend %LabelBoldMedium;
+}
+
+.fnccl11-status-active {
+  font-weight: 600;
+  font-size: var(--fs-14);
+  color: var(--semantics-success-text);
+}
+
+.fnccl11-status-disconnect {
+  font-weight: 600;
+  font-size: var(--fs-14);
+  color: var(--semantics-critical-text);
+}
+
+.fnccl11-status-reconnect {
+  font-weight: 600;
+  font-size: var(--fs-14);
+  color: var(--semantics-warning-text);
+}
+.fnchdr {
+  font-weight: 600;
+  font-size: var(--fs-14);
+  padding-left: 0px;
+}
+
+.fnccl2,
+.fnccl3 {
+  font-weight: 600;
+  font-size: var(--fs-14);
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.fnccl4 {
+  background: var(--neutral-surface-layer-02);
+}
+
+.fncrwcelltbpadding,
+.fncrwcelltbpadding-var {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.fnchfmk {
+  .form-label {
+    @extend %LabelBoldMedium;
+  }
+
+  .place-holder {
+    @extend %TextBodyMediumBold;
+  }
+}
+.fnccl40 {
+  font-weight: 400;
+  font-size: var(--fs-14);
+}
+.fnccl41 {
+  color: var(--brand-text-primary-default);
+  font-weight: 600;
+  font-size: var(--fs-16);
+  text-decoration: underline;
+}
+.fnccl41-var {
+  color: var(--brand-text-primary-default);
+  font-weight: 600;
+  font-size: var(--fs-16);
+  text-decoration: underline;
+  opacity: 0.4;
+  pointer-events: none;
+}
+.fnchchoicechips_tabs {
+  .nav-tabs {
+    border-bottom: none;
+    font-weight: var(--font-medium);
+    font-size: var(--fs-14);
+    padding-top: 8px;
+    padding-bottom: 0;
+
+    .nav-link {
+      color: var(--neutral-text-default);
+      border: 1px solid var(--neutral-border-strong);
+      border-radius: 20px;
+      margin-right: 1.25rem;
+      padding: 4px 8px;
+
+      &.active {
+        margin-bottom: 0;
+        font-weight: 500;
+        border: 1px solid var(--brand-border-primary-default);
+        color: var(--brand-text-primary-default);
+        background-color: color-mix(
+          in srgb,
+          var(--brand-background-primary-strong) 10%,
+          transparent
+        );
+        padding: 4px 8px;
+      }
+
+      &:hover {
+        border: 1px solid var(--brand-border-primary-default);
+        color: var(--brand-text-primary-default);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .fa-check {
+    cursor: pointer;
+    padding-right: 4px;
+    font-size: var(--fs-12);
+    width: auto;
+  }
+  .fa-check.bold {
+    font-weight: bold;
+    font-size: var(--fs-15);
+  }
+}
+
+.finch-logo-var {
+  width: 30px;
+  height: 20px;
+  margin-left: 7px;
+  margin-top: 5px;
+}
+
+.finch-logo-slider {
+  width: 30px;
+  height: 20px;
+  margin-top: 3px;
+}
+
+.enrich-logo-slider {
+  width: 60px;
+  height: 17px;
+  margin-top: 2px;
+}
+.enrich-logo-var {
+  width: 50px;
+  height: 15px;
+  margin-top: 2px;
+}
+
+.authorize-sponsor-modal {
+  border: 1px solid var(--brand-border-primary-default);
+  border-radius: 4px;
+  padding: 16px;
+  background-color: color-mix(
+    in srgb,
+    var(--brand-background-primary-strong) 10%,
+    transparent
+  );
+}
+/* .no-hover-effect:focus, */
+/* .no-hover-effect:hover { */
+/* box-shadow: none ; */
+/* } */
+.loader-wrapper-finch {
+  position: relative;
+  display: inherit;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin-left: 0;
+  margin-right: 0;
+}
+.mt-180 {
+  margin-top: 180px;
+}
+.sort-button.reset {
+  margin-left: 10px;
+  line-height: 19px;
+  margin-top: 30px;
+}
+.sort-button.search {
+  margin-left: 10px;
+  line-height: 19px;
+}
+.integrations-plangroupslider {
+  .panel-content {
+    overflow: hidden;
+  }
+}
+.integrations-plangroupslider-grid {
+  height: 490px;
+  .k-grid-header {
+    padding-right: 8px;
+  }
+}
+
+@media screen and (max-width: 1368px) {
+  .integrations-plangroupslider-grid {
+    height: 325px;
+  }
+}
+
+.filtersCountInt {
+  border-top: 1px solid var(--neutral-border-strong);
+  border-bottom: 1px solid var(--neutral-border-strong);
+  padding: 0.5rem 0 0.5rem 0;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.border-right-clear {
+  padding: 0px 0.25rem 0px 0px;
+  border-right: 1px solid var(--neutral-border-strong);
+}
+
+.plan-group-info-container {
+  align-items: center;
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  background-color: var(--neutral-surface-layer-01);
+
+  .card-top {
+    background: var(--neutral-surface-layer-02);
+    /* width: 363.2px; */
+    border-radius: 8px 8px 0px 0px;
+    align-items: center;
+    padding: var(--spacing-16);
+  }
+}
+
+.redoIonStyle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--semantics-highlight-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--neutral-surface-layer-01);
+  cursor: pointer;
+
+  &.disabledIcon {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+.iconStyle:hover {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--semantics-highlight-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--semantics-highlight-background-light);
+}
+
+.iconStyle:hover .iconColor {
+  color: var(--neutral-text-on-color);
+  transition: color 0.3s ease;
+}
+
+.iconColor {
+  color: var(--semantics-highlight-text);
+}
+
+.addPlansIntFilterContent {
+  justify-content: space-between;
+  display: flex;
+  padding: 0rem 0rem 0rem 0rem;
+  width: 100%;
+
+  .leftcol-int {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 15px 10px;
+    height: 85vh;
+    width: 63%;
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 5px;
+
+    a {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    .col1-fees {
+      display: flex;
+      flex-direction: column;
+      width: 45%;
+      /* margin-right: 1.188rem; */
+      height: 80vh;
+      overflow: auto;
+      border: 1px solid var(--neutral-border-strong);
+      border-top-width: 0;
+      border-bottom-width: 0;
+      border-left-width: 0;
+      padding-right: 0.8rem;
+
+      .left-header {
+        margin-bottom: var(--spacing-6);
+
+        .feesPlanGroupApply {
+          color: var(--brand-text-primary-default);
+          font-size: var(--fs-14);
+          line-height: 150%;
+          border-radius: 0.313rem;
+          border: 0.063rem solid var(--brand-border-primary-default);
+          background-color: var(--neutral-surface-layer-01);
+          box-sizing: border-box;
+          width: 3.75rem;
+          padding: 0.469rem 0.625rem 0.469rem 0.625rem;
+          margin-left: 20px;
+        }
+      }
+
+      .filtersFees {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.313rem;
+        height: 41rem;
+
+        .status-Pop {
+          box-shadow: var(--elevation-01);
+          border-radius: 6px;
+          border: 1px solid var(--neutral-border-strong);
+          padding: 20px 16px;
+          margin-top: 10px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .leftcol-2-fees {
+      height: 80vh;
+      width: 55%;
+      border: 1px solid var(--neutral-border-strong);
+      border-top-width: 0;
+      border-bottom-width: 0;
+      border-left-width: 0;
+      padding-right: 0.8rem;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    .leftcol-2-fs {
+      height: 80vh;
+      width: 55%;
+      border-top-width: 0;
+      border-bottom-width: 0;
+      border-left-width: 0;
+      padding-left: 0.8rem;
+      overflow: hidden;
+    }
+  }
+
+  .fee-maintenancePlanRight {
+    width: 35%;
+    height: 85vh;
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 5px;
+    overflow: auto;
+  }
+}
+
+.assistedConnectionBanner-list {
+  width: fit-content;
+  background-color: var(--semantics-highlight-background-light);
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+}

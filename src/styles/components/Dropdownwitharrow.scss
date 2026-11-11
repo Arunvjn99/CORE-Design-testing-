@@ -1,0 +1,89 @@
+@use "../shared/shared-placeholders" as *;
+/* DropdownWithArrow.css */
+.arrow-finch-drop::before {
+  @extend %TooltipArrowTop;
+}
+
+.finch-disabled-sponsor {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.drop-finch-btn {
+  @extend %PrimaryBackgroundWhiteTextPadded;
+}
+
+.dropdown-basic-fch {
+  box-shadow: var(--elevation-01);
+  margin-top: 6px;
+  border: none;
+  border-radius: 8px;
+  min-width: 280px;
+  padding: 16px;
+}
+
+.finch-dropdown-scroll {
+  max-height: calc(100vh - 260px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.dropdown-menu.dropdown-basic-fch {
+  margin-top: 6px;
+}
+
+.drp-dwn-arw-fnch {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: var(--fs-16);
+  font-weight: 600;
+}
+
+.fnch-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  background-color: var(--neutral-surface-layer-02);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--fs-10);
+  margin-right: 12px;
+}
+
+.drop-finch-btn::after {
+  display: none;
+}
+
+.fnch-drp-down-item {
+  @extend %FlexColumnCentered;
+}
+
+.fnch-drp-down-item.ml-9rem {
+  margin-left: 9rem;
+}
+
+.fnch-name {
+  @extend %FlexColumnCentered;
+}
+
+.finch-authentication-text {
+  width: 60%;
+  padding: 7px 0px 7px 7px;
+}
+
+.go-to-finch-button {
+  .fa-arrow-right {
+    margin-left: 0.25rem;
+    color: var(--neutral-text-on-color);
+  }
+}
+
+.addsources.mt-8px {
+  margin-top: 0.5rem;
+}

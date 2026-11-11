@@ -1,0 +1,550 @@
+@use "../shared/shared-placeholders" as *;
+.clearing-partner-inside-content {
+  margin-top: -30px;
+
+  .clearing-partners-list-container {
+    display: flex;
+    border-top: 2px solid var(--neutral-border-strong);
+
+    .clearing-partners-list {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      background: var(--brand-background-primary-light);
+      padding: 1rem;
+    }
+
+    .clearing-partners-list-item {
+      width: 60%;
+      padding: 1rem 0 0.5rem 1rem;
+
+      .clearing-partner-card-list {
+        .column-filters-clearing-partner {
+          display: flex;
+          margin-bottom: 10px;
+          margin-top: 15px;
+          justify-content: space-between;
+        }
+
+        .clearing-partner-list-table-component {
+          display: flex;
+          border: 1px solid var(--neutral-border-strong);
+          border-radius: 4px;
+
+          padding: 0.5rem;
+          margin-bottom: 1rem;
+
+          .trade-flex-column {
+            display: flex;
+            padding-left: 0.75rem;
+            align-items: center;
+
+            .select-item {
+              border: 2px solid var(--neutral-border-strong);
+              width: 1.5rem;
+              height: 1.5rem;
+              border-radius: 1rem;
+            }
+
+            .clearing-partner-id-text {
+              display: flex;
+              flex-direction: column;
+              margin-left: 2rem;
+
+              .transaction-card-top-row {
+                font-weight: 500;
+                font-size: var(--fs-14);
+                line-height: 19px;
+                color: var(--neutral-text-default);
+              }
+
+              .transaction-status {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 4px 8px;
+                gap: 10px;
+                color: var(--semantics-success-text);
+                height: 29px;
+                width: fit-content;
+                background: color-mix(
+                  in srgb,
+                  var(--semantics-success-background-strong) 10%,
+                  transparent
+                );
+                border-radius: 6px;
+              }
+            }
+          }
+
+          .trade-ssn-column {
+            @extend %FlexColumn;
+          }
+
+          .w-15 {
+            width: 15%;
+          }
+
+          .w-60 {
+            width: 60%;
+          }
+
+          .w-40 {
+            width: 40%;
+          }
+        }
+      }
+
+      .search-bar-clearing-partner {
+        margin-bottom: 2.5rem;
+
+        .form-control-search-text {
+          .form-control {
+            width: 100%;
+          }
+        }
+      }
+
+      .clearing-partner-added-container {
+        @extend %FlexRowBetweenCenter;
+
+        .clearing-partner-subjects {
+          .clearing-partner-recently-added {
+            // font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 600;
+            font-size: var(--fs-14);
+            line-height: 20px;
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.02em;
+
+            color: var(--neutral-text-subtle);
+          }
+
+          .clearing-partner-records {
+            // font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 600;
+            font-size: var(--fs-14);
+            line-height: 20px;
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.02em;
+
+            color: var(--neutral-text-subtle-least);
+          }
+        }
+
+        .create-partner-id {
+          cursor: pointer;
+          color: var(--brand-text-primary-default);
+        }
+      }
+    }
+  }
+}
+
+.clearing-partner-inside-contentsdui {
+  /* margin-top: -30px; */
+
+  .clearing-partners-list-containersdui {
+    /* display: flex; */
+    border-top: 2px solid var(--neutral-border-strong);
+
+    .clearing-partners-listsdui {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      background: var(--brand-background-primary-light);
+      padding: 1rem;
+    }
+
+    .clearing-partners-list-itemsdui {
+      /* width: 60%; */
+      padding: 1rem 0 0.5rem 1rem;
+
+      .clearing-partner-card-listsdui {
+        .column-filters-clearing-partnersdui {
+          display: flex;
+          margin-bottom: 10px;
+          margin-top: 15px;
+          justify-content: space-between;
+        }
+
+        .clearing-partner-list-table-componentsdui {
+          display: flex;
+          border: 1px solid var(--neutral-border-strong);
+          border-radius: 4px;
+
+          padding: 0.5rem;
+          margin-bottom: 1rem;
+
+          .trade-flex-column {
+            display: flex;
+            padding-left: 0.75rem;
+            align-items: center;
+
+            .select-item {
+              border: 2px solid var(--neutral-border-strong);
+              width: 1.5rem;
+              height: 1.5rem;
+              border-radius: 1rem;
+            }
+
+            .clearing-partner-id-text {
+              display: flex;
+              flex-direction: column;
+              margin-left: 2rem;
+
+              .transaction-card-top-row {
+                font-weight: 500;
+                font-size: var(--fs-14);
+                line-height: 19px;
+                color: var(--neutral-text-default);
+              }
+
+              .transaction-status {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 4px 8px;
+                gap: 10px;
+                color: var(--semantics-success-text);
+                height: 29px;
+                width: fit-content;
+                background: color-mix(
+                  in srgb,
+                  var(--semantics-success-background-strong) 10%,
+                  transparent
+                );
+                border-radius: 6px;
+              }
+            }
+          }
+
+          .trade-ssn-column {
+            @extend %FlexColumn;
+          }
+
+          .w-15 {
+            width: 15%;
+          }
+
+          .w-60 {
+            width: 60%;
+          }
+
+          .w-40 {
+            width: 40%;
+          }
+        }
+      }
+
+      .search-bar-clearing-partner {
+        margin-bottom: 2.5rem;
+
+        .form-control-search-text {
+          .form-control {
+            width: 100%;
+          }
+        }
+      }
+
+      .clearing-partner-added-container {
+        @extend %FlexRowBetweenCenter;
+
+        .clearing-partner-subjects {
+          .clearing-partner-recently-added {
+            // font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 600;
+            font-size: var(--fs-14);
+            line-height: 20px;
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.02em;
+
+            color: var(--neutral-text-subtle);
+          }
+
+          .clearing-partner-records {
+            // font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 600;
+            font-size: var(--fs-14);
+            line-height: 20px;
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.02em;
+
+            color: var(--neutral-text-subtle-least);
+          }
+        }
+
+        .create-partner-id {
+          cursor: pointer;
+          color: var(--brand-text-primary-default);
+        }
+      }
+    }
+  }
+}
+
+.clearing-partner-inside-content-plan {
+  margin-top: -30px;
+  height: 100%;
+
+  .clearing-partners-list-container {
+    display: flex;
+    border-top: 2px solid var(--neutral-border-strong);
+    height: 100%;
+
+    .clearing-partners-list {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      background: var(--brand-background-primary-light);
+      padding: 1rem;
+    }
+
+    .clearing-partners-list-item {
+      width: 60%;
+      padding: 1rem 0 0.5rem 1rem;
+
+      .plan-search-box {
+        width: 100%;
+      }
+
+      .clearing-partner-card-list {
+        .column-filters-clearing-partner {
+          display: flex;
+          margin-bottom: 10px;
+          margin-top: 15px;
+          justify-content: space-between;
+        }
+
+        .clearing-partner-list-table-component {
+          display: flex;
+          border: 1px solid var(--neutral-border-strong);
+          border-radius: 4px;
+
+          padding: 0.5rem;
+          margin-bottom: 1rem;
+
+          .trade-flex-column {
+            display: flex;
+            padding-left: 0.75rem;
+            align-items: center;
+
+            .select-item {
+              border: 2px solid var(--neutral-border-strong);
+              width: 1.5rem;
+              height: 1.5rem;
+              border-radius: 1rem;
+            }
+
+            .clearing-partner-id-text {
+              display: flex;
+              flex-direction: column;
+
+              .transaction-card-top-row {
+                font-weight: 500;
+                font-size: var(--fs-14);
+                line-height: 19px;
+                color: var(--neutral-text-default);
+              }
+
+              .transaction-status {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 4px 8px;
+                gap: 10px;
+                color: var(--semantics-success-text);
+                height: 29px;
+                width: fit-content;
+                background: color-mix(
+                  in srgb,
+                  var(--semantics-success-background-strong) 10%,
+                  transparent
+                );
+                border-radius: 6px;
+              }
+            }
+          }
+
+          .trade-ssn-column {
+            @extend %FlexColumn;
+          }
+
+          .w-15 {
+            width: 15%;
+          }
+
+          .w-60 {
+            width: 60%;
+          }
+
+          .w-40 {
+            width: 40%;
+          }
+        }
+      }
+
+      .search-bar-clearing-partner {
+        margin-bottom: 2.5rem;
+      }
+
+      .clearing-partner-added-container {
+        @extend %FlexRowBetweenCenter;
+
+        .clearing-partner-subjects {
+          .clearing-partner-recently-added {
+            // font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 600;
+            font-size: var(--fs-14);
+            line-height: 20px;
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.02em;
+
+            color: var(--neutral-text-subtle);
+          }
+
+          .clearing-partner-records {
+            // font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 600;
+            font-size: var(--fs-14);
+            line-height: 20px;
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.02em;
+
+            color: var(--neutral-text-subtle-least);
+          }
+        }
+
+        .create-partner-id {
+          cursor: pointer;
+          color: var(--brand-text-primary-default);
+        }
+      }
+    }
+  }
+}
+
+.clearing-partner-card-item {
+  margin-bottom: 20px;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    font-weight: normal;
+  }
+
+  .clearing-partner-card-item-content {
+    padding: 10px;
+    background: var(--neutral-surface-layer-01);
+    box-shadow: var(--elevation-01);
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+
+    &:hover {
+      @extend %PrimaryOutlineBox;
+    }
+
+    .clearing-partner-description-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      padding: 0 1rem;
+
+      .clearing-partner-name {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        border-bottom: 0.5px solid var(--neutral-border-strong);
+      }
+
+      .clearing-partner-associated-plans {
+        font-style: normal;
+        font-weight: 400;
+        font-size: var(--fs-13);
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        color: var(--neutral-text-default);
+      }
+    }
+
+    .clearing-partner-icon-wrapper {
+      width: 40%;
+    }
+  }
+}
+
+.edit-button-clearing-Partner {
+  border: 2px solid var(--brand-border-primary-default);
+  padding: 0.5rem 1rem;
+  color: var(--brand-text-primary-default);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.clearing-partner-added-cards {
+  display: flex;
+  width: 100%;
+  border: 2px solid var(--neutral-border-strong);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+
+  .left-component-clearing-partner {
+    width: 40%;
+    display: flex;
+    border-right: 2px solid var(--neutral-border-strong);
+    align-items: center;
+
+    /* .clearing-partner-icon-wrapper { */
+    /* width: 40%; */
+    /* } */
+    .clearing-partner-description-box {
+      margin-left: 1rem;
+    }
+  }
+
+  .right-component-clearing-partner {
+    margin-left: 1rem;
+  }
+
+  .right-component-investment-clearing-partner {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+    .inner-bank-details {
+      @extend %FlexColumn;
+    }
+
+    .edit-icon {
+      cursor: pointer;
+    }
+  }
+}
+
+.clearing-partner-inside-content-plan.mt-0px {
+  margin-top: 0;
+}

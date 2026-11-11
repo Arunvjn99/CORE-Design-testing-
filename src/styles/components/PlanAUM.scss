@@ -1,0 +1,46 @@
+.paum-vested {
+  background-color: var(--neutral-surface-layer-02);
+  padding: 1rem;
+  border-radius: 6px;
+}
+.pre-heading-value {
+  font-weight: bold;
+  font-size: var(--fs-19);
+}
+.value {
+  color: var(--neutral-text-default);
+  font-size: var(--fs-16);
+  font-weight: 700;
+}
+.heading {
+  font-size: var(--fs-16);
+  font-weight: 700;
+  color: var(--neutral-text-subtle);
+}
+
+.planaumcardbrdhdr {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.planaumcardbrdbdy {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-right: 10px;
+}
+.outer-grid {
+  .k-grid-header {
+    background-color: color-mix(
+      in srgb,
+      var(--brand-background-primary-strong) 10%,
+      transparent
+    );
+  }
+}
+
+.dummy-search {
+  .form-control-seach-text input {
+    border: 2px solid var(--brand-border-primary-default);
+  }
+}

@@ -1,0 +1,54 @@
+.manage-company-wrapper {
+  .context-banner {
+    padding: 1rem 2rem;
+    font-size: var(--fs-11);
+    position: relative;
+    z-index: 2;
+    box-shadow: var(--elevation-01);
+  }
+}
+
+.transaction-restriction-card {
+  border-radius: 8px;
+  border: 1px solid var(--semantics-warning-border);
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--semantics-warning-background-light);
+  .fw-700 {
+    font-weight: 700;
+  }
+
+  .warning-message {
+    font-size: var(--fs-13);
+    font-weight: 500;
+    color: var(--semantics-warning-text);
+    background-color: var(--semantics-warning-background-light);
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    font-size: var(--fs-16);
+    display: flex;
+    align-items: center;
+    .inner-html-constructor {
+      display: flex;
+      overflow: hidden;
+      word-break: break-word;
+      white-space: pre-wrap;
+      text-overflow: ellipsis;
+      .white-space-no-wrap {
+        white-space: nowrap;
+      }
+      .add-tool-tip {
+        .inner-html {
+          display: flex;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

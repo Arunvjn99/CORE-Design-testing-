@@ -1,0 +1,19 @@
+@use "../shared/shared-placeholders" as *;
+
+.transactionButton {
+  border-radius: 30px;
+  margin: 0.8rem 0.8rem;
+  background-color: var(--neutral-surface-layer-01);
+  border: 1px solid var(--neutral-border-strong);
+  color: var(--neutral-text-subtle-least);
+}
+
+.transactionButton:hover {
+  color: var(--brand-text-primary-default);
+  border: 1px solid var(--brand-border-primary-default);
+  background-color: var(--brand-background-primary-light);
+}
+
+.typescomponents div:not(:last-child) {
+  @extend %RightVerticalDivider;
+}

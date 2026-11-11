@@ -1,0 +1,39 @@
+// .listStyle .pb-12px {
+//     padding-bottom: 12px ;
+// }
+.redemptiontreestructure {
+  .tier-list-1 {
+    .pl-0px {
+      padding-left: 0px;
+    }
+    .pr-0px {
+      padding-right: 0px;
+    }
+  }
+
+  .rf-1-tree.tree {
+    ul.tier-list-1 {
+      margin-left: 2.54em;
+    }
+  }
+
+  .rf-1-tree.tree {
+    li.listStyle {
+      list-style: none;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .rf-1-tree {
+    ul.tier-list-1 {
+      &::before {
+        top: 0;
+        left: 1px;
+      }
+    }
+  }
+  .rf-1-tree ul li:last-child:before {
+    background: transparent;
+  }
+}

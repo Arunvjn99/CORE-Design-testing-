@@ -1,0 +1,131 @@
+.timePickerFirstPart {
+  border-radius: var(--spacing-4);
+  border: 1px solid var(--neutral-border-strong);
+  background: var(--neutral-surface-layer-01);
+  width: 150px;
+  height: 35px;
+  padding: var(--spacing-8);
+
+  .time-firstWidth {
+    width: 50px;
+
+    .time-input {
+      font-size: var(--fs-14);
+      font-weight: var(--font-medium);
+      color: var(--neutral-text-default);
+      border: none;
+      background: none;
+      outline: none;
+      width: 45%;
+    }
+
+    .time-distinguish {
+      width: 10%;
+      font-size: var(--fs-14);
+      font-weight: var(--font-medium);
+      color: var(--neutral-text-default);
+      align-self: center;
+    }
+  }
+
+  .time-secondWidth {
+    width: 92px;
+    align-self: center;
+    padding-left: 68px;
+  }
+}
+.timePickerDisable {
+  cursor: not-allowed;
+  background: var(--neutral-surface-layer-02);
+  border-color: var(--neutral-border-light);
+
+  .time-distinguish {
+    color: var(--semantics-disabled-text);
+  }
+
+  .time-secondWidth {
+    svg {
+      color: var(--semantics-disabled-text);
+      cursor: not-allowed;
+    }
+  }
+
+  .time-input {
+    background-color: var(--neutral-surface-layer-02);
+    color: var(--semantics-disabled-text);
+    cursor: not-allowed;
+  }
+}
+.timePickerSecondPart {
+  width: 150px;
+  height: 65px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 0px 2px var(--brand-background-primary-light);
+  border: 1px solid var(--brand-border-primary-default);
+  padding: 8px;
+  justify-content: space-between;
+
+  .time-firstWidth {
+    width: 54px;
+    height: 48px;
+
+    .time-inputWidth {
+      width: 45%;
+
+      .time-inputstyle {
+        width: 11px;
+        height: 12px;
+        font-size: var(--fs-12);
+        font-weight: var(--font-regular);
+      }
+
+      .time-inputLabel {
+        width: 21px;
+        height: 24px;
+        font-size: var(--fs-18);
+        font-weight: var(--font-bold);
+        color: var(--neutral-text-default);
+      }
+    }
+
+    .time-distinguish {
+      width: 4px;
+      height: 9px;
+      font-size: var(--fs-14);
+      font-weight: var(--font-medium);
+      color: var(--neutral-text-default);
+      margin-top: 15px;
+    }
+  }
+
+  .time-secondWidth {
+    width: 50px;
+    height: 48px;
+    gap: var(--spacing-8);
+
+    .ok-button {
+      width: 50px;
+      height: 24px;
+      border-radius: 4px;
+      padding: var(--spacing-4) var(--spacing-16);
+      background-color: var(--brand-background-primary-strong);
+      color: var(--neutral-text-on-color);
+      cursor: pointer;
+    }
+
+    .reset-button {
+      width: 50px;
+      height: 16px;
+      font-size: var(--fs-12);
+      font-weight: var(--font-medium);
+    }
+  }
+}
+
+.error-message-timer {
+  display: block;
+  font-size: var(--fs-14);
+  font-weight: var(--font-medium);
+  margin-top: 0rem;
+  color: var(--semantics-critical-text);
+}

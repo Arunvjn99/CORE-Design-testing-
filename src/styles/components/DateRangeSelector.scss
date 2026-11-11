@@ -1,0 +1,147 @@
+.date-range-selector {
+  .rdrMonthName,
+  .rdrDayNumber span,
+  .rdrWeekDay,
+  .rdrMonthPicker select,
+  .rdrYearPicker select {
+    color: var(--neutral-text-subtle);
+  }
+
+  padding: 10px;
+
+  .border-bottom {
+    border-bottom: 1px solid var(--neutral-border-strong);
+    margin: 5px 0px;
+  }
+
+  .rdrStaticRangeLabel {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+
+    &.active {
+      background-color: color-mix(
+        in srgb,
+        var(--brand-background-primary-strong) 10%,
+        transparent
+      );
+      border-right: 1px solid var(--brand-border-primary-default);
+    }
+  }
+
+  .text-color {
+    color: var(--neutral-text-subtle-least);
+  }
+
+  .rdrStaticRanges {
+    width: 100%;
+  }
+
+  .rdrDefinedRangesWrapper {
+    width: 100px;
+    display: flex;
+    /* align-items: center; */
+  }
+
+  .rdrCalendarWrapper {
+    width: 500px;
+  }
+
+  .rdrDay {
+    line-height: 1em;
+    height: 2.5em;
+  }
+
+  .rdrDayPassive {
+    line-height: 1em;
+    height: 2.5em;
+  }
+
+  .rdrDayWeekend {
+    line-height: 1em;
+    height: 2.5em;
+  }
+
+  .rdrDayStartOfWeek {
+    line-height: 1em;
+    height: 2.5em;
+  }
+
+  .rdrDayToday:not(.rdrDayPassive) {
+    .rdrInRange,
+    .rdrStartEdge,
+    .rdrEndEdge,
+    .rdrSelected {
+      & ~ .rdrDayNumber span:after {
+        background: var(--neutral-surface-layer-01);
+        top: auto;
+      }
+    }
+  }
+
+  .rdrDayToday .rdrDayNumber span {
+    font-weight: 500;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 4px;
+      top: auto;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 18px;
+      height: 1px;
+      border-radius: 2px;
+      background: var(--brand-background-primary-strong);
+    }
+  }
+
+  .rdrInputRanges {
+    display: none;
+  }
+
+  .rdrDateDisplayWrapper {
+    display: none;
+  }
+
+  .rdrMonthName {
+    padding: 0.25rem;
+  }
+
+  .rdrWeekDay {
+    line-height: 1em;
+    font-size: var(--fs-12);
+  }
+
+  .form-group button {
+    font-size: var(--fs-8);
+  }
+
+  .rdrMonthAndYearWrapper {
+    padding-top: 0px;
+  }
+
+  .rdrStaticRangeSelected {
+    background-color: color-mix(
+      in srgb,
+      var(--brand-background-primary-strong) 10%,
+      transparent
+    );
+    color: var(--neutral-text-default);
+    border-right: 2px solid var(--brand-border-primary-default);
+  }
+
+  .rdrMonth {
+    padding-bottom: 5px;
+    font-size: var(--fs-14);
+  }
+
+  .rdrMonthAndYearWrapper {
+    height: 25px;
+    font-size: var(--fs-14);
+  }
+}
+
+.date-range-manual-box {
+  width: calc(100% - 97.2px);
+}

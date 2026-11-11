@@ -1,0 +1,75 @@
+.part1SelectedColP1 {
+  color: var(--neutral-text-default);
+
+  /* H6 (Page Menu) */
+  // font-family: Open Sans;
+  font-size: var(--fs-18);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  /* 133.333% */
+  letter-spacing: 0.18px;
+  text-transform: capitalize;
+}
+
+.part1SelectedCol {
+  margin-left: 3%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  border-bottom: 1px solid var(--neutral-border-strong);
+  margin-right: 3%;
+}
+
+.part2InfoCol {
+  display: flex;
+  margin-left: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-right: 5%;
+}
+
+.part2InfoColIcon {
+  padding-top: 3%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+
+.part2InfoColP {
+  color: var(--neutral-text-subtle);
+  // font-family: Open Sans;
+  font-size: var(--fs-14);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.mappingDataCSS {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.part3DataCol {
+  margin-left: 4%;
+  margin-right: 5%;
+}
+
+.dataCSS {
+  color: var(--neutral-text-subtle-least);
+  width: fit-content;
+
+  /* Body Text/Large - Bold */
+  // font-family: Open Sans;
+  font-size: var(--fs-16);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  padding: 3px 11px;
+  border-radius: 6px;
+  border: 1px solid var(--neutral-border-strong);
+  background: var(--neutral-surface-layer-01);
+}

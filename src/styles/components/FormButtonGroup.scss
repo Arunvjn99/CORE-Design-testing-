@@ -1,0 +1,149 @@
+@use "../shared/shared-placeholders" as *;
+.form-control.form-button-group {
+  padding: 0px;
+  border: 0px;
+  margin-bottom: 8px;
+  button {
+    white-space: nowrap;
+    flex-basis: 0px;
+    min-height: 100%;
+    border: 1px solid var(--neutral-border-strong);
+    border-right-width: 0px;
+    &:last-child {
+      border-right-width: 1px;
+    }
+    &.selected {
+      min-height: 100%;
+    }
+    &:focus {
+      border-color: var(--brand-border-primary-default);
+    }
+  }
+}
+.display-flex {
+  @extend %FlexRow;
+}
+.marg-right-12 {
+  margin-right: 12px;
+}
+.tooltip-basic {
+  @extend %RelativeInlineBlock;
+}
+.tooltip-basic .tooltiptext {
+  visibility: hidden;
+  background-color: var(--neutral-surface-high-contrast);
+  font: 12px;
+  line-height: 21px;
+  color: var(--neutral-text-on-color);
+  position: absolute;
+  height: 36px;
+  z-index: 1;
+  left: 50%;
+  padding: 7.5px 0px 7.5px 0px;
+  border-radius: 5px;
+  margin-left: -45px;
+  margin-top: 23px;
+}
+
+.tooltip-basic .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -100px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--neutral-border-strong) transparent;
+}
+.tooltip-basic:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip-qaca {
+  @extend %RelativeInlineBlock;
+}
+.tooltip-qaca .tooltiptext {
+  visibility: hidden;
+  background-color: var(--neutral-surface-high-contrast);
+  font: 14px;
+  line-height: 21px;
+  color: var(--neutral-text-on-color);
+  position: absolute;
+  height: 36px;
+  z-index: 1;
+  left: 50%;
+  padding: 7.5px 0px 7.5px 0px;
+  border-radius: 5px;
+  margin-left: -158px;
+  margin-top: 23px;
+}
+
+.tooltip-qaca .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: 12.5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--neutral-border-strong) transparent;
+}
+.tooltip-qaca:hover .tooltiptext {
+  visibility: visible;
+}
+
+.invalid {
+  .form-control.form-button-group {
+    button {
+      border-color: var(--semantics-critical-border);
+    }
+  }
+}
+.form-control.form-button-group.disabled {
+  button {
+    &.selected {
+      color: var(--brand-text-primary-disabled);
+      &:first-child {
+        border-left-color: var(--brand-border-primary-disabled);
+        border-top-color: var(--brand-border-primary-disabled);
+        border-bottom-color: var(--brand-border-primary-disabled);
+      }
+      &:last-child {
+        border-right-color: var(--brand-border-primary-disabled);
+        border-top-color: var(--brand-border-primary-disabled);
+        border-bottom-color: var(--brand-border-primary-disabled);
+      }
+      &:not(:first-child):not(:last-child) {
+        border-color: var(--brand-border-primary-disabled);
+      }
+    }
+    &.notSelected {
+      &:hover,
+      &:focus {
+        border-color: var(--neutral-border-strong);
+      }
+
+      &:first-child {
+        &:hover,
+        &:focus {
+          border-right-color: var(--neutral-border-strong);
+        }
+      }
+
+      &:last-child {
+        &:hover,
+        &:focus {
+          border-left-color: var(--neutral-border-strong);
+        }
+      }
+
+      &:not(:first-child):not(:last-child) {
+        &:hover,
+        &:focus {
+          border-left: none;
+          border-right: none;
+        }
+      }
+    }
+  }
+}

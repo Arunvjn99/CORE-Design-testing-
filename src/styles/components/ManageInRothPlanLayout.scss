@@ -1,0 +1,54 @@
+@use "../shared/shared-placeholders" as *;
+.manage-inrothplan-layout {
+  padding: 0 var(--spacing-16) 0 var(--spacing-16);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .flex-column {
+    @extend %FlexColumn;
+  }
+
+  &.layout-height {
+    height: 90vh;
+  }
+
+  .inrothplan-layout-header {
+    width: 100%;
+    background-color: var(--neutral-surface-layer-01);
+    position: relative;
+    border-bottom: 1px solid var(--neutral-border-light);
+    align-items: center;
+    display: flex;
+    content: "";
+    padding: var(--spacing-16) 0 var(--spacing-8) 0;
+
+    .align-flex {
+      @extend %FlexAlignCenter;
+
+      .header-roth {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-4);
+
+        .backButton-roth {
+          display: flex;
+          cursor: pointer;
+          align-items: center;
+          flex-direction: row;
+
+          .margin-right-8 {
+            margin-right: var(--spacing-8);
+          }
+        }
+      }
+    }
+
+    .roth-button {
+      display: flex;
+      flex-direction: row;
+      margin-right: 5px;
+      margin-left: auto;
+    }
+  }
+}

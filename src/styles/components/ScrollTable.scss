@@ -1,0 +1,38 @@
+@use "../shared/shared-placeholders" as *;
+.scroll-table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: auto;
+}
+.thead {
+  border: 2px solid var(--neutral-border-strong);
+  background-color: var(--neutral-surface-layer-05);
+}
+
+.trbody {
+  border: 2px solid var(--neutral-border-strong);
+  color: var(--neutral-text-subtle-least);
+}
+.tdcell {
+  border: 2px solid var(--neutral-border-strong);
+  padding: 10px 5px 5px 10px;
+}
+.trhead {
+  border: 2px solid var(--neutral-border-strong);
+  background-color: var(--neutral-surface-layer-05);
+  color: var(--neutral-text-subtle-least);
+}
+.thcell {
+  @extend %DashedBorderHighlightBox;
+}
+.td {
+  @extend %DashedBorderHighlightBox;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+.fs-40 {
+  font-size: var(--fs-32);
+}

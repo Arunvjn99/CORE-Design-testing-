@@ -1,0 +1,102 @@
+@use "../shared/shared-placeholders" as *;
+.badge-wrapper {
+  width: fit-content;
+  white-space: nowrap;
+
+  .success {
+    .primary {
+      background-color: var(--semantics-success-background-strong);
+      color: var(--neutral-text-on-color);
+      border-radius: var(--spacing-4);
+      padding: 0.25rem 0.5rem;
+    }
+
+    .secondary {
+      background-color: var(--semantics-success-background-light);
+      color: var(--semantics-success-text);
+      border-radius: var(--spacing-4);
+      padding: 0.25rem 0.5rem;
+    }
+  }
+
+  .warning {
+    .primary {
+      background-color: var(--semantics-warning-background-strong);
+      color: var(--neutral-text-on-color);
+      border-radius: var(--spacing-4);
+      padding: 0.25rem 0.5rem;
+    }
+
+    .secondary {
+      background-color: var(--semantics-warning-background-light);
+      color: var(--semantics-warning-text);
+      border-radius: var(--spacing-4);
+      padding: 0.25rem 0.5rem;
+    }
+  }
+
+  .danger {
+    .primary {
+      background-color: var(--semantics-critical-background-strong);
+      color: var(--neutral-text-on-color);
+      border-radius: var(--spacing-4);
+      padding: 0.25rem 0.5rem;
+    }
+
+    .secondary {
+      background-color: var(--semantics-critical-background-light);
+      color: var(--semantics-critical-text);
+      border-radius: var(--spacing-4);
+      padding: 0.25rem 0.5rem;
+    }
+  }
+
+  .info {
+    .primary {
+      background-color: var(--semantics-highlight-background-strong);
+      color: var(--neutral-text-on-color);
+      border-radius: var(--spacing-4);
+      padding: 0.25rem 0.5rem;
+    }
+
+    .secondary {
+      background-color: var(--semantics-highlight-background-light);
+      color: var(--semantics-highlight-text);
+      border-radius: var(--spacing-4);
+      padding: 0.25rem 0.5rem;
+    }
+  }
+
+  .neutral {
+    .primary {
+      background-color: var(--neutral-surface-layer-05);
+      color: var(--neutral-text-default);
+      border-radius: var(--spacing-4);
+      padding: 0.25rem 0.5rem;
+    }
+
+    .secondary {
+      background-color: var(--neutral-surface-layer-03);
+      color: var(--neutral-text-default);
+      border-radius: var(--spacing-4);
+      padding: 0.25rem 0.5rem;
+    }
+  }
+
+  .md {
+    font-size: var(--fs-14);
+    font-weight: var(--font-medium);
+  }
+
+  .sm {
+    @extend %TextSmallSemiBold;
+  }
+
+  .badge-icon-size {
+    font-size: var(--fs-12);
+    font-weight: var(--font-regular);
+    align-self: right;
+    position: relative;
+    top: -0.1875rem;
+  }
+}

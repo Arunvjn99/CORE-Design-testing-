@@ -1,0 +1,110 @@
+@use "../shared/shared-placeholders" as *;
+
+.stock-split-manage-card {
+  border: 1px solid var(--neutral-border-strong);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.stock-split-heading-box {
+  padding: 16px;
+  margin-right: 9px;
+  white-space: normal;
+}
+
+.stock-split-listing-table-header {
+  display: inline-block;
+}
+
+.w-95px {
+  width: 95px;
+}
+
+.status-submit {
+  color: var(--semantics-warning-text);
+  background-color: color-mix(
+    in srgb,
+    var(--semantics-warning-background-strong) 10%,
+    transparent
+  );
+  border-radius: 8px;
+  padding: 5px 8px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  align-items: center;
+}
+
+.status-complete {
+  color: var(--semantics-success-text);
+  background-color: var(--semantics-success-background-light);
+  border-radius: 8px;
+  padding: 5px 8px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  align-items: center;
+}
+
+.status-awaiting {
+  color: var(--semantics-highlight-text);
+  background-color: color-mix(
+    in srgb,
+    var(--semantics-highlight-background-strong) 10%,
+    transparent
+  );
+  border-radius: 8px;
+  padding: 5px 8px;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  align-items: center;
+}
+
+.stock-split-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.corporate-actions-listing-records {
+  margin-left: 3px;
+  font-size: var(--fs-14);
+  font-weight: 600;
+  color: var(--neutral-text-subtle-least);
+  margin-top: 0.5rem;
+}
+
+.tm-ss-border-bottom {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+// .cardsdiv-fs {
+//   overflow: scroll;
+//   height: 50vh;
+// }
+
+// @media screen and (max-width: 1368px) {
+//   .cardsdiv-fs {
+//     height: 40vh;
+//   }
+// }
+
+.stockSplit-body-stock {
+  background-color: var(--neutral-surface-layer-02);
+  border-radius: 0.5rem;
+  padding: var(--spacing-16);
+}

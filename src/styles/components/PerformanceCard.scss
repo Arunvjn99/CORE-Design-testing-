@@ -1,0 +1,42 @@
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  padding: 16px;
+  height: 120px;
+  width: 32%;
+  box-shadow: var(--elevation-01);
+  background-color: var(--neutral-surface-layer-01);
+  border-radius: 8px;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: var(--brand-text-primary-default);
+  font-weight: 600;
+  font-size: var(--fs-14);
+  font-style: normal;
+  line-height: normal;
+}
+
+.header2 {
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.trial-header {
+  font-size: var(--fs-24);
+  font-weight: 500;
+  color: var(--neutral-text-default);
+}
+.lowerText {
+  font-size: var(--fs-12);
+  color: var(--neutral-text-subtle-least);
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 0;
+}

@@ -1,0 +1,291 @@
+.dividend-summary-conatiner {
+  .basic-info-split {
+    grid-template-columns: 3fr 1fr;
+    background-color: var(--neutral-surface-layer-03);
+    border: 1px solid var(--neutral-border-subtle);
+    display: grid;
+    white-space: nowrap;
+    border-radius: 5px;
+    justify-content: space-between;
+    padding: var(--spacing-16);
+  }
+
+  .file-name {
+    grid-template-columns: 310px;
+    background-color: var(--neutral-surface-layer-03);
+    border: 1px solid var(--neutral-border-subtle);
+    display: grid;
+    white-space: nowrap;
+    border-radius: 5px;
+    align-content: center;
+    padding: 100px;
+  }
+
+  .details-card {
+    border: 1px solid var(--neutral-border-subtle);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    white-space: nowrap;
+    border-radius: 5px;
+    background-color: var(--neutral-surface-layer-03);
+    justify-content: space-between;
+    border-right: 1px dashed var(--neutral-border-strong);
+    padding-right: var(--spacing-16);
+  }
+
+  .headerDetails {
+    color: var(--neutral-text-subtle-least);
+  }
+
+  .processTime {
+    margin-top: -2px;
+    font-weight: 500;
+    font-size: var(--fs-14);
+    color: var(--neutral-text-subtle-least);
+  }
+
+  .valueDetails {
+    color: var(--neutral-text-subtle);
+  }
+
+  .firstValue {
+    color: var(--neutral-text-default);
+  }
+
+  .secondValue {
+    color: var(--neutral-text-subtle);
+    margin-top: -15px;
+  }
+
+  .investmentCard {
+    border: 1px solid var(--neutral-border-subtle);
+    background-color: var(--neutral-surface-layer-01);
+    border-radius: 5px;
+    padding: 15px;
+    width: 340px;
+  }
+
+  .AllocationBox {
+    border: 1px solid var(--neutral-border-subtle);
+    border-radius: 5px;
+    padding: 15px;
+    background-color: var(--neutral-surface-layer-01);
+  }
+
+  .capsule {
+    border: 1px solid var(--neutral-border-subtle);
+    border-radius: 20px;
+    background-color: var(--neutral-surface-layer-04);
+    padding: 10px;
+  }
+
+  .dividend-applicable {
+    border: 1px solid var(--neutral-border-subtle);
+    padding: var(--spacing-16);
+    border-radius: 5px;
+    background-color: var(--neutral-surface-layer-03);
+  }
+
+  .dividend-applicable-card {
+    display: grid;
+    grid-template-columns: 270px 600px 80px;
+    white-space: nowrap;
+  }
+
+  .dividend-details-card {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    white-space: nowrap;
+  }
+
+  .schedule-run {
+    display: grid;
+    grid-template-columns: 260px 220px 247px;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
+
+  .schedule-details1 {
+    display: grid;
+    grid-template-columns: 100px 190px 220px;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
+
+  .dividend-calculation {
+    display: grid;
+    grid-template-columns: 250px 170px 420px;
+    justify-content: space-between;
+  }
+
+  .dividend-specification {
+    display: grid;
+    grid-template-columns: 150px 250px 250px 250px;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
+
+  .dividendDetailsLabel {
+    font-size: var(--fs-16);
+    font-weight: 600;
+    color: var(--neutral-text-subtle-least);
+  }
+
+  .accrualCard {
+    height: 150px;
+    width: 500px;
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 5px;
+  }
+
+  .accrualLink {
+    text-decoration: underline;
+    color: var(--brand-text-primary-default);
+  }
+
+  .accuralSliderHeader {
+    margin-top: -65px;
+    color: var(--neutral-text-default);
+    font-size: var(--fs-22);
+    font-weight: 600;
+  }
+
+  .accrualRecordCount {
+    margin-top: -15px;
+  }
+
+  .accrualCardData {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+
+    border: 1px solid var(--neutral-border-inverse);
+    border-radius: 5px;
+
+    .accrualTableNoData {
+      text-align: center;
+      font-weight: 600;
+      margin-top: 20px;
+      font-size: var(--fs-16);
+      color: var(--neutral-text-subtle-least);
+    }
+  }
+
+  .accrualCardBox {
+    height: 70px;
+    display: flex;
+  }
+
+  .leftVerticalLine {
+    position: relative;
+    height: 134px;
+  }
+
+  .fileNameContainer {
+    margin-top: 32px;
+    margin-left: 16px;
+    height: 74px;
+    border-radius: 4px;
+    background: var(--neutral-surface-layer-01);
+  }
+
+  .verticalLine {
+    border-right: 1px solid var(--semantics-critical-border);
+  }
+
+  .vertical-line {
+    width: 1px;
+    background-color: var(--neutral-surface-high-contrast);
+    height: 100%;
+    float: right;
+  }
+
+  .dividend-calculation1 {
+    display: grid;
+    grid-template-columns: 150px 11px 140px;
+    justify-content: space-between;
+  }
+
+  .popup-cancel-btn {
+    /* background: var(--neutral-surface-layer-01); */
+    color: var(--semantics-highlight-text);
+    border: 1px solid var(--semantics-highlight-border);
+  }
+
+  .popup-ok-btn {
+    background: var(--neutral-surface-layer-01);
+    color: var(--semantics-highlight-text);
+    border: 1px solid var(--semantics-highlight-border);
+  }
+
+  .popup-border {
+    height: 200px;
+    width: 400px;
+    border-radius: 2px;
+  }
+
+  .dividend-calculation2 {
+    display: grid;
+    grid-template-columns: 320px 270px 250px;
+    justify-content: space-between;
+  }
+
+  .summary-success-toast-text {
+    color: var(--neutral-text-default);
+    font-size: var(--fs-18);
+    margin-bottom: 5px;
+    font-weight: 100;
+  }
+
+  .summary-success-toast-sub-text {
+    color: var(--neutral-text-default);
+    font-size: var(--fs-16);
+    margin-bottom: 2px;
+    font-weight: 50;
+  }
+
+  .schedule-run1 {
+    display: grid;
+    grid-template-columns: 230px 220px 220px 300px;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
+
+  .dividend-specification-details {
+    display: grid;
+    grid-template-columns: 410px 410px;
+    justify-content: space-between;
+  }
+
+  .dividend-exclusion-details {
+    display: grid;
+    grid-template-columns: 240px 310px;
+    justify-content: start;
+  }
+
+  .dividend-exclusion {
+    border: 1px solid var(--neutral-border-subtle);
+    padding: var(--spacing-16);
+    width: 580px;
+    border-radius: 5px;
+    background-color: var(--neutral-surface-layer-03);
+  }
+
+  .dividend-schedule-details {
+    display: grid;
+    grid-template-columns: 190px 200px;
+    justify-content: start;
+  }
+
+  .dividend-schedule {
+    border: 1px solid var(--neutral-border-subtle);
+    padding: var(--spacing-16);
+    width: 400px;
+    border-radius: 5px;
+    background-color: var(--neutral-surface-layer-03);
+  }
+}
+
+.dividend-summary-container-step {
+  height: calc(100vh - 110px);
+}

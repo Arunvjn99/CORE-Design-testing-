@@ -1,0 +1,46 @@
+@use "../foundation/variables";
+
+.cspl-table {
+  .column-employment-status {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .column-additional-rules {
+    width: 25%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .column-employment-status-container {
+    width: 50%;
+  }
+  .column-employment-status-description {
+    width: 100%;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+
+  .column-employment-status-code {
+    width: 50%;
+    pointer-events: none;
+  }
+}
+
+.box {
+  width: 800px;
+  height: 36px;
+  border-radius: 8px;
+  padding: 20px;
+  font-size: var(--fs-19);
+  border: 1px solid var(--neutral-border-strong);
+}
+
+.out {
+  padding-left: 70px;
+}
+.reset-button {
+  color: var(--brand-text-primary-default);
+}

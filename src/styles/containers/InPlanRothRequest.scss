@@ -1,0 +1,281 @@
+@use "../shared/shared-placeholders" as *;
+.inPlanRothRequest {
+  &.inPlanRothRequestPage {
+    padding-bottom: 200px;
+  }
+
+  .employeeCardRoth {
+    margin-top: 16px;
+    padding: 16px 16px 0px 16px;
+    border: 1px solid var(--neutral-border-strong);
+    border-radius: 8px;
+
+    .topCardDetails {
+      display: flex;
+      gap: 16px;
+      height: fit-content;
+      align-items: center;
+      justify-content: space-between;
+
+      .employeeDetails {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        .employeeImage {
+          @extend %ThumbnailSize85x85;
+        }
+
+        .employeeData {
+          display: flex;
+          flex-direction: column;
+          height: fit-content;
+          gap: 4px;
+
+          .ssnAndId {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+          }
+        }
+      }
+
+      .companyData {
+        display: flex;
+        flex-direction: column;
+        padding-left: 16px;
+        align-self: center;
+      }
+
+      .planSelection {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        position: relative;
+        width: 200px;
+      }
+
+      .vestedBalanceAndAccountBalance {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-end;
+      }
+      .vestedBalanceAndAccountBalanceLable {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-end;
+        margin-left: 6%;
+      }
+    }
+
+    .borderBottom {
+      border-bottom: 1px solid var(--neutral-border-subtle);
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
+    .sourceCardDetails {
+      @extend %FlexRow;
+
+      .sourceCard {
+        @extend %FlexColumn;
+      }
+
+      .readOnlyFields {
+        .form-control.dropSide {
+          border-color: var(--neutral-border-strong);
+        }
+
+        .place-holder {
+          color: var(--neutral-text-subtle-least);
+        }
+
+        .form-control {
+          color: var(--neutral-text-subtle-least);
+        }
+
+        .form-label {
+          color: var(--neutral-text-subtle-least);
+        }
+
+        .form-control.form-button-group {
+          button {
+            border-color: var(--neutral-border-strong);
+            color: var(--neutral-text-subtle-least);
+          }
+        }
+
+        .form-group .form-control:disabled {
+          background-color: var(--semantics-disabled-background);
+        }
+
+        .btn-primary:disabled {
+          background-color: var(--semantics-disabled-background);
+        }
+      }
+
+      .readOnlyHeader {
+        color: var(--neutral-text-subtle-least);
+        gap: 4px;
+      }
+    }
+  }
+
+  .conversionTab {
+    padding-top: 16px;
+  }
+
+  .borderBottomConversion {
+    border-bottom: 1px solid var(--neutral-border-subtle);
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+
+  .vertical-separator-roth {
+    border-right: 1px solid var(--neutral-border-strong);
+    height: 100px;
+  }
+
+  .inPlanRothConversion {
+    display: flex;
+    gap: 16px;
+
+    .inPlanRothSourceCard {
+      width: 65%;
+      border: 1px solid var(--neutral-border-strong);
+      border-radius: 8px;
+      padding: 16px;
+      height: fit-content;
+
+      .topHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4px;
+
+        .icon-align {
+          align-items: center;
+          margin-right: 4px;
+        }
+      }
+
+      .fieldArray {
+        margin-top: 8px;
+        width: 100%;
+
+        .conversion-table {
+          width: 100%;
+          border-collapse: separate;
+          border-spacing: 0;
+          border: solid 1px var(--neutral-border-strong);
+          border-radius: 4px;
+          overflow: hidden;
+
+          th,
+          td {
+            padding: 8px 16px;
+            vertical-align: middle;
+          }
+
+          .column-sourceName {
+            text-align: left;
+            width: 30%;
+            align-content: baseline;
+          }
+
+          .column-availableAmount {
+            text-align: center;
+            width: 30%;
+            align-content: baseline;
+          }
+
+          .column-conversionAmount-header {
+            vertical-align: middle;
+            text-align: right;
+            width: 40%;
+            justify-items: end;
+            align-content: baseline;
+          }
+
+          .column-conversionAmount {
+            vertical-align: middle;
+            width: 40%;
+            justify-items: end;
+            align-content: baseline;
+          }
+
+          .width-120 {
+            width: 120px;
+            display: flex;
+            text-wrap: wrap;
+          }
+
+          thead {
+            background-color: var(--neutral-surface-layer-03);
+            font-weight: 600;
+          }
+
+          tbody tr.odd {
+            background-color: var(--neutral-surface-layer-01);
+          }
+
+          tbody tr.total-row {
+            background-color: var(--neutral-surface-layer-03);
+            font-weight: bold;
+
+            td:last-child {
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+
+    .taxAndCodeCard {
+      width: 35%;
+
+      .borderBottom {
+        border-bottom: 1px solid var(--neutral-border-subtle);
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+      .taxDetails {
+        border: 1px solid var(--neutral-border-strong);
+        border-radius: 8px;
+        width: 100%;
+        padding: 16px;
+        margin-bottom: 16px;
+      }
+
+      .CodeCard {
+        border: 1px solid var(--neutral-border-strong);
+        border-radius: 8px;
+        width: 100%;
+        padding: 16px;
+      }
+    }
+  }
+
+  .mb-4p {
+    margin-bottom: 4px;
+  }
+
+  .mr-4p {
+    margin-right: 4px;
+  }
+
+  .mb-1p {
+    margin-bottom: 1px;
+  }
+
+  .align-center {
+    align-self: center;
+  }
+
+  .formClassName {
+    margin: 0px;
+  }
+}

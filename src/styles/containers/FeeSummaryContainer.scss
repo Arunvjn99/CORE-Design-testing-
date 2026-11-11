@@ -1,0 +1,212 @@
+@use "../shared/shared-placeholders" as *;
+.fee-summary-conatiner {
+  .details-card {
+    border: none;
+    padding: 16px;
+    display: flex;
+    white-space: nowrap;
+    border-radius: 5px;
+    background-color: var(--neutral-surface-layer-02);
+  }
+
+  .headerDetails {
+    color: var(--neutral-text-subtle-least);
+  }
+  .processTime {
+    margin-top: -2px;
+    font-weight: 500;
+    font-size: var(--fs-14);
+    color: var(--neutral-text-subtle-least);
+  }
+  .valueDetails {
+    color: var(--neutral-text-subtle);
+  }
+
+  .investmentCard {
+    border: 1px solid var(--neutral-border-subtle);
+    background-color: var(--neutral-surface-layer-01);
+    border-radius: 5px;
+    padding: 15px;
+    width: 340px;
+  }
+
+  .AllocationBox {
+    border: 1px solid var(--neutral-border-subtle);
+    border-radius: 5px;
+    padding: 15px;
+    background-color: var(--neutral-surface-layer-01);
+  }
+
+  .capsule {
+    border: 1px solid var(--neutral-border-subtle);
+    border-radius: 20px;
+    background-color: var(--neutral-surface-layer-04);
+    padding: 10px;
+  }
+
+  .fee-applicable {
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--neutral-surface-layer-02);
+    .fa-border {
+      width: 100%;
+      margin-bottom: var(--spacing-24);
+      border-bottom: 1px solid var(--neutral-border-light);
+    }
+    .fa-dashed {
+      border: 1px dashed var(--neutral-border-light);
+    }
+    .investment-hierarchy {
+      width: 45%;
+      margin-top: 30px;
+      .padding-15 {
+        padding: 0px 15px;
+      }
+    }
+    .fa-filter-source-box {
+      margin-top: -30px;
+      margin-left: 43px;
+    }
+    .investmentList-box {
+      border-radius: var(--spacing-8);
+      padding: 15px 40px 0px 15px;
+      justify-items: center;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .padding-top-5 {
+      padding-top: 5px;
+    }
+    .sourcemergelist-box {
+      border-radius: var(--spacing-8);
+      padding: 15px 40px 0px 15px;
+      justify-items: center;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .slider-panel-header {
+      margin-top: -60px;
+    }
+  }
+
+  .fee-applicable-card {
+    display: grid;
+    grid-template-columns: 270px 600px 80px;
+    white-space: nowrap;
+  }
+
+  .schedule-run {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .details-card,
+  .schedule-run,
+  .schedule-details1 {
+    white-space: normal;
+  }
+  .divider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .schedule-details1 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
+
+  .fee-calculation {
+    display: grid;
+    grid-template-columns: 250px 170px 420px;
+    justify-content: space-between;
+  }
+  .fee-specification {
+    display: grid;
+    grid-template-columns: 150px 250px 250px 250px;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
+  .verticalLine {
+    border-right: 1px solid var(--semantics-critical-border);
+  }
+  .vertical-line {
+    width: 1px;
+    background-color: var(--neutral-surface-high-contrast);
+    height: 100%;
+    float: right;
+  }
+  .fee-calculation1 {
+    @extend %GridFourColumnEven;
+  }
+  .popup-cancel-btn {
+    /* background: var(--neutral-surface-layer-01); */
+    color: var(--semantics-highlight-text);
+    border: 1px solid var(--semantics-highlight-border);
+  }
+
+  .popup-ok-btn {
+    background: var(--neutral-surface-layer-01);
+    color: var(--semantics-highlight-text);
+    border: 1px solid var(--semantics-highlight-border);
+  }
+
+  .popup-border {
+    height: 200px;
+    width: 400px;
+    border-radius: 2px;
+  }
+  .fee-calculation2 {
+    display: grid;
+    grid-template-columns: 320px 270px 250px;
+    justify-content: space-between;
+  }
+  .summary-success-toast-text {
+    color: var(--neutral-text-default);
+    font-size: var(--fs-18);
+    margin-bottom: 5px;
+    font-weight: 100;
+  }
+
+  .summary-success-toast-sub-text {
+    color: var(--neutral-text-default);
+    font-size: var(--fs-16);
+    margin-bottom: 2px;
+    font-weight: 50;
+  }
+
+  .schedule-run1 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
+
+  .fee-specification-details {
+    @extend %GridFourColumnEven;
+  }
+  .whiteSpace-fee {
+    white-space: nowrap;
+  }
+
+  .margin-minus {
+    margin-top: -16px;
+  }
+  .whiteSpace-fee-normal {
+    white-space: normal;
+  }
+  .divider {
+    width: 100%;
+    margin-bottom: var(--spacing-24);
+    border-bottom: 1px solid var(--neutral-border-light);
+  }
+  .margin-minus-20 {
+    margin-top: -20px;
+  }
+}
+
+.fee-summary-container-wrapper {
+  overflow: visible;
+  max-height: 100%;
+}

@@ -1,0 +1,23 @@
+.cspl-table {
+  .column-source-name {
+    width: 50%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .column-source-catergory {
+    width: 50%;
+  }
+  .validatesources {
+    color: var(--semantics-critical-text);
+  }
+  /* .column-source-status { */
+  /* width: 40%; */
+  /* } */
+}
+
+@media (max-width: 1366px) and (min-width: 1024px) {
+  .md-ml-4 {
+    margin-left: 4.5rem;
+  }
+}

@@ -1,0 +1,407 @@
+@use "../shared/shared-placeholders" as *;
+
+.payroll-card {
+  width: 65%;
+  height: 7.75rem;
+}
+
+.file-text {
+  font-size: var(--fs-12);
+  font-weight: 500;
+  color: var(--neutral-text-default);
+  margin-left: 0.625rem;
+  line-height: 150%;
+}
+
+.ellipse {
+  width: 0.375rem;
+  height: 0.375rem;
+  margin-top: 0.438rem;
+  border: 0.063rem solid var(--neutral-border-strong);
+  background-color: var(--neutral-surface-layer-05);
+  border-radius: 50%;
+}
+
+.date {
+  width: 10.599rem;
+  height: 1.096rem;
+  margin-top: 0.813rem;
+}
+
+.border-line {
+  width: 100%;
+  border-bottom: 0.063rem solid var(--neutral-border-strong);
+  padding-bottom: 0.625rem;
+}
+
+.pay-date-card {
+  width: 85%;
+  height: 3.125rem;
+  margin-top: 0.938rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.progress-file-card {
+  width: 100%;
+  padding-left: 1.063rem;
+  border-left: 0.063rem solid var(--neutral-border-strong);
+}
+
+.grey-text {
+  color: var(--neutral-text-subtle-least);
+  font-size: var(--fs-14);
+}
+
+.status-text {
+  color: var(--neutral-text-subtle);
+}
+
+.reset {
+  color: var(--brand-text-primary-default);
+}
+
+.fullWidth {
+  width: 100%;
+  margin: 0;
+}
+
+.records {
+  color: var(--neutral-text-subtle-least);
+}
+
+.line-h-150 {
+  line-height: 150%;
+}
+
+.ft-11 {
+  font-size: var(--fs-11);
+}
+
+.marg-top-5 {
+  margin-top: 0.313rem;
+}
+
+.marg-r-40 {
+  margin-right: 2.5rem;
+}
+
+.br-1 {
+  border-right: 0.063rem solid var(--neutral-border-strong);
+  height: 6.25rem;
+  align-self: center;
+}
+
+.error-btn {
+  border: 0.063rem solid var(--semantics-critical-border);
+  color: var(--semantics-critical-text);
+  border-radius: 0.313rem;
+  padding: 0.313rem 0.938rem;
+  background: var(--neutral-surface-layer-01);
+  font-size: var(--fs-12);
+  font-weight: 500;
+}
+
+.pending-btn {
+  border: 0.063rem solid var(--semantics-warning-border);
+  color: var(--semantics-warning-text);
+  border-radius: 0.313rem;
+  padding: 0.313rem 0.938rem;
+  background: var(--neutral-surface-layer-01);
+  font-size: var(--fs-12);
+  font-weight: 500;
+}
+
+.awaiting-btn {
+  border: 0.063rem solid var(--semantics-success-border);
+  color: var(--semantics-success-text);
+  border-radius: 0.313rem;
+  padding: 0.313rem 0.938rem;
+  background: var(--neutral-surface-layer-01);
+  font-size: var(--fs-12);
+  font-weight: 500;
+}
+
+.create-btn {
+  border: 0.063rem solid var(--brand-border-primary-default);
+  color: var(--brand-text-primary-default);
+  border-radius: 0.313rem;
+  padding: 0.313rem 0.938rem;
+  background: var(--neutral-surface-layer-01);
+  font-size: var(--fs-12);
+  font-weight: 500;
+}
+
+.title-wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.para-wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.two-lines {
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.file-list {
+  overflow: auto;
+  height: 60%;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.card-box {
+  width: 100%;
+  height: 12rem;
+  position: relative;
+  background: var(--neutral-surface-layer-01);
+  border-radius: 0.313rem;
+  padding: 1.25rem 1.063rem 1.25rem 1.25rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: row;
+
+  .progress-status {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    margin-bottom: 0;
+    margin-right: 1.25rem;
+    align-items: center;
+    border: 0;
+    background: var(--neutral-surface-layer-01);
+
+    .progress-active {
+      width: 1.563rem;
+      height: 1.563rem;
+      text-align: center;
+      padding-top: 0.188rem;
+      color: var(--brand-background-primary-strong);
+      border: 0.063rem solid var(--brand-border-primary-default);
+      background: var(--neutral-surface-layer-01);
+      border-radius: 3.125rem;
+    }
+
+    li {
+      margin-left: 0.938rem;
+      width: 1.563rem;
+      height: 1.563rem;
+      text-align: center;
+      padding-top: 0.188rem;
+      background: var(--neutral-surface-layer-02);
+      color: var(--neutral-text-default);
+      border-radius: 3.125rem;
+      border: 0.063rem solid var(--neutral-border-strong);
+    }
+
+    .awaiting-bg {
+      background: var(--semantics-success-background-strong);
+      border: 0.063rem solid var(--semantics-success-border);
+      color: var(--neutral-text-on-color);
+    }
+
+    .awaiting-blue {
+      background: var(--brand-background-primary-strong);
+      border: 0.063rem solid var(--brand-border-primary-default);
+      color: var(--neutral-text-on-color);
+    }
+  }
+
+  .popup-block {
+    .popup-bg {
+      background: color-mix(
+        in srgb,
+        var(--neutral-surface-high-contrast) 65%,
+        transparent
+      );
+      position: absolute;
+      right: 0rem;
+      top: 0;
+      backdrop-filter: blur(0.625rem);
+      padding: 2.188rem 1.25rem;
+      width: 40%;
+      height: 100%;
+      border-radius: 0.313rem;
+    }
+
+    background: color-mix(
+      in srgb,
+      var(--neutral-surface-layer-05) 60%,
+      transparent
+    );
+    border: 0.063rem solid var(--neutral-border-strong);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.313rem;
+    top: 0;
+    right: -25rem;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+
+    p {
+      color: var(--neutral-text-on-color);
+      font-weight: 500;
+      font-size: var(--fs-12);
+      margin-bottom: 0.625rem;
+    }
+
+    .danger-btn {
+      background: var(--semantics-critical-background-strong);
+      color: var(--neutral-text-on-color);
+      border-radius: 0.313rem;
+      padding: 0.313rem 0.938rem;
+      font-size: var(--fs-12);
+      font-weight: 500;
+      border: 0;
+    }
+
+    .cancel-btn {
+      color: var(--semantics-critical-text);
+      background: var(--neutral-surface-layer-01);
+      border-radius: 0.313rem;
+      padding: 0.313rem 0.938rem;
+      font-size: var(--fs-12);
+      font-weight: 500;
+      border: 0;
+    }
+
+    @-webkit-keyframes slide {
+      100% {
+        right: 0;
+      }
+    }
+
+    @keyframes slide {
+      100% {
+        right: 0;
+      }
+    }
+  }
+
+  .close-anime {
+    left: -25rem;
+    -webkit-animation: slide-left 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide-left 0.5s forwards;
+  }
+
+  @-webkit-keyframes slide-left {
+    100% {
+      left: 0;
+    }
+  }
+
+  @keyframes slide-left {
+    100% {
+      left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 47.625rem) {
+  .pay-date-card {
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    align-items: flex-start;
+  }
+
+  .card-box {
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    align-items: flex-start;
+  }
+}
+
+.fileinfo-filestatus-layout {
+  width: 70%;
+  min-width: 600px;
+  flex-shrink: 1;
+}
+
+.fileinfo-filestatus-card {
+  width: 30%;
+  background: var(--neutral-surface-layer-02);
+  border-radius: 8px;
+}
+
+.fileinfo-filestatus-errorwarningbox {
+  background: var(--neutral-surface-layer-01);
+  border-radius: 8px;
+}
+
+.fileinfo-filestatus-noerrosbox {
+  background: var(--neutral-surface-layer-05);
+  border-radius: 8px;
+}
+
+.fileinfo-filestatus-icontri {
+  color: var(--semantics-critical-text);
+  font-size: var(--fs-24);
+  font-weight: 300px;
+}
+
+.fileinfo-filestatus-iconcir {
+  color: var(--semantics-warning-text);
+  font-size: var(--fs-24);
+  font-weight: 300px;
+}
+
+.fileinfo-payroll-excelfile {
+  width: 46px;
+  height: 46px;
+  margin-right: 10px;
+  border-radius: 30px;
+}
+
+.finchfileupload {
+  width: 35px;
+  margin-left: 6px;
+  margin-top: 9px;
+}
+
+.notfinchfileupload {
+  width: 50px;
+  margin-left: 0px;
+  margin-top: 3px;
+}
+
+.height-41px {
+  height: 41px;
+}
+
+.fileinfo-plandetails-box {
+  border: 1px solid var(--neutral-border-strong);
+  box-shadow: var(--elevation-01);
+  border-radius: 8px;
+  padding-right: 10px;
+}
+
+.initials {
+  height: 44px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: var(--fs-16);
+  font-weight: 600;
+  background-color: var(--neutral-surface-layer-05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.file-information-plan-details {
+  overflow-y: auto;
+  max-height: calc(100vh - 514px);
+}

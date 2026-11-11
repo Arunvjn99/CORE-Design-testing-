@@ -1,0 +1,9 @@
+@use "../shared/shared-placeholders" as *;
+
+.border-grey {
+  border: 1px solid var(--neutral-border-strong);
+}
+
+.m-10-10 {
+  margin: 0px 10px 0px 10px;
+}
